@@ -1,0 +1,52 @@
+# Welcome
+
+## Introduction
+
+This is the website for “R for Novice Programmers.” The goal of this book is to introduce non-programmers or those with very little programming experience to the benefits of the R and RStudio software. The main prerequisites for learners are basic knowledge of computer applications and experience working with files and folders. This book will primarily focus on the basic R concepts that are hardly emphasized, but that may prove difficult for learners new to programming.
+
+## About the author
+
+The author of this book is a Certified Carpentries instructor and a trainer with the Digital Research Academy. Additionally, the author holds a PhD in Biomedical Engineering and has completed postdoctoral fellowships in vascular biology and infectious diseases. Lastly, the author is passionate about using R and RStudio to generate data-driven visualizations to allow for a deeper understanding of public policy issues.
+
+## Why did I write this book?
+
+This book is primarily intended to cater to the needs of individuals who have a desire to learn the basics of programming. I focus on R and RStudio because their capabilities may be relevant to a wide variety of individuals and organizations seeking to perform basic statistical analysis and data visualization. Personally, my skills in R and RStudio were gained via classroom instruction, online tutorials and videos, as well as relevant blog posts. A significant disadvantage of some of these resources is the assumption of prior programming knowledge. To address this, I begin the book with instructions for downloading software, navigating the R and RStudio interfaces, and an overview of the basics of R to decrease the cognitive load on novices.
+
+## Syllabus
+
+At the end of the book, the student should be able to perform the tasks listed in the syllabus below.
+
+```{r}
+
+
+```
+
+## Sample chapter design
+
+Each lesson will follow a pre-described format
+
+i\. Questions to be addressed
+
+ii\. Learning objectives
+
+iii\. Lesson content
+
+iv\. Practice exercises
+
+v\. Lesson summary
+
+## Feedback
+
+Feedback can be provided using the following channels:
+
+i\. Email - willyokech\@gmail.com
+
+ii\. Github pull request - \_\_\_\_\_\_\_\_\_\_\_\_\_
+
+## Summary
+
+Overall, I believe that this book will increase both the knowledge and confidence levels of novice programmers and allow them to perform basic statistical analysis and simplify everyday computational tasks at home or in their workplaces. In the next chapter, we will perform a basic overview of the R and RStudio ecosystem.
+
+The online version of this book is free to use and is licensed under the \_\_\_\_\_\_\_\_.
+
+The book is written in [Quarto](https://quarto.org/).

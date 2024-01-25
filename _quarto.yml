@@ -1,0 +1,27 @@
+project:
+  type: book
+  output-dir: _book
+
+book:
+  title: "R for Novice Programmers (1e)"
+  reader-mode: true
+  
+  
+  author: "William Okech"
+  chapters:
+    - index.qmd
+    - 1_welcome_intro.qmd
+    - 2_overview.qmd
+    - summary.qmd
+    - references.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+  pdf:
+    documentclass: scrreprt
+
+editor: visual
+
