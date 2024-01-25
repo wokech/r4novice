@@ -6,13 +6,37 @@ book:
   title: "R for Novice Programmers (1e)"
   reader-mode: true
   
+  page-footer:
+    left: |
+      R for Novice Programmers (1e) was written by William Okech.
+    right: |
+      This book was built with <a href="https://quarto.org/">Quarto</a>.
   
-  author: "William Okech"
+  cover-image: Cover_R4NP.png
+  favicon: Cover_R4NP.png
+  #site-url: 
+  repo-url: https://github.com/wokech/r4novice
+  repo-branch: main
+  repo-actions: [edit, issue]
   chapters:
     - index.qmd
-    - 1_welcome_intro.qmd
-    - 2_overview.qmd
-    - summary.qmd
+    - intro.qmd
+
+    - overview.qmd
+    - download_install.qmd
+    - navigating.qmd
+    - managing.qmd
+    - importing.qmd
+    - arithmetic_variables.qmd
+    - operators.qmd
+    - data_types.qmd
+    - vectors.qmd
+    - data_struct_1.qmd
+    - data_struct_2.qmd
+    - missing.qmd
+    - conclusion.qmd
+    - appendix.qmd
+    
     - references.qmd
 
 bibliography: references.bib
@@ -20,6 +44,7 @@ bibliography: references.bib
 format:
   html:
     theme: cosmo
+    code-link: true
   pdf:
     documentclass: scrreprt
 
