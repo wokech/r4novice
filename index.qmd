@@ -4,4 +4,4 @@ This is the website for “R for Novice Programmers.” The goal of this book is
 
 The online version of this book is free to use and is licensed under the ... .
 
-The book is written in [Quarto](https://quarto.org/).
+This book was built with [Quarto](https://quarto.org/).
