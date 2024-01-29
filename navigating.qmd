@@ -1,1 +1,21 @@
 # Navigating the R and RStudio interfaces {#sec-navigating}
+
+## Questions
+
+*In progress*
+
+## Learning Objectives
+
+*In progress*
+
+## Lesson Content
+
+*In progress*
+
+## Exercises
+
+*In progress*
+
+## Summary
+
+*In progress*

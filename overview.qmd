@@ -12,7 +12,7 @@
 
 -   What advantages does R offer over other programming languages for data science tasks?
 
-## Learning objectives
+## Learning Objectives
 
 -   Learn about the historical background of R and RStudio.
 
@@ -20,7 +20,9 @@
 
 -   Assess the various applications of R across different industries.
 
-## Why learn R and RStudio?
+## Lesson Content
+
+### Why learn R and RStudio?
 
 Both R and Studio are free, open-source software tools that are widely used for statistical analysis and data visualization. R is a programming language that enables the use of code to analyze data. The primary function of the R language is statistical analysis and this can be performed directly in the R console. To ease the analysis process and enhance usability, an integrated development environment (IDE), such as RStudio is recommended. The RStudio IDE is a user-friendly interface that allows the learner to manage multiple script files, use the command-line terminal, easily access file inputs and outputs, and review file/analysis history.
 
@@ -28,11 +30,11 @@ The R programming language software was developed by Ross Ihaka and Robert Gentl
 
 RStudio extends R’s capabilities by making it easier to import data, write scripts, and generate visualizations and reports. The company RStudio (now Posit since 2022) was founded in 2009 with the main goal of “creating high quality open-source software for data scientists.”
 
-## Uses of R and RStudio
+### Uses of R and RStudio
 
 i.  The R and RStudio console can be used as a complex scientific calculator.
 
-ii. The values of various data types can be assigned to variables using the symbol "\<-" or "=".
+ii. The values of various data types can be assigned to variables using the symbol `<-` or `=`.
 
 iii. Built-in functions can be used to manipulate variables.
 
@@ -42,7 +44,7 @@ v.  New datasets can be imported and new functions can be created for custom ana
 
 vi. To aid in computational analysis, there exists a large package library ([CRAN](https://cran.r-project.org/)), as well as a lot of software in development to aid in computational analysis.
 
-## Primary advantages of R and RStudio
+### Primary advantages of R and RStudio
 
 i.  R and RStudio are free and open-source software programs which makes them accessible to anyone with a computer and internet connection. This accessibility is key in enabling learners from all socioeconomic levels and geographic regions to have a chance to work with statistical software,
 
@@ -54,9 +56,19 @@ iv. R and RStudio allow for reproducible analysis where scripts and workflows ca
 
 v.  The R/RStudio software is cross-platform, which means that it can be used on Linux, Windows, and Mac operating systems.
 
-## Applications of R in different industries
+### Applications of R in different industries
 
--   Discuss applications in fields such as finance, healthcare, and social sciences.
+-   Bioinformatics and Healthcare: epidemiological studies, clinical trial analysis, and genetic data analysis.
+
+-   Financial Modeling and Risk Analysis: risk management, algorithmic trading, trading strategies and analysis, time series analysis, and portfolio optimization.
+
+-   Retail and Marketing: customer analytics, sales forecasting, market research, web analytics, and customer segmentation.
+
+-   Social Sciences and Humanities: text analysis, surveys and opinion research, social trend analysis, and policy analysis.
+
+-   Statistics and Data Analysis: hypothesis testing, data visualization, regression modelling, and statistical inference.
+
+-   Environmental Science and Climate Change: forecasting weather patterns, modelling climate change, monitoring pollution levels, and ecological modelling.
 
 ## Exercises
 
@@ -68,8 +80,10 @@ ii. Do you currently use any other software tools for data analysis and visualiz
 
 iii. What tasks do you hope to accomplish after completing this training?
 
-iv. Explore the various R/RStudio communities listed in the appendix and consider joining any one of them
+iv. Explore the various R/RStudio communities listed in the appendix and consider joining any one of them.
+
+v.  Browse some of popular R packages (on [CRAN](https://cran.r-project.org/) or [R-Universe](https://r-universe.dev/search/)) for different tasks like data visualization and statistical analysis. Pick one package that interests you and read about its capabilities.
 
 ## Summary
 
-Overall, I hope you enjoyed learning about the history of R and RStudio, and have seen the advantages of using these software tools. Additionally, we discussed the applications of R in various industries. By the end of this book, the learner should have gained a basic understanding of the R and RStudio software environments and should be ready to tackle more advanced computational tasks.
+Overall, I hope you enjoyed learning about the history of R and RStudio, and have seen the advantages of using these software tools. Additionally, we discussed the numerous applications of R in various industries. In the next chapter, we will look at how to download and install both R and RStudio on your local computer.

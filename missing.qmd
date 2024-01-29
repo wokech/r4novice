@@ -1,1 +1,21 @@
 # Handling missing data {#sec-missing}
+
+## Questions
+
+*In progress*
+
+## Learning Objectives
+
+*In progress*
+
+## Lesson Content
+
+*In progress*
+
+## Exercises
+
+*In progress*
+
+## Summary
+
+*In progress*

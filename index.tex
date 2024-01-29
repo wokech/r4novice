@@ -1,0 +1,1503 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
+%
+\documentclass[
+  letterpaper,
+  DIV=11,
+  numbers=noendperiod]{scrreprt}
+
+\usepackage{amsmath,amssymb}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else  
+    % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\setcounter{secnumdepth}{5}
+% Make \paragraph and \subparagraph free-standing
+\ifx\paragraph\undefined\else
+  \let\oldparagraph\paragraph
+  \renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+  \let\oldsubparagraph\subparagraph
+  \renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+\newlength{\cslentryspacingunit} % times entry-spacing
+\setlength{\cslentryspacingunit}{\parskip}
+\newenvironment{CSLReferences}[2] % #1 hanging-ident, #2 entry spacing
+ {% don't indent paragraphs
+  \setlength{\parindent}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1
+  \let\oldpar\par
+  \def\par{\hangindent=\cslhangindent\oldpar}
+  \fi
+  % set entry spacing
+  \setlength{\parskip}{#2\cslentryspacingunit}
+ }%
+ {}
+\usepackage{calc}
+\newcommand{\CSLBlock}[1]{#1\hfill\break}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{#1}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{#1}\break}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+
+\KOMAoption{captions}{tableheading}
+\makeatletter
+\makeatother
+\makeatletter
+\@ifpackageloaded{bookmark}{}{\usepackage{bookmark}}
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\AtBeginDocument{%
+\ifdefined\contentsname
+  \renewcommand*\contentsname{Table of contents}
+\else
+  \newcommand\contentsname{Table of contents}
+\fi
+\ifdefined\listfigurename
+  \renewcommand*\listfigurename{List of Figures}
+\else
+  \newcommand\listfigurename{List of Figures}
+\fi
+\ifdefined\listtablename
+  \renewcommand*\listtablename{List of Tables}
+\else
+  \newcommand\listtablename{List of Tables}
+\fi
+\ifdefined\figurename
+  \renewcommand*\figurename{Figure}
+\else
+  \newcommand\figurename{Figure}
+\fi
+\ifdefined\tablename
+  \renewcommand*\tablename{Table}
+\else
+  \newcommand\tablename{Table}
+\fi
+}
+\@ifpackageloaded{float}{}{\usepackage{float}}
+\floatstyle{ruled}
+\@ifundefined{c@chapter}{\newfloat{codelisting}{h}{lop}}{\newfloat{codelisting}{h}{lop}[chapter]}
+\floatname{codelisting}{Listing}
+\newcommand*\listoflistings{\listof{codelisting}{List of Listings}}
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\@ifpackageloaded{subcaption}{}{\usepackage{subcaption}}
+\makeatother
+\makeatletter
+\@ifpackageloaded{tcolorbox}{}{\usepackage[skins,breakable]{tcolorbox}}
+\makeatother
+\makeatletter
+\@ifundefined{shadecolor}{\definecolor{shadecolor}{rgb}{.97, .97, .97}}
+\makeatother
+\makeatletter
+\makeatother
+\makeatletter
+\makeatother
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same} % disable monospaced font for URLs
+\hypersetup{
+  pdftitle={R for Novice Programmers (1e)},
+  colorlinks=true,
+  linkcolor={blue},
+  filecolor={Maroon},
+  citecolor={Blue},
+  urlcolor={Blue},
+  pdfcreator={LaTeX via pandoc}}
+
+\title{R for Novice Programmers (1e)}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[interior hidden, sharp corners, frame hidden, breakable, borderline west={3pt}{0pt}{shadecolor}, enhanced, boxrule=0pt]}{\end{tcolorbox}}\fi
+
+\renewcommand*\contentsname{Table of contents}
+{
+\hypersetup{linkcolor=}
+\setcounter{tocdepth}{2}
+\tableofcontents
+}
+\bookmarksetup{startatroot}
+
+\hypertarget{welcome}{%
+\chapter*{Welcome}\label{welcome}}
+\addcontentsline{toc}{chapter}{Welcome}
+
+\markboth{Welcome}{Welcome}
+
+This is the website for ``R for Novice Programmers.'' The goal of this
+book is to introduce non-programmers or those with very little
+programming experience to the benefits of the R and RStudio software.
+The main prerequisites for learners are basic knowledge of computer
+applications and experience working with files and folders. This book
+will primarily focus on the basic R concepts that are hardly emphasized,
+but that may prove difficult for learners new to programming.
+
+The online version of this book is free to use and is licensed under the
+\ldots{} .
+
+The book is written in \href{https://quarto.org/}{Quarto}.
+
+\bookmarksetup{startatroot}
+
+\hypertarget{introduction}{%
+\chapter*{Introduction}\label{introduction}}
+\addcontentsline{toc}{chapter}{Introduction}
+
+\markboth{Introduction}{Introduction}
+
+\hypertarget{why-did-i-write-this-book}{%
+\section*{Why did I write this book?}\label{why-did-i-write-this-book}}
+\addcontentsline{toc}{section}{Why did I write this book?}
+
+\markright{Why did I write this book?}
+
+This book is primarily intended to cater to the needs of individuals who
+have a desire to learn the basics of programming. I focus on R and
+RStudio because their capabilities may be relevant to a wide variety of
+individuals and organizations seeking to perform basic statistical
+analysis and data visualization. Personally, my skills in R and RStudio
+were gained via classroom instruction, online tutorials and videos, as
+well as relevant blog posts. A significant disadvantage of some of these
+resources is the assumption of prior programming knowledge. To address
+this, I begin the book with instructions for downloading software,
+navigating the R and RStudio interfaces, and an overview of the basics
+of R to decrease the cognitive load on novices.
+
+\hypertarget{about-the-author}{%
+\section*{About the author}\label{about-the-author}}
+\addcontentsline{toc}{section}{About the author}
+
+\markright{About the author}
+
+The author of this book is a Certified Carpentries instructor and a
+trainer with the Digital Research Academy. Additionally, the author
+holds a PhD in Biomedical Engineering and has completed postdoctoral
+fellowships in vascular biology and infectious diseases. Lastly, the
+author is passionate about using R and RStudio to generate data-driven
+visualizations to allow for a deeper understanding of public policy
+issues.
+
+\hypertarget{syllabus}{%
+\section*{Syllabus}\label{syllabus}}
+\addcontentsline{toc}{section}{Syllabus}
+
+\markright{Syllabus}
+
+At the end of the book, the student should be able to perform the tasks
+listed in the syllabus below.
+
+\hypertarget{tbl-syllabus-.striped-.hover-tbl-colwidths10-70-20}{}
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.2394}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.5211}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.2394}}@{}}
+\caption{\label{tbl-syllabus-.striped-.hover-tbl-colwidths10-70-20}Syllabus}\tabularnewline
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Chapter
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Title
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Complete? (Yes / No)
+\end{minipage} \\
+\midrule\noalign{}
+\endfirsthead
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Chapter
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Title
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Complete? (Yes / No)
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+& Introduction & \\
+1 & Overview of R and RStudio & \\
+2 & Download and Install R and RStudio & \\
+3 & Navigating the R and RStudio interfaces & \\
+4 & Managing your files and data & \\
+5 & Importing data and saving analysis outputs & \\
+6 & Basic arithmetic, arithmetic operators, and variables & \\
+7 & The primary types of operators in R & \\
+8 & Data Types & \\
+9 & Vectors & \\
+10 & Data Structures (Part I) & \\
+11 & Data Structures (Part II) & \\
+12 & Handling missing data & \\
+& Conclusion & \\
+& Appendix & \\
+\end{longtable}
+
+\hypertarget{sample-chapter-design}{%
+\section*{Sample chapter design}\label{sample-chapter-design}}
+\addcontentsline{toc}{section}{Sample chapter design}
+
+\markright{Sample chapter design}
+
+Each lesson will follow a pre-described format
+
+\begin{enumerate}
+\def\labelenumi{\roman{enumi}.}
+\item
+  Questions to be addressed
+\item
+  Learning objectives
+\item
+  Lesson content
+\item
+  Practice exercises
+\item
+  Lesson summary
+\end{enumerate}
+
+\hypertarget{feedback}{%
+\section*{Feedback}\label{feedback}}
+\addcontentsline{toc}{section}{Feedback}
+
+\markright{Feedback}
+
+Feedback can be provided using the following channels:
+
+\begin{enumerate}
+\def\labelenumi{\roman{enumi}.}
+\item
+  Email: willyokech@gmail.com
+\item
+  Github pull request:
+\end{enumerate}
+
+\hypertarget{summary}{%
+\section*{Summary}\label{summary}}
+\addcontentsline{toc}{section}{Summary}
+
+\markright{Summary}
+
+Overall, I believe that this book will increase both the knowledge and
+confidence levels of novice programmers and allow them to perform basic
+statistical analysis and simplify everyday computational tasks at home
+or in their workplaces. In the next chapter, we will perform a basic
+overview of the R and RStudio ecosystem.
+
+\bookmarksetup{startatroot}
+
+\hypertarget{sec-overview}{%
+\chapter{Overview of R and RStudio}\label{sec-overview}}
+
+\hypertarget{questions}{%
+\section{Questions}\label{questions}}
+
+\begin{itemize}
+\item
+  What is R? How is it related to RStudio?
+\item
+  What are the primary advantages of R compared to other software
+  programs?
+\item
+  Why is R considered a powerful language for statistical computing and
+  data analysis?
+\item
+  In what domains and industries is R widely used?
+\item
+  What advantages does R offer over other programming languages for data
+  science tasks?
+\end{itemize}
+
+\hypertarget{learning-objectives}{%
+\section{Learning Objectives}\label{learning-objectives}}
+
+\begin{itemize}
+\item
+  Learn about the historical background of R and RStudio.
+\item
+  Understand the uses and primary advantages of R and RStudio.
+\item
+  Assess the various applications of R across different industries.
+\end{itemize}
+
+\hypertarget{lesson-content}{%
+\section{Lesson Content}\label{lesson-content}}
+
+\hypertarget{why-learn-r-and-rstudio}{%
+\subsection{Why learn R and RStudio?}\label{why-learn-r-and-rstudio}}
+
+Both R and Studio are free, open-source software tools that are widely
+used for statistical analysis and data visualization. R is a programming
+language that enables the use of code to analyze data. The primary
+function of the R language is statistical analysis and this can be
+performed directly in the R console. To ease the analysis process and
+enhance usability, an integrated development environment (IDE), such as
+RStudio is recommended. The RStudio IDE is a user-friendly interface
+that allows the learner to manage multiple script files, use the
+command-line terminal, easily access file inputs and outputs, and review
+file/analysis history.
+
+The R programming language software was developed by Ross Ihaka and
+Robert Gentleman in 1993 (published as open-source in 1995) when they
+were based at the University of Auckland. \emph{Fun fact: R represents
+the first letter of the first names of the creators}. The software is
+utilized by individuals working for various organizations ranging from
+academic institutions and healthcare organizations to financial services
+and information technology companies. In January 2024, the
+\href{https://pypl.github.io/PYPL.html}{PopularitY of Programming
+Language (PYPL) Index}, which is created by analyzing how often language
+tutorials are searched on Google, demonstrated that R was the 6th most
+popular programming language. However, in the same period, the TIOBE
+index (https://www.tiobe.com/tiobe-index/) indicated that R was the 23rd
+most popular language. This may result from different methodologies for
+developing the rankings. RStudio is an integrated development
+environment (IDE) for R that was developed by JJ Allaire. This software
+contains tools that make programming in R easier.
+
+RStudio extends R's capabilities by making it easier to import data,
+write scripts, and generate visualizations and reports. The company
+RStudio (now Posit since 2022) was founded in 2009 with the main goal of
+``creating high quality open-source software for data scientists.''
+
+\hypertarget{uses-of-r-and-rstudio}{%
+\subsection{Uses of R and RStudio}\label{uses-of-r-and-rstudio}}
+
+\begin{enumerate}
+\def\labelenumi{\roman{enumi}.}
+\item
+  The R and RStudio console can be used as a complex scientific
+  calculator.
+\item
+  The values of various data types can be assigned to variables using
+  the symbol \texttt{\textless{}-} or \texttt{=}.
+\item
+  Built-in functions can be used to manipulate variables.
+\item
+  Built-in datasets can be accessed internally for analysis.
+\item
+  New datasets can be imported and new functions can be created for
+  custom analysis.
+\item
+  To aid in computational analysis, there exists a large package library
+  (\href{https://cran.r-project.org/}{CRAN}), as well as a lot of
+  software in development to aid in computational analysis.
+\end{enumerate}
+
+\hypertarget{primary-advantages-of-r-and-rstudio}{%
+\subsection{Primary advantages of R and
+RStudio}\label{primary-advantages-of-r-and-rstudio}}
+
+\begin{enumerate}
+\def\labelenumi{\roman{enumi}.}
+\item
+  R and RStudio are free and open-source software programs which makes
+  them accessible to anyone with a computer and internet connection.
+  This accessibility is key in enabling learners from all socioeconomic
+  levels and geographic regions to have a chance to work with
+  statistical software,
+\item
+  A large number of user communities exists for the R/RStudio software.
+  These communities (listed in the Appendix) provide learning support
+  and assist with technical challenges,
+\item
+  Numerous freely available packages/extensions have been developed by
+  the R and RStudio user communities to facilitate all forms of
+  computational analysis, visualization, and publication. The
+  (\href{https://cran.r-project.org/}{CRAN}) has packages that contain
+  datasets as well as allow one to perform statistical analysis and data
+  visualization,
+\item
+  R and RStudio allow for reproducible analysis where scripts and
+  workflows can be shared with fellow users, and,
+\item
+  The R/RStudio software is cross-platform, which means that it can be
+  used on Linux, Windows, and Mac operating systems.
+\end{enumerate}
+
+\hypertarget{applications-of-r-in-different-industries}{%
+\subsection{Applications of R in different
+industries}\label{applications-of-r-in-different-industries}}
+
+\begin{itemize}
+\item
+  Bioinformatics and Healthcare: epidemiological studies, clinical trial
+  analysis, and genetic data analysis.
+\item
+  Financial Modeling and Risk Analysis: risk management, algorithmic
+  trading, trading strategies and analysis, time series analysis, and
+  portfolio optimization.
+\item
+  Retail and Marketing: customer analytics, sales forecasting, market
+  research, web analytics, and customer segmentation.
+\item
+  Social Sciences and Humanities: text analysis, surveys and opinion
+  research, social trend analysis, and policy analysis.
+\item
+  Statistics and Data Analysis: hypothesis testing, data visualization,
+  regression modelling, and statistical inference.
+\item
+  Environmental Science and Climate Change: forecasting weather
+  patterns, modelling climate change, monitoring pollution levels, and
+  ecological modelling.
+\end{itemize}
+
+\hypertarget{exercises}{%
+\section{Exercises}\label{exercises}}
+
+As you embark on your R/RStudio learning journey, I have listed (below)
+a few questions for you to think about before we get started with the
+lessons.
+
+\begin{enumerate}
+\def\labelenumi{\roman{enumi}.}
+\item
+  Why do you want to learn R and RStudio?
+\item
+  Do you currently use any other software tools for data analysis and
+  visualization? What are the limitations of these tools?
+\item
+  What tasks do you hope to accomplish after completing this training?
+\item
+  Explore the various R/RStudio communities listed in the appendix and
+  consider joining any one of them.
+\item
+  Browse some of popular R packages (on
+  \href{https://cran.r-project.org/}{CRAN} or
+  \href{https://r-universe.dev/search/}{R-Universe}) for different tasks
+  like data visualization and statistical analysis. Pick one package
+  that interests you and read about its capabilities.
+\end{enumerate}
+
+\hypertarget{summary-1}{%
+\section{Summary}\label{summary-1}}
+
+Overall, I hope you enjoyed learning about the history of R and RStudio,
+and have seen the advantages of using these software tools.
+Additionally, we discussed the numerous applications of R in various
+industries. In the next chapter, we will look at how to download and
+install both R and RStudio on your local computer.
+
+\bookmarksetup{startatroot}
+
+\hypertarget{sec-download-install}{%
+\chapter{Download and Install R and
+RStudio}\label{sec-download-install}}
+
+\hypertarget{questions-1}{%
+\section{Questions}\label{questions-1}}
+
+\emph{In progress}
+
+\hypertarget{learning-objectives-1}{%
+\section{Learning Objectives}\label{learning-objectives-1}}
+
+\emph{In progress}
+
+\hypertarget{lesson-content-1}{%
+\section{Lesson Content}\label{lesson-content-1}}
+
+\emph{In progress}
+
+\hypertarget{exercises-1}{%
+\section{Exercises}\label{exercises-1}}
+
+\emph{In progress}
+
+\hypertarget{summary-2}{%
+\section{Summary}\label{summary-2}}
+
+\emph{In progress}
+
+\bookmarksetup{startatroot}
+
+\hypertarget{sec-navigating}{%
+\chapter{Navigating the R and RStudio interfaces}\label{sec-navigating}}
+
+\hypertarget{questions-2}{%
+\section{Questions}\label{questions-2}}
+
+\emph{In progress}
+
+\hypertarget{learning-objectives-2}{%
+\section{Learning Objectives}\label{learning-objectives-2}}
+
+\emph{In progress}
+
+\hypertarget{lesson-content-2}{%
+\section{Lesson Content}\label{lesson-content-2}}
+
+\emph{In progress}
+
+\hypertarget{exercises-2}{%
+\section{Exercises}\label{exercises-2}}
+
+\emph{In progress}
+
+\hypertarget{summary-3}{%
+\section{Summary}\label{summary-3}}
+
+\emph{In progress}
+
+\bookmarksetup{startatroot}
+
+\hypertarget{sec-managing}{%
+\chapter{Managing your files and data}\label{sec-managing}}
+
+\hypertarget{questions-3}{%
+\section{Questions}\label{questions-3}}
+
+\emph{In progress}
+
+\hypertarget{learning-objectives-3}{%
+\section{Learning Objectives}\label{learning-objectives-3}}
+
+\emph{In progress}
+
+\hypertarget{lesson-content-3}{%
+\section{Lesson Content}\label{lesson-content-3}}
+
+\emph{In progress}
+
+\hypertarget{exercises-3}{%
+\section{Exercises}\label{exercises-3}}
+
+\emph{In progress}
+
+\hypertarget{summary-4}{%
+\section{Summary}\label{summary-4}}
+
+\emph{In progress}
+
+\bookmarksetup{startatroot}
+
+\hypertarget{sec-import-save}{%
+\chapter{Importing data and saving analysis
+outputs}\label{sec-import-save}}
+
+\hypertarget{questions-4}{%
+\section{Questions}\label{questions-4}}
+
+\emph{In progress}
+
+\hypertarget{learning-objectives-4}{%
+\section{Learning Objectives}\label{learning-objectives-4}}
+
+\emph{In progress}
+
+\hypertarget{lesson-content-4}{%
+\section{Lesson Content}\label{lesson-content-4}}
+
+\emph{In progress}
+
+\hypertarget{exercises-4}{%
+\section{Exercises}\label{exercises-4}}
+
+\emph{In progress}
+
+\hypertarget{summary-5}{%
+\section{Summary}\label{summary-5}}
+
+\emph{In progress}
+
+\bookmarksetup{startatroot}
+
+\hypertarget{sec-arithmetic-variables}{%
+\chapter{Basic arithmetic, arithmetic operators, and
+variables}\label{sec-arithmetic-variables}}
+
+\hypertarget{questions-5}{%
+\section{Questions}\label{questions-5}}
+
+\emph{In progress}
+
+\hypertarget{learning-objectives-5}{%
+\section{Learning Objectives}\label{learning-objectives-5}}
+
+\emph{In progress}
+
+\hypertarget{lesson-content-5}{%
+\section{Lesson Content}\label{lesson-content-5}}
+
+\emph{In progress}
+
+\hypertarget{exercises-5}{%
+\section{Exercises}\label{exercises-5}}
+
+\emph{In progress}
+
+\hypertarget{summary-6}{%
+\section{Summary}\label{summary-6}}
+
+\emph{In progress}
+
+\bookmarksetup{startatroot}
+
+\hypertarget{sec-operators}{%
+\chapter{The primary types of operators in R}\label{sec-operators}}
+
+\hypertarget{questions-6}{%
+\section{Questions}\label{questions-6}}
+
+\emph{In progress}
+
+\hypertarget{learning-objectives-6}{%
+\section{Learning Objectives}\label{learning-objectives-6}}
+
+\emph{In progress}
+
+\hypertarget{lesson-content-6}{%
+\section{Lesson Content}\label{lesson-content-6}}
+
+\emph{In progress}
+
+\hypertarget{exercises-6}{%
+\section{Exercises}\label{exercises-6}}
+
+\emph{In progress}
+
+\hypertarget{summary-7}{%
+\section{Summary}\label{summary-7}}
+
+\emph{In progress}
+
+\bookmarksetup{startatroot}
+
+\hypertarget{sec-data-types}{%
+\chapter{Data Types}\label{sec-data-types}}
+
+\hypertarget{questions-7}{%
+\section{Questions}\label{questions-7}}
+
+\emph{In progress}
+
+\hypertarget{learning-objectives-7}{%
+\section{Learning Objectives}\label{learning-objectives-7}}
+
+\emph{In progress}
+
+\hypertarget{lesson-content-7}{%
+\section{Lesson Content}\label{lesson-content-7}}
+
+\emph{In progress}
+
+\hypertarget{exercises-7}{%
+\section{Exercises}\label{exercises-7}}
+
+\emph{In progress}
+
+\hypertarget{summary-8}{%
+\section{Summary}\label{summary-8}}
+
+\emph{In progress}
+
+\bookmarksetup{startatroot}
+
+\hypertarget{sec-vectors}{%
+\chapter{Vectors}\label{sec-vectors}}
+
+\hypertarget{questions-8}{%
+\section{Questions}\label{questions-8}}
+
+\emph{In progress}
+
+\hypertarget{learning-objectives-8}{%
+\section{Learning Objectives}\label{learning-objectives-8}}
+
+\emph{In progress}
+
+\hypertarget{lesson-content-8}{%
+\section{Lesson Content}\label{lesson-content-8}}
+
+\emph{In progress}
+
+\hypertarget{exercises-8}{%
+\section{Exercises}\label{exercises-8}}
+
+\emph{In progress}
+
+\hypertarget{summary-9}{%
+\section{Summary}\label{summary-9}}
+
+\emph{In progress}
+
+\bookmarksetup{startatroot}
+
+\hypertarget{sec-data-structure-1}{%
+\chapter{Data Structures (Part I)}\label{sec-data-structure-1}}
+
+\hypertarget{questions-9}{%
+\section{Questions}\label{questions-9}}
+
+\emph{In progress}
+
+\hypertarget{learning-objectives-9}{%
+\section{Learning Objectives}\label{learning-objectives-9}}
+
+\emph{In progress}
+
+\hypertarget{lesson-content-9}{%
+\section{Lesson Content}\label{lesson-content-9}}
+
+\emph{In progress}
+
+\hypertarget{exercises-9}{%
+\section{Exercises}\label{exercises-9}}
+
+\emph{In progress}
+
+\hypertarget{summary-10}{%
+\section{Summary}\label{summary-10}}
+
+\emph{In progress}
+
+\bookmarksetup{startatroot}
+
+\hypertarget{sec-data-structure-2}{%
+\chapter{Data Structures (Part II)}\label{sec-data-structure-2}}
+
+\hypertarget{questions-10}{%
+\section{Questions}\label{questions-10}}
+
+\emph{In progress}
+
+\hypertarget{learning-objectives-10}{%
+\section{Learning Objectives}\label{learning-objectives-10}}
+
+\emph{In progress}
+
+\hypertarget{lesson-content-10}{%
+\section{Lesson Content}\label{lesson-content-10}}
+
+\emph{In progress}
+
+\hypertarget{exercises-10}{%
+\section{Exercises}\label{exercises-10}}
+
+\emph{In progress}
+
+\hypertarget{summary-11}{%
+\section{Summary}\label{summary-11}}
+
+\emph{In progress}
+
+\bookmarksetup{startatroot}
+
+\hypertarget{sec-missing}{%
+\chapter{Handling missing data}\label{sec-missing}}
+
+\hypertarget{questions-11}{%
+\section{Questions}\label{questions-11}}
+
+\emph{In progress}
+
+\hypertarget{learning-objectives-11}{%
+\section{Learning Objectives}\label{learning-objectives-11}}
+
+\emph{In progress}
+
+\hypertarget{lesson-content-11}{%
+\section{Lesson Content}\label{lesson-content-11}}
+
+\emph{In progress}
+
+\hypertarget{exercises-11}{%
+\section{Exercises}\label{exercises-11}}
+
+\emph{In progress}
+
+\hypertarget{summary-12}{%
+\section{Summary}\label{summary-12}}
+
+\emph{In progress}
+
+\bookmarksetup{startatroot}
+
+\hypertarget{conclusion}{%
+\chapter*{Conclusion}\label{conclusion}}
+\addcontentsline{toc}{chapter}{Conclusion}
+
+\markboth{Conclusion}{Conclusion}
+
+\textbf{We have finally come to the end of the ``R for Novice
+Programmers'' book. Congratulations on completing this learning
+journey!}
+
+The overall goal of this book was to introduce non-programmers or those
+with very little programming experience to R and RStudio and their use
+in basic statistical programming. It is hoped that the learners gained
+new skills and discovered how this software could be used to simplify
+everyday tasks in their workplaces. The learner should now be able to
+understand all the topics listed below based on the previously described
+learning objectives.
+
+\hypertarget{tbl-syllabus-.striped-.hover-tbl-colwidths10-70-20}{}
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.5000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.2500}}@{}}
+\caption{\label{tbl-syllabus-.striped-.hover-tbl-colwidths10-70-20}Syllabus}\tabularnewline
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Chapter
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Title
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Complete? (Yes / No)
+\end{minipage} \\
+\midrule\noalign{}
+\endfirsthead
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Chapter
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Title
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Complete? (Yes / No)
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+& Introduction & \\
+1 & Overview of R and RStudio & \\
+2 & Download and Install R and RStudio & \\
+3 & Navigating the R and RStudio interfaces & \\
+4 & Managing your files and data & \\
+5 & Importing data and saving analysis outputs & \\
+6 & Basic arithmetic, arithmetic operators, and variables & \\
+7 & The primary types of operators in R & \\
+8 & Data Types & \\
+9 & Vectors & \\
+10 & Data Structures (Part I) & \\
+11 & Data Structures (Part II) & \\
+12 & Handling missing data & \\
+& Conclusion & \\
+& Appendix & \\
+\end{longtable}
+
+Now that the learner has mastered the basics, it is time to transition
+to specific topics such as data wrangling/manipulation, data
+visualization, and programming. Therefore, I would encourage the learner
+to review some of the links I have provided in the Appendix and look out
+for more books in the future which will cover:
+
+\begin{enumerate}
+\def\labelenumi{\roman{enumi}.}
+\item
+  Data visualization
+\item
+  Tidyverse
+\item
+  Programming: Functions, Loops, and Control Statements
+\item
+  Data Science
+\item
+  Statistics
+\item
+  Machine Learning and Artificial Intelligence
+\item
+  Publishing with R Markdown and/or Quarto
+\item
+  R Shiny
+\end{enumerate}
+
+\textbf{Thanks for your participation and for completing this book!}
+
+\bookmarksetup{startatroot}
+
+\hypertarget{appendix}{%
+\chapter*{Appendix}\label{appendix}}
+\addcontentsline{toc}{chapter}{Appendix}
+
+\markboth{Appendix}{Appendix}
+
+To further your R learning journey, I would recommend a review of the
+following freely available resources. This list will constantly be
+updated as new material becomes available.
+
+\hypertarget{online-repositories-with-rrstudio-related-links}{%
+\section*{1. Online repositories with R/RStudio-related
+links}\label{online-repositories-with-rrstudio-related-links}}
+\addcontentsline{toc}{section}{1. Online repositories with
+R/RStudio-related links}
+
+\markright{1. Online repositories with R/RStudio-related links}
+
+\begin{itemize}
+\tightlist
+\item
+  \href{https://www.bigbookofr.com/}{Big Book of R}
+\item
+  \href{https://committedtotape.shinyapps.io/freeR/}{Free R Reading
+  Material}
+\item
+  \href{https://github.com/qinwf/awesome-R}{Awesome R 1}
+\item
+  \href{https://github.com/uhub/awesome-r}{Awesome R 2}
+\item
+  \href{https://github.com/ktaranov/AwesomeR}{Awesome R 3}
+\item
+  \href{https://github.com/iamericfletcher/awesome-r-learning-resources}{Awesome
+  R 4}
+\item
+  \href{https://www.resourcesdatabase.com/}{resouRces: Database of
+  Resources to Learn \& Teach R}
+\item
+  \href{https://r-universe.dev/search/}{R-universe}
+\item
+  \href{https://rviews.rstudio.com/2021/11/04/bookdown-org/}{R Community
+  Public Library}
+\end{itemize}
+
+\hypertarget{r-communities}{%
+\section*{2. R Communities}\label{r-communities}}
+\addcontentsline{toc}{section}{2. R Communities}
+
+\markright{2. R Communities}
+
+\begin{itemize}
+\tightlist
+\item
+  \href{https://community.rstudio.com/}{Posit (formerly RStudio)
+  Community}
+\item
+  \href{https://stackoverflow.com/questions/tagged/r}{Stack Overflow R}
+\item
+  \href{https://stackoverflow.com/questions/tagged/rstudio}{Stack
+  Overflow RStudio}
+\item
+  \href{https://stats.stackexchange.com/?tags=r}{Cross Validated}
+\item
+  \href{https://www.r-bloggers.com/}{R-bloggers}
+\item
+  \href{https://rfordatasci.com/}{R for Data Science Slack Group}
+\item
+  \href{https://www.linkedin.com/company/r-user-community/}{R User
+  Community}
+\item
+  \href{https://rladies.org/}{R-Ladies Global}
+\item
+  \href{https://satrdays.org/}{satRday}
+\item
+  \href{https://ropensci.org/community/}{rOpenSci}
+\item
+  \textbf{Twitter (now X) -- \#rstats and \#rstudio}
+\item
+  \textbf{Reddit -- r/rstats and r/RStudio}
+\end{itemize}
+
+\hypertarget{conferences-and-meetups}{%
+\section*{3. Conferences and Meetups}\label{conferences-and-meetups}}
+\addcontentsline{toc}{section}{3. Conferences and Meetups}
+
+\markright{3. Conferences and Meetups}
+
+\begin{itemize}
+\tightlist
+\item
+  \href{https://www.r-project.org/conferences/}{R Foundation Conferences
+  (useR! and DSC)}
+\item
+  \href{https://rstats.ai/}{R Conference}
+\item
+  \href{https://posit.co/conference/}{Posit Conference}
+\item
+  \href{https://www.meetup.com/pro/r-user-groups/}{R User Group Meetups}
+\end{itemize}
+
+\hypertarget{cheatsheets}{%
+\section*{4. Cheatsheets}\label{cheatsheets}}
+\addcontentsline{toc}{section}{4. Cheatsheets}
+
+\markright{4. Cheatsheets}
+
+\begin{itemize}
+\tightlist
+\item
+  \href{https://rviews.rstudio.com/2021/03/10/rstudio-open-source-resorurces/}{R
+  Views Cheatsheets}
+\item
+  \href{https://posit.co/resources/cheatsheets/}{Posit Cheatsheets}
+\item
+  \href{https://www.kdnuggets.com/2017/09/essential-data-science-machine-learning-deep-learning-cheat-sheets.html}{30
+  Essential Data Science, Machine Learning \& Deep Learning Cheat
+  Sheets}
+\end{itemize}
+
+\hypertarget{tutorials}{%
+\section*{5. Tutorials}\label{tutorials}}
+\addcontentsline{toc}{section}{5. Tutorials}
+
+\markright{5. Tutorials}
+
+\begin{itemize}
+\tightlist
+\item
+  \href{https://swirlstats.com/}{Swirl: Learn or Teach R, in R}
+\item
+  \href{https://education.rstudio.com/learn/}{RStudio Education
+  Learning}
+\item
+  \href{https://education.rstudio.com/teach/}{RStudio Education
+  Teaching}
+\item
+  \href{https://hbiostat.org/rflow/}{R Workflow}
+\item
+  \href{https://www.rscreencasts.com/}{R Screencasts}
+\item
+  \href{https://www.statmethods.net/}{Quick-R}
+\item
+  \href{https://skranz.github.io/RTutor/}{RTutor: Interactive R Problem
+  Sets}
+\end{itemize}
+
+\hypertarget{newsletters-and-blogs}{%
+\section*{6. Newsletters and Blogs}\label{newsletters-and-blogs}}
+\addcontentsline{toc}{section}{6. Newsletters and Blogs}
+
+\markright{6. Newsletters and Blogs}
+
+\begin{itemize}
+\tightlist
+\item
+  \href{https://rweekly.org/}{R Weekly}
+\item
+  \href{https://dataelixir.com/}{Data Elixir}
+\item
+  \href{https://blog.revolutionanalytics.com/}{Revolution Analytics
+  Blog}
+\end{itemize}
+
+\hypertarget{data-visualization}{%
+\section*{7. Data Visualization}\label{data-visualization}}
+\addcontentsline{toc}{section}{7. Data Visualization}
+
+\markright{7. Data Visualization}
+
+\begin{itemize}
+\tightlist
+\item
+  \href{https://r-graph-gallery.com/}{The R Graph Gallery}
+\item
+  \href{https://r-charts.com/}{R Charts}
+\item
+  \href{https://exts.ggplot2.tidyverse.org/}{ggplot2 extensions}
+\item
+  \href{https://tellingstorieswithdata.com/}{Telling Stories with Data}
+\item
+  \href{https://r-graphics.org/}{R Graphics Cookbook}
+\item
+  \href{https://clauswilke.com/dataviz/}{Fundamentals of Data
+  Visualization}
+\item
+  \href{https://ggplot2-book.org/}{ggplot2: Elegant Graphics for Data
+  Analysis}
+\item
+  \href{https://socviz.co/}{Data Visualization: A practical
+  introduction}
+\item
+  \href{https://rkabacoff.github.io/datavis/}{Modern Data Visualization
+  with R}
+\end{itemize}
+
+\hypertarget{data-science}{%
+\section*{8. Data Science}\label{data-science}}
+\addcontentsline{toc}{section}{8. Data Science}
+
+\markright{8. Data Science}
+
+\begin{itemize}
+\tightlist
+\item
+  \href{https://r4ds.hadley.nz/}{R for Data Science}
+\item
+  \href{https://www.data8.org/}{Data 8: The Foundations of Data Science}
+\item
+  \href{https://sml201.github.io/}{Introduction to Data Science}
+\item
+  \href{https://github.com/hadley/stats337}{Readings in Applied Data
+  Science}
+\item
+  \href{https://github.com/AllenDowney/ElementsOfDataScience}{Elements
+  of Data Science}
+\item
+  \href{https://bookdown.org/rdpeng/artofdatascience/}{The Art of Data
+  Science}
+\item
+  \href{https://github.com/ml874/Data-Science-Cheatsheet}{Data Science
+  Cheatsheet}
+\item
+  \href{https://florian-huber.github.io/data_science_course/book/cover.html}{Introduction
+  to Data Science (for not-yet scientists)}
+\item
+  \href{https://data.org/}{data.org}
+\item
+  \href{https://databasic.io/en/}{Data Basic}
+\item
+  \href{https://datasciencebox.org/}{Data Science in a Box}
+\item
+  \href{http://dataliteracy.rbind.io/}{Data Literacy}
+\end{itemize}
+
+\hypertarget{statistics}{%
+\section*{9. Statistics}\label{statistics}}
+\addcontentsline{toc}{section}{9. Statistics}
+
+\markright{9. Statistics}
+
+\begin{itemize}
+\tightlist
+\item
+  \href{https://www.statlearning.com/}{An Introduction to Statistical
+  Learning with R or Python}
+\item
+  \href{https://modernstatisticswithr.com/}{Modern Statistics with R}
+\item
+  \href{https://openintro-ims.netlify.app/index.html}{Introduction to
+  Modern Statistics}
+\item
+  \href{https://www.fharrell.com/}{Statistical Thinking}
+\item
+  \href{https://openintro-ims.netlify.app/index.html}{Introduction to
+  Modern Statistics}
+\item
+  \href{https://hbiostat.org/bbr/}{Biostatistics for Biomedical
+  Research}
+\item
+  \href{https://sta-212-f19.lucymcgowan.com/}{STA 212: Statistical
+  Models}
+\item
+  \href{https://sta-312-f20.netlify.app/}{STA 312: Linear Models}
+\item
+  \href{https://sta-363-s20.lucymcgowan.com/}{STA 363: Statistical
+  Learning}
+\item
+  \href{https://probability4datascience.com/}{Introduction to
+  Probability for Data Science}
+\item
+  \href{https://cal-poly-advanced-r.github.io/STAT-431/}{Statistics 431:
+  Advanced Statistical Computing with R}
+\item
+  \href{https://tinystats.github.io/teacups-giraffes-and-statistics/index.html}{Statistics
+  and R}
+\item
+  \href{https://themockup.blog/posts/2018-12-10-a-gentle-guide-to-tidy-statistics-in-r/}{Tidy
+  Statistics in R} -
+  \href{https://discourse.datamethods.org/}{Datamethods}
+\item
+  \href{https://www.stephaniehicks.com/jhustatcomputing2022/schedule}{Statistical
+  Computing}
+\end{itemize}
+
+\hypertarget{datasets}{%
+\section*{10. Datasets}\label{datasets}}
+\addcontentsline{toc}{section}{10. Datasets}
+
+\markright{10. Datasets}
+
+\begin{itemize}
+\tightlist
+\item
+  \href{https://github.com/awesomedata/awesome-public-datasets}{Awesome
+  Public Datasets}
+\item
+  \href{https://dataverse.org/}{Dataverse Project}
+\item
+  \href{https://datacommons.org/}{Data Commons}
+\item
+  \href{https://africaopendata.org/}{Open Africa Data}
+\item
+  \href{https://dataafrica.io/}{Data Africa}
+\item
+  \href{https://ourworldindata.org/}{Our World in Data}
+\item
+  \href{https://hillcrestadvisory.com/2019/01/20/california-data-sources/}{California
+  Data Sources}
+\item
+  \href{https://datasf.org/opendata/}{DataSF}
+\item
+  \href{https://opendata.cityofnewyork.us/}{NYC Open Data}
+\item
+  \href{https://data.humdata.org/}{The Humanitarian Data Exchange}
+\item
+  \href{https://globaldatabarometer.org/}{Global Data Barometer}
+\item
+  \href{https://msropendata.com/}{Microsoft Research Open Data}
+\item
+  \href{https://www.kaggle.com/datasets}{Kaggle Datasets}
+\item
+  \href{https://datasetsearch.research.google.com/}{Google Research
+  Datasets}
+\item
+  \href{https://nhs-r-community.github.io/NHSRdatasets/}{NHS R-community
+  Datasets}
+\item
+  \href{https://www.healthdata.org/}{IHME}
+\item
+  \href{https://healthdatascience.substack.com/p/best-public-datasets-for-public-health-225}{Best
+  Public Datasets for Health Data Science Projects}
+\item
+  \href{https://data.worldbank.org/}{World Bank Open Data}
+\end{itemize}
+
+\hypertarget{tidyverse}{%
+\section*{11. Tidyverse}\label{tidyverse}}
+\addcontentsline{toc}{section}{11. Tidyverse}
+
+\markright{11. Tidyverse}
+
+\begin{itemize}
+\tightlist
+\item
+  \href{https://dominicroye.github.io/en/2020/a-very-short-introduction-to-tidyverse/}{A
+  very short introduction to Tidyverse}
+\item
+  \href{https://github.com/nuitrcs/r-tidyverse}{Tidyverse Workshop
+  Series}
+\item
+  \href{https://jhudatascience.org/tidyversecourse/}{Tidyverse Skills
+  for Data Science}
+\item
+  \href{https://tomaztsql.wordpress.com/2022/07/14/eight-r-tidyverse-tips-for-everyday-data-engineering/}{Eight
+  R Tidyverse tips for everyday data engineering}
+\item
+  \href{https://oliviergimenez.github.io/tidyverse-tips/}{Tidyverse
+  Tips}
+\item
+  \href{https://pmacdasci.github.io/r-intro-tidyverse/}{An Introduction
+  to R through the tidyverse}
+\item
+  \href{http://modern-rstats.eu/}{Modern R with the tidyverse}
+\item
+  \href{https://thinkr.fr/c-est-quoi-le-tidyverse/\#Mettre_en_forme_ses_donnees_avec_la_package_tidyr}{C'est
+  quoi, le tidyverse?}
+\item
+  \href{https://www.rebeccabarter.com/blog/2019-08-05_base_r_to_tidyverse/}{Transitioning
+  into the tidyverse (part 1)}
+\item
+  \href{https://www.rebeccabarter.com/blog/2019-08-05_base_r_to_tidyverse_pt2/}{Transitioning
+  into the tidyverse (part 2)}
+\end{itemize}
+
+\hypertarget{programming-functions-loops-and-control-statements}{%
+\section*{12. Programming: Functions, Loops, and Control
+Statements}\label{programming-functions-loops-and-control-statements}}
+\addcontentsline{toc}{section}{12. Programming: Functions, Loops, and
+Control Statements}
+
+\markright{12. Programming: Functions, Loops, and Control Statements}
+
+\begin{itemize}
+\tightlist
+\item
+  \href{https://cran.r-project.org/doc/manuals/r-release/R-lang.html\#Control-structures}{Control
+  Structures}
+\item
+  \href{https://www.rdocumentation.org/packages/base/versions/3.6.2/topics/apply}{Apply
+  Functions}
+\item
+  \href{https://modern-rstats.eu/defining-your-own-functions.html}{Defining
+  your own functions}
+\item
+  \href{https://modern-rstats.eu/functional-programming.html}{Functional
+  programming 1}
+\item
+  \href{http://adv-r.had.co.nz/Functional-programming.html}{Functional
+  programming 2}
+\item
+  \href{https://www.stephaniehicks.com/jhustatprogramming2022/schedule}{Statistical
+  Programming Paradigms and Workflows}
+\item
+  \href{https://jjallaire.github.io/hopr/}{Hands-On Programming with R}
+\item
+  \href{https://jennybc.github.io/purrr-tutorial/index.html}{purr
+  tutorial}
+\item
+  \href{https://appsilon.com/functional-programming-in-r-part-1/}{Unlocking
+  the Power of Functional Programming in R (Part 1)}
+\item
+  \href{https://appsilon.com/functional-programming-in-r-part-2/}{Unlocking
+  the Power of Functional Programming in R (Part 2)}
+\end{itemize}
+
+\hypertarget{machine-learning-and-artificial-intelligence}{%
+\section*{13. Machine Learning and Artificial
+Intelligence}\label{machine-learning-and-artificial-intelligence}}
+\addcontentsline{toc}{section}{13. Machine Learning and Artificial
+Intelligence}
+
+\markright{13. Machine Learning and Artificial Intelligence}
+
+\begin{itemize}
+\tightlist
+\item
+  \href{https://bradleyboehmke.github.io/HOML/}{Hands-On Machine
+  Learning with R}
+\item
+  \href{https://rpubs.com/eR_ic/exploRe}{Create machine learning models:
+  An R version}
+\item
+  \href{https://advanced-ds-in-r.netlify.app/posts/2021-03-31-imllocal/}{Interpretable
+  Machine Learning}
+\item
+  \href{https://smltar.com/}{Supervised Machine Learning for Text
+  Analysis in R}
+\item
+  \href{https://blogs.rstudio.com/ai/}{Posit AI Blog}
+\item
+  \href{https://www.tmwr.org/}{Tidy Modeling with R}
+\item
+  \href{https://www.tidymodels.org/}{Tidymodels}
+\item
+  \href{https://rviews.rstudio.com/2019/06/19/a-gentle-intro-to-tidymodels/}{A
+  Gentle Introduction to tidymodels}
+\item
+  \href{https://rviews.rstudio.com/2020/04/21/the-case-for-tidymodels/}{The
+  Case for tidymodels}
+\item
+  \href{https://emilhvitfeldt.github.io/ISLR-tidymodels-labs/index.html}{ISLR
+  tidymodels labs}
+\item
+  \href{https://education.rstudio.com/blog/2020/02/conf20-intro-ml/}{Introduction
+  to Machine Learning with the Tidyverse}
+\item
+  \href{https://tidypredict.tidymodels.org/}{tidypredict}
+\end{itemize}
+
+\hypertarget{publishing}{%
+\section*{14. Publishing}\label{publishing}}
+\addcontentsline{toc}{section}{14. Publishing}
+
+\markright{14. Publishing}
+
+\begin{itemize}
+\tightlist
+\item
+  \href{https://quarto.org/}{Quarto}
+\item
+  \href{https://rmarkdown.rstudio.com/}{R Markdown}
+\item
+  \href{https://github.com/mcanouil/awesome-quarto}{Awesome Quarto}
+\end{itemize}
+
+\hypertarget{r-shiny}{%
+\section*{15. R Shiny}\label{r-shiny}}
+\addcontentsline{toc}{section}{15. R Shiny}
+
+\markright{15. R Shiny}
+
+\begin{itemize}
+\tightlist
+\item
+  \href{https://shiny.rstudio.com/tutorial/}{Shiny Learning Resources}
+\item
+  \href{https://shiny.rstudio.com/tutorial/written-tutorial/lesson1/}{Shiny
+  Tutorials}
+\item
+  \href{https://mastering-shiny.org/}{Mastering Shiny}
+\item
+  \href{https://rstudio-education.github.io/shiny-course/}{Building Web
+  Applications WITH SHINY}
+\item
+  \href{https://laderast.github.io/gradual_shiny/}{a gRadual
+  intRoduction to Shiny}
+\item
+  \href{https://engineering-shiny.org/}{Engineering Production-Grade
+  Shiny Apps}
+\item
+  \href{https://rstudio.github.io/shinyuieditor/}{ShinyUI Editor}
+\item
+  \href{https://shinylive.io/r/examples/}{Shiny Examples}
+\item
+  \href{https://ucsb-meds.github.io/shiny-workshop/\#1}{An Intro to
+  Shiny}
+\item
+  \href{https://shiny.posit.co/r/gallery/}{Shiny Gallery}
+\item
+  \href{https://rstudio.github.io/shinydashboard/structure.html}{shinydashboard}
+\item
+  \href{https://shiny.posit.co/r/articles/build/layout-guide/}{Application
+  layout guide}
+\end{itemize}
+
+\bookmarksetup{startatroot}
+
+\hypertarget{references}{%
+\chapter*{References}\label{references}}
+\addcontentsline{toc}{chapter}{References}
+
+\markboth{References}{References}
+
+\hypertarget{refs}{}
+\begin{CSLReferences}{0}{0}
+\end{CSLReferences}
+
+
+
+\end{document}

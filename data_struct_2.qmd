@@ -1,1 +1,21 @@
 # Data Structures (Part II) {#sec-data-structure-2}
+
+## Questions
+
+*In progress*
+
+## Learning Objectives
+
+*In progress*
+
+## Lesson Content
+
+*In progress*
+
+## Exercises
+
+*In progress*
+
+## Summary
+
+*In progress*

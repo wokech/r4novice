@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "R for Novice Programmers (1e)",
     "section": "",
-    "text": "Welcome\nThis is the website for “R for Novice Programmers.” The goal of this book is to introduce non-programmers or those with very little programming experience to the benefits of the R and RStudio software. The main prerequisites for learners are basic knowledge of computer applications and experience working with files and folders. This book will primarily focus on the basic R concepts that are hardly emphasized, but that may prove difficult for learners new to programming."
+    "text": "Welcome\nThis is the website for “R for Novice Programmers.” The goal of this book is to introduce non-programmers or those with very little programming experience to the benefits of the R and RStudio software. The main prerequisites for learners are basic knowledge of computer applications and experience working with files and folders. This book will primarily focus on the basic R concepts that are hardly emphasized, but that may prove difficult for learners new to programming.\nThe online version of this book is free to use and is licensed under the … .\nThe book is written in Quarto."
   },
   {
     "objectID": "intro.html",
@@ -283,8 +283,8 @@
     "objectID": "overview.html#learning-objectives",
     "href": "overview.html#learning-objectives",
     "title": "1  Overview of R and RStudio",
-    "section": "1.2 Learning objectives",
-    "text": "1.2 Learning objectives\n\nLearn about the historical background of R and RStudio.\nUnderstand the uses and primary advantages of R and RStudio.\nAssess the various applications of R across different industries."
+    "section": "1.2 Learning Objectives",
+    "text": "1.2 Learning Objectives\n\nLearn about the historical background of R and RStudio.\nUnderstand the uses and primary advantages of R and RStudio.\nAssess the various applications of R across different industries."
   },
   {
     "objectID": "overview.html#why-learn-r-and-rstudio",
@@ -318,15 +318,15 @@
     "objectID": "overview.html#exercises",
     "href": "overview.html#exercises",
     "title": "1  Overview of R and RStudio",
-    "section": "1.7 Exercises",
-    "text": "1.7 Exercises\nAs you embark on your R/RStudio learning journey, I have listed (below) a few questions for you to think about before we get started with the lessons.\n\nWhy do you want to learn R and RStudio?\nDo you currently use any other software tools for data analysis and visualization? What are the limitations of these tools?\nWhat tasks do you hope to accomplish after completing this training?\nExplore the various R/RStudio communities listed in the appendix and consider joining any one of them"
+    "section": "1.4 Exercises",
+    "text": "1.4 Exercises\nAs you embark on your R/RStudio learning journey, I have listed (below) a few questions for you to think about before we get started with the lessons.\n\nWhy do you want to learn R and RStudio?\nDo you currently use any other software tools for data analysis and visualization? What are the limitations of these tools?\nWhat tasks do you hope to accomplish after completing this training?\nExplore the various R/RStudio communities listed in the appendix and consider joining any one of them.\nBrowse some of popular R packages (on CRAN or R-Universe) for different tasks like data visualization and statistical analysis. Pick one package that interests you and read about its capabilities."
   },
   {
     "objectID": "overview.html#summary",
     "href": "overview.html#summary",
     "title": "1  Overview of R and RStudio",
-    "section": "1.8 Summary",
-    "text": "1.8 Summary\nOverall, I hope you enjoyed learning about the history of R and RStudio, and have seen the advantages of using these software tools. Additionally, we discussed the applications of R in various industries. By the end of this book, the learner should have gained a basic understanding of the R and RStudio software environments and should be ready to tackle more advanced computational tasks."
+    "section": "1.5 Summary",
+    "text": "1.5 Summary\nOverall, I hope you enjoyed learning about the history of R and RStudio, and have seen the advantages of using these software tools. Additionally, we discussed the numerous applications of R in various industries. In the next chapter, we will look at how to download and install both R and RStudio on your local computer."
   },
   {
     "objectID": "data_types.html",
@@ -354,7 +354,7 @@
     "href": "intro.html#syllabus",
     "title": "Introduction",
     "section": "Syllabus",
-    "text": "Syllabus\nAt the end of the book, the student should be able to perform the tasks listed in the syllabus below.\n\nSyllabus\n\n\n\n\n\n\n\n\nChapter\nComplete? (Yes / No)\n\n\n\n\n1\nOverview of R and RStudio\n\n\n\n2\nDownload and Install R and RStudio\n\n\n\n3\nNavigating the R and RStudio interfaces\n\n\n\n4\nManaging your files and data\n\n\n\n5\nImporting data and saving analysis outputs\n\n\n\n6\nBasic arithmetic, arithmetic operators, and variables\n\n\n\n7\nThe primary types of operators in R\n\n\n\n8\nData Types\n\n\n\n9\nVectors\n\n\n\n10\nData Structures (Part I)\n\n\n\n11\nData Structures (Part II)\n\n\n\n12\nHandling missing data\n\n\n\n\nConclusion\n\n\n\n\nAppendix"
+    "text": "Syllabus\nAt the end of the book, the student should be able to perform the tasks listed in the syllabus below.\n\n\nTable 1: Syllabus\n\n\n\n\n\n\n\nChapter\nTitle\nComplete? (Yes / No)\n\n\n\n\n\nIntroduction\n\n\n\n1\nOverview of R and RStudio\n\n\n\n2\nDownload and Install R and RStudio\n\n\n\n3\nNavigating the R and RStudio interfaces\n\n\n\n4\nManaging your files and data\n\n\n\n5\nImporting data and saving analysis outputs\n\n\n\n6\nBasic arithmetic, arithmetic operators, and variables\n\n\n\n7\nThe primary types of operators in R\n\n\n\n8\nData Types\n\n\n\n9\nVectors\n\n\n\n10\nData Structures (Part I)\n\n\n\n11\nData Structures (Part II)\n\n\n\n12\nHandling missing data\n\n\n\n\nConclusion\n\n\n\n\nAppendix"
   },
   {
     "objectID": "intro.html#sample-chapter-design",
@@ -368,13 +368,517 @@
     "href": "intro.html#feedback",
     "title": "Introduction",
     "section": "Feedback",
-    "text": "Feedback\nFeedback can be provided using the following channels:\n\nEmail - willyokech@gmail.com\nGithub pull request - … ."
+    "text": "Feedback\nFeedback can be provided using the following channels:\n\nEmail: willyokech@gmail.com\nGithub pull request:"
   },
   {
     "objectID": "intro.html#summary",
     "href": "intro.html#summary",
     "title": "Introduction",
     "section": "Summary",
-    "text": "Summary\nOverall, I believe that this book will increase both the knowledge and confidence levels of novice programmers and allow them to perform basic statistical analysis and simplify everyday computational tasks at home or in their workplaces. In the next chapter, we will perform a basic overview of the R and RStudio ecosystem.\nThe online version of this book is free to use and is licensed under the … .\nThe book is written in Quarto."
+    "text": "Summary\nOverall, I believe that this book will increase both the knowledge and confidence levels of novice programmers and allow them to perform basic statistical analysis and simplify everyday computational tasks at home or in their workplaces. In the next chapter, we will perform a basic overview of the R and RStudio ecosystem."
+  },
+  {
+    "objectID": "appendix.html#online-repositories-with-rrstudio-related-links",
+    "href": "appendix.html#online-repositories-with-rrstudio-related-links",
+    "title": "Appendix",
+    "section": "1. Online repositories with R/RStudio-related links",
+    "text": "1. Online repositories with R/RStudio-related links\n\nBig Book of R\nFree R Reading Material\nAwesome R 1\nAwesome R 2\nAwesome R 3\nAwesome R 4\nresouRces: Database of Resources to Learn & Teach R\nR-universe\nR Community Public Library"
+  },
+  {
+    "objectID": "appendix.html#r-communities",
+    "href": "appendix.html#r-communities",
+    "title": "Appendix",
+    "section": "2. R Communities",
+    "text": "2. R Communities\n\nPosit (formerly RStudio) Community\nStack Overflow R\nStack Overflow RStudio\nCross Validated\nR-bloggers\nR for Data Science Slack Group\nR User Community\nR-Ladies Global\nsatRday\nrOpenSci\nTwitter (now X) – #rstats and #rstudio\nReddit – r/rstats and r/RStudio"
+  },
+  {
+    "objectID": "appendix.html#conferences-and-meetups",
+    "href": "appendix.html#conferences-and-meetups",
+    "title": "Appendix",
+    "section": "3. Conferences and Meetups",
+    "text": "3. Conferences and Meetups\n\nR Foundation Conferences (useR! and DSC)\nR Conference\nPosit Conference\nR User Group Meetups"
+  },
+  {
+    "objectID": "appendix.html#cheatsheets",
+    "href": "appendix.html#cheatsheets",
+    "title": "Appendix",
+    "section": "4. Cheatsheets",
+    "text": "4. Cheatsheets\n\nR Views Cheatsheets\nPosit Cheatsheets\n30 Essential Data Science, Machine Learning & Deep Learning Cheat Sheets"
+  },
+  {
+    "objectID": "appendix.html#tutorials",
+    "href": "appendix.html#tutorials",
+    "title": "Appendix",
+    "section": "5. Tutorials",
+    "text": "5. Tutorials\n\nSwirl: Learn or Teach R, in R\nRStudio Education Learning\nRStudio Education Teaching\nR Workflow\nR Screencasts\nQuick-R\nRTutor: Interactive R Problem Sets"
+  },
+  {
+    "objectID": "appendix.html#newsletters-and-blogs",
+    "href": "appendix.html#newsletters-and-blogs",
+    "title": "Appendix",
+    "section": "6. Newsletters and Blogs",
+    "text": "6. Newsletters and Blogs\n\nR Weekly\nData Elixir\nRevolution Analytics Blog"
+  },
+  {
+    "objectID": "appendix.html#data-visualization",
+    "href": "appendix.html#data-visualization",
+    "title": "Appendix",
+    "section": "7. Data Visualization",
+    "text": "7. Data Visualization\n\nThe R Graph Gallery\nR Charts\nggplot2 extensions\nTelling Stories with Data\nR Graphics Cookbook\nFundamentals of Data Visualization\nggplot2: Elegant Graphics for Data Analysis\nData Visualization: A practical introduction\nModern Data Visualization with R"
+  },
+  {
+    "objectID": "appendix.html#data-science",
+    "href": "appendix.html#data-science",
+    "title": "Appendix",
+    "section": "8. Data Science",
+    "text": "8. Data Science\n\nR for Data Science\nData 8: The Foundations of Data Science\nIntroduction to Data Science\nReadings in Applied Data Science\nElements of Data Science\nThe Art of Data Science\nData Science Cheatsheet\nIntroduction to Data Science (for not-yet scientists)\ndata.org\nData Basic\nData Science in a Box\nData Literacy"
+  },
+  {
+    "objectID": "appendix.html#statistics",
+    "href": "appendix.html#statistics",
+    "title": "Appendix",
+    "section": "9. Statistics",
+    "text": "9. Statistics\n\nAn Introduction to Statistical Learning with R or Python\nModern Statistics with R\nIntroduction to Modern Statistics\nStatistical Thinking\nIntroduction to Modern Statistics\nBiostatistics for Biomedical Research\nSTA 212: Statistical Models\nSTA 312: Linear Models\nSTA 363: Statistical Learning\nIntroduction to Probability for Data Science\nStatistics 431: Advanced Statistical Computing with R\nStatistics and R\nTidy Statistics in R - Datamethods\nStatistical Computing"
+  },
+  {
+    "objectID": "appendix.html#datasets",
+    "href": "appendix.html#datasets",
+    "title": "Appendix",
+    "section": "10. Datasets",
+    "text": "10. Datasets\n\nAwesome Public Datasets\nDataverse Project\nData Commons\nOpen Africa Data\nData Africa\nOur World in Data\nCalifornia Data Sources\nDataSF\nNYC Open Data\nThe Humanitarian Data Exchange\nGlobal Data Barometer\nMicrosoft Research Open Data\nKaggle Datasets\nGoogle Research Datasets\nNHS R-community Datasets\nIHME\nBest Public Datasets for Health Data Science Projects\nWorld Bank Open Data"
+  },
+  {
+    "objectID": "appendix.html#tidyverse",
+    "href": "appendix.html#tidyverse",
+    "title": "Appendix",
+    "section": "11. Tidyverse",
+    "text": "11. Tidyverse\n\nA very short introduction to Tidyverse\nTidyverse Workshop Series\nTidyverse Skills for Data Science\nEight R Tidyverse tips for everyday data engineering\nTidyverse Tips\nAn Introduction to R through the tidyverse\nModern R with the tidyverse\nC’est quoi, le tidyverse?\nTransitioning into the tidyverse (part 1)\nTransitioning into the tidyverse (part 2)"
+  },
+  {
+    "objectID": "appendix.html#programming-functions-loops-and-control-statements",
+    "href": "appendix.html#programming-functions-loops-and-control-statements",
+    "title": "Appendix",
+    "section": "12. Programming: Functions, Loops, and Control Statements",
+    "text": "12. Programming: Functions, Loops, and Control Statements\n\nControl Structures\nApply Functions\nDefining your own functions\nFunctional programming 1\nFunctional programming 2\nStatistical Programming Paradigms and Workflows\nHands-On Programming with R\npurr tutorial\nUnlocking the Power of Functional Programming in R (Part 1)\nUnlocking the Power of Functional Programming in R (Part 2)"
+  },
+  {
+    "objectID": "appendix.html#machine-learning-and-artificial-intelligence",
+    "href": "appendix.html#machine-learning-and-artificial-intelligence",
+    "title": "Appendix",
+    "section": "13. Machine Learning and Artificial Intelligence",
+    "text": "13. Machine Learning and Artificial Intelligence\n\nHands-On Machine Learning with R\nCreate machine learning models: An R version\nInterpretable Machine Learning\nSupervised Machine Learning for Text Analysis in R\nPosit AI Blog\nTidy Modeling with R\nTidymodels\nA Gentle Introduction to tidymodels\nThe Case for tidymodels\nISLR tidymodels labs\nIntroduction to Machine Learning with the Tidyverse\ntidypredict"
+  },
+  {
+    "objectID": "appendix.html#publishing",
+    "href": "appendix.html#publishing",
+    "title": "Appendix",
+    "section": "14. Publishing",
+    "text": "14. Publishing\n\nQuarto\nR Markdown\nAwesome Quarto"
+  },
+  {
+    "objectID": "appendix.html#r-shiny",
+    "href": "appendix.html#r-shiny",
+    "title": "Appendix",
+    "section": "15. R Shiny",
+    "text": "15. R Shiny\n\nShiny Learning Resources\nShiny Tutorials\nMastering Shiny\nBuilding Web Applications WITH SHINY\na gRadual intRoduction to Shiny\nEngineering Production-Grade Shiny Apps\nShinyUI Editor\nShiny Examples\nAn Intro to Shiny\nShiny Gallery\nshinydashboard\nApplication layout guide"
+  },
+  {
+    "objectID": "overview.html#lesson-content",
+    "href": "overview.html#lesson-content",
+    "title": "1  Overview of R and RStudio",
+    "section": "1.3 Lesson Content",
+    "text": "1.3 Lesson Content\n\n1.3.1 Why learn R and RStudio?\nBoth R and Studio are free, open-source software tools that are widely used for statistical analysis and data visualization. R is a programming language that enables the use of code to analyze data. The primary function of the R language is statistical analysis and this can be performed directly in the R console. To ease the analysis process and enhance usability, an integrated development environment (IDE), such as RStudio is recommended. The RStudio IDE is a user-friendly interface that allows the learner to manage multiple script files, use the command-line terminal, easily access file inputs and outputs, and review file/analysis history.\nThe R programming language software was developed by Ross Ihaka and Robert Gentleman in 1993 (published as open-source in 1995) when they were based at the University of Auckland. Fun fact: R represents the first letter of the first names of the creators. The software is utilized by individuals working for various organizations ranging from academic institutions and healthcare organizations to financial services and information technology companies. In January 2024, the PopularitY of Programming Language (PYPL) Index, which is created by analyzing how often language tutorials are searched on Google, demonstrated that R was the 6th most popular programming language. However, in the same period, the TIOBE index (https://www.tiobe.com/tiobe-index/) indicated that R was the 23rd most popular language. This may result from different methodologies for developing the rankings. RStudio is an integrated development environment (IDE) for R that was developed by JJ Allaire. This software contains tools that make programming in R easier.\nRStudio extends R’s capabilities by making it easier to import data, write scripts, and generate visualizations and reports. The company RStudio (now Posit since 2022) was founded in 2009 with the main goal of “creating high quality open-source software for data scientists.”\n\n\n1.3.2 Uses of R and RStudio\n\nThe R and RStudio console can be used as a complex scientific calculator.\nThe values of various data types can be assigned to variables using the symbol &lt;- or =.\nBuilt-in functions can be used to manipulate variables.\nBuilt-in datasets can be accessed internally for analysis.\nNew datasets can be imported and new functions can be created for custom analysis.\nTo aid in computational analysis, there exists a large package library (CRAN), as well as a lot of software in development to aid in computational analysis.\n\n\n\n1.3.3 Primary advantages of R and RStudio\n\nR and RStudio are free and open-source software programs which makes them accessible to anyone with a computer and internet connection. This accessibility is key in enabling learners from all socioeconomic levels and geographic regions to have a chance to work with statistical software,\nA large number of user communities exists for the R/RStudio software. These communities (listed in the Appendix) provide learning support and assist with technical challenges,\nNumerous freely available packages/extensions have been developed by the R and RStudio user communities to facilitate all forms of computational analysis, visualization, and publication. The (CRAN) has packages that contain datasets as well as allow one to perform statistical analysis and data visualization,\nR and RStudio allow for reproducible analysis where scripts and workflows can be shared with fellow users, and,\nThe R/RStudio software is cross-platform, which means that it can be used on Linux, Windows, and Mac operating systems.\n\n\n\n1.3.4 Applications of R in different industries\n\nBioinformatics and Healthcare: epidemiological studies, clinical trial analysis, and genetic data analysis.\nFinancial Modeling and Risk Analysis: risk management, algorithmic trading, trading strategies and analysis, time series analysis, and portfolio optimization.\nRetail and Marketing: customer analytics, sales forecasting, market research, web analytics, and customer segmentation.\nSocial Sciences and Humanities: text analysis, surveys and opinion research, social trend analysis, and policy analysis.\nStatistics and Data Analysis: hypothesis testing, data visualization, regression modelling, and statistical inference.\nEnvironmental Science and Climate Change: forecasting weather patterns, modelling climate change, monitoring pollution levels, and ecological modelling."
+  },
+  {
+    "objectID": "download_install.html#questions",
+    "href": "download_install.html#questions",
+    "title": "2  Download and Install R and RStudio",
+    "section": "2.1 Questions",
+    "text": "2.1 Questions\nIn progress"
+  },
+  {
+    "objectID": "download_install.html#learning-objectives",
+    "href": "download_install.html#learning-objectives",
+    "title": "2  Download and Install R and RStudio",
+    "section": "2.2 Learning Objectives",
+    "text": "2.2 Learning Objectives\nIn progress"
+  },
+  {
+    "objectID": "download_install.html#lesson-content",
+    "href": "download_install.html#lesson-content",
+    "title": "2  Download and Install R and RStudio",
+    "section": "2.3 Lesson Content",
+    "text": "2.3 Lesson Content\nIn progress"
+  },
+  {
+    "objectID": "download_install.html#exercises",
+    "href": "download_install.html#exercises",
+    "title": "2  Download and Install R and RStudio",
+    "section": "2.4 Exercises",
+    "text": "2.4 Exercises\nIn progress"
+  },
+  {
+    "objectID": "download_install.html#summary",
+    "href": "download_install.html#summary",
+    "title": "2  Download and Install R and RStudio",
+    "section": "2.5 Summary",
+    "text": "2.5 Summary\nIn progress"
+  },
+  {
+    "objectID": "navigating.html#questions",
+    "href": "navigating.html#questions",
+    "title": "3  Navigating the R and RStudio interfaces",
+    "section": "3.1 Questions",
+    "text": "3.1 Questions\nIn progress"
+  },
+  {
+    "objectID": "navigating.html#learning-objectives",
+    "href": "navigating.html#learning-objectives",
+    "title": "3  Navigating the R and RStudio interfaces",
+    "section": "3.2 Learning Objectives",
+    "text": "3.2 Learning Objectives\nIn progress"
+  },
+  {
+    "objectID": "navigating.html#lesson-content",
+    "href": "navigating.html#lesson-content",
+    "title": "3  Navigating the R and RStudio interfaces",
+    "section": "3.3 Lesson Content",
+    "text": "3.3 Lesson Content\nIn progress"
+  },
+  {
+    "objectID": "navigating.html#exercises",
+    "href": "navigating.html#exercises",
+    "title": "3  Navigating the R and RStudio interfaces",
+    "section": "3.4 Exercises",
+    "text": "3.4 Exercises\nIn progress"
+  },
+  {
+    "objectID": "navigating.html#summary",
+    "href": "navigating.html#summary",
+    "title": "3  Navigating the R and RStudio interfaces",
+    "section": "3.5 Summary",
+    "text": "3.5 Summary\nIn progress"
+  },
+  {
+    "objectID": "managing.html#questions",
+    "href": "managing.html#questions",
+    "title": "4  Managing your files and data",
+    "section": "4.1 Questions",
+    "text": "4.1 Questions\nIn progress"
+  },
+  {
+    "objectID": "managing.html#learning-objectives",
+    "href": "managing.html#learning-objectives",
+    "title": "4  Managing your files and data",
+    "section": "4.2 Learning Objectives",
+    "text": "4.2 Learning Objectives\nIn progress"
+  },
+  {
+    "objectID": "managing.html#lesson-content",
+    "href": "managing.html#lesson-content",
+    "title": "4  Managing your files and data",
+    "section": "4.3 Lesson Content",
+    "text": "4.3 Lesson Content\nIn progress"
+  },
+  {
+    "objectID": "managing.html#exercises",
+    "href": "managing.html#exercises",
+    "title": "4  Managing your files and data",
+    "section": "4.4 Exercises",
+    "text": "4.4 Exercises\nIn progress"
+  },
+  {
+    "objectID": "managing.html#summary",
+    "href": "managing.html#summary",
+    "title": "4  Managing your files and data",
+    "section": "4.5 Summary",
+    "text": "4.5 Summary\nIn progress"
+  },
+  {
+    "objectID": "importing.html#questions",
+    "href": "importing.html#questions",
+    "title": "5  Importing data and saving analysis outputs",
+    "section": "5.1 Questions",
+    "text": "5.1 Questions\nIn progress"
+  },
+  {
+    "objectID": "importing.html#learning-objectives",
+    "href": "importing.html#learning-objectives",
+    "title": "5  Importing data and saving analysis outputs",
+    "section": "5.2 Learning Objectives",
+    "text": "5.2 Learning Objectives\nIn progress"
+  },
+  {
+    "objectID": "importing.html#lesson-content",
+    "href": "importing.html#lesson-content",
+    "title": "5  Importing data and saving analysis outputs",
+    "section": "5.3 Lesson Content",
+    "text": "5.3 Lesson Content\nIn progress"
+  },
+  {
+    "objectID": "importing.html#exercises",
+    "href": "importing.html#exercises",
+    "title": "5  Importing data and saving analysis outputs",
+    "section": "5.4 Exercises",
+    "text": "5.4 Exercises\nIn progress"
+  },
+  {
+    "objectID": "importing.html#summary",
+    "href": "importing.html#summary",
+    "title": "5  Importing data and saving analysis outputs",
+    "section": "5.5 Summary",
+    "text": "5.5 Summary\nIn progress"
+  },
+  {
+    "objectID": "arithmetic_variables.html#questions",
+    "href": "arithmetic_variables.html#questions",
+    "title": "6  Basic arithmetic, arithmetic operators, and variables",
+    "section": "6.1 Questions",
+    "text": "6.1 Questions\nIn progress"
+  },
+  {
+    "objectID": "arithmetic_variables.html#learning-objectives",
+    "href": "arithmetic_variables.html#learning-objectives",
+    "title": "6  Basic arithmetic, arithmetic operators, and variables",
+    "section": "6.2 Learning Objectives",
+    "text": "6.2 Learning Objectives\nIn progress"
+  },
+  {
+    "objectID": "arithmetic_variables.html#lesson-content",
+    "href": "arithmetic_variables.html#lesson-content",
+    "title": "6  Basic arithmetic, arithmetic operators, and variables",
+    "section": "6.3 Lesson Content",
+    "text": "6.3 Lesson Content\nIn progress"
+  },
+  {
+    "objectID": "arithmetic_variables.html#exercises",
+    "href": "arithmetic_variables.html#exercises",
+    "title": "6  Basic arithmetic, arithmetic operators, and variables",
+    "section": "6.4 Exercises",
+    "text": "6.4 Exercises\nIn progress"
+  },
+  {
+    "objectID": "arithmetic_variables.html#summary",
+    "href": "arithmetic_variables.html#summary",
+    "title": "6  Basic arithmetic, arithmetic operators, and variables",
+    "section": "6.5 Summary",
+    "text": "6.5 Summary\nIn progress"
+  },
+  {
+    "objectID": "operators.html#questions",
+    "href": "operators.html#questions",
+    "title": "7  The primary types of operators in R",
+    "section": "7.1 Questions",
+    "text": "7.1 Questions\nIn progress"
+  },
+  {
+    "objectID": "operators.html#learning-objectives",
+    "href": "operators.html#learning-objectives",
+    "title": "7  The primary types of operators in R",
+    "section": "7.2 Learning Objectives",
+    "text": "7.2 Learning Objectives\nIn progress"
+  },
+  {
+    "objectID": "operators.html#lesson-content",
+    "href": "operators.html#lesson-content",
+    "title": "7  The primary types of operators in R",
+    "section": "7.3 Lesson Content",
+    "text": "7.3 Lesson Content\nIn progress"
+  },
+  {
+    "objectID": "operators.html#exercises",
+    "href": "operators.html#exercises",
+    "title": "7  The primary types of operators in R",
+    "section": "7.4 Exercises",
+    "text": "7.4 Exercises\nIn progress"
+  },
+  {
+    "objectID": "operators.html#summary",
+    "href": "operators.html#summary",
+    "title": "7  The primary types of operators in R",
+    "section": "7.5 Summary",
+    "text": "7.5 Summary\nIn progress"
+  },
+  {
+    "objectID": "data_types.html#questions",
+    "href": "data_types.html#questions",
+    "title": "8  Data Types",
+    "section": "8.1 Questions",
+    "text": "8.1 Questions\nIn progress"
+  },
+  {
+    "objectID": "data_types.html#learning-objectives",
+    "href": "data_types.html#learning-objectives",
+    "title": "8  Data Types",
+    "section": "8.2 Learning Objectives",
+    "text": "8.2 Learning Objectives\nIn progress"
+  },
+  {
+    "objectID": "data_types.html#lesson-content",
+    "href": "data_types.html#lesson-content",
+    "title": "8  Data Types",
+    "section": "8.3 Lesson Content",
+    "text": "8.3 Lesson Content\nIn progress"
+  },
+  {
+    "objectID": "data_types.html#exercises",
+    "href": "data_types.html#exercises",
+    "title": "8  Data Types",
+    "section": "8.4 Exercises",
+    "text": "8.4 Exercises\nIn progress"
+  },
+  {
+    "objectID": "data_types.html#summary",
+    "href": "data_types.html#summary",
+    "title": "8  Data Types",
+    "section": "8.5 Summary",
+    "text": "8.5 Summary\nIn progress"
+  },
+  {
+    "objectID": "vectors.html#questions",
+    "href": "vectors.html#questions",
+    "title": "9  Vectors",
+    "section": "9.1 Questions",
+    "text": "9.1 Questions\nIn progress"
+  },
+  {
+    "objectID": "vectors.html#learning-objectives",
+    "href": "vectors.html#learning-objectives",
+    "title": "9  Vectors",
+    "section": "9.2 Learning Objectives",
+    "text": "9.2 Learning Objectives\nIn progress"
+  },
+  {
+    "objectID": "vectors.html#lesson-content",
+    "href": "vectors.html#lesson-content",
+    "title": "9  Vectors",
+    "section": "9.3 Lesson Content",
+    "text": "9.3 Lesson Content\nIn progress"
+  },
+  {
+    "objectID": "vectors.html#exercises",
+    "href": "vectors.html#exercises",
+    "title": "9  Vectors",
+    "section": "9.4 Exercises",
+    "text": "9.4 Exercises\nIn progress"
+  },
+  {
+    "objectID": "vectors.html#summary",
+    "href": "vectors.html#summary",
+    "title": "9  Vectors",
+    "section": "9.5 Summary",
+    "text": "9.5 Summary\nIn progress"
+  },
+  {
+    "objectID": "data_struct_1.html#questions",
+    "href": "data_struct_1.html#questions",
+    "title": "10  Data Structures (Part I)",
+    "section": "10.1 Questions",
+    "text": "10.1 Questions\nIn progress"
+  },
+  {
+    "objectID": "data_struct_1.html#learning-objectives",
+    "href": "data_struct_1.html#learning-objectives",
+    "title": "10  Data Structures (Part I)",
+    "section": "10.2 Learning Objectives",
+    "text": "10.2 Learning Objectives\nIn progress"
+  },
+  {
+    "objectID": "data_struct_1.html#lesson-content",
+    "href": "data_struct_1.html#lesson-content",
+    "title": "10  Data Structures (Part I)",
+    "section": "10.3 Lesson Content",
+    "text": "10.3 Lesson Content\nIn progress"
+  },
+  {
+    "objectID": "data_struct_1.html#exercises",
+    "href": "data_struct_1.html#exercises",
+    "title": "10  Data Structures (Part I)",
+    "section": "10.4 Exercises",
+    "text": "10.4 Exercises\nIn progress"
+  },
+  {
+    "objectID": "data_struct_1.html#summary",
+    "href": "data_struct_1.html#summary",
+    "title": "10  Data Structures (Part I)",
+    "section": "10.5 Summary",
+    "text": "10.5 Summary\nIn progress"
+  },
+  {
+    "objectID": "data_struct_2.html#questions",
+    "href": "data_struct_2.html#questions",
+    "title": "11  Data Structures (Part II)",
+    "section": "11.1 Questions",
+    "text": "11.1 Questions\nIn progress"
+  },
+  {
+    "objectID": "data_struct_2.html#learning-objectives",
+    "href": "data_struct_2.html#learning-objectives",
+    "title": "11  Data Structures (Part II)",
+    "section": "11.2 Learning Objectives",
+    "text": "11.2 Learning Objectives\nIn progress"
+  },
+  {
+    "objectID": "data_struct_2.html#lesson-content",
+    "href": "data_struct_2.html#lesson-content",
+    "title": "11  Data Structures (Part II)",
+    "section": "11.3 Lesson Content",
+    "text": "11.3 Lesson Content\nIn progress"
+  },
+  {
+    "objectID": "data_struct_2.html#exercises",
+    "href": "data_struct_2.html#exercises",
+    "title": "11  Data Structures (Part II)",
+    "section": "11.4 Exercises",
+    "text": "11.4 Exercises\nIn progress"
+  },
+  {
+    "objectID": "data_struct_2.html#summary",
+    "href": "data_struct_2.html#summary",
+    "title": "11  Data Structures (Part II)",
+    "section": "11.5 Summary",
+    "text": "11.5 Summary\nIn progress"
+  },
+  {
+    "objectID": "missing.html#questions",
+    "href": "missing.html#questions",
+    "title": "12  Handling missing data",
+    "section": "12.1 Questions",
+    "text": "12.1 Questions\nIn progress"
+  },
+  {
+    "objectID": "missing.html#learning-objectives",
+    "href": "missing.html#learning-objectives",
+    "title": "12  Handling missing data",
+    "section": "12.2 Learning Objectives",
+    "text": "12.2 Learning Objectives\nIn progress"
+  },
+  {
+    "objectID": "missing.html#lesson-content",
+    "href": "missing.html#lesson-content",
+    "title": "12  Handling missing data",
+    "section": "12.3 Lesson Content",
+    "text": "12.3 Lesson Content\nIn progress"
+  },
+  {
+    "objectID": "missing.html#exercises",
+    "href": "missing.html#exercises",
+    "title": "12  Handling missing data",
+    "section": "12.4 Exercises",
+    "text": "12.4 Exercises\nIn progress"
+  },
+  {
+    "objectID": "missing.html#summary",
+    "href": "missing.html#summary",
+    "title": "12  Handling missing data",
+    "section": "12.5 Summary",
+    "text": "12.5 Summary\nIn progress"
+  },
+  {
+    "objectID": "conclusion.html",
+    "href": "conclusion.html",
+    "title": "Conclusion",
+    "section": "",
+    "text": "We have finally come to the end of the “R for Novice Programmers” book. Congratulations on completing this learning journey!\nThe overall goal of this book was to introduce non-programmers or those with very little programming experience to R and RStudio and their use in basic statistical programming. It is hoped that the learners gained new skills and discovered how this software could be used to simplify everyday tasks in their workplaces. The learner should now be able to understand all the topics listed below based on the previously described learning objectives.\n\n\nTable 1: Syllabus\n\n\n\n\n\n\n\nChapter\nTitle\nComplete? (Yes / No)\n\n\n\n\n\nIntroduction\n\n\n\n1\nOverview of R and RStudio\n\n\n\n2\nDownload and Install R and RStudio\n\n\n\n3\nNavigating the R and RStudio interfaces\n\n\n\n4\nManaging your files and data\n\n\n\n5\nImporting data and saving analysis outputs\n\n\n\n6\nBasic arithmetic, arithmetic operators, and variables\n\n\n\n7\nThe primary types of operators in R\n\n\n\n8\nData Types\n\n\n\n9\nVectors\n\n\n\n10\nData Structures (Part I)\n\n\n\n11\nData Structures (Part II)\n\n\n\n12\nHandling missing data\n\n\n\n\nConclusion\n\n\n\n\nAppendix\n\n\n\n\n\nNow that the learner has mastered the basics, it is time to transition to specific topics such as data wrangling/manipulation, data visualization, and programming. Therefore, I would encourage the learner to review some of the links I have provided in the Appendix and look out for more books in the future which will cover:\n\nData visualization\nTidyverse\nProgramming: Functions, Loops, and Control Statements\nData Science\nStatistics\nMachine Learning and Artificial Intelligence\nPublishing with R Markdown and/or Quarto\nR Shiny\n\nThanks for your participation and for completing this book!"
   }
 ]

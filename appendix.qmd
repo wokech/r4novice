@@ -1,1 +1,186 @@
 # Appendix {.unnumbered}
+
+To further your R learning journey, I would recommend a review of the following freely available resources. This list will constantly be updated as new material becomes available.
+
+## 1. Online repositories with R/RStudio-related links
+
+-   [Big Book of R](https://www.bigbookofr.com/)
+-   [Free R Reading Material](https://committedtotape.shinyapps.io/freeR/)
+-   [Awesome R 1](https://github.com/qinwf/awesome-R)
+-   [Awesome R 2](https://github.com/uhub/awesome-r)
+-   [Awesome R 3](https://github.com/ktaranov/AwesomeR)
+-   [Awesome R 4](https://github.com/iamericfletcher/awesome-r-learning-resources)
+-   [resouRces: Database of Resources to Learn & Teach R](https://www.resourcesdatabase.com/)
+-   [R-universe](https://r-universe.dev/search/)
+-   [R Community Public Library](https://rviews.rstudio.com/2021/11/04/bookdown-org/)
+
+## 2. R Communities
+
+-   [Posit (formerly RStudio) Community](https://community.rstudio.com/)
+-   [Stack Overflow R](https://stackoverflow.com/questions/tagged/r)
+-   [Stack Overflow RStudio](https://stackoverflow.com/questions/tagged/rstudio)
+-   [Cross Validated](https://stats.stackexchange.com/?tags=r)
+-   [R-bloggers](https://www.r-bloggers.com/)
+-   [R for Data Science Slack Group](https://rfordatasci.com/)
+-   [R User Community](https://www.linkedin.com/company/r-user-community/)
+-   [R-Ladies Global](https://rladies.org/)
+-   [satRday](https://satrdays.org/)
+-   [rOpenSci](https://ropensci.org/community/)
+-   **Twitter (now X) – #rstats and #rstudio**
+-   **Reddit – r/rstats and r/RStudio**
+
+## 3. Conferences and Meetups
+
+-   [R Foundation Conferences (useR! and DSC)](https://www.r-project.org/conferences/)
+-   [R Conference](https://rstats.ai/)
+-   [Posit Conference](https://posit.co/conference/)
+-   [R User Group Meetups](https://www.meetup.com/pro/r-user-groups/)
+
+## 4. Cheatsheets
+
+-   [R Views Cheatsheets](https://rviews.rstudio.com/2021/03/10/rstudio-open-source-resorurces/)
+-   [Posit Cheatsheets](https://posit.co/resources/cheatsheets/)
+-   [30 Essential Data Science, Machine Learning & Deep Learning Cheat Sheets](https://www.kdnuggets.com/2017/09/essential-data-science-machine-learning-deep-learning-cheat-sheets.html)
+
+## 5. Tutorials
+
+-   [Swirl: Learn or Teach R, in R](https://swirlstats.com/)
+-   [RStudio Education Learning](https://education.rstudio.com/learn/)
+-   [RStudio Education Teaching](https://education.rstudio.com/teach/)
+-   [R Workflow](https://hbiostat.org/rflow/)
+-   [R Screencasts](https://www.rscreencasts.com/)
+-   [Quick-R](https://www.statmethods.net/)
+-   [RTutor: Interactive R Problem Sets](https://skranz.github.io/RTutor/)
+
+## 6. Newsletters and Blogs
+
+-   [R Weekly](https://rweekly.org/)
+-   [Data Elixir](https://dataelixir.com/)
+-   [Revolution Analytics Blog](https://blog.revolutionanalytics.com/)
+
+## 7. Data Visualization
+
+-   [The R Graph Gallery](https://r-graph-gallery.com/)
+-   [R Charts](https://r-charts.com/)
+-   [ggplot2 extensions](https://exts.ggplot2.tidyverse.org/)
+-   [Telling Stories with Data](https://tellingstorieswithdata.com/)
+-   [R Graphics Cookbook](https://r-graphics.org/)
+-   [Fundamentals of Data Visualization](https://clauswilke.com/dataviz/)
+-   [ggplot2: Elegant Graphics for Data Analysis](https://ggplot2-book.org/)
+-   [Data Visualization: A practical introduction](https://socviz.co/)
+-   [Modern Data Visualization with R](https://rkabacoff.github.io/datavis/)
+
+## 8. Data Science
+
+-   [R for Data Science](https://r4ds.hadley.nz/)
+-   [Data 8: The Foundations of Data Science](https://www.data8.org/)
+-   [Introduction to Data Science](https://sml201.github.io/)
+-   [Readings in Applied Data Science](https://github.com/hadley/stats337)
+-   [Elements of Data Science](https://github.com/AllenDowney/ElementsOfDataScience)
+-   [The Art of Data Science](https://bookdown.org/rdpeng/artofdatascience/)
+-   [Data Science Cheatsheet](https://github.com/ml874/Data-Science-Cheatsheet)
+-   [Introduction to Data Science (for not-yet scientists)](https://florian-huber.github.io/data_science_course/book/cover.html)
+-   [data.org](https://data.org/)
+-   [Data Basic](https://databasic.io/en/)
+-   [Data Science in a Box](https://datasciencebox.org/)
+-   [Data Literacy](http://dataliteracy.rbind.io/)
+
+## 9. Statistics
+
+-   [An Introduction to Statistical Learning with R or Python](https://www.statlearning.com/)
+-   [Modern Statistics with R](https://modernstatisticswithr.com/)
+-   [Introduction to Modern Statistics](https://openintro-ims.netlify.app/index.html)
+-   [Statistical Thinking](https://www.fharrell.com/)
+-   [Introduction to Modern Statistics](https://openintro-ims.netlify.app/index.html)
+-   [Biostatistics for Biomedical Research](https://hbiostat.org/bbr/)
+-   [STA 212: Statistical Models](https://sta-212-f19.lucymcgowan.com/)
+-   [STA 312: Linear Models](https://sta-312-f20.netlify.app/)
+-   [STA 363: Statistical Learning](https://sta-363-s20.lucymcgowan.com/)
+-   [Introduction to Probability for Data Science](https://probability4datascience.com/)
+-   [Statistics 431: Advanced Statistical Computing with R](https://cal-poly-advanced-r.github.io/STAT-431/)
+-   [Statistics and R](https://tinystats.github.io/teacups-giraffes-and-statistics/index.html)
+-   [Tidy Statistics in R](https://themockup.blog/posts/2018-12-10-a-gentle-guide-to-tidy-statistics-in-r/) - [Datamethods](https://discourse.datamethods.org/)
+-   [Statistical Computing](https://www.stephaniehicks.com/jhustatcomputing2022/schedule)
+
+## 10. Datasets
+
+-   [Awesome Public Datasets](https://github.com/awesomedata/awesome-public-datasets)
+-   [Dataverse Project](https://dataverse.org/)
+-   [Data Commons](https://datacommons.org/)
+-   [Open Africa Data](https://africaopendata.org/)
+-   [Data Africa](https://dataafrica.io/)
+-   [Our World in Data](https://ourworldindata.org/)
+-   [California Data Sources](https://hillcrestadvisory.com/2019/01/20/california-data-sources/)
+-   [DataSF](https://datasf.org/opendata/)
+-   [NYC Open Data](https://opendata.cityofnewyork.us/)
+-   [The Humanitarian Data Exchange](https://data.humdata.org/)
+-   [Global Data Barometer](https://globaldatabarometer.org/)
+-   [Microsoft Research Open Data](https://msropendata.com/)
+-   [Kaggle Datasets](https://www.kaggle.com/datasets)
+-   [Google Research Datasets](https://datasetsearch.research.google.com/)
+-   [NHS R-community Datasets](https://nhs-r-community.github.io/NHSRdatasets/)
+-   [IHME](https://www.healthdata.org/)
+-   [Best Public Datasets for Health Data Science Projects](https://healthdatascience.substack.com/p/best-public-datasets-for-public-health-225)
+-   [World Bank Open Data](https://data.worldbank.org/)
+
+## 11. Tidyverse
+
+-   [A very short introduction to Tidyverse](https://dominicroye.github.io/en/2020/a-very-short-introduction-to-tidyverse/)
+-   [Tidyverse Workshop Series](https://github.com/nuitrcs/r-tidyverse)
+-   [Tidyverse Skills for Data Science](https://jhudatascience.org/tidyversecourse/)
+-   [Eight R Tidyverse tips for everyday data engineering](https://tomaztsql.wordpress.com/2022/07/14/eight-r-tidyverse-tips-for-everyday-data-engineering/)
+-   [Tidyverse Tips](https://oliviergimenez.github.io/tidyverse-tips/)
+-   [An Introduction to R through the tidyverse](https://pmacdasci.github.io/r-intro-tidyverse/)
+-   [Modern R with the tidyverse](http://modern-rstats.eu/)
+-   [C’est quoi, le tidyverse?](https://thinkr.fr/c-est-quoi-le-tidyverse/#Mettre_en_forme_ses_donnees_avec_la_package_tidyr)
+-   [Transitioning into the tidyverse (part 1)](https://www.rebeccabarter.com/blog/2019-08-05_base_r_to_tidyverse/)
+-   [Transitioning into the tidyverse (part 2)](https://www.rebeccabarter.com/blog/2019-08-05_base_r_to_tidyverse_pt2/)
+
+## 12. Programming: Functions, Loops, and Control Statements
+
+-   [Control Structures](https://cran.r-project.org/doc/manuals/r-release/R-lang.html#Control-structures)
+-   [Apply Functions](https://www.rdocumentation.org/packages/base/versions/3.6.2/topics/apply)
+-   [Defining your own functions](https://modern-rstats.eu/defining-your-own-functions.html)
+-   [Functional programming 1](https://modern-rstats.eu/functional-programming.html)
+-   [Functional programming 2](http://adv-r.had.co.nz/Functional-programming.html)
+-   [Statistical Programming Paradigms and Workflows](https://www.stephaniehicks.com/jhustatprogramming2022/schedule)
+-   [Hands-On Programming with R](https://jjallaire.github.io/hopr/)
+-   [purr tutorial](https://jennybc.github.io/purrr-tutorial/index.html)
+-   [Unlocking the Power of Functional Programming in R (Part 1)](https://appsilon.com/functional-programming-in-r-part-1/)
+-   [Unlocking the Power of Functional Programming in R (Part 2)](https://appsilon.com/functional-programming-in-r-part-2/)
+
+## 13. Machine Learning and Artificial Intelligence
+
+-   [Hands-On Machine Learning with R](https://bradleyboehmke.github.io/HOML/)
+-   [Create machine learning models: An R version](https://rpubs.com/eR_ic/exploRe)
+-   [Interpretable Machine Learning](https://advanced-ds-in-r.netlify.app/posts/2021-03-31-imllocal/)
+-   [Supervised Machine Learning for Text Analysis in R](https://smltar.com/)
+-   [Posit AI Blog](https://blogs.rstudio.com/ai/)
+-   [Tidy Modeling with R](https://www.tmwr.org/)
+-   [Tidymodels](https://www.tidymodels.org/)
+-   [A Gentle Introduction to tidymodels](https://rviews.rstudio.com/2019/06/19/a-gentle-intro-to-tidymodels/)
+-   [The Case for tidymodels](https://rviews.rstudio.com/2020/04/21/the-case-for-tidymodels/)
+-   [ISLR tidymodels labs](https://emilhvitfeldt.github.io/ISLR-tidymodels-labs/index.html)
+-   [Introduction to Machine Learning with the Tidyverse](https://education.rstudio.com/blog/2020/02/conf20-intro-ml/)
+-   [tidypredict](https://tidypredict.tidymodels.org/)
+
+## 14. Publishing
+
+-   [Quarto](https://quarto.org/)
+-   [R Markdown](https://rmarkdown.rstudio.com/)
+-   [Awesome Quarto](https://github.com/mcanouil/awesome-quarto)
+
+## 15. R Shiny
+
+-   [Shiny Learning Resources](https://shiny.rstudio.com/tutorial/)
+-   [Shiny Tutorials](https://shiny.rstudio.com/tutorial/written-tutorial/lesson1/)
+-   [Mastering Shiny](https://mastering-shiny.org/)
+-   [Building Web Applications WITH SHINY](https://rstudio-education.github.io/shiny-course/)
+-   [a gRadual intRoduction to Shiny](https://laderast.github.io/gradual_shiny/)
+-   [Engineering Production-Grade Shiny Apps](https://engineering-shiny.org/)
+-   [ShinyUI Editor](https://rstudio.github.io/shinyuieditor/)
+-   [Shiny Examples](https://shinylive.io/r/examples/)
+-   [An Intro to Shiny](https://ucsb-meds.github.io/shiny-workshop/#1)
+-   [Shiny Gallery](https://shiny.posit.co/r/gallery/)
+-   [shinydashboard](https://rstudio.github.io/shinydashboard/structure.html)
+-   [Application layout guide](https://shiny.posit.co/r/articles/build/layout-guide/)

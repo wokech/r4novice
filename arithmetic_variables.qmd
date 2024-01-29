@@ -1,1 +1,21 @@
 # Basic arithmetic, arithmetic operators, and variables {#sec-arithmetic-variables}
+
+## Questions
+
+*In progress*
+
+## Learning Objectives
+
+*In progress*
+
+## Lesson Content
+
+*In progress*
+
+## Exercises
+
+*In progress*
+
+## Summary
+
+*In progress*

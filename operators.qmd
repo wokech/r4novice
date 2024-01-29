@@ -1,1 +1,21 @@
 # The primary types of operators in R {#sec-operators}
+
+## Questions
+
+*In progress*
+
+## Learning Objectives
+
+*In progress*
+
+## Lesson Content
+
+*In progress*
+
+## Exercises
+
+*In progress*
+
+## Summary
+
+*In progress*
