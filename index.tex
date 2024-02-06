@@ -177,7 +177,7 @@
 
 \begin{document}
 \maketitle
-\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[interior hidden, sharp corners, frame hidden, breakable, borderline west={3pt}{0pt}{shadecolor}, enhanced, boxrule=0pt]}{\end{tcolorbox}}\fi
+\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[boxrule=0pt, enhanced, borderline west={3pt}{0pt}{shadecolor}, frame hidden, breakable, sharp corners, interior hidden]}{\end{tcolorbox}}\fi
 
 \renewcommand*\contentsname{Table of contents}
 {
@@ -204,7 +204,7 @@ but that may prove difficult for learners new to programming.
 The online version of this book is free to use and is licensed under the
 \ldots{} .
 
-The book is written in \href{https://quarto.org/}{Quarto}.
+This book was built with \href{https://quarto.org/}{Quarto}.
 
 \bookmarksetup{startatroot}
 
@@ -255,19 +255,19 @@ issues.
 At the end of the book, the student should be able to perform the tasks
 listed in the syllabus below.
 
-\hypertarget{tbl-syllabus-.striped-.hover-tbl-colwidths10-70-20}{}
+\hypertarget{tbl-syllabus-.striped-.hover-tbl-colwidths5-75-20}{}
 \begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.2394}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.5211}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.2394}}@{}}
-\caption{\label{tbl-syllabus-.striped-.hover-tbl-colwidths10-70-20}Syllabus}\tabularnewline
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.1944}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.6111}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.1944}}@{}}
+\caption{\label{tbl-syllabus-.striped-.hover-tbl-colwidths5-75-20}Syllabus}\tabularnewline
 \toprule\noalign{}
 \begin{minipage}[b]{\linewidth}\raggedright
 Chapter
 \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
 Title
 \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-Complete? (Yes / No)
+Date Completed
 \end{minipage} \\
 \midrule\noalign{}
 \endfirsthead
@@ -277,7 +277,7 @@ Chapter
 \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
 Title
 \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-Complete? (Yes / No)
+Date Completed
 \end{minipage} \\
 \midrule\noalign{}
 \endhead
@@ -362,13 +362,10 @@ overview of the R and RStudio ecosystem.
 \item
   What is R? How is it related to RStudio?
 \item
-  What are the primary advantages of R compared to other software
-  programs?
-\item
   Why is R considered a powerful language for statistical computing and
   data analysis?
 \item
-  In what domains and industries is R widely used?
+  What are some of the common uses of R in various fields?
 \item
   What advantages does R offer over other programming languages for data
   science tasks?
@@ -383,7 +380,7 @@ overview of the R and RStudio ecosystem.
 \item
   Understand the uses and primary advantages of R and RStudio.
 \item
-  Assess the various applications of R across different industries.
+  Explore the various applications of R across different industries.
 \end{itemize}
 
 \hypertarget{lesson-content}{%
@@ -484,7 +481,8 @@ RStudio}\label{primary-advantages-of-r-and-rstudio}}
 \subsection{Applications of R in different
 industries}\label{applications-of-r-in-different-industries}}
 
-\begin{itemize}
+\begin{enumerate}
+\def\labelenumi{\roman{enumi}.}
 \item
   Bioinformatics and Healthcare: epidemiological studies, clinical trial
   analysis, and genetic data analysis.
@@ -505,7 +503,7 @@ industries}\label{applications-of-r-in-different-industries}}
   Environmental Science and Climate Change: forecasting weather
   patterns, modelling climate change, monitoring pollution levels, and
   ecological modelling.
-\end{itemize}
+\end{enumerate}
 
 \hypertarget{exercises}{%
 \section{Exercises}\label{exercises}}
@@ -522,10 +520,14 @@ lessons.
   Do you currently use any other software tools for data analysis and
   visualization? What are the limitations of these tools?
 \item
+  What are some key differences between R and other statistical
+  programming languages like SAS or SPSS?
+\item
   What tasks do you hope to accomplish after completing this training?
 \item
   Explore the various R/RStudio communities listed in the appendix and
-  consider joining any one of them.
+  consider joining any one of them. What is the role of the R community
+  in the development and support of R?
 \item
   Browse some of popular R packages (on
   \href{https://cran.r-project.org/}{CRAN} or
@@ -552,12 +554,31 @@ RStudio}\label{sec-download-install}}
 \hypertarget{questions-1}{%
 \section{Questions}\label{questions-1}}
 
-\emph{In progress}
+\begin{itemize}
+\item
+  How does one install R and RStudio on their personal computer?
+\item
+  Can RStudio be used online via a cloud-based service?
+\item
+  Is it possible to work with alternative code editors when using R?
+\item
+  What steps are involved in installing RStudio?
+\end{itemize}
 
 \hypertarget{learning-objectives-1}{%
 \section{Learning Objectives}\label{learning-objectives-1}}
 
-\emph{In progress}
+\begin{itemize}
+\item
+  Install the R programming language on your local machine.
+\item
+  Install RStudio as an integrated development environment (IDE) for R
+  on your local machine.
+\item
+  Create an RStudio Cloud Account on the Posit Website.
+\item
+  Learn how to use alternative code editors.
+\end{itemize}
 
 \hypertarget{lesson-content-1}{%
 \section{Lesson Content}\label{lesson-content-1}}
@@ -567,7 +588,31 @@ RStudio}\label{sec-download-install}}
 \hypertarget{exercises-1}{%
 \section{Exercises}\label{exercises-1}}
 
-\emph{In progress}
+\begin{enumerate}
+\def\labelenumi{\roman{enumi}.}
+\tightlist
+\item
+  Download and install R and RStudio (\emph{If you have not already done
+  so}).
+\item
+  Describe the steps involved in installing R on a Windows operating
+  system.
+\item
+  Are there any specific considerations when installing R on a macOS or
+  Linux system?
+\item
+  Set up a free RStudio Cloud Account on the
+  \href{https://posit.cloud/}{Posit Website}.
+\item
+  Compare the local RStudio with the cloud-based RStudio and list the
+  potential benefits/disadvantages of both.
+\item
+  Verify your R installation by running a simple R script that prints
+  ``Hello, R! My name is (fill in the blank)'' to the console.
+\item
+  Can you customize the appearance or behavior of RStudio according to
+  your preferences?
+\end{enumerate}
 
 \hypertarget{summary-2}{%
 \section{Summary}\label{summary-2}}
@@ -582,12 +627,36 @@ RStudio}\label{sec-download-install}}
 \hypertarget{questions-2}{%
 \section{Questions}\label{questions-2}}
 
-\emph{In progress}
+\begin{itemize}
+\item
+  What are the main components of the R interface?
+\item
+  How is the RStudio IDE organized, and what are its key features?
+\item
+  How does one navigate the R and RStudio interfaces?
+\item
+  What are the functions of the various RStudio panes?
+\end{itemize}
 
 \hypertarget{learning-objectives-2}{%
 \section{Learning Objectives}\label{learning-objectives-2}}
 
-\emph{In progress}
+\begin{itemize}
+\item
+  Identify and understand the main components of the R interface.
+\item
+  Navigate the RStudio IDE and comprehend its organizational structure.
+\item
+  Customize your RStudio environment to suit your preferences.
+\item
+  Understand the roles of the console and menu options in the R
+  software.
+\item
+  Review the various panes and menu options in the RStudio software.
+\item
+  Learn the various keyboard shortcuts that can improve speed and
+  efficiency.
+\end{itemize}
 
 \hypertarget{lesson-content-2}{%
 \section{Lesson Content}\label{lesson-content-2}}
@@ -597,7 +666,28 @@ RStudio}\label{sec-download-install}}
 \hypertarget{exercises-2}{%
 \section{Exercises}\label{exercises-2}}
 
-\emph{In progress}
+\begin{enumerate}
+\def\labelenumi{\roman{enumi}.}
+\tightlist
+\item
+  Describe the main components of the RStudio interface.
+\item
+  Open RStudio and explore the different panels of the interface, then
+  describe in your own words the purpose of the Environment, History,
+  Files, and Plots panes.
+\item
+  What is the purpose of the Console pane in RStudio?
+\item
+  Access the help documentation using the Help pane and find information
+  on specific R functions/packages.
+\item
+  Customize your RStudio environment by changing the theme and adjusting
+  the appearance settings.
+\item
+  Practice using keyboard shortcuts for common tasks in RStudio.
+\item
+  How can you customize the layout of panes in RStudio?
+\end{enumerate}
 
 \hypertarget{summary-3}{%
 \section{Summary}\label{summary-3}}
@@ -612,12 +702,39 @@ RStudio}\label{sec-download-install}}
 \hypertarget{questions-3}{%
 \section{Questions}\label{questions-3}}
 
-\emph{In progress}
+\begin{itemize}
+\item
+  Why is good file and data management important in R?
+\item
+  What is the concept of a project in R, and how does it help in
+  organizing your work?
+\item
+  What is the purpose of creating R project folders and scripts?
+\item
+  What is the significance of a working directory in R, and how does it
+  impact your workflow?
+\item
+  How do you create, save, and run R scripts for efficient code
+  management?
+\end{itemize}
 
 \hypertarget{learning-objectives-3}{%
 \section{Learning Objectives}\label{learning-objectives-3}}
 
-\emph{In progress}
+\begin{itemize}
+\item
+  Understand the importance of properly organized files and datasets for
+  efficient R projects.
+\item
+  Understand the concept of R projects and their role in organizing your
+  work.
+\item
+  Write and run R code in scripts for better code organization and
+  reproducibility.
+\item
+  Master the concept of working directories and navigate your project
+  files effectively.
+\end{itemize}
 
 \hypertarget{lesson-content-3}{%
 \section{Lesson Content}\label{lesson-content-3}}
@@ -627,7 +744,29 @@ RStudio}\label{sec-download-install}}
 \hypertarget{exercises-3}{%
 \section{Exercises}\label{exercises-3}}
 
-\emph{In progress}
+\begin{enumerate}
+\def\labelenumi{\roman{enumi}.}
+\item
+  Create a new RStudio project called ``novice\_programmer\_guide''.
+\item
+  Within the project folder, create a new R Script called
+  ``introduction.R'' and save it.
+\item
+  Set your working directory in the console to the root of this new
+  project, and practice loading data from a file within it.
+\item
+  Explain the significance of using relative and absolute file paths in
+  R, and experiment with using relative paths to access different data
+  files within your project directory.
+\item
+  Explain the role of the functions, file.path(), list.files(), and
+  dir.create(), in R.
+\item
+  Describe the purpose of the .Rproj file in an R project.
+\item
+  How can you clear the R workspace? Explore functions like rm() and
+  rm(list=ls()) to remove unwanted objects.
+\end{enumerate}
 
 \hypertarget{summary-4}{%
 \section{Summary}\label{summary-4}}
@@ -643,12 +782,41 @@ outputs}\label{sec-import-save}}
 \hypertarget{questions-4}{%
 \section{Questions}\label{questions-4}}
 
-\emph{In progress}
+\begin{itemize}
+\item
+  Can users access and use internal datasets for analysis in R? How do I
+  load the datasets?
+\item
+  How does one import external datasets into R? What functions and
+  packages are commonly used for this purpose?
+\item
+  How do I handle different data formats such as CSV, Excel, or text
+  files?
+\item
+  Once the user completes their data analysis, how can their output(s)
+  be saved?
+\item
+  How can I create new data objects or modify existing ones within R?
+\end{itemize}
 
 \hypertarget{learning-objectives-4}{%
 \section{Learning Objectives}\label{learning-objectives-4}}
 
-\emph{In progress}
+\begin{itemize}
+\item
+  Learn how to load and access internal R datasets.
+\item
+  Import external datasets into your R project folder.
+\item
+  Demonstrate how to save analysis outputs from R such as tables and
+  datasets.
+\item
+  Understand methods for importing data stored internally in R and from
+  external sources.
+\item
+  Utilize built-in functions and packages to read various data formats
+  like CSV, Excel, and text files.
+\end{itemize}
 
 \hypertarget{lesson-content-4}{%
 \section{Lesson Content}\label{lesson-content-4}}
@@ -658,7 +826,29 @@ outputs}\label{sec-import-save}}
 \hypertarget{exercises-4}{%
 \section{Exercises}\label{exercises-4}}
 
-\emph{In progress}
+\begin{enumerate}
+\def\labelenumi{\roman{enumi}.}
+\item
+  Import datasets from different formats like \href{}{CSV},
+  \href{}{Excel}, and \href{}{text} files into your R environment using
+  the base R functions such as read.*().
+\item
+  Save your file using a new name with write.*(), save(), or .RData?
+\item
+  How can you check the structure and summary statistics of an imported
+  dataset in R?
+\item
+  What options do you have when importing data from non-local sources
+  like URLs or databases? Explore functions like url() and dbConnect()
+  for remote data access.
+\item
+  How can you specify import options for different file formats? Learn
+  about arguments like sep, header, and na.strings for customized data
+  reading.
+\item
+  What is the difference between overwriting a dataset and appending new
+  data to it in R?
+\end{enumerate}
 
 \hypertarget{summary-5}{%
 \section{Summary}\label{summary-5}}
@@ -674,12 +864,38 @@ variables}\label{sec-arithmetic-variables}}
 \hypertarget{questions-5}{%
 \section{Questions}\label{questions-5}}
 
-\emph{In progress}
+\begin{itemize}
+\item
+  How can we perform basic arithmetic operations in R?
+\item
+  What arithmetic operators can be used in R?
+\item
+  How do I assign values to variables?
+\item
+  Are there naming conventions/variable style guides for creating new
+  variables?
+\end{itemize}
 
 \hypertarget{learning-objectives-5}{%
 \section{Learning Objectives}\label{learning-objectives-5}}
 
-\emph{In progress}
+\begin{itemize}
+\item
+  Learn how to use R to perform basic arithmetic.
+\item
+  Declare and manipulate variables to store and retrieve data in R.
+\item
+  Master basic arithmetic operations like addition, subtraction,
+  multiplication, and division in R.
+\item
+  Understand the concept of variables and assign numeric values in your
+  R code.
+\item
+  Use appropriate naming conventions for variables.
+\item
+  Differentiate between different variable types (numeric, integer,
+  character) and choose appropriate ones.
+\end{itemize}
 
 \hypertarget{lesson-content-5}{%
 \section{Lesson Content}\label{lesson-content-5}}
@@ -689,7 +905,32 @@ variables}\label{sec-arithmetic-variables}}
 \hypertarget{exercises-5}{%
 \section{Exercises}\label{exercises-5}}
 
-\emph{In progress}
+\begin{enumerate}
+\def\labelenumi{\roman{enumi}.}
+\tightlist
+\item
+  In R, calculate 3 + 5 and then 4 * 6.
+\item
+  Assign the value 10 to a variable called x. Then calculate x \^{} 2.
+  Next, calculate the expression (3 + x) * (x - 1) using the x from
+  before.
+\item
+  Declare a variable to store your age and assign a value to it. Print
+  the variable value.
+\item
+  Create variables for the length and width of a rectangle and calculate
+  its area.
+\item
+  Explain the rules for naming variables in R. Provide examples of valid
+  and invalid variable names.
+\item
+  What is operator precedence in R? How does it work for arithmetic
+  operators?
+\item
+  What data types can be used for arithmetic operations in R?
+\item
+  What is the difference between \textless- and = for assignment in R?
+\end{enumerate}
 
 \hypertarget{summary-6}{%
 \section{Summary}\label{summary-6}}
@@ -704,12 +945,35 @@ variables}\label{sec-arithmetic-variables}}
 \hypertarget{questions-6}{%
 \section{Questions}\label{questions-6}}
 
-\emph{In progress}
+\begin{itemize}
+\item
+  What are the primary operator types in R?
+\item
+  How can one use the various operator types in data analysis?
+\item
+  How do arithmetic, comparison, and logical operators work in R?
+\item
+  When should I use assignment operators versus comparison operators?
+\end{itemize}
 
 \hypertarget{learning-objectives-6}{%
 \section{Learning Objectives}\label{learning-objectives-6}}
 
-\emph{In progress}
+\begin{itemize}
+\item
+  Identify the primary operator types in R.
+\item
+  Learn how to use various operators for data manipulation.
+\item
+  Utilize arithmetic operators for efficient numerical calculations in
+  your R scripts.
+\item
+  Apply comparison operators to evaluate conditions and filter data
+  based on logical comparisons.
+\item
+  Employ logical operators to combine multiple conditions and control
+  the flow of your R code.
+\end{itemize}
 
 \hypertarget{lesson-content-6}{%
 \section{Lesson Content}\label{lesson-content-6}}
@@ -719,7 +983,26 @@ variables}\label{sec-arithmetic-variables}}
 \hypertarget{exercises-6}{%
 \section{Exercises}\label{exercises-6}}
 
-\emph{In progress}
+\begin{itemize}
+\item
+  List the basic operator types in R and provide an example for each.
+\item
+  What operators allow you to subset vectors, lists, and data frames in
+  R?
+\item
+  Explain how the modulus operator (\%/\%) differs from the regular
+  division operator (/).
+\item
+  What are the membership operators \%in\% and !\%in\% used for in R?
+\item
+  Assign 10 to x using \textless-. Then compare if x == 10.
+\item
+  Calculate 3\^{}4 using arithmetic operators.
+\item
+  Compare 3 \textgreater{} 5. Is the result TRUE or FALSE?
+\item
+  When would you use the sequence operator (:) in R? Give an example.
+\end{itemize}
 
 \hypertarget{summary-7}{%
 \section{Summary}\label{summary-7}}
@@ -734,12 +1017,35 @@ variables}\label{sec-arithmetic-variables}}
 \hypertarget{questions-7}{%
 \section{Questions}\label{questions-7}}
 
-\emph{In progress}
+\begin{itemize}
+\item
+  What are the primary data types in R?
+\item
+  Can one convert between different data types?
+\item
+  How does R handle different types of data?
+\item
+  How can I determine the type of a variable in R?
+\item
+  What are some helpful functions for identifying and manipulating data
+  types?
+\item
+  How do data types impact my analysis and coding in R?
+\end{itemize}
 
 \hypertarget{learning-objectives-7}{%
 \section{Learning Objectives}\label{learning-objectives-7}}
 
-\emph{In progress}
+\begin{itemize}
+\item
+  Identify and differentiate between common data types in R.
+\item
+  Learn how to convert between different data types.
+\item
+  Use functions like class(), typeof(), and str() to inspect types.
+\item
+  Convert between data types using the as.* functions.
+\end{itemize}
 
 \hypertarget{lesson-content-7}{%
 \section{Lesson Content}\label{lesson-content-7}}
@@ -749,7 +1055,25 @@ variables}\label{sec-arithmetic-variables}}
 \hypertarget{exercises-7}{%
 \section{Exercises}\label{exercises-7}}
 
-\emph{In progress}
+\begin{itemize}
+\item
+  What are the basic data types in R? Give examples of each.
+\item
+  How can you check the data type of a variable in R?
+\item
+  Use the class(), typeof(), and str() functions to check the data type
+  of objects.
+\item
+  Describe the process of coercion in R.
+\item
+  Provide an example of implicit and explicit coercion between data
+  types.
+\item
+  How can you coerce or convert between different data types in R?
+\item
+  What does it mean for an object in R to have attributes? What
+  attributes are commonly used?
+\end{itemize}
 
 \hypertarget{summary-8}{%
 \section{Summary}\label{summary-8}}
@@ -764,12 +1088,46 @@ variables}\label{sec-arithmetic-variables}}
 \hypertarget{questions-8}{%
 \section{Questions}\label{questions-8}}
 
-\emph{In progress}
+\begin{itemize}
+\item
+  What are vectors and why are they essential in R?
+\item
+  What are the different types of vectors and their key characteristics?
+\item
+  How does one create a vector?
+\item
+  What operations can be performed on a vector?
+\item
+  How do I create and access different elements within a vector?
+\item
+  Can I combine and manipulate vectors to achieve specific tasks?
+\item
+  What are some common functions for working with vectors?
+\end{itemize}
 
 \hypertarget{learning-objectives-8}{%
 \section{Learning Objectives}\label{learning-objectives-8}}
 
-\emph{In progress}
+\begin{itemize}
+\item
+  Define and create vectors in R.
+\item
+  Understand how to perform basic operations on vectors.
+\item
+  Understand the concept of vectors as fundamental data structures in R.
+\item
+  Master the creation and manipulation of vectors using various
+  techniques.
+\item
+  Identify and differentiate between different types of vectors based on
+  their elements.
+\item
+  Utilize functions and operators to combine, subset, and transform
+  vectors with ease.
+\item
+  Apply your understanding of vectors to enhance your R coding and data
+  analysis efficiency.
+\end{itemize}
 
 \hypertarget{lesson-content-8}{%
 \section{Lesson Content}\label{lesson-content-8}}
@@ -779,7 +1137,49 @@ variables}\label{sec-arithmetic-variables}}
 \hypertarget{exercises-8}{%
 \section{Exercises}\label{exercises-8}}
 
-\emph{In progress}
+\begin{enumerate}
+\def\labelenumi{\roman{enumi}.}
+\tightlist
+\item
+  Create a numeric vector with values 1 through 5 using c() and extract
+  the middle element from the vector using the described subsetting
+  methods.
+\item
+  Generate a sequence of even numbers from 2 to 10 using the seq()
+  function and calculate the total sum and average of this new vector.
+\item
+  Create a vector of student ages (between 16 and 20, n = 10), calculate
+  their average and standard deviation, and identify students younger
+  than 18.
+\item
+  Use logical indexing to subset elements from a vector based on a
+  condition.
+\item
+  Perform element-wise addition and multiplication on two newly created
+  numeric vectors of the same length.
+\item
+  Concatenate two newly created character vectors to create a longer
+  vector.
+\item
+  Create a named vector with elements representing days of the week.
+\item
+  Use vector functions to find the length, sum, and mean of a numeric
+  vector.
+\item
+  Use functions like \texttt{sort()} or \texttt{rev()} to arrange
+  elements in ascending, descending, or reversed order.
+\item
+  Use functions like \texttt{which()} or \texttt{match()} to locate
+  elements based on conditions or matching values.
+\item
+  How can you append elements to an existing vector?
+\item
+  When binding vectors together, what is the difference between cbind()
+  and rbind()?
+\item
+  Explore other vector capabilities like recycling, naming elements, and
+  using vector lengths in your R code.
+\end{enumerate}
 
 \hypertarget{summary-9}{%
 \section{Summary}\label{summary-9}}
@@ -794,12 +1194,39 @@ variables}\label{sec-arithmetic-variables}}
 \hypertarget{questions-9}{%
 \section{Questions}\label{questions-9}}
 
-\emph{In progress}
+\begin{itemize}
+\item
+  List the data structures that can be used in R?
+\item
+  How do we define the various data structures?
+\item
+  What operations can be performed on the different data structures?
+\item
+  How do these data structures differ from one another in terms of
+  storage and functionality?
+\end{itemize}
 
 \hypertarget{learning-objectives-9}{%
 \section{Learning Objectives}\label{learning-objectives-9}}
 
-\emph{In progress}
+\begin{itemize}
+\item
+  Learn about data structures in R, specifically vectors, lists, and
+  dataframes.
+\item
+  Define and manipulate vectors, lists, and dataframes.
+\item
+  Perform common operations on each data structure.
+\item
+  Identify and differentiate between the diverse data structures offered
+  by R.
+\item
+  Choose the appropriate data structure based on the type and
+  organization of your data.
+\item
+  Understand the strengths and limitations of each structure for
+  efficient analysis.
+\end{itemize}
 
 \hypertarget{lesson-content-9}{%
 \section{Lesson Content}\label{lesson-content-9}}
@@ -809,7 +1236,33 @@ variables}\label{sec-arithmetic-variables}}
 \hypertarget{exercises-9}{%
 \section{Exercises}\label{exercises-9}}
 
-\emph{In progress}
+\begin{enumerate}
+\def\labelenumi{\roman{enumi}.}
+\item
+  Explain the characteristics and use cases of lists in R.
+\item
+  Create a list containing a numeric vector, character vector, and
+  logical vector.
+\item
+  How can you add elements to a list in R?
+\item
+  Explain what a data frame is and why it is widely used in R.
+\item
+  Write code to create a data frame with columns for ``Name,'' ``Age,''
+  and ``Gender'' for three individuals.
+\item
+  How can you combine two data frames horizontally in R?
+\item
+  Discuss various methods for subsetting elements in data structures.
+\item
+  How do you check the structure of a data frame? What function is used?
+\item
+  How do you access a specific column of a data frame?
+\item
+  What are rownames and colnames in a data frame? How are they useful?
+\item
+  How do you add a new column to an existing data frame?
+\end{enumerate}
 
 \hypertarget{summary-10}{%
 \section{Summary}\label{summary-10}}
@@ -824,12 +1277,39 @@ variables}\label{sec-arithmetic-variables}}
 \hypertarget{questions-10}{%
 \section{Questions}\label{questions-10}}
 
-\emph{In progress}
+\begin{itemize}
+\item
+  List the data structures that can be used in R?
+\item
+  How do we define the various data structures?
+\item
+  What operations can be performed on the different data structures?
+\item
+  How do these data structures differ from one another in terms of
+  storage and functionality?
+\end{itemize}
 
 \hypertarget{learning-objectives-10}{%
 \section{Learning Objectives}\label{learning-objectives-10}}
 
-\emph{In progress}
+\begin{itemize}
+\item
+  Learn about data structures in R, specifically matrices, arrays, and
+  factors.
+\item
+  Define and manipulate matrices, arrays, and factors.
+\item
+  Perform common operations on each data structure.
+\item
+  Identify and differentiate between the diverse data structures offered
+  by R.
+\item
+  Choose the appropriate data structure based on the type and
+  organization of your data.
+\item
+  Understand the strengths and limitations of each structure for
+  efficient analysis.
+\end{itemize}
 
 \hypertarget{lesson-content-10}{%
 \section{Lesson Content}\label{lesson-content-10}}
@@ -839,7 +1319,28 @@ variables}\label{sec-arithmetic-variables}}
 \hypertarget{exercises-10}{%
 \section{Exercises}\label{exercises-10}}
 
-\emph{In progress}
+\begin{itemize}
+\item
+  How do you create a matrix in R? Give an example.
+\item
+  What are the column and row dimensions of a matrix called in R?
+\item
+  How do you access elements in a matrix?
+\item
+  Generate a 3x3 identity matrix using matrix().
+\item
+  Write code to create a 3x3 matrix with sequential numeric values.
+\item
+  Convert a character vector to a factor with 3 levels.
+\item
+  Describe the purpose of factors in R.
+\item
+  How do you create a factor variable with specified levels?
+\item
+  What is an array, and how does it differ from a matrix in R?
+\item
+  Provide an example of creating a three-dimensional array.
+\end{itemize}
 
 \hypertarget{summary-11}{%
 \section{Summary}\label{summary-11}}
@@ -848,18 +1349,44 @@ variables}\label{sec-arithmetic-variables}}
 
 \bookmarksetup{startatroot}
 
-\hypertarget{sec-missing}{%
-\chapter{Handling missing data}\label{sec-missing}}
-
 \hypertarget{questions-11}{%
-\section{Questions}\label{questions-11}}
+\chapter{Questions}\label{questions-11}}
 
-\emph{In progress}
+\# Handling missing data \{\#sec-missing\}
+
+\begin{itemize}
+\item
+  What is missing data?
+\item
+  Why is missing data a common challenge in data analysis?
+\item
+  How can we identify and handle missing data effectively in R?
+\item
+  What are the consequences of ignoring or mishandling missing data?
+\item
+  What are the best practices for imputing missing values?
+\item
+  When should I choose deletion, imputation, or alternative approaches?
+\end{itemize}
 
 \hypertarget{learning-objectives-11}{%
 \section{Learning Objectives}\label{learning-objectives-11}}
 
-\emph{In progress}
+\begin{itemize}
+\item
+  Define the main types of missing data.
+\item
+  Identify missing data in R and assess its impact on analyses.
+\item
+  Work with datasets that contain missing data.
+\item
+  Understand the importance of addressing missing data in data analysis.
+\item
+  Apply best practices for handling missing data in your R projects.
+\item
+  Apply functions like is.na() and complete.cases() to identify NA
+  values.
+\end{itemize}
 
 \hypertarget{lesson-content-11}{%
 \section{Lesson Content}\label{lesson-content-11}}
@@ -869,7 +1396,29 @@ variables}\label{sec-arithmetic-variables}}
 \hypertarget{exercises-11}{%
 \section{Exercises}\label{exercises-11}}
 
-\emph{In progress}
+\begin{enumerate}
+\def\labelenumi{\roman{enumi}.}
+\item
+  Identify missing values in a dataset using the \texttt{is.na()} and
+  \texttt{complete.cases()} functions.
+\item
+  Practice removing missing data using the \texttt{na.omit()} function.
+\item
+  How can you handle missing values when calculating summary statistics
+  like mean or median?
+\item
+  If you take the mean of a vector with \texttt{NA} values, what will
+  the result be?
+\item
+  How are missing values represented in R?
+\item
+  What is \texttt{NA} in R? How is it different from \texttt{NULL}?
+\item
+  What are some common reasons you may get \texttt{NA} values in a
+  dataset?
+\item
+  How can you check if a value is \texttt{NA} in R?
+\end{enumerate}
 
 \hypertarget{summary-12}{%
 \section{Summary}\label{summary-12}}
@@ -896,19 +1445,19 @@ everyday tasks in their workplaces. The learner should now be able to
 understand all the topics listed below based on the previously described
 learning objectives.
 
-\hypertarget{tbl-syllabus-.striped-.hover-tbl-colwidths10-70-20}{}
+\hypertarget{tbl-syllabus-.striped-.hover-tbl-colwidths5-80-15}{}
 \begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.2500}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.5000}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.2500}}@{}}
-\caption{\label{tbl-syllabus-.striped-.hover-tbl-colwidths10-70-20}Syllabus}\tabularnewline
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.2639}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.4722}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.2639}}@{}}
+\caption{\label{tbl-syllabus-.striped-.hover-tbl-colwidths5-80-15}Syllabus}\tabularnewline
 \toprule\noalign{}
 \begin{minipage}[b]{\linewidth}\raggedright
 Chapter
 \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
 Title
 \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-Complete? (Yes / No)
+Date Completed
 \end{minipage} \\
 \midrule\noalign{}
 \endfirsthead
@@ -918,7 +1467,7 @@ Chapter
 \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
 Title
 \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-Complete? (Yes / No)
+Date Completed
 \end{minipage} \\
 \midrule\noalign{}
 \endhead
@@ -1496,6 +2045,15 @@ Intelligence}
 
 \hypertarget{refs}{}
 \begin{CSLReferences}{0}{0}
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Include books and websites.
+\item
+  Explore the use of cross-referencing.
+\end{enumerate}
+
 \end{CSLReferences}
 
 
