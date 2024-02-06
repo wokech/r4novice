@@ -2,11 +2,23 @@
 
 ## Questions
 
-*In progress*
+-   How does one install R and RStudio on their personal computer?
+
+-   Can RStudio be used online via a cloud-based service?
+
+-   Is it possible to work with alternative code editors when using R?
+
+-   What steps are involved in installing RStudio?
 
 ## Learning Objectives
 
-*In progress*
+-   Install the R programming language on your local machine.
+
+-   Install RStudio as an integrated development environment (IDE) for R on your local machine.
+
+-   Create an RStudio Cloud Account on the Posit Website.
+
+-   Learn how to use alternative code editors.
 
 ## Lesson Content
 
@@ -14,7 +26,13 @@
 
 ## Exercises
 
-*In progress*
+i.  Download and install R and RStudio (*If you have not already done so*).
+ii. Describe the steps involved in installing R on a Windows operating system.
+iii. Are there any specific considerations when installing R on a macOS or Linux system?
+iv. Set up a free RStudio Cloud Account on the [Posit Website](https://posit.cloud/).
+v.  Compare the local RStudio with the cloud-based RStudio and list the potential benefits/disadvantages of both.
+vi. Verify your R installation by running a simple R script that prints "Hello, R! My name is (fill in the blank)" to the console.
+vii. Can you customize the appearance or behavior of RStudio according to your preferences?
 
 ## Summary
 

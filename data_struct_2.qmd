@@ -2,11 +2,27 @@
 
 ## Questions
 
-*In progress*
+- List the data structures that can be used in R?
+
+- How do we define the various data structures?
+
+- What operations can be performed on the different data structures?
+
+- How do these data structures differ from one another in terms of storage and functionality?
 
 ## Learning Objectives
 
-*In progress*
+- Learn about data structures in R, specifically matrices, arrays, and factors.
+
+- Define and manipulate matrices, arrays, and factors.
+
+- Perform common operations on each data structure.
+
+- Identify and differentiate between the diverse data structures offered by R.
+
+- Choose the appropriate data structure based on the type and organization of your data.
+
+- Understand the strengths and limitations of each structure for efficient analysis.
 
 ## Lesson Content
 
@@ -14,7 +30,25 @@
 
 ## Exercises
 
-*In progress*
+- How do you create a matrix in R? Give an example.
+
+- What are the column and row dimensions of a matrix called in R?
+
+- How do you access elements in a matrix?
+
+- Generate a 3x3 identity matrix using matrix().
+
+- Write code to create a 3x3 matrix with sequential numeric values.
+
+- Convert a character vector to a factor with 3 levels.
+
+- Describe the purpose of factors in R.
+
+- How do you create a factor variable with specified levels?
+
+- What is an array, and how does it differ from a matrix in R?
+
+- Provide an example of creating a three-dimensional array.
 
 ## Summary
 

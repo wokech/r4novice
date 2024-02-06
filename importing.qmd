@@ -2,11 +2,27 @@
 
 ## Questions
 
-*In progress*
+- Can users access and use internal datasets for analysis in R? How do I load the datasets?
+
+- How does one import external datasets into R? What functions and packages are commonly used for this purpose?
+
+- How do I handle different data formats such as CSV, Excel, or text files?
+
+- Once the user completes their data analysis, how can their output(s) be saved?
+
+- How can I create new data objects or modify existing ones within R?
 
 ## Learning Objectives
 
-*In progress*
+- Learn how to load and access internal R datasets.
+
+- Import external datasets into your R project folder.
+
+- Demonstrate how to save analysis outputs from R such as tables and datasets.
+
+- Understand methods for importing data stored internally in R and from external sources.
+
+- Utilize built-in functions and packages to read various data formats like CSV, Excel, and text files.
 
 ## Lesson Content
 
@@ -14,7 +30,17 @@
 
 ## Exercises
 
-*In progress*
+i. Import datasets from different formats like [CSV](), [Excel](), and [text]() files into your R environment using the base R functions such as read.*().
+
+ii. Save your file using a new name with write.*(), save(), or .RData?
+
+iii. How can you check the structure and summary statistics of an imported dataset in R?
+
+iv. What options do you have when importing data from non-local sources like URLs or databases? Explore functions like url() and dbConnect() for remote data access.
+
+v. How can you specify import options for different file formats? Learn about arguments like sep, header, and na.strings for customized data reading.
+
+vi. What is the difference between overwriting a dataset and appending new data to it in R?
 
 ## Summary
 

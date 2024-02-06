@@ -2,11 +2,25 @@
 
 ## Questions
 
-*In progress*
+- What are the primary operator types in R?
+
+- How can one use the various operator types in data analysis?
+
+- How do arithmetic, comparison, and logical operators work in R?
+
+- When should I use assignment operators versus comparison operators?
 
 ## Learning Objectives
 
-*In progress*
+- Identify the primary operator types in R.
+
+- Learn how to use various operators for data manipulation.
+
+- Utilize arithmetic operators for efficient numerical calculations in your R scripts.
+
+- Apply comparison operators to evaluate conditions and filter data based on logical comparisons.
+
+- Employ logical operators to combine multiple conditions and control the flow of your R code.
 
 ## Lesson Content
 
@@ -14,7 +28,21 @@
 
 ## Exercises
 
-*In progress*
+- List the basic operator types in R and provide an example for each.
+
+- What operators allow you to subset vectors, lists, and data frames in R?
+
+- Explain how the modulus operator (%/%) differs from the regular division operator (/).
+
+- What are the membership operators %in% and !%in% used for in R?
+
+- Assign 10 to x using <-. Then compare if x == 10.
+
+- Calculate 3^4 using arithmetic operators.
+
+- Compare 3 > 5. Is the result TRUE or FALSE?
+
+- When would you use the sequence operator (:) in R? Give an example.
 
 ## Summary
 

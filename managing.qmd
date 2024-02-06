@@ -2,11 +2,25 @@
 
 ## Questions
 
-*In progress*
+-   Why is good file and data management important in R?
+
+-   What is the concept of a project in R, and how does it help in organizing your work?
+
+-   What is the purpose of creating R project folders and scripts?
+
+-   What is the significance of a working directory in R, and how does it impact your workflow?
+
+-   How do you create, save, and run R scripts for efficient code management?
 
 ## Learning Objectives
 
-*In progress*
+-   Understand the importance of properly organized files and datasets for efficient R projects.
+
+-   Understand the concept of R projects and their role in organizing your work.
+
+-   Write and run R code in scripts for better code organization and reproducibility.
+
+-   Master the concept of working directories and navigate your project files effectively.
 
 ## Lesson Content
 
@@ -14,7 +28,19 @@
 
 ## Exercises
 
-*In progress*
+i.  Create a new RStudio project called "novice_programmer_guide".
+
+ii. Within the project folder, create a new R Script called "introduction.R" and save it.
+
+iii. Set your working directory in the console to the root of this new project, and practice loading data from a file within it.
+
+iv. Explain the significance of using relative and absolute file paths in R, and experiment with using relative paths to access different data files within your project directory.
+
+v.  Explain the role of the functions, file.path(), list.files(), and dir.create(), in R.
+
+vi. Describe the purpose of the .Rproj file in an R project.
+
+vii. How can you clear the R workspace? Explore functions like rm() and rm(list=ls()) to remove unwanted objects.
 
 ## Summary
 

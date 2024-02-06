@@ -2,11 +2,35 @@
 
 ## Questions
 
-*In progress*
+-   What are vectors and why are they essential in R?
+
+-   What are the different types of vectors and their key characteristics?
+
+-   How does one create a vector?
+
+-   What operations can be performed on a vector?
+
+-   How do I create and access different elements within a vector?
+
+-   Can I combine and manipulate vectors to achieve specific tasks?
+
+-   What are some common functions for working with vectors?
 
 ## Learning Objectives
 
-*In progress*
+-   Define and create vectors in R.
+
+-   Understand how to perform basic operations on vectors.
+
+-   Understand the concept of vectors as fundamental data structures in R.
+
+-   Master the creation and manipulation of vectors using various techniques.
+
+-   Identify and differentiate between different types of vectors based on their elements.
+
+-   Utilize functions and operators to combine, subset, and transform vectors with ease.
+
+-   Apply your understanding of vectors to enhance your R coding and data analysis efficiency.
 
 ## Lesson Content
 
@@ -14,7 +38,19 @@
 
 ## Exercises
 
-*In progress*
+i.  Create a numeric vector with values 1 through 5 using c() and extract the middle element from the vector using the described subsetting methods.
+ii. Generate a sequence of even numbers from 2 to 10 using the seq() function and calculate the total sum and average of this new vector.
+iii. Create a vector of student ages (between 16 and 20, n = 10), calculate their average and standard deviation, and identify students younger than 18.
+iv. Use logical indexing to subset elements from a vector based on a condition.
+v.  Perform element-wise addition and multiplication on two newly created numeric vectors of the same length.
+vi. Concatenate two newly created character vectors to create a longer vector.
+vii. Create a named vector with elements representing days of the week.
+viii. Use vector functions to find the length, sum, and mean of a numeric vector.
+ix. Use functions like `sort()` or `rev()` to arrange elements in ascending, descending, or reversed order.
+x.  Use functions like `which()` or `match()` to locate elements based on conditions or matching values.
+xi. How can you append elements to an existing vector?
+xii. When binding vectors together, what is the difference between cbind() and rbind()?
+xiii. Explore other vector capabilities like recycling, naming elements, and using vector lengths in your R code.
 
 ## Summary
 

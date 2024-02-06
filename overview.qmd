@@ -2,23 +2,21 @@
 
 ## Questions
 
--   What is R? How is it related to RStudio?
+- What is R? How is it related to RStudio?
 
--   What are the primary advantages of R compared to other software programs?
+- Why is R considered a powerful language for statistical computing and data analysis?
 
--   Why is R considered a powerful language for statistical computing and data analysis?
+- What are some of the common uses of R in various fields?
 
--   In what domains and industries is R widely used?
-
--   What advantages does R offer over other programming languages for data science tasks?
+- What advantages does R offer over other programming languages for data science tasks?
 
 ## Learning Objectives
 
--   Learn about the historical background of R and RStudio.
+- Learn about the historical background of R and RStudio.
 
--   Understand the uses and primary advantages of R and RStudio.
+- Understand the uses and primary advantages of R and RStudio.
 
--   Assess the various applications of R across different industries.
+- Explore the various applications of R across different industries.
 
 ## Lesson Content
 
@@ -58,31 +56,33 @@ v.  The R/RStudio software is cross-platform, which means that it can be used on
 
 ### Applications of R in different industries
 
--   Bioinformatics and Healthcare: epidemiological studies, clinical trial analysis, and genetic data analysis.
+i. Bioinformatics and Healthcare: epidemiological studies, clinical trial analysis, and genetic data analysis.
 
--   Financial Modeling and Risk Analysis: risk management, algorithmic trading, trading strategies and analysis, time series analysis, and portfolio optimization.
+ii. Financial Modeling and Risk Analysis: risk management, algorithmic trading, trading strategies and analysis, time series analysis, and portfolio optimization.
 
--   Retail and Marketing: customer analytics, sales forecasting, market research, web analytics, and customer segmentation.
+iii. Retail and Marketing: customer analytics, sales forecasting, market research, web analytics, and customer segmentation.
 
--   Social Sciences and Humanities: text analysis, surveys and opinion research, social trend analysis, and policy analysis.
+iv. Social Sciences and Humanities: text analysis, surveys and opinion research, social trend analysis, and policy analysis.
 
--   Statistics and Data Analysis: hypothesis testing, data visualization, regression modelling, and statistical inference.
+v. Statistics and Data Analysis: hypothesis testing, data visualization, regression modelling, and statistical inference.
 
--   Environmental Science and Climate Change: forecasting weather patterns, modelling climate change, monitoring pollution levels, and ecological modelling.
+vi. Environmental Science and Climate Change: forecasting weather patterns, modelling climate change, monitoring pollution levels, and ecological modelling.
 
 ## Exercises
 
 As you embark on your R/RStudio learning journey, I have listed (below) a few questions for you to think about before we get started with the lessons.
 
-i.  Why do you want to learn R and RStudio?
+i.	Why do you want to learn R and RStudio?
 
-ii. Do you currently use any other software tools for data analysis and visualization? What are the limitations of these tools?
+ii.	Do you currently use any other software tools for data analysis and visualization? What are the limitations of these tools?
 
-iii. What tasks do you hope to accomplish after completing this training?
+iii.	What are some key differences between R and other statistical programming languages like SAS or SPSS?
 
-iv. Explore the various R/RStudio communities listed in the appendix and consider joining any one of them.
+iv.	What tasks do you hope to accomplish after completing this training?
 
-v.  Browse some of popular R packages (on [CRAN](https://cran.r-project.org/) or [R-Universe](https://r-universe.dev/search/)) for different tasks like data visualization and statistical analysis. Pick one package that interests you and read about its capabilities.
+v.	Explore the various R/RStudio communities listed in the appendix and consider joining any one of them. What is the role of the R community in the development and support of R?
+
+vi.	Browse some of popular R packages (on [CRAN](https://cran.r-project.org/) or [R-Universe](https://r-universe.dev/search/)) for different tasks like data visualization and statistical analysis. Pick one package that interests you and read about its capabilities.
 
 ## Summary
 

@@ -2,11 +2,27 @@
 
 ## Questions
 
-*In progress*
+- What are the main components of the R interface?
+
+- How is the RStudio IDE organized, and what are its key features?
+
+- How does one navigate the R and RStudio interfaces?
+
+- What are the functions of the various RStudio panes?
 
 ## Learning Objectives
 
-*In progress*
+- Identify and understand the main components of the R interface.
+
+- Navigate the RStudio IDE and comprehend its organizational structure.
+
+- Customize your RStudio environment to suit your preferences.
+
+- Understand the roles of the console and menu options in the R software.
+
+- Review the various panes and menu options in the RStudio software.
+
+- Learn the various keyboard shortcuts that can improve speed and efficiency.
 
 ## Lesson Content
 
@@ -14,7 +30,13 @@
 
 ## Exercises
 
-*In progress*
+i. Describe the main components of the RStudio interface.
+ii. Open RStudio and explore the different panels of the interface, then describe in your own words the purpose of the Environment, History, Files, and Plots panes.
+iii. What is the purpose of the Console pane in RStudio?
+iv. Access the help documentation using the Help pane and find information on specific R functions/packages.
+v. Customize your RStudio environment by changing the theme and adjusting the appearance settings.
+vi. Practice using keyboard shortcuts for common tasks in RStudio.
+vii. How can you customize the layout of panes in RStudio? 
 
 ## Summary
 

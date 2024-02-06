@@ -1,12 +1,32 @@
-# Handling missing data {#sec-missing}
+\# Handling missing data {#sec-missing}
 
 ## Questions
 
-*In progress*
+-   What is missing data?
+
+-   Why is missing data a common challenge in data analysis?
+
+-   How can we identify and handle missing data effectively in R?
+
+-   What are the consequences of ignoring or mishandling missing data?
+
+-   What are the best practices for imputing missing values?
+
+-   When should I choose deletion, imputation, or alternative approaches?
 
 ## Learning Objectives
 
-*In progress*
+-   Define the main types of missing data.
+
+-   Identify missing data in R and assess its impact on analyses.
+
+-   Work with datasets that contain missing data.
+
+-   Understand the importance of addressing missing data in data analysis.
+
+-   Apply best practices for handling missing data in your R projects.
+
+-   Apply functions like is.na() and complete.cases() to identify NA values.
 
 ## Lesson Content
 
@@ -14,7 +34,21 @@
 
 ## Exercises
 
-*In progress*
+i.  Identify missing values in a dataset using the `is.na()` and `complete.cases()` functions.
+
+ii. Practice removing missing data using the `na.omit()` function.
+
+iii. How can you handle missing values when calculating summary statistics like mean or median?
+
+iv. If you take the mean of a vector with `NA` values, what will the result be?
+
+v.  How are missing values represented in R?
+
+vi. What is `NA` in R? How is it different from `NULL`?
+
+vii. What are some common reasons you may get `NA` values in a dataset?
+
+viii. How can you check if a value is `NA` in R?
 
 ## Summary
 
