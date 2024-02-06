@@ -5,22 +5,22 @@
 The overall goal of this book was to introduce non-programmers or those with very little programming experience to R and RStudio and their use in basic statistical programming. It is hoped that the learners gained new skills and discovered how this software could be used to simplify everyday tasks in their workplaces. The learner should now be able to understand all the topics listed below based on the previously described learning objectives.
 
 | Chapter | Title                                                 | Date Completed |
-|:------------------|:----------------------------------|:------------------|
-|         | Introduction                                          |                     |
-| 1       | Overview of R and RStudio                             |                     |
-| 2       | Download and Install R and RStudio                    |                     |
-| 3       | Navigating the R and RStudio interfaces               |                     |
-| 4       | Managing your files and data                          |                     |
-| 5       | Importing data and saving analysis outputs            |                     |
-| 6       | Basic arithmetic, arithmetic operators, and variables |                     |
-| 7       | The primary types of operators in R                   |                     |
-| 8       | Data Types                                            |                     |
-| 9       | Vectors                                               |                     |
-| 10      | Data Structures (Part I)                              |                     |
-| 11      | Data Structures (Part II)                             |                     |
-| 12      | Handling missing data                                 |                     |
-|         | Conclusion                                            |                     |
-|         | Appendix                                              |                     |
+|:------------------|:---------------------------------|:------------------|
+|         | Introduction                                          |                |
+| 1       | Overview of R and RStudio                             |                |
+| 2       | Download and Install R and RStudio                    |                |
+| 3       | Navigating the R and RStudio interfaces               |                |
+| 4       | Managing your files and data                          |                |
+| 5       | Importing data and saving analysis outputs            |                |
+| 6       | Basic arithmetic, arithmetic operators, and variables |                |
+| 7       | The primary types of operators in R                   |                |
+| 8       | Data Types                                            |                |
+| 9       | Vectors                                               |                |
+| 10      | Data Structures (Part I)                              |                |
+| 11      | Data Structures (Part II)                             |                |
+| 12      | Handling missing data                                 |                |
+|         | Conclusion                                            |                |
+|         | Appendix                                              |                |
 
 : Syllabus {# tbl-syllabus .striped .hover tbl-colwidths="\[5, 80, 15\]"}
 

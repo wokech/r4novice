@@ -13,7 +13,7 @@ The author of this book is a Certified Carpentries instructor and a trainer with
 At the end of the book, the student should be able to perform the tasks listed in the syllabus below.
 
 | Chapter | Title                                                 | Date Completed |
-|:--------|:------------------------------------------------------|:---------------|
+|:-------------|:-------------------------------------------|:-------------|
 |         | Introduction                                          |                |
 | 1       | Overview of R and RStudio                             |                |
 | 2       | Download and Install R and RStudio                    |                |
