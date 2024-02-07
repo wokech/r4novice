@@ -77,33 +77,41 @@
 \makeatletter
 \def\fps@figure{htbp}
 \makeatother
+% definitions for citeproc citations
+\NewDocumentCommand\citeproctext{}{}
+\NewDocumentCommand\citeproc{mm}{%
+  \begingroup\def\citeproctext{#2}\cite{#1}\endgroup}
+\makeatletter
+ % allow citations to break across lines
+ \let\@cite@ofmt\@firstofone
+ % avoid brackets around text for \cite:
+ \def\@biblabel#1{}
+ \def\@cite#1#2{{#1\if@tempswa , #2\fi}}
+\makeatother
 \newlength{\cslhangindent}
 \setlength{\cslhangindent}{1.5em}
 \newlength{\csllabelwidth}
 \setlength{\csllabelwidth}{3em}
-\newlength{\cslentryspacingunit} % times entry-spacing
-\setlength{\cslentryspacingunit}{\parskip}
-\newenvironment{CSLReferences}[2] % #1 hanging-ident, #2 entry spacing
- {% don't indent paragraphs
-  \setlength{\parindent}{0pt}
+\newenvironment{CSLReferences}[2] % #1 hanging-indent, #2 entry-spacing
+ {\begin{list}{}{%
+  \setlength{\itemindent}{0pt}
+  \setlength{\leftmargin}{0pt}
+  \setlength{\parsep}{0pt}
   % turn on hanging indent if param 1 is 1
   \ifodd #1
-  \let\oldpar\par
-  \def\par{\hangindent=\cslhangindent\oldpar}
+   \setlength{\leftmargin}{\cslhangindent}
+   \setlength{\itemindent}{-1\cslhangindent}
   \fi
   % set entry spacing
-  \setlength{\parskip}{#2\cslentryspacingunit}
- }%
- {}
+  \setlength{\itemsep}{#2\baselineskip}}}
+ {\end{list}}
 \usepackage{calc}
-\newcommand{\CSLBlock}[1]{#1\hfill\break}
-\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{#1}}
-\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{#1}\break}
+\newcommand{\CSLBlock}[1]{\hfill\break\parbox[t]{\linewidth}{\strut\ignorespaces#1\strut}}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{\strut#1\strut}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{\strut#1\strut}}
 \newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
 
 \KOMAoption{captions}{tableheading}
-\makeatletter
-\makeatother
 \makeatletter
 \@ifpackageloaded{bookmark}{}{\usepackage{bookmark}}
 \makeatother
@@ -143,23 +151,16 @@
 \newcommand*\listoflistings{\listof{codelisting}{List of Listings}}
 \makeatother
 \makeatletter
+\makeatother
+\makeatletter
 \@ifpackageloaded{caption}{}{\usepackage{caption}}
 \@ifpackageloaded{subcaption}{}{\usepackage{subcaption}}
-\makeatother
-\makeatletter
-\@ifpackageloaded{tcolorbox}{}{\usepackage[skins,breakable]{tcolorbox}}
-\makeatother
-\makeatletter
-\@ifundefined{shadecolor}{\definecolor{shadecolor}{rgb}{.97, .97, .97}}
-\makeatother
-\makeatletter
-\makeatother
-\makeatletter
 \makeatother
 \ifLuaTeX
   \usepackage{selnolig}  % disable illegal ligatures
 \fi
-\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\usepackage{bookmark}
+
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
 \urlstyle{same} % disable monospaced font for URLs
 \hypersetup{
@@ -177,7 +178,6 @@
 
 \begin{document}
 \maketitle
-\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[boxrule=0pt, enhanced, borderline west={3pt}{0pt}{shadecolor}, frame hidden, breakable, sharp corners, interior hidden]}{\end{tcolorbox}}\fi
 
 \renewcommand*\contentsname{Table of contents}
 {
@@ -187,8 +187,7 @@
 }
 \bookmarksetup{startatroot}
 
-\hypertarget{welcome}{%
-\chapter*{Welcome}\label{welcome}}
+\chapter*{Welcome}\label{welcome}
 \addcontentsline{toc}{chapter}{Welcome}
 
 \markboth{Welcome}{Welcome}
@@ -208,14 +207,12 @@ This book was built with \href{https://quarto.org/}{Quarto}.
 
 \bookmarksetup{startatroot}
 
-\hypertarget{introduction}{%
-\chapter*{Introduction}\label{introduction}}
+\chapter*{Introduction}\label{introduction}
 \addcontentsline{toc}{chapter}{Introduction}
 
 \markboth{Introduction}{Introduction}
 
-\hypertarget{why-did-i-write-this-book}{%
-\section*{Why did I write this book?}\label{why-did-i-write-this-book}}
+\section*{Why did I write this book?}\label{why-did-i-write-this-book}
 \addcontentsline{toc}{section}{Why did I write this book?}
 
 \markright{Why did I write this book?}
@@ -232,8 +229,7 @@ this, I begin the book with instructions for downloading software,
 navigating the R and RStudio interfaces, and an overview of the basics
 of R to decrease the cognitive load on novices.
 
-\hypertarget{about-the-author}{%
-\section*{About the author}\label{about-the-author}}
+\section*{About the author}\label{about-the-author}
 \addcontentsline{toc}{section}{About the author}
 
 \markright{About the author}
@@ -246,8 +242,7 @@ author is passionate about using R and RStudio to generate data-driven
 visualizations to allow for a deeper understanding of public policy
 issues.
 
-\hypertarget{syllabus}{%
-\section*{Syllabus}\label{syllabus}}
+\section*{Syllabus}\label{syllabus}
 \addcontentsline{toc}{section}{Syllabus}
 
 \markright{Syllabus}
@@ -255,12 +250,11 @@ issues.
 At the end of the book, the student should be able to perform the tasks
 listed in the syllabus below.
 
-\hypertarget{tbl-syllabus-.striped-.hover-tbl-colwidths5-75-20}{}
 \begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.1944}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.6111}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.1944}}@{}}
-\caption{\label{tbl-syllabus-.striped-.hover-tbl-colwidths5-75-20}Syllabus}\tabularnewline
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.1125}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.6875}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.2000}}@{}}
+\caption{Syllabus}\label{tbl-syllabus-.striped-.hover-tbl-colwidths5-75-20}\tabularnewline
 \toprule\noalign{}
 \begin{minipage}[b]{\linewidth}\raggedright
 Chapter
@@ -300,8 +294,7 @@ Date Completed
 & Appendix & \\
 \end{longtable}
 
-\hypertarget{sample-chapter-design}{%
-\section*{Sample chapter design}\label{sample-chapter-design}}
+\section*{Sample chapter design}\label{sample-chapter-design}
 \addcontentsline{toc}{section}{Sample chapter design}
 
 \markright{Sample chapter design}
@@ -322,8 +315,7 @@ Each lesson will follow a pre-described format
   Lesson summary
 \end{enumerate}
 
-\hypertarget{feedback}{%
-\section*{Feedback}\label{feedback}}
+\section*{Feedback}\label{feedback}
 \addcontentsline{toc}{section}{Feedback}
 
 \markright{Feedback}
@@ -338,8 +330,7 @@ Feedback can be provided using the following channels:
   Github pull request:
 \end{enumerate}
 
-\hypertarget{summary}{%
-\section*{Summary}\label{summary}}
+\section*{Summary}\label{summary}
 \addcontentsline{toc}{section}{Summary}
 
 \markright{Summary}
@@ -352,11 +343,9 @@ overview of the R and RStudio ecosystem.
 
 \bookmarksetup{startatroot}
 
-\hypertarget{sec-overview}{%
-\chapter{Overview of R and RStudio}\label{sec-overview}}
+\chapter{Overview of R and RStudio}\label{sec-overview}
 
-\hypertarget{questions}{%
-\section{Questions}\label{questions}}
+\section{Questions}\label{questions}
 
 \begin{itemize}
 \item
@@ -371,8 +360,7 @@ overview of the R and RStudio ecosystem.
   science tasks?
 \end{itemize}
 
-\hypertarget{learning-objectives}{%
-\section{Learning Objectives}\label{learning-objectives}}
+\section{Learning Objectives}\label{learning-objectives}
 
 \begin{itemize}
 \item
@@ -383,11 +371,9 @@ overview of the R and RStudio ecosystem.
   Explore the various applications of R across different industries.
 \end{itemize}
 
-\hypertarget{lesson-content}{%
-\section{Lesson Content}\label{lesson-content}}
+\section{Lesson Content}\label{lesson-content}
 
-\hypertarget{why-learn-r-and-rstudio}{%
-\subsection{Why learn R and RStudio?}\label{why-learn-r-and-rstudio}}
+\subsection{Why learn R and RStudio?}\label{why-learn-r-and-rstudio}
 
 Both R and Studio are free, open-source software tools that are widely
 used for statistical analysis and data visualization. R is a programming
@@ -422,8 +408,7 @@ write scripts, and generate visualizations and reports. The company
 RStudio (now Posit since 2022) was founded in 2009 with the main goal of
 ``creating high quality open-source software for data scientists.''
 
-\hypertarget{uses-of-r-and-rstudio}{%
-\subsection{Uses of R and RStudio}\label{uses-of-r-and-rstudio}}
+\subsection{Uses of R and RStudio}\label{uses-of-r-and-rstudio}
 
 \begin{enumerate}
 \def\labelenumi{\roman{enumi}.}
@@ -446,9 +431,8 @@ RStudio (now Posit since 2022) was founded in 2009 with the main goal of
   software in development to aid in computational analysis.
 \end{enumerate}
 
-\hypertarget{primary-advantages-of-r-and-rstudio}{%
 \subsection{Primary advantages of R and
-RStudio}\label{primary-advantages-of-r-and-rstudio}}
+RStudio}\label{primary-advantages-of-r-and-rstudio}
 
 \begin{enumerate}
 \def\labelenumi{\roman{enumi}.}
@@ -477,9 +461,8 @@ RStudio}\label{primary-advantages-of-r-and-rstudio}}
   used on Linux, Windows, and Mac operating systems.
 \end{enumerate}
 
-\hypertarget{applications-of-r-in-different-industries}{%
 \subsection{Applications of R in different
-industries}\label{applications-of-r-in-different-industries}}
+industries}\label{applications-of-r-in-different-industries}
 
 \begin{enumerate}
 \def\labelenumi{\roman{enumi}.}
@@ -505,8 +488,7 @@ industries}\label{applications-of-r-in-different-industries}}
   ecological modelling.
 \end{enumerate}
 
-\hypertarget{exercises}{%
-\section{Exercises}\label{exercises}}
+\section{Exercises}\label{exercises}
 
 As you embark on your R/RStudio learning journey, I have listed (below)
 a few questions for you to think about before we get started with the
@@ -536,8 +518,7 @@ lessons.
   that interests you and read about its capabilities.
 \end{enumerate}
 
-\hypertarget{summary-1}{%
-\section{Summary}\label{summary-1}}
+\section{Summary}\label{summary-1}
 
 Overall, I hope you enjoyed learning about the history of R and RStudio,
 and have seen the advantages of using these software tools.
@@ -547,12 +528,9 @@ install both R and RStudio on your local computer.
 
 \bookmarksetup{startatroot}
 
-\hypertarget{sec-download-install}{%
-\chapter{Download and Install R and
-RStudio}\label{sec-download-install}}
+\chapter{Download and Install R and RStudio}\label{sec-download-install}
 
-\hypertarget{questions-1}{%
-\section{Questions}\label{questions-1}}
+\section{Questions}\label{questions-1}
 
 \begin{itemize}
 \item
@@ -565,8 +543,7 @@ RStudio}\label{sec-download-install}}
   What steps are involved in installing RStudio?
 \end{itemize}
 
-\hypertarget{learning-objectives-1}{%
-\section{Learning Objectives}\label{learning-objectives-1}}
+\section{Learning Objectives}\label{learning-objectives-1}
 
 \begin{itemize}
 \item
@@ -580,13 +557,11 @@ RStudio}\label{sec-download-install}}
   Learn how to use alternative code editors.
 \end{itemize}
 
-\hypertarget{lesson-content-1}{%
-\section{Lesson Content}\label{lesson-content-1}}
+\section{Lesson Content}\label{lesson-content-1}
 
 \emph{In progress}
 
-\hypertarget{exercises-1}{%
-\section{Exercises}\label{exercises-1}}
+\section{Exercises}\label{exercises-1}
 
 \begin{enumerate}
 \def\labelenumi{\roman{enumi}.}
@@ -614,18 +589,15 @@ RStudio}\label{sec-download-install}}
   your preferences?
 \end{enumerate}
 
-\hypertarget{summary-2}{%
-\section{Summary}\label{summary-2}}
+\section{Summary}\label{summary-2}
 
 \emph{In progress}
 
 \bookmarksetup{startatroot}
 
-\hypertarget{sec-navigating}{%
-\chapter{Navigating the R and RStudio interfaces}\label{sec-navigating}}
+\chapter{Navigating the R and RStudio interfaces}\label{sec-navigating}
 
-\hypertarget{questions-2}{%
-\section{Questions}\label{questions-2}}
+\section{Questions}\label{questions-2}
 
 \begin{itemize}
 \item
@@ -638,8 +610,7 @@ RStudio}\label{sec-download-install}}
   What are the functions of the various RStudio panes?
 \end{itemize}
 
-\hypertarget{learning-objectives-2}{%
-\section{Learning Objectives}\label{learning-objectives-2}}
+\section{Learning Objectives}\label{learning-objectives-2}
 
 \begin{itemize}
 \item
@@ -658,13 +629,11 @@ RStudio}\label{sec-download-install}}
   efficiency.
 \end{itemize}
 
-\hypertarget{lesson-content-2}{%
-\section{Lesson Content}\label{lesson-content-2}}
+\section{Lesson Content}\label{lesson-content-2}
 
 \emph{In progress}
 
-\hypertarget{exercises-2}{%
-\section{Exercises}\label{exercises-2}}
+\section{Exercises}\label{exercises-2}
 
 \begin{enumerate}
 \def\labelenumi{\roman{enumi}.}
@@ -689,18 +658,15 @@ RStudio}\label{sec-download-install}}
   How can you customize the layout of panes in RStudio?
 \end{enumerate}
 
-\hypertarget{summary-3}{%
-\section{Summary}\label{summary-3}}
+\section{Summary}\label{summary-3}
 
 \emph{In progress}
 
 \bookmarksetup{startatroot}
 
-\hypertarget{sec-managing}{%
-\chapter{Managing your files and data}\label{sec-managing}}
+\chapter{Managing your files and data}\label{sec-managing}
 
-\hypertarget{questions-3}{%
-\section{Questions}\label{questions-3}}
+\section{Questions}\label{questions-3}
 
 \begin{itemize}
 \item
@@ -718,8 +684,7 @@ RStudio}\label{sec-download-install}}
   management?
 \end{itemize}
 
-\hypertarget{learning-objectives-3}{%
-\section{Learning Objectives}\label{learning-objectives-3}}
+\section{Learning Objectives}\label{learning-objectives-3}
 
 \begin{itemize}
 \item
@@ -736,13 +701,11 @@ RStudio}\label{sec-download-install}}
   files effectively.
 \end{itemize}
 
-\hypertarget{lesson-content-3}{%
-\section{Lesson Content}\label{lesson-content-3}}
+\section{Lesson Content}\label{lesson-content-3}
 
 \emph{In progress}
 
-\hypertarget{exercises-3}{%
-\section{Exercises}\label{exercises-3}}
+\section{Exercises}\label{exercises-3}
 
 \begin{enumerate}
 \def\labelenumi{\roman{enumi}.}
@@ -768,19 +731,16 @@ RStudio}\label{sec-download-install}}
   rm(list=ls()) to remove unwanted objects.
 \end{enumerate}
 
-\hypertarget{summary-4}{%
-\section{Summary}\label{summary-4}}
+\section{Summary}\label{summary-4}
 
 \emph{In progress}
 
 \bookmarksetup{startatroot}
 
-\hypertarget{sec-import-save}{%
 \chapter{Importing data and saving analysis
-outputs}\label{sec-import-save}}
+outputs}\label{sec-import-save}
 
-\hypertarget{questions-4}{%
-\section{Questions}\label{questions-4}}
+\section{Questions}\label{questions-4}
 
 \begin{itemize}
 \item
@@ -799,8 +759,7 @@ outputs}\label{sec-import-save}}
   How can I create new data objects or modify existing ones within R?
 \end{itemize}
 
-\hypertarget{learning-objectives-4}{%
-\section{Learning Objectives}\label{learning-objectives-4}}
+\section{Learning Objectives}\label{learning-objectives-4}
 
 \begin{itemize}
 \item
@@ -818,13 +777,11 @@ outputs}\label{sec-import-save}}
   like CSV, Excel, and text files.
 \end{itemize}
 
-\hypertarget{lesson-content-4}{%
-\section{Lesson Content}\label{lesson-content-4}}
+\section{Lesson Content}\label{lesson-content-4}
 
 \emph{In progress}
 
-\hypertarget{exercises-4}{%
-\section{Exercises}\label{exercises-4}}
+\section{Exercises}\label{exercises-4}
 
 \begin{enumerate}
 \def\labelenumi{\roman{enumi}.}
@@ -850,19 +807,16 @@ outputs}\label{sec-import-save}}
   data to it in R?
 \end{enumerate}
 
-\hypertarget{summary-5}{%
-\section{Summary}\label{summary-5}}
+\section{Summary}\label{summary-5}
 
 \emph{In progress}
 
 \bookmarksetup{startatroot}
 
-\hypertarget{sec-arithmetic-variables}{%
 \chapter{Basic arithmetic, arithmetic operators, and
-variables}\label{sec-arithmetic-variables}}
+variables}\label{sec-arithmetic-variables}
 
-\hypertarget{questions-5}{%
-\section{Questions}\label{questions-5}}
+\section{Questions}\label{questions-5}
 
 \begin{itemize}
 \item
@@ -876,8 +830,7 @@ variables}\label{sec-arithmetic-variables}}
   variables?
 \end{itemize}
 
-\hypertarget{learning-objectives-5}{%
-\section{Learning Objectives}\label{learning-objectives-5}}
+\section{Learning Objectives}\label{learning-objectives-5}
 
 \begin{itemize}
 \item
@@ -897,13 +850,11 @@ variables}\label{sec-arithmetic-variables}}
   character) and choose appropriate ones.
 \end{itemize}
 
-\hypertarget{lesson-content-5}{%
-\section{Lesson Content}\label{lesson-content-5}}
+\section{Lesson Content}\label{lesson-content-5}
 
 \emph{In progress}
 
-\hypertarget{exercises-5}{%
-\section{Exercises}\label{exercises-5}}
+\section{Exercises}\label{exercises-5}
 
 \begin{enumerate}
 \def\labelenumi{\roman{enumi}.}
@@ -932,18 +883,15 @@ variables}\label{sec-arithmetic-variables}}
   What is the difference between \textless- and = for assignment in R?
 \end{enumerate}
 
-\hypertarget{summary-6}{%
-\section{Summary}\label{summary-6}}
+\section{Summary}\label{summary-6}
 
 \emph{In progress}
 
 \bookmarksetup{startatroot}
 
-\hypertarget{sec-operators}{%
-\chapter{The primary types of operators in R}\label{sec-operators}}
+\chapter{The primary types of operators in R}\label{sec-operators}
 
-\hypertarget{questions-6}{%
-\section{Questions}\label{questions-6}}
+\section{Questions}\label{questions-6}
 
 \begin{itemize}
 \item
@@ -956,8 +904,7 @@ variables}\label{sec-arithmetic-variables}}
   When should I use assignment operators versus comparison operators?
 \end{itemize}
 
-\hypertarget{learning-objectives-6}{%
-\section{Learning Objectives}\label{learning-objectives-6}}
+\section{Learning Objectives}\label{learning-objectives-6}
 
 \begin{itemize}
 \item
@@ -975,13 +922,11 @@ variables}\label{sec-arithmetic-variables}}
   the flow of your R code.
 \end{itemize}
 
-\hypertarget{lesson-content-6}{%
-\section{Lesson Content}\label{lesson-content-6}}
+\section{Lesson Content}\label{lesson-content-6}
 
 \emph{In progress}
 
-\hypertarget{exercises-6}{%
-\section{Exercises}\label{exercises-6}}
+\section{Exercises}\label{exercises-6}
 
 \begin{itemize}
 \item
@@ -1004,18 +949,15 @@ variables}\label{sec-arithmetic-variables}}
   When would you use the sequence operator (:) in R? Give an example.
 \end{itemize}
 
-\hypertarget{summary-7}{%
-\section{Summary}\label{summary-7}}
+\section{Summary}\label{summary-7}
 
 \emph{In progress}
 
 \bookmarksetup{startatroot}
 
-\hypertarget{sec-data-types}{%
-\chapter{Data Types}\label{sec-data-types}}
+\chapter{Data Types}\label{sec-data-types}
 
-\hypertarget{questions-7}{%
-\section{Questions}\label{questions-7}}
+\section{Questions}\label{questions-7}
 
 \begin{itemize}
 \item
@@ -1033,8 +975,7 @@ variables}\label{sec-arithmetic-variables}}
   How do data types impact my analysis and coding in R?
 \end{itemize}
 
-\hypertarget{learning-objectives-7}{%
-\section{Learning Objectives}\label{learning-objectives-7}}
+\section{Learning Objectives}\label{learning-objectives-7}
 
 \begin{itemize}
 \item
@@ -1047,13 +988,11 @@ variables}\label{sec-arithmetic-variables}}
   Convert between data types using the as.* functions.
 \end{itemize}
 
-\hypertarget{lesson-content-7}{%
-\section{Lesson Content}\label{lesson-content-7}}
+\section{Lesson Content}\label{lesson-content-7}
 
 \emph{In progress}
 
-\hypertarget{exercises-7}{%
-\section{Exercises}\label{exercises-7}}
+\section{Exercises}\label{exercises-7}
 
 \begin{itemize}
 \item
@@ -1075,18 +1014,15 @@ variables}\label{sec-arithmetic-variables}}
   attributes are commonly used?
 \end{itemize}
 
-\hypertarget{summary-8}{%
-\section{Summary}\label{summary-8}}
+\section{Summary}\label{summary-8}
 
 \emph{In progress}
 
 \bookmarksetup{startatroot}
 
-\hypertarget{sec-vectors}{%
-\chapter{Vectors}\label{sec-vectors}}
+\chapter{Vectors}\label{sec-vectors}
 
-\hypertarget{questions-8}{%
-\section{Questions}\label{questions-8}}
+\section{Questions}\label{questions-8}
 
 \begin{itemize}
 \item
@@ -1105,8 +1041,7 @@ variables}\label{sec-arithmetic-variables}}
   What are some common functions for working with vectors?
 \end{itemize}
 
-\hypertarget{learning-objectives-8}{%
-\section{Learning Objectives}\label{learning-objectives-8}}
+\section{Learning Objectives}\label{learning-objectives-8}
 
 \begin{itemize}
 \item
@@ -1129,13 +1064,11 @@ variables}\label{sec-arithmetic-variables}}
   analysis efficiency.
 \end{itemize}
 
-\hypertarget{lesson-content-8}{%
-\section{Lesson Content}\label{lesson-content-8}}
+\section{Lesson Content}\label{lesson-content-8}
 
 \emph{In progress}
 
-\hypertarget{exercises-8}{%
-\section{Exercises}\label{exercises-8}}
+\section{Exercises}\label{exercises-8}
 
 \begin{enumerate}
 \def\labelenumi{\roman{enumi}.}
@@ -1181,18 +1114,15 @@ variables}\label{sec-arithmetic-variables}}
   using vector lengths in your R code.
 \end{enumerate}
 
-\hypertarget{summary-9}{%
-\section{Summary}\label{summary-9}}
+\section{Summary}\label{summary-9}
 
 \emph{In progress}
 
 \bookmarksetup{startatroot}
 
-\hypertarget{sec-data-structure-1}{%
-\chapter{Data Structures (Part I)}\label{sec-data-structure-1}}
+\chapter{Data Structures (Part I)}\label{sec-data-structure-1}
 
-\hypertarget{questions-9}{%
-\section{Questions}\label{questions-9}}
+\section{Questions}\label{questions-9}
 
 \begin{itemize}
 \item
@@ -1206,8 +1136,7 @@ variables}\label{sec-arithmetic-variables}}
   storage and functionality?
 \end{itemize}
 
-\hypertarget{learning-objectives-9}{%
-\section{Learning Objectives}\label{learning-objectives-9}}
+\section{Learning Objectives}\label{learning-objectives-9}
 
 \begin{itemize}
 \item
@@ -1228,13 +1157,11 @@ variables}\label{sec-arithmetic-variables}}
   efficient analysis.
 \end{itemize}
 
-\hypertarget{lesson-content-9}{%
-\section{Lesson Content}\label{lesson-content-9}}
+\section{Lesson Content}\label{lesson-content-9}
 
 \emph{In progress}
 
-\hypertarget{exercises-9}{%
-\section{Exercises}\label{exercises-9}}
+\section{Exercises}\label{exercises-9}
 
 \begin{enumerate}
 \def\labelenumi{\roman{enumi}.}
@@ -1264,18 +1191,15 @@ variables}\label{sec-arithmetic-variables}}
   How do you add a new column to an existing data frame?
 \end{enumerate}
 
-\hypertarget{summary-10}{%
-\section{Summary}\label{summary-10}}
+\section{Summary}\label{summary-10}
 
 \emph{In progress}
 
 \bookmarksetup{startatroot}
 
-\hypertarget{sec-data-structure-2}{%
-\chapter{Data Structures (Part II)}\label{sec-data-structure-2}}
+\chapter{Data Structures (Part II)}\label{sec-data-structure-2}
 
-\hypertarget{questions-10}{%
-\section{Questions}\label{questions-10}}
+\section{Questions}\label{questions-10}
 
 \begin{itemize}
 \item
@@ -1289,8 +1213,7 @@ variables}\label{sec-arithmetic-variables}}
   storage and functionality?
 \end{itemize}
 
-\hypertarget{learning-objectives-10}{%
-\section{Learning Objectives}\label{learning-objectives-10}}
+\section{Learning Objectives}\label{learning-objectives-10}
 
 \begin{itemize}
 \item
@@ -1311,13 +1234,11 @@ variables}\label{sec-arithmetic-variables}}
   efficient analysis.
 \end{itemize}
 
-\hypertarget{lesson-content-10}{%
-\section{Lesson Content}\label{lesson-content-10}}
+\section{Lesson Content}\label{lesson-content-10}
 
 \emph{In progress}
 
-\hypertarget{exercises-10}{%
-\section{Exercises}\label{exercises-10}}
+\section{Exercises}\label{exercises-10}
 
 \begin{itemize}
 \item
@@ -1342,15 +1263,13 @@ variables}\label{sec-arithmetic-variables}}
   Provide an example of creating a three-dimensional array.
 \end{itemize}
 
-\hypertarget{summary-11}{%
-\section{Summary}\label{summary-11}}
+\section{Summary}\label{summary-11}
 
 \emph{In progress}
 
 \bookmarksetup{startatroot}
 
-\hypertarget{questions-11}{%
-\chapter{Questions}\label{questions-11}}
+\chapter{Questions}\label{questions-11}
 
 \# Handling missing data \{\#sec-missing\}
 
@@ -1369,8 +1288,7 @@ variables}\label{sec-arithmetic-variables}}
   When should I choose deletion, imputation, or alternative approaches?
 \end{itemize}
 
-\hypertarget{learning-objectives-11}{%
-\section{Learning Objectives}\label{learning-objectives-11}}
+\section{Learning Objectives}\label{learning-objectives-11}
 
 \begin{itemize}
 \item
@@ -1388,13 +1306,11 @@ variables}\label{sec-arithmetic-variables}}
   values.
 \end{itemize}
 
-\hypertarget{lesson-content-11}{%
-\section{Lesson Content}\label{lesson-content-11}}
+\section{Lesson Content}\label{lesson-content-11}
 
 \emph{In progress}
 
-\hypertarget{exercises-11}{%
-\section{Exercises}\label{exercises-11}}
+\section{Exercises}\label{exercises-11}
 
 \begin{enumerate}
 \def\labelenumi{\roman{enumi}.}
@@ -1420,15 +1336,13 @@ variables}\label{sec-arithmetic-variables}}
   How can you check if a value is \texttt{NA} in R?
 \end{enumerate}
 
-\hypertarget{summary-12}{%
-\section{Summary}\label{summary-12}}
+\section{Summary}\label{summary-12}
 
 \emph{In progress}
 
 \bookmarksetup{startatroot}
 
-\hypertarget{conclusion}{%
-\chapter*{Conclusion}\label{conclusion}}
+\chapter*{Conclusion}\label{conclusion}
 \addcontentsline{toc}{chapter}{Conclusion}
 
 \markboth{Conclusion}{Conclusion}
@@ -1445,12 +1359,11 @@ everyday tasks in their workplaces. The learner should now be able to
 understand all the topics listed below based on the previously described
 learning objectives.
 
-\hypertarget{tbl-syllabus-.striped-.hover-tbl-colwidths5-80-15}{}
 \begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.2639}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.4722}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.2639}}@{}}
-\caption{\label{tbl-syllabus-.striped-.hover-tbl-colwidths5-80-15}Syllabus}\tabularnewline
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.1125}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.6875}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.2000}}@{}}
+\caption{Syllabus}\label{tbl-syllabus-.striped-.hover-tbl-colwidths5-80-15}\tabularnewline
 \toprule\noalign{}
 \begin{minipage}[b]{\linewidth}\raggedright
 Chapter
@@ -1520,8 +1433,7 @@ for more books in the future which will cover:
 
 \bookmarksetup{startatroot}
 
-\hypertarget{appendix}{%
-\chapter*{Appendix}\label{appendix}}
+\chapter*{Appendix}\label{appendix}
 \addcontentsline{toc}{chapter}{Appendix}
 
 \markboth{Appendix}{Appendix}
@@ -1530,9 +1442,8 @@ To further your R learning journey, I would recommend a review of the
 following freely available resources. This list will constantly be
 updated as new material becomes available.
 
-\hypertarget{online-repositories-with-rrstudio-related-links}{%
 \section*{1. Online repositories with R/RStudio-related
-links}\label{online-repositories-with-rrstudio-related-links}}
+links}\label{online-repositories-with-rrstudio-related-links}
 \addcontentsline{toc}{section}{1. Online repositories with
 R/RStudio-related links}
 
@@ -1564,8 +1475,7 @@ R/RStudio-related links}
   Public Library}
 \end{itemize}
 
-\hypertarget{r-communities}{%
-\section*{2. R Communities}\label{r-communities}}
+\section*{2. R Communities}\label{r-communities}
 \addcontentsline{toc}{section}{2. R Communities}
 
 \markright{2. R Communities}
@@ -1601,8 +1511,7 @@ R/RStudio-related links}
   \textbf{Reddit -- r/rstats and r/RStudio}
 \end{itemize}
 
-\hypertarget{conferences-and-meetups}{%
-\section*{3. Conferences and Meetups}\label{conferences-and-meetups}}
+\section*{3. Conferences and Meetups}\label{conferences-and-meetups}
 \addcontentsline{toc}{section}{3. Conferences and Meetups}
 
 \markright{3. Conferences and Meetups}
@@ -1620,8 +1529,7 @@ R/RStudio-related links}
   \href{https://www.meetup.com/pro/r-user-groups/}{R User Group Meetups}
 \end{itemize}
 
-\hypertarget{cheatsheets}{%
-\section*{4. Cheatsheets}\label{cheatsheets}}
+\section*{4. Cheatsheets}\label{cheatsheets}
 \addcontentsline{toc}{section}{4. Cheatsheets}
 
 \markright{4. Cheatsheets}
@@ -1639,8 +1547,7 @@ R/RStudio-related links}
   Sheets}
 \end{itemize}
 
-\hypertarget{tutorials}{%
-\section*{5. Tutorials}\label{tutorials}}
+\section*{5. Tutorials}\label{tutorials}
 \addcontentsline{toc}{section}{5. Tutorials}
 
 \markright{5. Tutorials}
@@ -1666,8 +1573,7 @@ R/RStudio-related links}
   Sets}
 \end{itemize}
 
-\hypertarget{newsletters-and-blogs}{%
-\section*{6. Newsletters and Blogs}\label{newsletters-and-blogs}}
+\section*{6. Newsletters and Blogs}\label{newsletters-and-blogs}
 \addcontentsline{toc}{section}{6. Newsletters and Blogs}
 
 \markright{6. Newsletters and Blogs}
@@ -1683,8 +1589,7 @@ R/RStudio-related links}
   Blog}
 \end{itemize}
 
-\hypertarget{data-visualization}{%
-\section*{7. Data Visualization}\label{data-visualization}}
+\section*{7. Data Visualization}\label{data-visualization}
 \addcontentsline{toc}{section}{7. Data Visualization}
 
 \markright{7. Data Visualization}
@@ -1715,8 +1620,7 @@ R/RStudio-related links}
   with R}
 \end{itemize}
 
-\hypertarget{data-science}{%
-\section*{8. Data Science}\label{data-science}}
+\section*{8. Data Science}\label{data-science}
 \addcontentsline{toc}{section}{8. Data Science}
 
 \markright{8. Data Science}
@@ -1754,8 +1658,7 @@ R/RStudio-related links}
   \href{http://dataliteracy.rbind.io/}{Data Literacy}
 \end{itemize}
 
-\hypertarget{statistics}{%
-\section*{9. Statistics}\label{statistics}}
+\section*{9. Statistics}\label{statistics}
 \addcontentsline{toc}{section}{9. Statistics}
 
 \markright{9. Statistics}
@@ -1804,8 +1707,7 @@ R/RStudio-related links}
   Computing}
 \end{itemize}
 
-\hypertarget{datasets}{%
-\section*{10. Datasets}\label{datasets}}
+\section*{10. Datasets}\label{datasets}
 \addcontentsline{toc}{section}{10. Datasets}
 
 \markright{10. Datasets}
@@ -1855,8 +1757,7 @@ R/RStudio-related links}
   \href{https://data.worldbank.org/}{World Bank Open Data}
 \end{itemize}
 
-\hypertarget{tidyverse}{%
-\section*{11. Tidyverse}\label{tidyverse}}
+\section*{11. Tidyverse}\label{tidyverse}
 \addcontentsline{toc}{section}{11. Tidyverse}
 
 \markright{11. Tidyverse}
@@ -1894,9 +1795,8 @@ R/RStudio-related links}
   into the tidyverse (part 2)}
 \end{itemize}
 
-\hypertarget{programming-functions-loops-and-control-statements}{%
 \section*{12. Programming: Functions, Loops, and Control
-Statements}\label{programming-functions-loops-and-control-statements}}
+Statements}\label{programming-functions-loops-and-control-statements}
 \addcontentsline{toc}{section}{12. Programming: Functions, Loops, and
 Control Statements}
 
@@ -1935,9 +1835,8 @@ Control Statements}
   the Power of Functional Programming in R (Part 2)}
 \end{itemize}
 
-\hypertarget{machine-learning-and-artificial-intelligence}{%
 \section*{13. Machine Learning and Artificial
-Intelligence}\label{machine-learning-and-artificial-intelligence}}
+Intelligence}\label{machine-learning-and-artificial-intelligence}
 \addcontentsline{toc}{section}{13. Machine Learning and Artificial
 Intelligence}
 
@@ -1979,8 +1878,7 @@ Intelligence}
   \href{https://tidypredict.tidymodels.org/}{tidypredict}
 \end{itemize}
 
-\hypertarget{publishing}{%
-\section*{14. Publishing}\label{publishing}}
+\section*{14. Publishing}\label{publishing}
 \addcontentsline{toc}{section}{14. Publishing}
 
 \markright{14. Publishing}
@@ -1995,8 +1893,7 @@ Intelligence}
   \href{https://github.com/mcanouil/awesome-quarto}{Awesome Quarto}
 \end{itemize}
 
-\hypertarget{r-shiny}{%
-\section*{15. R Shiny}\label{r-shiny}}
+\section*{15. R Shiny}\label{r-shiny}
 \addcontentsline{toc}{section}{15. R Shiny}
 
 \markright{15. R Shiny}
@@ -2037,14 +1934,13 @@ Intelligence}
 
 \bookmarksetup{startatroot}
 
-\hypertarget{references}{%
-\chapter*{References}\label{references}}
+\chapter*{References}\label{references}
 \addcontentsline{toc}{chapter}{References}
 
 \markboth{References}{References}
 
-\hypertarget{refs}{}
-\begin{CSLReferences}{0}{0}
+\phantomsection\label{refs}
+\begin{CSLReferences}{0}{1}
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \tightlist
