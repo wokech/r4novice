@@ -4,9 +4,129 @@
     "href": "index.html",
     "title": "R for Novice Programmers (1e)",
     "section": "",
-    "text": "Welcome\nThis is the website for “R for Novice Programmers.” The goal of this book is to introduce non-programmers or those with very little programming experience to the benefits of the R and RStudio software. The main prerequisites for learners are basic knowledge of computer applications and experience working with files and folders. This book will primarily focus on the basic R concepts that are hardly emphasized, but that may prove difficult for learners new to programming.\nThe online version of this book is free to use and is licensed under the … .\nThis book was built with Quarto.",
+    "text": "Welcome\nThis is the website for the book “R for Novice Programmers” written by William Okech. The goal of this book is to introduce non-programmers or those with very little programming experience to the benefits of the R and RStudio software. The main prerequisites for learners are basic knowledge of computer applications and experience working with files and folders. This book will primarily focus on the basic R concepts that are hardly emphasized, but that may prove difficult for learners new to programming.\nThe online version of this book is free to use and is licensed under the … .\nThis book was built with Quarto.",
     "crumbs": [
       "Welcome"
+    ]
+  },
+  {
+    "objectID": "data_struct_1.html",
+    "href": "data_struct_1.html",
+    "title": "10  Data Structures (Part I)",
+    "section": "",
+    "text": "10.1 Questions",
+    "crumbs": [
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Data Structures (Part I)</span>"
+    ]
+  },
+  {
+    "objectID": "data_struct_1.html#questions",
+    "href": "data_struct_1.html#questions",
+    "title": "10  Data Structures (Part I)",
+    "section": "",
+    "text": "List the data structures that can be used in R?\nHow do we define the various data structures?\nWhat operations can be performed on the different data structures?\nHow do these data structures differ from one another in terms of storage and functionality?",
+    "crumbs": [
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Data Structures (Part I)</span>"
+    ]
+  },
+  {
+    "objectID": "data_struct_1.html#learning-objectives",
+    "href": "data_struct_1.html#learning-objectives",
+    "title": "10  Data Structures (Part I)",
+    "section": "10.2 Learning Objectives",
+    "text": "10.2 Learning Objectives\n\nLearn about data structures in R, specifically vectors, lists, and dataframes.\nDefine and manipulate vectors, lists, and dataframes.\nPerform common operations on each data structure.\nIdentify and differentiate between the diverse data structures offered by R.\nChoose the appropriate data structure based on the type and organization of your data.\nUnderstand the strengths and limitations of each structure for efficient analysis.",
+    "crumbs": [
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Data Structures (Part I)</span>"
+    ]
+  },
+  {
+    "objectID": "data_struct_1.html#lesson-content",
+    "href": "data_struct_1.html#lesson-content",
+    "title": "10  Data Structures (Part I)",
+    "section": "10.3 Lesson Content",
+    "text": "10.3 Lesson Content\nIn progress",
+    "crumbs": [
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Data Structures (Part I)</span>"
+    ]
+  },
+  {
+    "objectID": "data_struct_1.html#exercises",
+    "href": "data_struct_1.html#exercises",
+    "title": "10  Data Structures (Part I)",
+    "section": "10.4 Exercises",
+    "text": "10.4 Exercises\n\nExplain the characteristics and use cases of lists in R.\nCreate a list containing a numeric vector, character vector, and logical vector.\nHow can you add elements to a list in R?\nExplain what a data frame is and why it is widely used in R.\nWrite code to create a data frame with columns for “Name,” “Age,” and “Gender” for three individuals.\nHow can you combine two data frames horizontally in R?\nDiscuss various methods for subsetting elements in data structures.\nHow do you check the structure of a data frame? What function is used?\nHow do you access a specific column of a data frame?\nWhat are rownames and colnames in a data frame? How are they useful?\nHow do you add a new column to an existing data frame?",
+    "crumbs": [
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Data Structures (Part I)</span>"
+    ]
+  },
+  {
+    "objectID": "data_struct_1.html#summary",
+    "href": "data_struct_1.html#summary",
+    "title": "10  Data Structures (Part I)",
+    "section": "10.5 Summary",
+    "text": "10.5 Summary\nIn progress",
+    "crumbs": [
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Data Structures (Part I)</span>"
+    ]
+  },
+  {
+    "objectID": "missing.html",
+    "href": "missing.html",
+    "title": "12  Handling missing data",
+    "section": "",
+    "text": "12.1 Questions",
+    "crumbs": [
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Handling missing data</span>"
+    ]
+  },
+  {
+    "objectID": "missing.html#questions",
+    "href": "missing.html#questions",
+    "title": "12  Handling missing data",
+    "section": "",
+    "text": "What is missing data?\nWhy is missing data a common challenge in data analysis?\nHow can we identify and handle missing data effectively in R?\nWhat are the consequences of ignoring or mishandling missing data?\nWhat are the best practices for imputing missing values?\nWhen should I choose deletion, imputation, or alternative approaches?",
+    "crumbs": [
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Handling missing data</span>"
+    ]
+  },
+  {
+    "objectID": "missing.html#learning-objectives",
+    "href": "missing.html#learning-objectives",
+    "title": "12  Handling missing data",
+    "section": "12.2 Learning Objectives",
+    "text": "12.2 Learning Objectives\n\nDefine the main types of missing data.\nIdentify missing data in R and assess its impact on analyses.\nWork with datasets that contain missing data.\nUnderstand the importance of addressing missing data in data analysis.\nApply best practices for handling missing data in your R projects.\nApply functions like is.na() and complete.cases() to identify NA values.",
+    "crumbs": [
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Handling missing data</span>"
+    ]
+  },
+  {
+    "objectID": "missing.html#lesson-content",
+    "href": "missing.html#lesson-content",
+    "title": "12  Handling missing data",
+    "section": "12.3 Lesson Content",
+    "text": "12.3 Lesson Content\nIn progress",
+    "crumbs": [
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Handling missing data</span>"
+    ]
+  },
+  {
+    "objectID": "missing.html#exercises",
+    "href": "missing.html#exercises",
+    "title": "12  Handling missing data",
+    "section": "12.4 Exercises",
+    "text": "12.4 Exercises\n\nIdentify missing values in a dataset using the is.na() and complete.cases() functions.\nPractice removing missing data using the na.omit() function.\nHow can you handle missing values when calculating summary statistics like mean or median?\nIf you take the mean of a vector with NA values, what will the result be?\nHow are missing values represented in R?\nWhat is NA in R? How is it different from NULL?\nWhat are some common reasons you may get NA values in a dataset?\nHow can you check if a value is NA in R?",
+    "crumbs": [
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Handling missing data</span>"
+    ]
+  },
+  {
+    "objectID": "missing.html#summary",
+    "href": "missing.html#summary",
+    "title": "12  Handling missing data",
+    "section": "12.5 Summary",
+    "text": "12.5 Summary\nIn progress",
+    "crumbs": [
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Handling missing data</span>"
     ]
   }
 ]

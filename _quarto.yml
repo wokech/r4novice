@@ -1,6 +1,6 @@
 project:
   type: book
-  output-dir: docsgit
+  output-dir: docs
 
 book:
   title: "R for Novice Programmers (1e)"

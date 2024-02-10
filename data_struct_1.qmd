@@ -2,28 +2,27 @@
 
 ## Questions
 
-- List the data structures that can be used in R?
+-   List the data structures that can be used in R?
 
-- How do we define the various data structures?
+-   How do we define the various data structures?
 
-- What operations can be performed on the different data structures?
+-   What operations can be performed on the different data structures?
 
-- How do these data structures differ from one another in terms of storage and functionality?
+-   How do these data structures differ from one another in terms of storage and functionality?
 
 ## Learning Objectives
 
-- Learn about data structures in R, specifically vectors, lists, and dataframes.
+-   Learn about data structures in R, specifically vectors, lists, and dataframes.
 
-- Define and manipulate vectors, lists, and dataframes.
+-   Define and manipulate vectors, lists, and dataframes.
 
-- Perform common operations on each data structure.
+-   Perform common operations on each data structure.
 
-- Identify and differentiate between the diverse data structures offered by R.
+-   Identify and differentiate between the diverse data structures offered by R.
 
-- Choose the appropriate data structure based on the type and organization of your data.
+-   Choose the appropriate data structure based on the type and organization of your data.
 
-- Understand the strengths and limitations of each structure for efficient analysis.
-
+-   Understand the strengths and limitations of each structure for efficient analysis.
 
 ## Lesson Content
 
@@ -31,7 +30,7 @@
 
 ## Exercises
 
-i. Explain the characteristics and use cases of lists in R.
+i.  Explain the characteristics and use cases of lists in R.
 
 ii. Create a list containing a numeric vector, character vector, and logical vector.
 
@@ -39,7 +38,7 @@ iii. How can you add elements to a list in R?
 
 iv. Explain what a data frame is and why it is widely used in R.
 
-v. Write code to create a data frame with columns for "Name," "Age," and "Gender" for three individuals.
+v.  Write code to create a data frame with columns for "Name," "Age," and "Gender" for three individuals.
 
 vi. How can you combine two data frames horizontally in R?
 
@@ -49,7 +48,7 @@ viii. How do you check the structure of a data frame? What function is used?
 
 ix. How do you access a specific column of a data frame?
 
-x. What are rownames and colnames in a data frame? How are they useful?
+x.  What are rownames and colnames in a data frame? How are they useful?
 
 xi. How do you add a new column to an existing data frame?
 

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>R for Novice Programmers (1e) - 12&nbsp; Questions</title>
+<title>R for Novice Programmers (1e) - 12&nbsp; Handling missing data</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -82,7 +82,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./missing.html"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Questions</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./missing.html"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Handling missing data</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -196,7 +196,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./missing.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Questions</span></span></a>
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Handling missing data</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -227,10 +227,11 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link active" data-scroll-target="#learning-objectives"><span class="header-section-number">12.1</span> Learning Objectives</a></li>
-  <li><a href="#lesson-content" id="toc-lesson-content" class="nav-link" data-scroll-target="#lesson-content"><span class="header-section-number">12.2</span> Lesson Content</a></li>
-  <li><a href="#exercises" id="toc-exercises" class="nav-link" data-scroll-target="#exercises"><span class="header-section-number">12.3</span> Exercises</a></li>
-  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary"><span class="header-section-number">12.4</span> Summary</a></li>
+  <li><a href="#questions" id="toc-questions" class="nav-link active" data-scroll-target="#questions"><span class="header-section-number">12.1</span> Questions</a></li>
+  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link" data-scroll-target="#learning-objectives"><span class="header-section-number">12.2</span> Learning Objectives</a></li>
+  <li><a href="#lesson-content" id="toc-lesson-content" class="nav-link" data-scroll-target="#lesson-content"><span class="header-section-number">12.3</span> Lesson Content</a></li>
+  <li><a href="#exercises" id="toc-exercises" class="nav-link" data-scroll-target="#exercises"><span class="header-section-number">12.4</span> Exercises</a></li>
+  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary"><span class="header-section-number">12.5</span> Summary</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/wokech/r4novice/edit/main/missing.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/wokech/r4novice/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -239,7 +240,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Questions</span></h1>
+<h1 class="title"><span id="sec-missing" class="quarto-section-identifier"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Handling missing data</span></span></h1>
 </div>
 
 
@@ -256,7 +257,8 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p># Handling missing data {#sec-missing}</p>
+<section id="questions" class="level2" data-number="12.1">
+<h2 data-number="12.1" class="anchored" data-anchor-id="questions"><span class="header-section-number">12.1</span> Questions</h2>
 <ul>
 <li><p>What is missing data?</p></li>
 <li><p>Why is missing data a common challenge in data analysis?</p></li>
@@ -265,8 +267,9 @@ ul.task-list li input[type="checkbox"] {
 <li><p>What are the best practices for imputing missing values?</p></li>
 <li><p>When should I choose deletion, imputation, or alternative approaches?</p></li>
 </ul>
-<section id="learning-objectives" class="level2" data-number="12.1">
-<h2 data-number="12.1" class="anchored" data-anchor-id="learning-objectives"><span class="header-section-number">12.1</span> Learning Objectives</h2>
+</section>
+<section id="learning-objectives" class="level2" data-number="12.2">
+<h2 data-number="12.2" class="anchored" data-anchor-id="learning-objectives"><span class="header-section-number">12.2</span> Learning Objectives</h2>
 <ul>
 <li><p>Define the main types of missing data.</p></li>
 <li><p>Identify missing data in R and assess its impact on analyses.</p></li>
@@ -276,12 +279,12 @@ ul.task-list li input[type="checkbox"] {
 <li><p>Apply functions like is.na() and complete.cases() to identify NA values.</p></li>
 </ul>
 </section>
-<section id="lesson-content" class="level2" data-number="12.2">
-<h2 data-number="12.2" class="anchored" data-anchor-id="lesson-content"><span class="header-section-number">12.2</span> Lesson Content</h2>
+<section id="lesson-content" class="level2" data-number="12.3">
+<h2 data-number="12.3" class="anchored" data-anchor-id="lesson-content"><span class="header-section-number">12.3</span> Lesson Content</h2>
 <p><em>In progress</em></p>
 </section>
-<section id="exercises" class="level2" data-number="12.3">
-<h2 data-number="12.3" class="anchored" data-anchor-id="exercises"><span class="header-section-number">12.3</span> Exercises</h2>
+<section id="exercises" class="level2" data-number="12.4">
+<h2 data-number="12.4" class="anchored" data-anchor-id="exercises"><span class="header-section-number">12.4</span> Exercises</h2>
 <ol type="i">
 <li><p>Identify missing values in a dataset using the <code>is.na()</code> and <code>complete.cases()</code> functions.</p></li>
 <li><p>Practice removing missing data using the <code>na.omit()</code> function.</p></li>
@@ -293,8 +296,8 @@ ul.task-list li input[type="checkbox"] {
 <li><p>How can you check if a value is <code>NA</code> in R?</p></li>
 </ol>
 </section>
-<section id="summary" class="level2" data-number="12.4">
-<h2 data-number="12.4" class="anchored" data-anchor-id="summary"><span class="header-section-number">12.4</span> Summary</h2>
+<section id="summary" class="level2" data-number="12.5">
+<h2 data-number="12.5" class="anchored" data-anchor-id="summary"><span class="header-section-number">12.5</span> Summary</h2>
 <p><em>In progress</em></p>
 
 

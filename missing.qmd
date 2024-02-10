@@ -1,4 +1,4 @@
-\# Handling missing data {#sec-missing}
+# Handling missing data {#sec-missing}
 
 ## Questions
 
