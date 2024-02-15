@@ -41,4 +41,4 @@ viii. What is the difference between \<- and = for assignment in R?
 
 ## Summary
 
-*In progress*
+In this chapter, I have demonstrated how to perform basic arithmetic operations and how to use the various arithmetic operators available in R/RStudio. Additionally, the concept of variables and values has been explained, and conventions for appropriately naming variables have been discussed. In the next chapter, we will look at the other types of primary operators in R/RStudio.

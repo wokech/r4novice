@@ -5,7 +5,7 @@
 The overall goal of this book was to introduce non-programmers or those with very little programming experience to R and RStudio and their use in basic statistical programming. It is hoped that the learners gained new skills and discovered how this software could be used to simplify everyday tasks in their workplaces. The learner should now be able to understand all the topics listed below based on the previously described learning objectives.
 
 | Chapter | Title                                                 | Date Completed |
-|:--------|:------------------------------------------------------|:---------------|
+|:-------------|:-------------------------------------------|:-------------|
 |         | Introduction                                          |                |
 | 1       | Overview of R and RStudio                             |                |
 | 2       | Download and Install R and RStudio                    |                |
@@ -24,7 +24,7 @@ The overall goal of this book was to introduce non-programmers or those with ver
 
 : Syllabus {# tbl-syllabus .striped .hover tbl-colwidths="\[5, 80, 15\]"}
 
-Now that the learner has mastered the basics, it is time to transition to specific topics such as data wrangling/manipulation, data visualization, and programming. Therefore, I would encourage the learner to review some of the links I have provided in the Appendix and look out for more books in the future which will cover:
+To maintain mastery of the course material, the learner is encouraged to practice consistently, explore freely available resources, get involved in real-world projects, and work with the large R community. In future sessions, the learner will focus on specific topics such as data wrangling/manipulation, data visualization, and programming. Therefore, I would encourage the learner to review some of the links I have provided in the Appendix and look out for more books in the future which will cover:
 
 i.  Data visualization
 

@@ -36,4 +36,4 @@ vii. Can you customize the appearance or behavior of RStudio according to your p
 
 ## Summary
 
-*In progress*
+In this chapter, we have provided a step-by-step guide for downloading R and RStudio on the learner’s personal computer. Additionally, the learner has been shown how to set up an RStudio Cloud account on the Posit website, which allows for the use of R/RStudio using a web-based browser. Lastly, the learner has been shown how to access R/RStudio using alternative code editors such as Visual Studio Code. Overall, having a functional R and RStudio environment is key to gaining the most out of your learning journey. In the next chapter, we will navigate the R/RStudio interfaces and explain the various panes and menu options.

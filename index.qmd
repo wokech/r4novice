@@ -4,4 +4,6 @@ This is the website for the book “R for Novice Programmers” written by [Will
 
 The online version of this book is free to use and is licensed under the ... .
 
+Cover image was designed using [Canva](https://www.canva.com/)
+
 This book was built with [Quarto](https://quarto.org/).

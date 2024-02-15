@@ -54,4 +54,4 @@ xiii. Explore other vector capabilities like recycling, naming elements, and usi
 
 ## Summary
 
-*In progress*
+Vectors are an essential data structure for data analysis purposes. In this chapter, I have demonstrated the different types of vectors, how to generate vectors, and the various types of vector operations that can be performed. Now that we have a better understanding of vectors, it is time to explore other data structures (that are useful for data analysis) in the subsequent chapters. 

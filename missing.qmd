@@ -52,4 +52,4 @@ viii. How can you check if a value is `NA` in R?
 
 ## Summary
 
-*In progress*
+The learner should now have a firm grasp of what missing data is and why it is a common challenge in data analysis. Additionally, after completing this chapter, the learner should know how to identify and handle missing data with various R functions. This is the final chapter in the book and I hope you have enjoyed your learning journey so far. In the next chapter, I provide a conclusion to the book and some of the next steps you can take to continue on your R learning journey. 

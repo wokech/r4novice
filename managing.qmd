@@ -44,4 +44,4 @@ vii. How can you clear the R workspace? Explore functions like rm() and rm(list=
 
 ## Summary
 
-*In progress*
+Hopefully, this lesson has demonstrated to the learner the importance of good file and data management. We have reviewed the concepts of projects, scripts, and working directories and shown how this can help with file organization, saving/reusing code, and ultimately impact project reproducibility. In the next lesson, we will see how this is important when importing data and saving analysis outputs.

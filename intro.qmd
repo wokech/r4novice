@@ -46,14 +46,16 @@ iv. Practice exercises
 
 v.  Lesson summary
 
+The learners are encouraged to work through each chapter sequentially. For each chapter, the learner should first review the questions to be addressed and learning objectives. Next, the student should read through the lesson content and ensure that the questions and learning objectives sections have been addressed. Finally, the learners should do the practice exercises to reinforce the newly learned concepts and review the lesson summary.
+
 ## Feedback
 
 Feedback can be provided using the following channels:
 
 i.  Email: willyokech\@gmail.com
 
-ii. Github pull request:
+ii. Github pull request: [Link](https://github.com/wokech/r4novice)
 
 ## Summary
 
-Overall, I believe that this book will increase both the knowledge and confidence levels of novice programmers and allow them to perform basic statistical analysis and simplify everyday computational tasks at home or in their workplaces. In the next chapter, we will perform a basic overview of the R and RStudio ecosystem.
+Overall, I believe that this book will increase both the knowledge and confidence levels of novice programmers and allow them to perform basic statistical analysis and simplify everyday computational tasks at home or in their workplaces. In the next chapter, I will provide a basic overview of the R and RStudio ecosystem.

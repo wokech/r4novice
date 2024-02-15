@@ -54,4 +54,4 @@ xi. How do you add a new column to an existing data frame?
 
 ## Summary
 
-*In progress*
+We have now covered half of the key data structures used in R. Knowledge of how to identify and manipulate vectors, lists, and dataframes will help the learner perform numerous computational tasks in R. Next, to complete our review of data structures, we will focus on matrices, arrays, and factors.

@@ -1,8 +1,6 @@
 # References {.unnumbered}
 
 ::: {#refs}
-
-1. Include books and websites.
-2. Explore the use of cross-referencing.
-
+1.  Include books and websites.
+2.  ....
 :::
