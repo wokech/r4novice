@@ -26,7 +26,193 @@
 
 ## Lesson Content
 
-*In progress*
+*In progress (4/3/24)*
+
+### Introduction
+
+Data structures in R are the formats used to organize, process, retrieve, and store data. They help to organize stored data in a way that the data can be used more effectively. Data structures vary according to the number of dimensions and the data types (heterogeneous or homogeneous) contained. 
+
+The primary data structures are:
+- Vectors
+- Lists
+- Data frames
+- Matrices
+- Arrays
+- Factors
+
+In this lesson, we will review the 2nd set of data structures: matrices, arrays, and factors.
+
+### Matrices
+
+A matrix is a rectangular two-dimensional (2D) homogeneous data set containing rows and columns. It contains real numbers that are arranged in a fixed number of rows and columns. Matrices are generally used for various mathematical and statistical applications.
+
+a.	Creation of matrices
+
+Format: matrix(range, nrow = _, ncol = _)
+
+```{r}
+m1 <- matrix(1:9, nrow = 3, ncol = 3) 
+m2 <- matrix(21:29, nrow = 3, ncol = 3) 
+m3 <- matrix(1:12, nrow = 2, ncol = 6)
+m1
+m2
+m3
+```
+
+b.	Obtain the dimensions of the matrices
+# m1
+
+```{r}
+nrow(m1)
+```{r}
+
+```{r}
+ncol(m1)
+```{r}
+
+```{r}
+dim(m1)
+```{r}
+
+# m3
+
+```{r}
+nrow(m3)
+```{r}
+
+```{r}
+ncol(m3)
+```{r}
+
+```{r}
+dim(m3)
+```{r}
+
+c. Arithmetic with matrices
+
+```{r}
+m1+m2
+```{r}
+
+```{r}
+m1-m2
+```{r}
+
+```{r}
+m1*m2
+```{r}
+
+```{r}
+m1/m2
+```{r}
+
+```{r}
+m1 == m2
+```{r}
+
+d. Matrix multiplication
+
+```{r}
+m5 <- matrix(1:10, nrow = 5)
+m6 <- matrix(43:34, nrow = 5)
+m5
+m6
+```{r}
+
+```{r}
+m5*m6
+```{r}
+
+# m5%*%m6 will not work because of the dimensions.
+# the vector m6 needs to be transposed.
+
+# Transpose
+
+```{r}
+m5%*%t(m6)
+```{r}
+
+e. Generate an identity matrix
+
+```{r}
+diag(5)
+```{r}
+
+f. Column and row names
+```{r}
+colnames(m5)
+```{r}
+
+```{r}
+rownames(m6)
+```{r}
+
+colSums() / rowSums()
+
+- When subsetting use “drop=FALSE” to avoid converting single column or single row matrices to vectors
+- Note, when you divide a matrix by a vector, the operation is row-wise.
+
+### Arrays
+
+An array is a multidimensional vector that stores homogeneous data. It can be thought of as a stacked matrix and stores data in more than 2 dimensions (n-dimensional). An array is composed of rows by columns by dimensions. Example: an array with dimensions, dim = c(2,3,3), has 2 rows, 3 columns, and 3 matrices.
+
+b.	Creating arrays
+
+```{r}
+arr_1 <- array(1:12, dim = c(2,3,2))
+```{r}
+
+```{r}
+arr_1
+```{r}
+
+b. Filter array by index
+```{r}
+arr_1[1 ,  , ]
+```{r}
+
+```{r}
+arr_1[1, ,1]
+```{r}
+
+```{r}
+arr_1[, , 1]
+```{r}
+
+### Factors
+
+Factors are used to store integers or strings which are categorical. They categorize data and store the data in different levels. This form of data storage is useful for statistical modelling. Examples include TRUE or FALSE and male or female. Useful for handling qualitative datasets.
+
+```{r}
+vector <- c(“Male”, “Female”)
+```{r}
+
+```{r}
+factor_1 <- factor(vector)
+factor_1
+```{r}
+
+OR
+
+```{r}
+factor_2 <- as.factor(vector)
+factor_2
+```{r}
+
+```{r}
+as.numeric(factor_2)
+```{r}
+
+```{r}
+droplevels()
+```{r}
+
+Create example with the following sequence:
+- as.numeric()
+- as.character()
+- factor()
+
+*NOTE: forcats – tidyverse will be discussed later*
 
 ## Exercises
 

@@ -6,7 +6,7 @@
 
 -   Why is R considered a powerful language for statistical computing and data analysis?
 
--   What are some of the common uses of R in various fields?
+-   What are some common uses of R in various fields?
 
 -   What advantages does R offer over other programming languages for data science tasks?
 
@@ -22,9 +22,9 @@
 
 ### Why learn R and RStudio?
 
-Both R and Studio are free, open-source software tools that are widely used for statistical analysis and data visualization. R is a programming language that enables the use of code to analyze data. The primary function of the R language is statistical analysis and this can be performed directly in the R console. To ease the analysis process and enhance usability, an integrated development environment (IDE), such as RStudio is recommended. The RStudio IDE is a user-friendly interface that allows the learner to manage multiple script files, use the command-line terminal, easily access file inputs and outputs, and review file/analysis history.
+Both R and Studio are free, open-source software tools that are widely used for statistical analysis and data visualization. R is a programming language that enables the use of code to analyze data. The primary function of the R language is statistical analysis, and this can be performed directly in the R console. To ease the analysis process and enhance usability, an integrated development environment (IDE), such as RStudio is recommended. The RStudio IDE is a user-friendly interface that allows the learner to manage multiple script files, use the command-line terminal, easily access file inputs and outputs, and review file/analysis history.
 
-The R programming language software was developed by Ross Ihaka and Robert Gentleman in 1993 (published as open-source in 1995) when they were based at the University of Auckland. *Fun fact: R represents the first letter of the first names of the creators*. The software is utilized by individuals working for various organizations ranging from academic institutions and healthcare organizations to financial services and information technology companies. In January 2024, the [PopularitY of Programming Language (PYPL) Index](https://pypl.github.io/PYPL.html), which is created by analyzing how often language tutorials are searched on Google, demonstrated that R was the 6th most popular programming language. However, in the same period, the TIOBE index (https://www.tiobe.com/tiobe-index/) indicated that R was the 23rd most popular language. This may result from different methodologies for developing the rankings. RStudio is an integrated development environment (IDE) for R that was developed by JJ Allaire. This software contains tools that make programming in R easier.
+The R programming language software was developed by Ross Ihaka and Robert Gentleman in 1993 (published as open-source in 1995) when they were based at the University of Auckland. *Fun fact: R represents the first letter of the first names of the creators*. The software is utilized by individuals working for various organizations, ranging from academic institutions and healthcare organizations to financial services and information technology companies. In January 2024, the [PopularitY of Programming Language (PYPL) Index](https://pypl.github.io/PYPL.html), which is created by analyzing how often language tutorials are searched on Google, demonstrated that R was the 6th most popular programming language. However, in the same period, the TIOBE index (https://www.tiobe.com/tiobe-index/) indicated that R was the 23rd most popular language. This may result from different methodologies for developing the rankings. RStudio is an integrated development environment (IDE) for R that was developed by JJ Allaire. This software contains tools that make programming in R easier.
 
 RStudio extends R’s capabilities by making it easier to import data, write scripts, and generate visualizations and reports. The company RStudio (now Posit since 2022) was founded in 2009 with the main goal of “creating high quality open-source software for data scientists.”
 
@@ -38,15 +38,15 @@ iii. Built-in functions can be used to manipulate variables.
 
 iv. Built-in datasets can be accessed internally for analysis.
 
-v.  New datasets can be imported and new functions can be created for custom analysis.
+v.  New datasets can be imported, and new functions can be created for custom analysis.
 
 vi. To aid in computational analysis, there exists a large package library ([CRAN](https://cran.r-project.org/)), as well as a lot of software in development to aid in computational analysis.
 
 ### Primary advantages of R and RStudio
 
-i.  R and RStudio are free and open-source software programs which makes them accessible to anyone with a computer and internet connection. This accessibility is key in enabling learners from all socioeconomic levels and geographic regions to have a chance to work with statistical software,
+i.  R and RStudio are free and open-source software programs, which makes them accessible to anyone with a computer and internet connection. This accessibility is key in enabling learners from all socioeconomic levels and geographic regions to have a chance to work with statistical software,
 
-ii. A large number of user communities exists for the R/RStudio software. These communities (listed in the Appendix) provide learning support and assist with technical challenges,
+ii. Numerous user communities exist for the R/RStudio software. These communities (listed in the Appendix) provide learning support and assist with technical challenges,
 
 iii. Numerous freely available packages/extensions have been developed by the R and RStudio user communities to facilitate all forms of computational analysis, visualization, and publication. The ([CRAN](https://cran.r-project.org/)) has packages that contain datasets as well as allow one to perform statistical analysis and data visualization,
 
@@ -58,7 +58,7 @@ v.  The R/RStudio software is cross-platform, which means that it can be used on
 
 i.  Bioinformatics and Healthcare: epidemiological studies, clinical trial analysis, and genetic data analysis.
 
-ii. Financial Modeling and Risk Analysis: risk management, algorithmic trading, trading strategies and analysis, time series analysis, and portfolio optimization.
+ii. Financial Modelling and Risk Analysis: risk management, algorithmic trading, trading strategies and analysis, time series analysis, and portfolio optimization.
 
 iii. Retail and Marketing: customer analytics, sales forecasting, market research, web analytics, and customer segmentation.
 
@@ -82,8 +82,8 @@ iv. What tasks do you hope to accomplish after completing this training?
 
 v.  Explore the various R/RStudio communities listed in the appendix and consider joining any one of them. What is the role of the R community in the development and support of R?
 
-vi. Browse some of popular R packages (on [CRAN](https://cran.r-project.org/) or [R-Universe](https://r-universe.dev/search/)) for different tasks like data visualization and statistical analysis. Pick one package that interests you and read about its capabilities.
+vi. Browse some of the popular R packages (on [CRAN](https://cran.r-project.org/) or [R-Universe](https://r-universe.dev/search/)) for different tasks like data visualization and statistical analysis. Pick one package that interests you and read about its capabilities.
 
 ## Conclusion
 
-I hope you enjoyed learning about the history of R and RStudio, and have seen the advantages of using these tools for the diverse computational tasks in your fields of practice. Additionally, we discussed the numerous applications of R in various industries. In the next chapter, we will look at how to download and install both R and RStudio on your local computer. 
+I hope you enjoyed learning about the history of R and RStudio, and have seen the advantages of using these tools for the diverse computational tasks in your fields of practice. Additionally, we discussed the numerous applications of R in various industries. In the next chapter, we will look at how to download and install both R and RStudio on your local computer.

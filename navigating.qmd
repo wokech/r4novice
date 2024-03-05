@@ -26,7 +26,75 @@
 
 ## Lesson Content
 
-*In progress*
+*In progress (04/03/24)*
+
+### The R interface
+
+#### Menu options
+
+The R graphical user interface opens up with a console where you can start writing and executing code. Additionally, there exists a toolbar that contains shortcuts to commonly used functions. The menu bar allows one to perform various operations within the R software. The various menu bar options and a brief summary of their main uses are listed below:
+
+-   File: Create new scripts and workspaces, as well as review the session history.
+-   Edit: Copy, paste, and edit, as well as set up the graphical user interface (GUI) preferences.
+-   View: Include the toolbar and status bar within the GUI.
+-   Misc: Control computations and review objects.
+-   Packages: Install, load, and update packages.
+-   Windows: Arrange multiple windows in the learner’s preferred orientation.
+-   Help: Find links to FAQs, manuals, and help functions.
+
+*Figure*
+
+### RStudio interface (Panes)
+
+When opened for the 1st time, the RStudio interface will have 3 panes: Console, Environment, and Navigation. To include the 4th required panel, click on “File” --\> “New File” --\> “R Script”. Now that the 4 panes are open, let us review their functions.
+
+#### Script Pane (Text Editor)
+
+The script pane allows the user to write, edit, and save code. This code can then be run, and the output will be displayed in the console pane.
+
+#### Console Pane
+
+In the console pane, one can write and edit code, but not save. Within the console, one can run one line of code at a time. Additionally, one can access the terminal tab and run code via the command line. Lastly, we can access the “Background Jobs” tab to monitor progress of R scripts that are running in a separate, dedicated R session.
+
+#### Environment/History Pane
+
+This pane has multiple uses. The “Environment” tab shows the values of objects loaded in the current R session. Additionally, from this tab, one can load workspaces, import datasets, and observe memory usage. The “History” tab allows you to see what has been run previously, and the “Connections” tab provides a method for connecting to various databases. Lastly, the “Tutorial” tab helps with training users on the basic concepts of R.
+
+#### Navigation Pane
+
+The navigation pane allows the user to manage files (create new folders and scripts), view generated plots, and review and update installed packages. Additionally, there is a “Help” tab for basic queries, and “Viewer” and “Presentation” tabs for reviewing analysis outputs.
+
+*Figure*
+
+### RStudio interface (Menu Options)
+
+The RStudio interface has a number of menu bar options. To orient the user, a brief description of each menu bar option has been provided below.
+
+-   File: Create new files and projects, save them, as well as open and close the projects. Additionally, importing of datasets is made much easier by the “Import Dataset” option.
+
+-   Edit: Using this option, one can cut, copy, and paste, as well as undo and redo any actions.
+
+-   Code: Edit code formats and run code.
+
+-   View: Change the appearance of the RStudio graphical user interface (GUI), adjust and view different panes.
+
+-   Plots: View plots and save the plot outputs to different formats.
+
+-   Session: Create sessions, load workspaces, and set the working directories.
+
+-   Build: Configure build tools and edit the project options.
+
+-   Debug: Debug your code.
+
+-   *Profile:*
+
+-   Help: The help section allows one to access tools for troubleshooting. Additionally, it contains documentation and cheatsheets that allow for to discover more about the software.
+
+-   Tools: Install packages and check for package updates. Additionally, one can review version control options, access the terminal, and look at keyboard shortcuts. A short snippet of the numerous shortcuts is shown below (Figure …).
+
+*Figure*
+
+Lastly, one access both “Project Options” and “Global Options” from this menu bar option. Here, the user can change the appearance and pane layout for individual projects and globally.
 
 ## Exercises
 
@@ -41,5 +109,3 @@ vii. How can you customize the layout of panes in RStudio?
 ## Summary
 
 This brief overview of the R/RStudio interface should make the learner more comfortable when using the software. In this chapter, we explored the main components of the R interface and delved into the organizational structure of the RStudio IDE. Understanding the different panes and tabs within RStudio is crucial for efficient and effective programming. We navigated through the Source, Console, Environment, Plots, and Help panes, as well as additional tabs for managing files, plots, packages, and the viewer. Customizing your RStudio environment enhances your overall experience, and practicing keyboard shortcuts can significantly improve your coding efficiency. As you proceed with this guide, having a solid grasp of navigating the R and RStudio interfaces will empower you in your journey as an R programmer. Few introductory courses provide this overview, and it is hoped that this will decrease the cognitive load on learners in future lessons.
-
-

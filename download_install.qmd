@@ -22,7 +22,83 @@
 
 ## Lesson Content
 
-*In progress*
+*In progress (04/03/24)*
+
+### Introduction
+
+Both the R and RStudio software are required to make full use of the R programming environment. R is the programming language, while RStudio is the integrated development environment (IDE) that has an easy-to-use interface. Here, we will focus on downloading R and RStudio for Windows from the respective websites. The instructions for downloading these two programs on Mac/Linux operating systems are available on the download websites.
+
+### Install R
+
+To install R on your personal computer, visit the R Project for Statistical Computing’s Comprehensive R Archive Network [CRAN](https://cloud.r-project.org/). Follow the illustrated steps shown below:
+
+#### Step 1
+
+On the CRAN homepage, select the appropriate version of R for your operating system (Linux, macOS, or Windows) (Figure …).
+
+*Figure*
+
+#### Step 2
+
+If installing R for the 1st time, click on “base” (Figure …).
+
+*Figure*
+
+#### Step 3
+
+Click on the “Download” link for the latest version of R that is currently available (at the time of this writing, it was R-4.3.2). Once downloaded, run the executable file and wait for the software to be installed (Figure …).
+
+*Figure*
+
+#### Step 4
+
+Once R is installed, open up the R software. The R graphical user interface should be similar to what is depicted below (Figure …).
+
+*Figure*
+
+### Install RStudio
+
+The RStudio IDE can be obtained from the “Download” section of the Posit [website](https://posit.co/download/rstudio-desktop/). Install the software by clicking on the “Download RStudio Desktop for Windows” button and running the downloaded program (Figure …).
+
+*Figure*
+
+Once installed, verify that the RStudio software has a similar graphical user interface to the one depicted in the image below (Figure …).
+
+*Figure*
+
+### Create an RStudio Cloud Account on Posit website
+
+Posit (formerly RStudio) Cloud lets the user access the RStudio interface from their internet browsers (Figure …). Using this option does not require any installation or specific software configuration to be implemented. Posit Cloud offers a [free plan](https://posit.cloud/plans/free) for casual users (without the need for a paid plan) and there is no need for dedicated hardware. Additionally, Posit provides a comprehensive [guide](https://posit.cloud/learn/guide) for first-time users.
+
+#### Step 1
+
+Access the Posit Cloud Website (Figure …).
+
+*Figure*
+
+#### Step 2
+
+Sign up for a new user account (Figure …).
+
+*Figure*
+
+#### Step 3
+
+Log in to the new account, and you should see the page shown below (Figure …). It includes the workspace where all projects will be hosted. On the top right-hand side of the website is a button that allows one to create a “New Project.” Additionally, the “Learn” and “Help” sections on the left panel can assist with troubleshooting.
+
+*Figure*
+
+#### Step 4
+
+Create an R script to allow for code editing.
+
+*Figure*
+
+### Using alternative code editors to work with R (Advanced Users)
+
+Visual Studio (VS) Code is a code editor that can be used with various programming languages. For users that have previous experience with this code editor and would like to use it when reading this book, it is possible to use VS Code as an alternative to RStudio. After installing R, the “R Extension for Visual Studio Code” can be installed in the “Extensions” menu (Figure …).
+
+*Figure*
 
 ## Exercises
 
