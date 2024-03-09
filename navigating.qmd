@@ -32,7 +32,7 @@
 
 #### Menu options
 
-The R graphical user interface opens up with a console where you can start writing and executing code. Additionally, there exists a toolbar that contains shortcuts to commonly used functions. The menu bar allows one to perform various operations within the R software. The various menu bar options and a brief summary of their main uses are listed below:
+The R graphical user interface opens up with a console where you can start writing and executing code (@fig-r-console-1). Additionally, there exists a toolbar that contains shortcuts to commonly used functions. The menu bar allows one to perform various operations within the R software. The various menu bar options and a brief summary of their main uses are listed below:
 
 -   File: Create new scripts and workspaces, as well as review the session history.
 -   Edit: Copy, paste, and edit, as well as set up the graphical user interface (GUI) preferences.
@@ -42,7 +42,7 @@ The R graphical user interface opens up with a console where you can start writi
 -   Windows: Arrange multiple windows in the learner’s preferred orientation.
 -   Help: Find links to FAQs, manuals, and help functions.
 
-*Figure*
+![The R Console](images/navigating/r_console_1.png){#fig-r-console-1}
 
 ### RStudio interface (Panes)
 
@@ -64,11 +64,11 @@ This pane has multiple uses. The “Environment” tab shows the values of objec
 
 The navigation pane allows the user to manage files (create new folders and scripts), view generated plots, and review and update installed packages. Additionally, there is a “Help” tab for basic queries, and “Viewer” and “Presentation” tabs for reviewing analysis outputs.
 
-*Figure*
+![The R Console](images/navigating/r_console_1.png){#fig-r-console-1}
 
 ### RStudio interface (Menu Options)
 
-The RStudio interface has a number of menu bar options. To orient the user, a brief description of each menu bar option has been provided below.
+The RStudio interface has a number of menu bar options (@fig-rstudio-console-1). To orient the user, a brief description of each menu bar option has been provided below.
 
 -   File: Create new files and projects, save them, as well as open and close the projects. Additionally, importing of datasets is made much easier by the “Import Dataset” option.
 
@@ -90,9 +90,9 @@ The RStudio interface has a number of menu bar options. To orient the user, a br
 
 -   Help: The help section allows one to access tools for troubleshooting. Additionally, it contains documentation and cheatsheets that allow for to discover more about the software.
 
--   Tools: Install packages and check for package updates. Additionally, one can review version control options, access the terminal, and look at keyboard shortcuts. A short snippet of the numerous shortcuts is shown below (Figure …).
+-   Tools: Install packages and check for package updates. Additionally, one can review version control options, access the terminal, and look at keyboard shortcuts. A short snippet of the numerous shortcuts is shown below (@fig-rstudio-ks-1).
 
-*Figure*
+![A list of shortcuts available in RStudio](images/navigating/rstudio_ks_1.png){#fig-rstudio-ks-1}
 
 Lastly, one access both “Project Options” and “Global Options” from this menu bar option. Here, the user can change the appearance and pane layout for individual projects and globally.
 

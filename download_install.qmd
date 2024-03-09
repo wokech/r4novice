@@ -34,37 +34,37 @@ To install R on your personal computer, visit the R Project for Statistical Comp
 
 #### Step 1
 
-On the CRAN homepage, select the appropriate version of R for your operating system (Linux, macOS, or Windows) (Figure …).
+On the CRAN homepage, select the appropriate version of R for your operating system (Linux, macOS, or Windows) (@fig-cran-1).
 
-*Figure*
+![The CRAN Homepage (Part 1)](images/downloading/r_cran_1.png){#fig-cran-1}
 
 #### Step 2
 
-If installing R for the 1st time, click on “base” (Figure …).
+If installing R for the 1st time, click on “base” (@fig-cran-2).
 
-*Figure*
+![The CRAN Homepage (Part 2)](images/downloading/r_cran_2.png){#fig-cran-2}
 
 #### Step 3
 
-Click on the “Download” link for the latest version of R that is currently available (at the time of this writing, it was R-4.3.2). Once downloaded, run the executable file and wait for the software to be installed (Figure …).
+Click on the “Download” link for the latest version of R that is currently available (at the time of this writing, it was R-4.3.2). Once downloaded, run the executable file and wait for the software to be installed (@fig-cran-3).
 
-*Figure*
+![The CRAN Homepage (Part 3)](images/downloading/r_cran_3.png){#fig-cran-3}
 
 #### Step 4
 
-Once R is installed, open up the R software. The R graphical user interface should be similar to what is depicted below (Figure …).
+Once R is installed, open up the R software. The R graphical user interface should be similar to what is depicted below (@fig-r-console-1).
 
-*Figure*
+![The R Console](images/downloading/r_console_1.png){#fig-r-console-1}
 
 ### Install RStudio
 
-The RStudio IDE can be obtained from the “Download” section of the Posit [website](https://posit.co/download/rstudio-desktop/). Install the software by clicking on the “Download RStudio Desktop for Windows” button and running the downloaded program (Figure …).
+The RStudio IDE can be obtained from the “Download” section of the Posit [website](https://posit.co/download/rstudio-desktop/). Install the software by clicking on the “Download RStudio Desktop for Windows” button and running the downloaded program (@fig-rstudio-1).
 
-*Figure*
+![The Posit/RStudio Download Page](images/downloading/rstudio_1.png){#fig-rstudio-1}
 
-Once installed, verify that the RStudio software has a similar graphical user interface to the one depicted in the image below (Figure …).
+Once installed, verify that the RStudio software has a similar graphical user interface to the one depicted in the image below (@fig-rstudio-console-1).
 
-*Figure*
+![The RStudio Console](images/downloading/rstudio_console_1.png){#fig-rstudio-console-1}
 
 ### Create an RStudio Cloud Account on Posit website
 
@@ -72,33 +72,33 @@ Posit (formerly RStudio) Cloud lets the user access the RStudio interface from t
 
 #### Step 1
 
-Access the Posit Cloud Website (Figure …).
+Access the Posit Cloud Website (@fig-r-cloud-1).
 
-*Figure*
+![The Posit/RStudio Cloud Homepage](images/downloading/r_cloud_1.png){#fig-r-cloud-1}
 
 #### Step 2
 
-Sign up for a new user account (Figure …).
+Sign up for a new user account (@fig-r-cloud-2).
 
-*Figure*
+![The Posit/RStudio Cloud Login Page](images/downloading/r_cloud_2.png){#fig-r-cloud-2}
 
 #### Step 3
 
-Log in to the new account, and you should see the page shown below (Figure …). It includes the workspace where all projects will be hosted. On the top right-hand side of the website is a button that allows one to create a “New Project.” Additionally, the “Learn” and “Help” sections on the left panel can assist with troubleshooting.
+Log in to the new account, and you should see the page shown below (@fig-r-cloud-3). It includes the workspace where all projects will be hosted. On the top right-hand side of the website is a button that allows one to create a “New Project.” Additionally, the “Learn” and “Help” sections on the left panel can assist with troubleshooting.
 
-*Figure*
+![The Posit/RStudio Cloud Workspace](images/downloading/r_cloud_3.png){#fig-r-cloud-3}
 
 #### Step 4
 
-Create an R script to allow for code editing.
+Create an R script to allow for code editing (@fig-r-cloud-console-1).
 
-*Figure*
+![The Posit/RStudio Cloud Console](images/downloading/r_cloud_console_1.png){#fig-r-cloud-console-1}
 
 ### Using alternative code editors to work with R (Advanced Users)
 
-Visual Studio (VS) Code is a code editor that can be used with various programming languages. For users that have previous experience with this code editor and would like to use it when reading this book, it is possible to use VS Code as an alternative to RStudio. After installing R, the “R Extension for Visual Studio Code” can be installed in the “Extensions” menu (Figure …).
+Visual Studio (VS) Code is a code editor that can be used with various programming languages. For users that have previous experience with this code editor and would like to use it when reading this book, it is possible to use VS Code as an alternative to RStudio. After installing R, the “R Extension for Visual Studio Code” can be installed in the “Extensions” menu (@fig-r-vscode).
 
-*Figure*
+![The R interface on Visual Studio Code](images/downloading/r_vscode.png){#fig-r-vscode}
 
 ## Exercises
 

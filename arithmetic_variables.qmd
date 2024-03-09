@@ -30,19 +30,19 @@
 
 ### Basic Arithmetic
 
-To get started, first, we will open R or RStudio. In R, go to the console, and in RStudio, head to the console pane. Next, type in a basic arithmetic calculation such as ```1 + 1``` after the angle bracket (```>```) and hit “Enter.”
+To get started, first, we will open R or RStudio (@fig-arithmetic-1). In R, go to the console, and in RStudio, head to the console pane. Next, type in a basic arithmetic calculation such as `1 + 1` after the angle bracket (`>`) and hit “Enter.”
 
 **NOTE**
 
-Code Style – have a space on either side of the operator (```a <- 2``` / ```b <- 4 + c```)
+Code Style – have a space on either side of the operator (`a <- 2` / `b <- 4 + c`)
 
 ```{r}
 1 + 1
 ```
 
-The output will be observed next to the square bracket containing the number 1 ([1]). The 1 indicates that the indexing begins at position 1. Here, as opposed to Python, which uses zero-based indexing, R uses one-based indexing. 
+The output will be observed next to the square bracket containing the number 1 (\[1\]). The 1 indicates that the indexing begins at position 1. Here, as opposed to Python, which uses zero-based indexing, R uses one-based indexing.
 
-*Figure*
+![A basic arithmetic calculation in the R Console](images/arithmetic/arithmetic_console.png){#fig-arithmetic-1}
 
 Additionally, to include comments into the code block, we use the hash (#) symbol. Anything written after the code block will be commented out and not run.
 
@@ -53,7 +53,7 @@ Additionally, to include comments into the code block, we use the hash (#) symbo
 1 + 1
 ```
 
-### Arithmetic operators 
+### Arithmetic operators
 
 Various arithmetic operators (listed below) can be used in R/RStudio.
 
@@ -69,7 +69,7 @@ Various arithmetic operators (listed below) can be used in R/RStudio.
 
 Examples
 
-Create an R script called ```my_arithmetic_1.R```
+Create an R script called `my_arithmetic_1.R`
 
 Run the following calculations in the script and save the file to the working directory.
 
@@ -123,36 +123,36 @@ Run the following calculations in the script and save the file to the working di
 
 ### Variables
 
-Variables are instrumental in programming because they are used as “containers” to store data values. To assign a value to a variable, we can use <− or =. However, most R users prefer to use <−.
+Variables are instrumental in programming because they are used as “containers” to store data values. To assign a value to a variable, we can use \<− or =. However, most R users prefer to use \<−.
 
-- Variables store values for later use in your code, improving readability and efficiency.
-- Assign values to variables using the <- operator (e.g., x <- 5).
-- Variable names should be descriptive and avoid special characters.
+-   Variables store values for later use in your code, improving readability and efficiency.
+-   Assign values to variables using the \<- operator (e.g., x \<- 5).
+-   Variable names should be descriptive and avoid special characters.
 
 #### Variable assignment
 
-1. Using `<-`
+1.  Using `<-`
 
 ```{r}
 variable_1 <- 5
 variable_1
 ```
 
-2. Using `=`
+2.  Using `=`
 
 ```{r}
 variable_2 <- 10
 variable_2
 ```
 
-3. Reverse the value and variable with `->`
+3.  Reverse the value and variable with `->`
 
 ```{r}
 15 -> variable_3
 variable_3
 ```
 
-4. Assign two variables to one value
+4.  Assign two variables to one value
 
 ```{r}
 variable_4 <- variable_5 <- 30
@@ -160,14 +160,11 @@ variable_4
 variable_5
 ```
 
-The output of the variable can then be obtained by:
-1.	Typing the variable name and then pressing “Enter,”
-2.	Typing “print” with the variable name in brackets, print(variable), and
-3.	Typing “View” with the variable name in brackets, View(variable).
+The output of the variable can then be obtained by: 1. Typing the variable name and then pressing “Enter,” 2. Typing “print” with the variable name in brackets, print(variable), and 3. Typing “View” with the variable name in brackets, View(variable).
 
-Both ```print()``` and ```View()``` are some of the many built-in functions available in R.
+Both `print()` and `View()` are some of the many built-in functions available in R.
 
-*Figure*
+![The environment pane in RStudio with stored variables](images/arithmetic/environment_pane.png){#fig-environment-1}
 
 ```{r}
 print(variable_1)
@@ -177,11 +174,11 @@ print(variable_1)
 View(variable_2)
 ```
 
-Output of ```View()``` will be seen in the script pane.
+Output of `View()` will be seen in the script pane.
 
-### The ```assign()``` and ```rm()``` functions
+### The `assign()` and `rm()` functions
 
-In addition to using the assignment operators (<- and =), we can use the assign() function to assign a value to a variable.
+In addition to using the assignment operators (\<- and =), we can use the assign() function to assign a value to a variable.
 
 ```{r}
 assign("variable_6", 555)
@@ -201,45 +198,38 @@ rm(variable_7)
 After running rm() look at the environment pane to confirm whether variable_7 has been removed.
 
 #### Naming variables
+
 At this point, you may be wondering what conventions are used for naming variables. First, variables need to have meaningful names such as current_temp, time_24_hr, or weight_lbs. However, we need to be mindful of the variable style guide (link) which provides us with the appropriate rules for naming variables.
 
-object_name <- value
+object_name \<- value
 
 Objects must start with a letter and only contain letters and numbers
 
-Some rules to keep in mind are:
-1.	R is case-sensitive (variable is not the same as Variable),
-2.	Names similar to typical outputs or functions (TRUE, FALSE, if, or else) cannot be used,
-3.	Appropriate variable names can contain letters, numbers, dots, and underscores. However, you cannot start with an underscore, number, or dot followed by a number.
+Some rules to keep in mind are: 1. R is case-sensitive (variable is not the same as Variable), 2. Names similar to typical outputs or functions (TRUE, FALSE, if, or else) cannot be used, 3. Appropriate variable names can contain letters, numbers, dots, and underscores. However, you cannot start with an underscore, number, or dot followed by a number.
 
 #### Valid and invalid variable names
 
 Types of variable names:
 
-- snake_case
-- CamelCase
-- use.periods
-- snake.case.CamelCase_snake_case
+-   snake_case
+-   CamelCase
+-   use.periods
+-   snake.case.CamelCase_snake_case
 
-Valid names:
-- time_24_hr
-- .time24_hr
+Valid names: - time_24_hr - .time24_hr
 
-Invalid names:
-- _24_hr.time
-- 24_hr_time
-- .24_hr_time
+Invalid names: - \_24_hr.time - 24_hr_time - .24_hr_time
 
 ## Exercises
 
-i.  In R, calculate ```3 + 5``` and then ```4 * 6```.
-ii. Assign the value 10 to a variable called x. Then calculate ```x ^ 2```. Next, calculate the expression ```(3 + x) * (x - 1)``` using the x from before.
+i.  In R, calculate `3 + 5` and then `4 * 6`.
+ii. Assign the value 10 to a variable called x. Then calculate `x ^ 2`. Next, calculate the expression `(3 + x) * (x - 1)` using the x from before.
 iii. Declare a variable to store your age and assign a value to it. Print the variable value.
 iv. Create variables for the length and width of a rectangle and calculate its area.
 v.  Explain the rules for naming variables in R. Provide examples of valid and invalid variable names.
 vi. What is operator precedence in R? How does it work for arithmetic operators?
 vii. What data types can be used for arithmetic operations in R?
-viii. What is the difference between ```<-``` and ```=``` for assignment in R?
+viii. What is the difference between `<-` and `=` for assignment in R?
 
 ## Summary
 
