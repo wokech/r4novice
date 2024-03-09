@@ -40,25 +40,25 @@
 
 A vector is a collection of elements of the same data type, and they are a basic data structure in R programming.
 
-Vectors cannot be of mixed data type. The most common way to create a vector is with c(), where “c” stands for combine. In R, vectors do not have dimensions; therefore, they cannot be defined by columns or rows. Vectors can be divided into atomic vectors and lists (discussed in the “Data Structures” section). The atomic vectors include logical, character, and numeric (integer or double).
+Vectors cannot be of mixed data type. The most common way to create a vector is with `c()`, where “c” stands for combine. In R, vectors do not have dimensions; therefore, they cannot be defined by columns or rows. Vectors can be divided into atomic vectors and lists (discussed in the "Data Structures" {#sec-data-structure-1} section). The atomic vectors include logical, character, and numeric (integer or double).
 
-Additionally, R is a vectorized language because mathematical operations are applied to each element of the vector without the need to loop through the vector. 
+Additionally, R is a vectorized language because mathematical operations are applied to each element of the vector without the need to loop through the vector.
 
 Examples of vectors are shown below:
 
-- Numbers 
+-   Numbers
 
 ```{r}
 c(2, 10, 16, -5)
 ```
 
-- Characters
+-   Characters
 
 ```{r}
 c("R", "RStudio", "Shiny", "Quarto")
 ```
 
-- Logicals
+-   Logicals
 
 ```{r}
 c("TRUE", "FALSE", "TRUE")
@@ -68,7 +68,7 @@ c("TRUE", "FALSE", "TRUE")
 
 To generate a vector with a sequence of consecutive numbers, we can use: sequence(), or seq().
 
-Generate a sequence using ```:```
+Generate a sequence using `:`
 
 ```{r}
 a <- 9:18
@@ -85,7 +85,7 @@ a_rev_minus <- 5:-3
 a_rev_minus
 ```
 
-Generate a sequence using ```sequence()```
+Generate a sequence using `sequence()`
 
 ```{r}
 b <- sequence(7)
@@ -97,7 +97,7 @@ c <- sequence(c(5,9))
 c
 ```
 
-Generate a sequence using ```seq()```
+Generate a sequence using `seq()`
 
 The seq() function has four main arguments: seq(from, to, by, length.out), where “from” and “to” are the starting and ending elements of the sequence. Additionally, “by” is the difference between the elements, and “length.out” is the maximum length of the vector.
 
@@ -121,12 +121,13 @@ j <- seq(20, 2, length.out=3)
 j
 ```
 
-OR 
+OR
 
-seq(first, by  = __, length = __)
-first - 
-by - 
-length - 
+seq(first, by = **, length =** )
+
+Arguments
+
+first: by: length:
 
 Example
 
@@ -136,23 +137,23 @@ seq(3, by = 4, length = 30)
 
 Repeating vectors
 
-To create a repeating vector, we can use ```rep()```.
+To create a repeating vector, we can use `rep()`.
 
-rep(number, times)
+`rep(number, times)`
 
 ```{r}
 k <- rep(c(0,3,6), times = 3)
 k
 ```
 
-rep(range, times)
+`rep(range, times)`
 
 ```{r}
 l <- rep(2:6, each = 3)
 l
 ```
 
-rep(number or range, length.out)
+`rep(number or range, length.out)`
 
 ```{r}
 m <- rep(7, length.out = 20)
@@ -160,23 +161,25 @@ m
 n <- rep(7:10, length.out = 20)
 n
 ```
-OR 
 
-Random number generation with ```runif()```
+OR
 
-runif(n, min = 0, max = 1)
+Random number generation with `runif()`
+
+`runif(n, min = 0, max = 1)`
 
 ```{r}
 runif(5, min = 3, max = 100)
 ```
-**NOTE** 
-If you run the previous code block multiple times you will get different answers. Use set.seed() to get a similar sequence every time you run the calculation.
+
+**NOTE** If you run the previous code block multiple times you will get different answers. Use set.seed() to get a similar sequence every time you run the calculation.
 
 ```{r}
 set.seed(12345)
 runif(5, min = 3, max = 100)
 ```
-#### More functions to manipulate vectors
+
+### More functions to manipulate vectors
 
 Generate a random vector with 50 elements
 
@@ -191,6 +194,7 @@ Sample
 ```{r}
 sample(sam, size = 15)
 ```
+
 To get the same sample repeatedly
 
 ```{r}
@@ -219,39 +223,47 @@ vec_top_2 <- seq(4, by = 4, length = 100)
 vec_top_1 
 vec_top_2
 ```
+
 ```{r}
-
 union(vec_top_1, vec_top_2)
-intersect(vec_top_1, vec_top_2)
-setdiff(vec_top_1, vec_top_2)
-setequal(vec_top_1, vec_top_2)
+```
 
+```{r}
+intersect(vec_top_1, vec_top_2)
+```
+
+```{r}
+setdiff(vec_top_1, vec_top_2)
+```
+
+```{r}
+setequal(vec_top_1, vec_top_2)
 ```
 
 ### Vector Operations
 
 Vectors of equal length can be operated on together. If one vector is shorter, it will get recycled, as its elements are repeated until it matches the elements of the longer vector. When using vectors of unequal lengths, it would be ideal if the longer vector is a multiple of the shorter vector.
 
-1.	Basic Vector Operations
+1.  Basic Vector Operations
 
 ```{r}
 vec_1 <- 1:10
 ```
 
 ```{r}
-vec_1*12 # multiplication
+vec_1 * 12 # multiplication
 ```
 
 ```{r}
-vec_1+12 # addition
+vec_1 + 12 # addition
 ```
 
 ```{r}
-vec_1-12 # subtraction
+vec_1 - 12 # subtraction
 ```
 
 ```{r}
-vec_1/3 # division
+vec_1 / 3 # division
 ```
 
 ```{r}
@@ -262,10 +274,11 @@ vec_1^4 # power
 sqrt(vec_1) # square root
 ```
 
-Operations on vectors of equal length
-Additionally, we can perform operations on two vectors of equal length.
+2.  Operations on vectors
 
-1.	Create two vectors
+Operations on vectors of equal length Additionally, we can perform operations on two vectors of equal length.
+
+a.  Create two vectors
 
 ```{r}
 vec_3 <- 5:14
@@ -277,7 +290,7 @@ vec_4 <- 12:3
 vec_4
 ```
 
-2.	Perform various arithmetic operations
+b.  Perform various arithmetic operations
 
 ```{r}
 vec_3 + vec_4
@@ -299,14 +312,19 @@ vec_3 * vec_4
 vec_3 ^ vec_4
 ```
 
-2.	Functions that can be applied to vectors
+3.  Functions that can be applied to vectors
 
 The functions listed below can be applied to vectors:
-1.	```any()```
-2.	```all()```
-3.	```nchar()```
-4.	```length()```
-5.	```typeof()```
+
+a. `any()`
+
+b. `all()`
+
+c. `nchar()`
+
+d. `length()`
+
+e. `typeof()`
 
 Examples
 
@@ -352,14 +370,77 @@ vec_5 <- c("R", "RStudio", "Shiny", "Quarto")
 nchar(vec_5)
 ```
 
-3.	Stats and math on vectors
+3.  Stats and math on vectors
 
-length() / sum () / median() …max()…
-log() / log2() / log10() / count()
-round(x, digits = …) / floor() / leading() / 
-cumsum() / quantile() / sd() / IQR()  / sin()
+A variety of mathematical operations can be performed on vectors. These operations together with examples are listed below. 
 
-4.	Recycling of vectors
+- Length
+
+length()
+
+- Count
+
+count()
+
+- Sum
+
+sum()
+
+- Median
+
+median() 
+
+- Minimum
+
+min()
+
+- Maximum
+
+max()
+
+- Mean
+
+mean()
+
+- Median
+
+median()
+
+- Quantile
+
+quantile()
+
+- Standard Deviation
+
+sd()
+
+- Inter-Quartile Range (IQR)
+
+
+- Cumulative Sum
+
+cumsum()
+
+- Trigonometric functions
+
+sin()
+cos()
+tan()
+
+- Logarithmic functions
+
+log()
+log2()
+log10
+
+- Miscellaneous functions
+
+round(x, digits = …)
+floor()
+leading()
+
+4.  Recycling of vectors
+
 ```{r}
 vec_3 + c(10, 20)
 ```
@@ -369,11 +450,12 @@ vec_3 + c(10, 20, 30)
 # Will result in a warning as the longer vector is not a multiple of the shorter one
 ```
 
-D)	Accessing elements of a vector and subsetting
+D)  Accessing elements of a vector and subsetting
 
 To access the elements of a vector, we can use numeric-, character-, or logical-based indexing.
 
-Examples
+Examples 
+
 1. Name the columns of a vector with names().
 
 Create the vector.
@@ -390,26 +472,26 @@ names(vec_name) <- c("a", "c", "e", "g", "i")
 vec_name
 ```
 
-2. Use the vector index to filter
+2.  Use the vector index to filter
 
 ```{r}
 vec_index <- 1:5
 vec_index
 ```
 
-a) Logical vector as an index
+a)  Logical vector as an index
 
 ```{r}
 vec_index[c(TRUE, FALSE, TRUE, FALSE, TRUE)]
 ```
 
-b) Filter vector based on an index
+b)  Filter vector based on an index
 
 ```{r}
 vec_index[1:3]
 ```
 
-c) Access a vector using its position
+c)  Access a vector using its position
 
 ```{r}
 vec_index[4]
@@ -423,7 +505,8 @@ vec_index[-2]
 vec_index[c(2,4)]
 ```
 
-d) Modify a vector using indexing
+d)  Modify a vector using indexing
+
 ```{r}
 vec_index
 ```
@@ -444,23 +527,17 @@ tolower() / toupper() /
 
 unique() / duplicated()
 
-which()
-is.element()
+which() is.element()
 
 Binning data
 
-range() – min and max
-cut() – allocates each element to a bin
-pretty() – creates breakpoints nicely
+range() – min and max cut() – allocates each element to a bin pretty() – creates breakpoints nicely
 
 Create contingency tables
 
 Use the table() function to quickly create frequency tables and prop.table() to create a frequency table of proportions.
 
-table()
-prop.table()
-dimnames() – get names of columns and rows in tables
-names(dimnames()) – set the names of columns and rows in tables
+table() prop.table() dimnames() – get names of columns and rows in tables names(dimnames()) – set the names of columns and rows in tables
 
 Examples
 
@@ -468,11 +545,9 @@ table(vector) – frequency count of each distinct value in a vector
 
 table(cut(), pretty()) – review the use of cut and pretty###
 
-Create a matrix/dataframe
-table(vector1, vector2) – vector1 will go in rows and vector2 will go into columns
+Create a matrix/dataframe table(vector1, vector2) – vector1 will go in rows and vector2 will go into columns
 
 table(cut(vector1), pretty(vector1), vector2)
-
 
 ## Exercises
 

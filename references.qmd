@@ -1,6 +1,7 @@
 # References {.unnumbered}
 
 ::: {#refs}
-1.  Include books and websites.
-2.  ....
+1.  Posit/R Studio and Cheatsheets
+2.  Lander book R for...
+3.  Blogs
 :::

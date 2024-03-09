@@ -5,7 +5,7 @@
 The overall goal of this book was to introduce non-programmers or those with very little programming experience to R and RStudio and their use in basic statistical programming. It is hoped that the learners gained new skills and discovered how this software could be used to simplify everyday tasks in their workplaces. The learner should now be able to understand all the topics listed below based on the previously described learning objectives.
 
 | Chapter | Title                                                 | Date Completed |
-|:-------------|:-------------------------------------------|:-------------|
+|:--------|:------------------------------------------------------|:---------------|
 |         | Introduction                                          |                |
 | 1       | Overview of R and RStudio                             |                |
 | 2       | Download and Install R and RStudio                    |                |

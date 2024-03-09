@@ -34,7 +34,12 @@ To get started, first, we will open R or RStudio (@fig-arithmetic-1). In R, go t
 
 **NOTE**
 
-Code Style – have a space on either side of the operator (`a <- 2` / `b <- 4 + c`)
+Code Style – have a space on either side of the operator
+
+Examples
+
+-   `a <- 2`
+-   `b <- 4 + c`
 
 ```{r}
 1 + 1
@@ -201,7 +206,9 @@ After running rm() look at the environment pane to confirm whether variable_7 ha
 
 At this point, you may be wondering what conventions are used for naming variables. First, variables need to have meaningful names such as current_temp, time_24_hr, or weight_lbs. However, we need to be mindful of the variable style guide (link) which provides us with the appropriate rules for naming variables.
 
-object_name \<- value
+```{r}
+object_name <- value
+```
 
 Objects must start with a letter and only contain letters and numbers
 
@@ -216,9 +223,19 @@ Types of variable names:
 -   use.periods
 -   snake.case.CamelCase_snake_case
 
-Valid names: - time_24_hr - .time24_hr
+Valid names:
 
-Invalid names: - \_24_hr.time - 24_hr_time - .24_hr_time
+-   time_24_hr
+
+-   .time24_hr
+
+Invalid names:
+
+-   \_24_hr.time
+
+-   24_hr_time
+
+-   .24_hr_time
 
 ## Exercises
 

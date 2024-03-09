@@ -28,53 +28,43 @@
 
 ### Introduction
 
-Good file and data management allows the user to debug code, reduce the number of coding errors, and improve data quality. Additionally, by utilizing best practices the learner can easily share their work, organize projects, and develop a reproducible workflow. 
+Good file and data management allows the user to debug code, reduce the number of coding errors, and improve data quality. Additionally, by utilizing best practices the learner can easily share their work, organize projects, and develop a reproducible workflow.
 
 ### Projects
 
-An R project enables the learner to keep all their work in one folder. In the R project folder, all scripts, data files, figures, tables, history, and output can be stored in sub-folders within the R project. The root folder of the project is also known as the working directory (discussed in section …).
-
-*Figure*
+An R project enables the learner to keep all their work in one folder. In the R project folder, all scripts, data files, figures, tables, history, and output can be stored in sub-folders within the R project. The root folder of the project is also known as the working directory (described in the section below).
 
 ### Scripts
 
-To ensure that the learner has a record of all the code that they have written in the console, it is important that the learner also write the code in a script and saves it. Failure to do this will mean that the learner will have to write the code in the console every time they need to execute it. Code written in script files allows one to run it multiple times and edit when necessary. 
+To ensure that the learner has a record of all the code that they have written in the console, it is important that the learner also write the code in a script and saves it. Failure to do this will mean that the learner will have to write the code in the console every time they need to execute it. Code written in script files allows one to run it multiple times and edit when necessary.
 
 To create a new script file:
 
-File --> New File --> R Script
-
-*Figure*
+File --\> New File --\> R Script
 
 Save the file in your project folder
 
-Ensure filenames are readable for both the R software and collaborators. Examples include:
-```my_model_1.R```
-```report_1.txt```
+Ensure that the file names are readable for both the R software and collaborators.
 
-D)	Working Directory
+Examples include:
 
-The working directory is a file path/location on your computer that R uses for reading and writing files. The function ```getwd()``` prints the current working directory, and ```setwd()``` allows the user to set the working directory. This is where R looks for files that you ask it to load, and where it puts any files that you ask it to save.
+- "my_model_1.R"
 
-ls() and rm() are used for...
+### Working Directory
 
-*Figure*
+The working directory is a file path or location on your computer that R uses for reading and writing files. The function `getwd()` prints the current working directory, and `setwd()` allows the user to set the working directory. This is where R looks for files that you ask it to load, and where it puts any files that you ask it to save.
 
 Relative and absolute paths for loading data
-•	Windows = data\fire.png
-•	Mac/Linux = data/fire.png
 
-The here() package
+- Windows = "data\fire.png"
+
+- Mac/Linux = "data/fire.png"
 
 ### Finding help when using packages and functions
 
-•	Built-in help system: ?function_name provides documentation and examples.
-•	Online R [documentation](https://cran.r-project.org/manuals.html)
-•	Packages often include vignettes with detailed introductions and tutorials.
-•	Access via Help panel or ?function_name
-•	Get info on functions, arguments, examples
-•	?help to learn about using documentation
+- There is a built-in help system that can be accessed via the "Help" menu or one can use the ```?``` symbol before the function, package, or dataset to get a brief description and instructions for use.
 
+- Online R [documentation](https://cran.r-project.org/manuals.html) is also available to allow the user to learn the basics of R.
 
 ## Exercises
 
@@ -86,11 +76,11 @@ iii. Set your working directory in the console to the root of this new project, 
 
 iv. Explain the significance of using relative and absolute file paths in R, and experiment with using relative paths to access different data files within your project directory.
 
-v.  Explain the role of the functions, ```file.path()```, ```list.files()```, and ```dir.create()```, in R.
+v.  Explain the role of the functions, `file.path()`, `list.files()`, and `dir.create()`, in R.
 
-vi. Describe the purpose of the ```.Rproj``` file in an R project.
+vi. Describe the purpose of the `.Rproj` file in an R project.
 
-vii. How can you clear the R workspace? Explore functions like ```rm()``` and ```rm(list=ls())``` to remove unwanted objects.
+vii. How can you clear the R workspace? Explore functions like `rm()` and `rm(list=ls())` to remove unwanted objects.
 
 ## Summary
 

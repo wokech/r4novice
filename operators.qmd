@@ -28,18 +28,17 @@
 
 ### Introduction
 
-R has many different types of operators that can perform different tasks.
-Here we will focus on 5 major types of operators. The major types of operators are:
+R has many different types of operators that can perform different tasks. Here we will focus on 5 major types of operators. The major types of operators are:
 
-- Arithmetic,
-- Relational,
-- Logical,
-- Assignment, and
-- Miscellaneous. **Cross-ref**
+-   Arithmetic,
+-   Relational,
+-   Logical,
+-   Assignment, and
+-   Miscellaneous.
 
 ### Arithmetic Operators
 
-Arithmetic operators are used to perform mathematical operations. These operators were reviewed in the previous lesson **Cross-Ref**
+Arithmetic operators are used to perform mathematical operations. These operators were reviewed in the previous lesson on "Basic arithmetic, arithmetic operators, and variables" (@sec-arithmetic-variables)
 
 ### Relational Operators
 
@@ -61,37 +60,37 @@ x <- 227
 y <- 639
 ```
 
-a. Less than
+a.  Less than
 
 ```{r}
 x < y
 ```
 
-b. Greater than
+b.  Greater than
 
 ```{r}
 x > y
 ```
 
-c. Less than or equal to
+c.  Less than or equal to
 
 ```{r}
 x <= 300
 ```
 
-d. Greater than or equal to
+d.  Greater than or equal to
 
 ```{r}
 y >= 700
 ```
 
-e. Equal to
+e.  Equal to
 
 ```{r}
 y == 639
 ```
 
-f. Not Equal to
+f.  Not Equal to
 
 ```{r}
 x != 227
@@ -109,15 +108,14 @@ Logical operators are used to specify multiple conditions between objects. Logic
 
 #### Assign vectors to variables
 
-NOTE: 
-Full discussion on vectors in the chapter **Cross-Ref**
+NOTE: Full discussion in the chapter on "Vectors" (@sec-vectors)
 
 ```{r}
 vector_1 <- c(0,2)
 vector_2 <- c(1,0)
 ```
 
-a. Logical NOT
+a.  Logical NOT
 
 ```{r}
 !vector_1
@@ -127,13 +125,13 @@ a. Logical NOT
 !vector_2
 ```
 
-b. Element-wise Logical OR
+b.  Element-wise Logical OR
 
 ```{r}
 vector_1 | vector_2
 ```
 
-c. Element-wise Logical AND
+c.  Element-wise Logical AND
 
 ```{r}
 vector_1 & vector_2
@@ -141,19 +139,19 @@ vector_1 & vector_2
 
 ### Assignment Operators
 
-These operators assign values to variables. A more comprehensive review can be obtained in the lesson **Cross-ref**
+These operators assign values to variables. A more comprehensive review can be obtained in the lesson on "Basic arithmetic, arithmetic operators, and variables" (@sec-arithmetic-variables)
 
 ### Miscellaneous Operators
 
 These are helpful operators for working in that can perform a variety of functions. A few common miscellaneous operators are described below.
 
 | Miscellaneous Operator |                          Description                           |
-|:-------------------:|:-------------------------------------------------:|
+|:--------------------:|:------------------------------------------------:|
 |          %\*%          | Matrix multiplication (to be discussed in subsequent chapters) |
 |          %in%          |               Does an element belong to a vector               |
 |           :            |                      Generate a sequence                       |
 
-a. Sequence
+a.  Sequence
 
 ```{r}
 a <- 1:8
@@ -165,7 +163,7 @@ b <- 4:10
 b
 ```
 
-b. Element in a vector
+b.  Element in a vector
 
 ```{r}
 a %in% b
@@ -199,4 +197,4 @@ a %in% b
 
 ## Summary
 
-The focus of this chapter has been the five major types of operators thar can be used in R/RStudio. The operators allow one to perform numerous tasks including basic arithmetic including basic arithmetic, comparisons, subsetting, matrix multiplication, and vector generation. In the next chapter, we will discuss the available data types in R and how to utilize/handle them.
+The focus of this chapter has been the five major types of operators that can be used in R/RStudio. The operators allow one to perform numerous tasks including basic arithmetic including basic arithmetic, comparisons, subsetting, matrix multiplication, and vector generation. In the next chapter, we will discuss the available data types in R and how to utilize/handle them.
