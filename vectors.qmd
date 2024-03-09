@@ -44,7 +44,7 @@ Vectors cannot be of mixed data type. The most common way to create a vector is 
 
 Additionally, R is a vectorized language because mathematical operations are applied to each element of the vector without the need to loop through the vector.
 
-Examples of vectors are shown below:
+Examples of vectors made up of different data types are shown below:
 
 -   Numbers
 
@@ -121,13 +121,9 @@ j <- seq(20, 2, length.out=3)
 j
 ```
 
-OR
+The `seq()` function can also be used with the arguments first, by, and length.
 
-seq(first, by = **, length =** )
-
-Arguments
-
-first: by: length:
+`seq(first, by = ___, length = ____)`
 
 Example
 
@@ -162,9 +158,9 @@ n <- rep(7:10, length.out = 20)
 n
 ```
 
-OR
+Random number generation
 
-Random number generation with `runif()`
+The `runif()` function can be used to generate a specific number of random numbers between a minimum and maximum value.
 
 `runif(n, min = 0, max = 1)`
 
@@ -172,7 +168,8 @@ Random number generation with `runif()`
 runif(5, min = 3, max = 100)
 ```
 
-**NOTE** If you run the previous code block multiple times you will get different answers. Use set.seed() to get a similar sequence every time you run the calculation.
+**NOTE**
+If you run the previous code block multiple times you will get different answers. Use ```set.seed()``` to get a similar sequence every time you run the calculation.
 
 ```{r}
 set.seed(12345)
@@ -220,7 +217,13 @@ Create two vectors and look at the similarities/differences between the two
 set.seed(2468)
 vec_top_1 <- seq(2, by = 6, length = 100)
 vec_top_2 <- seq(4, by = 4, length = 100)
+```
+
+```{r}
 vec_top_1 
+```
+
+```{r}
 vec_top_2
 ```
 
@@ -234,10 +237,6 @@ intersect(vec_top_1, vec_top_2)
 
 ```{r}
 setdiff(vec_top_1, vec_top_2)
-```
-
-```{r}
-setequal(vec_top_1, vec_top_2)
 ```
 
 ### Vector Operations
@@ -316,15 +315,15 @@ vec_3 ^ vec_4
 
 The functions listed below can be applied to vectors:
 
-a. `any()`
+a.  `any()`
 
-b. `all()`
+b.  `all()`
 
-c. `nchar()`
+c.  `nchar()`
 
-d. `length()`
+d.  `length()`
 
-e. `typeof()`
+e.  `typeof()`
 
 Examples
 
@@ -372,72 +371,123 @@ nchar(vec_5)
 
 3.  Stats and math on vectors
 
-A variety of mathematical operations can be performed on vectors. These operations together with examples are listed below. 
+A variety of mathematical operations can be performed on vectors. These operations together with examples are listed below.
 
-- Length
+-   Length
 
 length()
 
-- Count
+-   Count
 
 count()
 
-- Sum
+-   Sum
 
 sum()
 
-- Median
-
-median() 
-
-- Minimum
-
-min()
-
-- Maximum
-
-max()
-
-- Mean
-
-mean()
-
-- Median
+-   Median
 
 median()
 
-- Quantile
+-   Minimum
+
+min()
+
+-   Maximum
+
+max()
+
+-   Mean
+
+mean()
+
+-   Median
+
+median()
+
+-   Quantile
 
 quantile()
 
-- Standard Deviation
+-   Standard Deviation
 
 sd()
 
-- Inter-Quartile Range (IQR)
+-   Inter-Quartile Range (IQR)
 
+IQR()
 
-- Cumulative Sum
+-   Cumulative Sum
 
 cumsum()
 
-- Trigonometric functions
+- Range
 
-sin()
-cos()
+range()
+
+- Cut
+
+cut()
+
+- Pretty
+
+pretty()
+
+-   Trigonometric functions
+
+sin() 
+
+cos() 
+
 tan()
 
-- Logarithmic functions
+-   Logarithmic functions
 
-log()
-log2()
-log10
+log() 
+
+log2() 
+
+log10()
 
 - Miscellaneous functions
 
-round(x, digits = …)
-floor()
-leading()
+unique()
+
+duplicated()
+
+which() 
+
+is.element()
+
+```{r}
+char_vec <- c("a", "b", "c", "d")
+```
+
+```{r}
+char_vec_upper <- toupper(char_vec)
+char_vec_upper
+```
+
+```{r}
+char_vec_lower <- tolower(char_vec_upper)
+char_vec_lower
+```
+
+- Create contingency tables
+
+Use the table() function to quickly create frequency tables and prop.table() to create a frequency table of proportions.
+
+table() prop.table() dimnames() – get names of columns and rows in tables names(dimnames()) – set the names of columns and rows in tables
+
+Examples
+
+table(vector) – frequency count of each distinct value in a vector
+
+table(cut(), pretty()) – review the use of cut and pretty###
+
+Create a matrix/dataframe table(vector1, vector2) – vector1 will go in rows and vector2 will go into columns
+
+table(cut(vector1), pretty(vector1), vector2)
 
 4.  Recycling of vectors
 
@@ -454,18 +504,18 @@ D)  Accessing elements of a vector and subsetting
 
 To access the elements of a vector, we can use numeric-, character-, or logical-based indexing.
 
-Examples 
+Examples
 
-1. Name the columns of a vector with names().
+1.  Name the columns of a vector with names().
 
-Create the vector.
+a) Create the vector.
 
 ```{r}
 vec_name <- 1:5
 vec_name
 ```
 
-Name the individual elements.
+b) Name the individual elements.
 
 ```{r}
 names(vec_name) <- c("a", "c", "e", "g", "i")
@@ -497,6 +547,8 @@ c)  Access a vector using its position
 vec_index[4]
 ```
 
+With negative indexing, every element except the one specified is returned.
+
 ```{r}
 vec_index[-2]
 ```
@@ -505,7 +557,7 @@ vec_index[-2]
 vec_index[c(2,4)]
 ```
 
-d)  Modify a vector using indexing
+d) Modify a vector using indexing
 
 ```{r}
 vec_index
@@ -518,36 +570,6 @@ vec_index[5] <- 1000
 ```{r}
 vec_index
 ```
-
-Other Functions on vectors
-
-tolower() / toupper() /
-
-%in%
-
-unique() / duplicated()
-
-which() is.element()
-
-Binning data
-
-range() – min and max cut() – allocates each element to a bin pretty() – creates breakpoints nicely
-
-Create contingency tables
-
-Use the table() function to quickly create frequency tables and prop.table() to create a frequency table of proportions.
-
-table() prop.table() dimnames() – get names of columns and rows in tables names(dimnames()) – set the names of columns and rows in tables
-
-Examples
-
-table(vector) – frequency count of each distinct value in a vector
-
-table(cut(), pretty()) – review the use of cut and pretty###
-
-Create a matrix/dataframe table(vector1, vector2) – vector1 will go in rows and vector2 will go into columns
-
-table(cut(vector1), pretty(vector1), vector2)
 
 ## Exercises
 
