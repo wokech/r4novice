@@ -26,8 +26,8 @@ To further your R learning journey, I would recommend a review of the following 
 -   [R-Ladies Global](https://rladies.org/)
 -   [satRday](https://satrdays.org/)
 -   [rOpenSci](https://ropensci.org/community/)
--   **Twitter (now X) – #rstats and #rstudio**
--   **Reddit – r/rstats and r/RStudio**
+-   **Twitter (now X)** – #rstats and #rstudio
+-   **Reddit** – r/rstats and r/RStudio
 
 ## 3. Conferences and Meetups
 

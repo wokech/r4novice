@@ -40,7 +40,7 @@
 
 A vector is a collection of elements of the same data type, and they are a basic data structure in R programming.
 
-Vectors cannot be of mixed data type. The most common way to create a vector is with `c()`, where “c” stands for combine. In R, vectors do not have dimensions; therefore, they cannot be defined by columns or rows. Vectors can be divided into atomic vectors and lists (discussed in the "Data Structures" {#sec-data-structure-1} section). The atomic vectors include logical, character, and numeric (integer or double).
+Vectors cannot be of mixed data type. The most common way to create a vector is with `c()`, where “c” stands for combine. In R, vectors do not have dimensions; therefore, they cannot be defined by columns or rows. Vectors can be divided into atomic vectors and lists (discussed in the "Data Structures" {@sec-data-structure-1} section). The atomic vectors include logical, character, and numeric (integer or double).
 
 Additionally, R is a vectorized language because mathematical operations are applied to each element of the vector without the need to loop through the vector.
 
@@ -66,7 +66,7 @@ c("TRUE", "FALSE", "TRUE")
 
 ### Sequence Generation
 
-To generate a vector with a sequence of consecutive numbers, we can use: sequence(), or seq().
+To generate a vector with a sequence of consecutive numbers, we can use: `sequence()`, or `seq()`.
 
 Generate a sequence using `:`
 
@@ -99,7 +99,7 @@ c
 
 Generate a sequence using `seq()`
 
-The seq() function has four main arguments: seq(from, to, by, length.out), where “from” and “to” are the starting and ending elements of the sequence. Additionally, “by” is the difference between the elements, and “length.out” is the maximum length of the vector.
+The `seq()` function has four main arguments: `seq(from, to, by, length.out)`, where "from" and "to" are the starting and ending elements of the sequence. Additionally, "by" is the difference between the elements, and "length.out" is the maximum length of the vector.
 
 ```{r}
 d <- seq(2,20,by=2)
@@ -168,8 +168,7 @@ The `runif()` function can be used to generate a specific number of random numbe
 runif(5, min = 3, max = 100)
 ```
 
-**NOTE**
-If you run the previous code block multiple times you will get different answers. Use ```set.seed()``` to get a similar sequence every time you run the calculation.
+**NOTE** If you run the previous code block multiple times you will get different answers. Use `set.seed()` to get a similar sequence every time you run the calculation.
 
 ```{r}
 set.seed(12345)
@@ -421,41 +420,41 @@ IQR()
 
 cumsum()
 
-- Range
+-   Range
 
 range()
 
-- Cut
+-   Cut
 
 cut()
 
-- Pretty
+-   Pretty
 
 pretty()
 
 -   Trigonometric functions
 
-sin() 
+sin()
 
-cos() 
+cos()
 
 tan()
 
 -   Logarithmic functions
 
-log() 
+log()
 
-log2() 
+log2()
 
 log10()
 
-- Miscellaneous functions
+-   Miscellaneous functions
 
 unique()
 
 duplicated()
 
-which() 
+which()
 
 is.element()
 
@@ -473,7 +472,7 @@ char_vec_lower <- tolower(char_vec_upper)
 char_vec_lower
 ```
 
-- Create contingency tables
+-   Create contingency tables
 
 Use the table() function to quickly create frequency tables and prop.table() to create a frequency table of proportions.
 
@@ -488,6 +487,8 @@ table(cut(), pretty()) – review the use of cut and pretty###
 Create a matrix/dataframe table(vector1, vector2) – vector1 will go in rows and vector2 will go into columns
 
 table(cut(vector1), pretty(vector1), vector2)
+
+
 
 4.  Recycling of vectors
 
@@ -508,14 +509,16 @@ Examples
 
 1.  Name the columns of a vector with names().
 
-a) Create the vector.
+<!-- -->
+
+a)  Create the vector.
 
 ```{r}
 vec_name <- 1:5
 vec_name
 ```
 
-b) Name the individual elements.
+b)  Name the individual elements.
 
 ```{r}
 names(vec_name) <- c("a", "c", "e", "g", "i")
@@ -557,7 +560,7 @@ vec_index[-2]
 vec_index[c(2,4)]
 ```
 
-d) Modify a vector using indexing
+d)  Modify a vector using indexing
 
 ```{r}
 vec_index
@@ -570,6 +573,10 @@ vec_index[5] <- 1000
 ```{r}
 vec_index
 ```
+
+- Combine vectors by row and column
+
+cbind() and rbind()
 
 ## Exercises
 

@@ -26,7 +26,7 @@
 
 -   Apply best practices for handling missing data in your R projects.
 
--   Apply functions like is.na() and complete.cases() to identify NA values.
+-   Apply functions like `is.na()` and `complete.cases()` to identify `NA` values.
 
 ## Lesson Content
 
@@ -43,15 +43,15 @@ One of the most common tasks/activities in data analysis is handling missing val
 
 Missingness presents itself in a variety of ways in R. The most common way to represent a missing value in R is with the value `NA`. Other reserved values include:
 
-- `NULL` = neither TRUE or FALSE (is.null() identifies a null value and as.null() converts to a null value). 
+-   `NULL` = neither TRUE or FALSE (`is.null()` identifies a null value and `as.null()` converts to a null value).
 
-- `NaN` = impossible values `Inf` = infinite value obtained by dividing by zero (is.infinite() identifies an infinite value and as.infinite() converts to an infinite value).
+-   `NaN` = impossible values `Inf` = infinite value obtained by dividing by zero (`is.infinite()` identifies an infinite value and `as.infinite()` converts to an infinite value).
 
 Examples of the missing values
 
-`NA` = `1/NA` 
+`NA` = `1/NA`
 
-`NaN` = `0/0` 
+`NaN` = `0/0`
 
 `Inf` = `10/0`
 
@@ -65,15 +65,15 @@ When investigating a dataset, there are a number of functions that can assist wi
 
 -   Imputation: Replace missing values with estimated values based on statistical methods (can introduce artificial data).
 
-R has two types of missing data, ```NA``` and ```NULL```.
+R has two types of missing data, `NA` and `NULL`.
 
 Missing values can represent a fixed value like 0 (zero) or a negative number.
 
-Missing can be ```NA``` or ```NaN``` and represented by ```is.na()``` or ```is.nan()```
+Missing can be `NA` or `NaN` and represented by `is.na()` or `is.nan()`
 
 ### NA
 
-R uses NA to represent missing data. The NA appears as another element of a vector. To test each element for missingness we use ```is.na()```. Generally, we can use tools such as ```mi```, ```mice```, and ```Amelia``` (which will be discussed later) to deal with missing data. The deletion of this missing data may lead to bias or data loss, so we need to be very careful when handling it. In subsequent blog posts, we will look at the use of imputation to deal with missing data.
+R uses NA to represent missing data. The NA appears as another element of a vector. To test each element for missingness we use `is.na()`. Generally, we can use tools such as `mi`, `mice`, and `Amelia` (which will be discussed later) to deal with missing data. The deletion of this missing data may lead to bias or data loss, so we need to be very careful when handling it. In subsequent blog posts, we will look at the use of imputation to deal with missing data.
 
 ### NULL
 

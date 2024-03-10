@@ -20,9 +20,9 @@
 
 -   Learn how to convert between different data types.
 
--   Use functions like class(), typeof(), and str() to inspect types.
+-   Use functions like `class()`, `typeof()`, and `str()` to inspect types.
 
--   Convert between data types using the as.\* functions.
+-   Convert between data types using the `as.___()` functions.
 
 ## Lesson Content
 
@@ -35,14 +35,14 @@ R and RStudio utilize multiple data types to store different kinds of data.
 The most common data types in R are listed below.
 
 | **Data Type** | **Description**                                                                                                                                                                           |
-|-------------------|-----------------------------------------------------|
+|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Numeric       | The most common data type. The values can be numbers or decimals (all real numbers).                                                                                                      |
 | Integer       | Special case of numeric data without decimals.                                                                                                                                            |
 | Logical       | Boolean data type with only 2 values (`TRUE` or `FALSE`).                                                                                                                                 |
 | Complex       | Specifies imaginary values in R.                                                                                                                                                          |
 | Character     | Assigns a character or string to a variable. The character variables are enclosed in single quotes ('character') while the string variables are enclosed in double quotes ("string").     |
 | Factor        | Special type of character variable that represents a categorical such as gender.                                                                                                          |
-| Raw           | Specifies values as raw bytes. It uses built-in functions to convert between raw and character (charToRaw() or rawToChar()).                                                              |
+| Raw           | Specifies values as raw bytes. It uses built-in functions to convert between raw and character (`charToRaw()` or `rawToChar()`).                                                          |
 | Dates         | Specifies the date variable. Date stores a date and POSIXct stores a date and time. The output is indicated as the number of days (Date) or number of seconds (POSIXct) since 01/01/1970. |
 
 ### Examples of data types in R
@@ -263,7 +263,7 @@ Character `>` Numeric `>` Integer `>` Logical
 
 -   How can you check the data type of a variable in R?
 
--   Use the ```class()```, ```typeof()```, and ```str()``` functions to check the data type of objects.
+-   Use the `class()`, `typeof()`, and `str()` functions to check the data type of objects.
 
 -   Describe the process of coercion in R.
 

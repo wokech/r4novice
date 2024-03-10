@@ -36,9 +36,11 @@ A dataset is a collection of data, and R offers the user the opportunity to eith
 
 R has several built-in datasets. To access them, we use the `data()` function after loading in the datasets library.
 
-`library(datasets)`
+```{r}
+library(datasets)
 
-`data()`
+data()
+```
 
 To find out more about a specific dataset, we use the `?` operator.
 
@@ -54,13 +56,21 @@ Example:
 
 #### Loading datasets
 
-`data::dataset`
+`datasets::dataset`
 
 OR
 
-`data(“dataset”)`
+`datasets("dataset")`
 
 Example:
+
+```{r}
+datasets::airquality
+```
+
+```{r}
+data("airquality")
+```
 
 #### Print datasets
 

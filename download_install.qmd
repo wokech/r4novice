@@ -68,7 +68,7 @@ Once installed, verify that the RStudio software has a similar graphical user in
 
 ### Create an RStudio Cloud Account on Posit website
 
-Posit (formerly RStudio) Cloud lets the user access the RStudio interface from their internet browsers (Figure …). Using this option does not require any installation or specific software configuration to be implemented. Posit Cloud offers a [free plan](https://posit.cloud/plans/free) for casual users (without the need for a paid plan) and there is no need for dedicated hardware. Additionally, Posit provides a comprehensive [guide](https://posit.cloud/learn/guide) for first-time users.
+Posit (formerly RStudio) Cloud lets the user access the RStudio interface from their internet browsers (@fig-r-cloud-1). Using this option does not require any installation or specific software configuration to be implemented. Posit Cloud offers a [free plan](https://posit.cloud/plans/free) for casual users (without the need for a paid plan) and there is no need for dedicated hardware. Additionally, Posit provides a comprehensive [guide](https://posit.cloud/learn/guide) for first-time users.
 
 #### Step 1
 

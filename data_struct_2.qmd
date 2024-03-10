@@ -54,9 +54,9 @@ A matrix is a rectangular two-dimensional (2D) homogeneous data set containing r
 
 a.  Creation of matrices
 
-Format:
+Using the `matrix()` function
 
-`matrix(range, nrow = _, ncol = _)`
+Format: `matrix(range, nrow = _, ncol = _)`
 
 ```{r}
 m1 <- matrix(1:9, nrow = 3, ncol = 3)
@@ -65,6 +65,12 @@ m3 <- matrix(1:12, nrow = 2, ncol = 6)
 m1
 m2
 m3
+```
+
+Using `cbind()` and `rbind()`
+
+```{r}
+
 ```
 
 b.  Obtain the dimensions of the matrices `m1` and `m3`
@@ -252,12 +258,13 @@ arr_1[, , 1]
 
 Factors are used to store integers or strings which are categorical. They categorize data and store the data in different levels. This form of data storage is useful for statistical modelling. Examples include TRUE or FALSE and male or female. Useful for handling qualitative datasets.
 
+**NOTE**: R has a more efficient method for handling categorical variables using the `forcats`package. This will be discussed in a subsequent series focusing on the `tidyverse`.
+
 ```{r}
 vector <- c("Male", "Female")
 ```
 
 ```{r}
-
 factor_1 <- factor(vector) 
 factor_1
 ```
@@ -273,13 +280,21 @@ factor_2
 as.numeric(factor_2)
 ```
 
+**NOTE**: To view the internal structure of various data types described above, the learner can use the `str()` function.
+
+Example
+
 ```{r}
-droplevels()
+str(m5)
 ```
 
-Create example with the following sequence: - as.numeric() - as.character() - factor()
+```{r}
+str(arr_1)
+```
 
-*NOTE: R has a more efficient method for handling categorical variables using the `forcats`package. This will be discussed in a subsequent series on the `tidyverse`.*
+```{r}
+str(factor_1)
+```
 
 ## Exercises
 

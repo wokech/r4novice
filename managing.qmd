@@ -34,6 +34,10 @@ Good file and data management allows the user to debug code, reduce the number o
 
 An R project enables the learner to keep all their work in one folder. In the R project folder, all scripts, data files, figures, tables, history, and output can be stored in sub-folders within the R project. The root folder of the project is also known as the working directory (described in the section below).
 
+To create a new project folder:
+
+File --\> New Project
+
 ### Scripts
 
 To ensure that the learner has a record of all the code that they have written in the console, it is important that the learner also write the code in a script and saves it. Failure to do this will mean that the learner will have to write the code in the console every time they need to execute it. Code written in script files allows one to run it multiple times and edit when necessary.
@@ -48,23 +52,19 @@ Ensure that the file names are readable for both the R software and collaborator
 
 Examples include:
 
-- "my_model_1.R"
+-   "my_model_1.R"
 
 ### Working Directory
 
 The working directory is a file path or location on your computer that R uses for reading and writing files. The function `getwd()` prints the current working directory, and `setwd()` allows the user to set the working directory. This is where R looks for files that you ask it to load, and where it puts any files that you ask it to save.
 
-Relative and absolute paths for loading data
-
-- Windows = "data\fire.png"
-
-- Mac/Linux = "data/fire.png"
+The paths to files or directories can be defined using relative or absolute paths. The relative path is where the file is found in the location where the user is, and absolute includes the entire path from the root directory.
 
 ### Finding help when using packages and functions
 
-- There is a built-in help system that can be accessed via the "Help" menu or one can use the ```?``` symbol before the function, package, or dataset to get a brief description and instructions for use.
+-   There is a built-in help system that can be accessed via the "Help" menu or one can use the `?` symbol before the function, package, or dataset to get a brief description and instructions for use.
 
-- Online R [documentation](https://cran.r-project.org/manuals.html) is also available to allow the user to learn the basics of R.
+-   Online R [documentation](https://cran.r-project.org/manuals.html) is also available to allow the user to learn the basics of R.
 
 ## Exercises
 

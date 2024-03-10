@@ -46,12 +46,12 @@ Relational operators are used to find the relationship between 2 variables and c
 
 | Relational Operator |       Description        |
 |:-------------------:|:------------------------:|
-|         \<          |        Less than         |
-|         \>          |       Greater than       |
-|         \<=         |  Less than or equal to   |
-|         \>=         | Greater than or equal to |
-|         ==          |         Equal to         |
-|         !=          |       Not Equal to       |
+|         `<`         |        Less than         |
+|         `>`         |       Greater than       |
+|        `<=`         |  Less than or equal to   |
+|        `>=`         | Greater than or equal to |
+|        `==`         |         Equal to         |
+|        `!=`         |       Not Equal to       |
 
 #### Assign values to variables
 
@@ -102,9 +102,9 @@ Logical operators are used to specify multiple conditions between objects. Logic
 
 | Logical Operator |       Description        |
 |:----------------:|:------------------------:|
-|        !         |       Logical NOT        |
-|        \|        | Element-wise logical OR  |
-|        &         | Element-wise logical AND |
+|       `!`        |       Logical NOT        |
+|       `|`        | Element-wise logical OR  |
+|       `&`        | Element-wise logical AND |
 
 #### Assign vectors to variables
 
@@ -147,9 +147,9 @@ These are helpful operators for working in that can perform a variety of functio
 
 | Miscellaneous Operator |                          Description                           |
 |:----------------------:|:--------------------------------------------------------------:|
-|          %\*%          | Matrix multiplication (to be discussed in subsequent chapters) |
-|          %in%          |               Does an element belong to a vector               |
-|           :            |                      Generate a sequence                       |
+|         `%*%`          | Matrix multiplication (to be discussed in subsequent chapters) |
+|         `%in%`         |               Does an element belong to a vector               |
+|          `:`           |                      Generate a sequence                       |
 
 a.  Sequence
 
@@ -183,17 +183,17 @@ a %in% b
 
 -   What operators allow you to subset vectors, lists, and data frames in R?
 
--   Explain how the modulus operator (%/%) differs from the regular division operator (/).
+-   Explain how the modulus operator (`%/%`) differs from the regular division operator (`/`).
 
--   What are the membership operators %in% and !%in% used for in R?
+-   What are the membership operators `%in%` and `!%in%` used for in R?
 
--   Assign 10 to x using \<-. Then compare if x == 10.
+-   Assign 10 to x using `<-`. Then compare if `x == 10`.
 
--   Calculate 3\^4 using arithmetic operators.
+-   Calculate `3^4` using arithmetic operators.
 
--   Compare 3 \> 5. Is the result TRUE or FALSE?
+-   Compare `3 > 5`. Is the result TRUE or FALSE?
 
--   When would you use the sequence operator (:) in R? Give an example.
+-   When would you use the sequence operator (`:`) in R? Give an example.
 
 ## Summary
 

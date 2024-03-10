@@ -32,9 +32,7 @@
 
 To get started, first, we will open R or RStudio (@fig-arithmetic-1). In R, go to the console, and in RStudio, head to the console pane. Next, type in a basic arithmetic calculation such as `1 + 1` after the angle bracket (`>`) and hit “Enter.”
 
-**NOTE**
-
-Code Style – have a space on either side of the operator
+**NOTE**: According to the Tidyverse Style Guide there should be a space on either side of the operator.
 
 Examples
 
@@ -45,11 +43,11 @@ Examples
 1 + 1
 ```
 
-The output will be observed next to the square bracket containing the number 1 (\[1\]). The 1 indicates that the indexing begins at position 1. Here, as opposed to Python, which uses zero-based indexing, R uses one-based indexing.
+The output will be observed next to the square bracket containing the number 1 (`[1]`). The 1 indicates that the indexing begins at position 1. Here, as opposed to Python, which uses zero-based indexing, R uses one-based indexing.
 
 ![A basic arithmetic calculation in the R Console](images/arithmetic/arithmetic_console.png){#fig-arithmetic-1}
 
-Additionally, to include comments into the code block, we use the hash (#) symbol. Anything written after the code block will be commented out and not run.
+Additionally, to include comments into the code block, we use the hash (`#`) symbol. Anything written after the code block will be commented out and not run.
 
 ```{r}
 
@@ -64,17 +62,17 @@ Various arithmetic operators (listed below) can be used in R/RStudio.
 
 | Arithmetic Operator |            Description             |
 |:-------------------:|:----------------------------------:|
-|         \+          |              Addition              |
-|         \-          |            Subtraction             |
-|         \*          |           Multiplication           |
-|          /          |              Division              |
-|     \*\* or \^      |           Exponentiation           |
-|         %%          | Modulus (remainder after division) |
-|         %/%         |          Integer division          |
+|         `+`         |              Addition              |
+|         `-`         |            Subtraction             |
+|         `*`         |           Multiplication           |
+|         `/`         |              Division              |
+|     `**` or `^`     |           Exponentiation           |
+|        `%%`         | Modulus (remainder after division) |
+|        `%/%`        |          Integer division          |
 
-Examples
+Example
 
-Create an R script called `my_arithmetic_1.R`
+Create an R script called "my_arithmetic_1.R"
 
 Run the following calculations in the script and save the file to the working directory.
 
@@ -128,10 +126,10 @@ Run the following calculations in the script and save the file to the working di
 
 ### Variables
 
-Variables are instrumental in programming because they are used as “containers” to store data values. To assign a value to a variable, we can use \<− or =. However, most R users prefer to use \<−.
+Variables are instrumental in programming because they are used as "containers" to store data values. To assign a value to a variable, we can use `<−` or `=`. However, most R users prefer to use `<−`.
 
--   Variables store values for later use in your code, improving readability and efficiency.
--   Assign values to variables using the \<- operator (e.g., x \<- 5).
+-   Variables store values for later use in your code. This results in improved readability and efficiency.
+-   Assign values to variables using the `<-` operator (e.g., `x <- 5`).
 -   Variable names should be descriptive and avoid special characters.
 
 #### Variable assignment
@@ -165,7 +163,13 @@ variable_4
 variable_5
 ```
 
-The output of the variable can then be obtained by: 1. Typing the variable name and then pressing “Enter,” 2. Typing “print” with the variable name in brackets, print(variable), and 3. Typing “View” with the variable name in brackets, View(variable).
+The output of the variable can then be obtained by:
+
+1.  Typing the variable name and then pressing “Enter,”
+
+2.  Typing “print” with the variable name in brackets, `print(variable)`, and,
+
+3.  Typing “View” with the variable name in brackets, `View(variable)`.
 
 Both `print()` and `View()` are some of the many built-in functions available in R.
 
@@ -181,16 +185,16 @@ View(variable_2)
 
 Output of `View()` will be seen in the script pane.
 
-### The `assign()` and `rm()` functions
+#### The `assign()` and `rm()` functions
 
-In addition to using the assignment operators (\<- and =), we can use the assign() function to assign a value to a variable.
+In addition to using the assignment operators (`<-` and `=`), we can use the `assign()` function to assign a value to a variable.
 
 ```{r}
 assign("variable_6", 555)
 variable_6
 ```
 
-To remove the assignment of the value to the variable, either delete the variable in the “environment pane” or use the rm() function.
+To remove the assignment of the value to the variable, either delete the variable in the “environment pane” or use the `rm()` function.
 
 ```{r}
 variable_7 <- 159
@@ -200,7 +204,7 @@ variable_7 <- 159
 rm(variable_7)
 ```
 
-After running rm() look at the environment pane to confirm whether variable_7 has been removed.
+After running `rm()` look at the environment pane to confirm whether variable_7 has been removed.
 
 #### Naming variables
 

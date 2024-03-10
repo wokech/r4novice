@@ -130,9 +130,7 @@ length(list_5)
 Flatten out into a single vector using unlist()
 
 ```{r}
-
 unlist(list_5)
-
 ```
 
 ### Dataframes
@@ -144,7 +142,7 @@ A data frame is one of the most common data objects used to store tabular data i
 -   Various data can be stored (such as numeric, factor, and character), and,
 -   The individual columns should contain the same number of data items.
 
-**NOTE** Tibbles and their advantages
+**NOTE**: Tibbles are the modern versions of dataframes, that have improved printing and subsetting features. The tibble package is a main component of the tidyverse; however, a review of the tidyverse is beyond the scope of this book and will be discussed in subsequent lessons.
 
 #### Creation of data frames
 
@@ -158,13 +156,11 @@ age <- c(25, 36, 47)
 df_1 <- data.frame(level, language, age)
 ```
 
-#### Other methods to create dataframes
+Use `stringsAsFactors = FALSE` to prevent R from converting string columns to factors.
 
-stack() / unstack() / cbind() / rbind()
-
-as.data.frame()
-
-When you use t() on a dataframe, check using class() to ensure that you didn’t convert to a matrix To transpose a dataframe use t() and then as.data.frame()
+```{r}
+df_2 <- data.frame(level, language, age, stringsAsFactors = FALSE)
+```
 
 #### Functions used to manipulate data frames
 
@@ -230,7 +226,7 @@ df_1[3,2]
 df_1[2, 1:2]
 ```
 
-j.  Access columns with index / subset
+j.  Access columns with index
 
 ```{r}
 df_1[, 3]
@@ -243,38 +239,20 @@ df_1[, c("language")]
 k.  Access rows with index
 
 ```{r}
-df_1[2, ]
+df_1[2, ] 
 ```
 
-Other methods for accessing
+**NOTE**: To view the internal structure of various data types described above, the learner can use the `str()` function.
 
-df\[c(1:3), \] and df\$col_name and df\[, “\_”\] and df\[ , c(“a”, “b”)\]
-
-\[ = many elements \[\[ and \$ = single element
-
-df\[row_indices, column_indices\]
-
-df\[row_indices, \]
-
-df\[ , column_indices\]
-
-which\[ry\$a \> 1\] returns the row indexes of the column “a” that has a value \> 1
+Example
 
 ```{r}
-ry$a = ry[ , 1]
+str(list_3)
 ```
-
-attach()
-
-str() to explain the output
-
-If you have 4 columns
 
 ```{r}
-df[ , c(3,4)] = df[ , -c(1,2)]
+str(df_1)
 ```
-
-glimpse() / View() / unique() / distinct() complete.cases() - eliminate missing values from a vector, matrix, or data frame
 
 ## Exercises
 
