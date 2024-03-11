@@ -26,8 +26,6 @@
 
 ## Lesson Content
 
-*In progress (4/3/24)*
-
 ### Introduction
 
 Data structures in R are the formats used to organize, process, retrieve, and store data. They help to organize stored data in a way that the data can be used more effectively. Data structures vary according to the number of dimensions and the data types (heterogeneous or homogeneous) contained.
@@ -118,7 +116,7 @@ dim(m6)
 ```
 
 ```{r}
-m5 %*% m6
+# m5 %*% m6 This will not execute because the dimensions are not appropriate
 ```
 
 The vector m6 needs to be transposed before multiplication.

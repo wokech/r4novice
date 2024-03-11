@@ -22,8 +22,6 @@
 
 ## Lesson Content
 
-*In progress (04/03/24)*
-
 ### Introduction
 
 Both the R and RStudio software are required to make full use of the R programming environment. R is the programming language, while RStudio is the integrated development environment (IDE) that has an easy-to-use interface. Here, we will focus on downloading R and RStudio for Windows from the respective websites. The instructions for downloading these two programs on Mac/Linux operating systems are available on the download websites.

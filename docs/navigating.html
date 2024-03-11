@@ -208,7 +208,13 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./appendix.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Appendix</span></a>
+ <span class="menu-text">Appendix 1: Resources for Learning R</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./datasets.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Appendix 2: Datasets</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -229,7 +235,12 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#questions" id="toc-questions" class="nav-link active" data-scroll-target="#questions"><span class="header-section-number">3.1</span> Questions</a></li>
   <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link" data-scroll-target="#learning-objectives"><span class="header-section-number">3.2</span> Learning Objectives</a></li>
-  <li><a href="#lesson-content" id="toc-lesson-content" class="nav-link" data-scroll-target="#lesson-content"><span class="header-section-number">3.3</span> Lesson Content</a></li>
+  <li><a href="#lesson-content" id="toc-lesson-content" class="nav-link" data-scroll-target="#lesson-content"><span class="header-section-number">3.3</span> Lesson Content</a>
+  <ul class="collapse">
+  <li><a href="#the-r-interface" id="toc-the-r-interface" class="nav-link" data-scroll-target="#the-r-interface"><span class="header-section-number">3.3.1</span> The R interface</a></li>
+  <li><a href="#rstudio-interface-panes" id="toc-rstudio-interface-panes" class="nav-link" data-scroll-target="#rstudio-interface-panes"><span class="header-section-number">3.3.2</span> RStudio interface (Panes)</a></li>
+  <li><a href="#rstudio-interface-menu-options" id="toc-rstudio-interface-menu-options" class="nav-link" data-scroll-target="#rstudio-interface-menu-options"><span class="header-section-number">3.3.3</span> RStudio interface (Menu Options)</a></li>
+  </ul></li>
   <li><a href="#exercises" id="toc-exercises" class="nav-link" data-scroll-target="#exercises"><span class="header-section-number">3.4</span> Exercises</a></li>
   <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary"><span class="header-section-number">3.5</span> Summary</a></li>
   </ul>
@@ -279,7 +290,86 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="lesson-content" class="level2" data-number="3.3">
 <h2 data-number="3.3" class="anchored" data-anchor-id="lesson-content"><span class="header-section-number">3.3</span> Lesson Content</h2>
-<p><em>In progress</em></p>
+<section id="the-r-interface" class="level3" data-number="3.3.1">
+<h3 data-number="3.3.1" class="anchored" data-anchor-id="the-r-interface"><span class="header-section-number">3.3.1</span> The R interface</h3>
+<section id="menu-options" class="level4" data-number="3.3.1.1">
+<h4 data-number="3.3.1.1" class="anchored" data-anchor-id="menu-options"><span class="header-section-number">3.3.1.1</span> Menu options</h4>
+<p>The R graphical user interface opens up with a console where you can start writing and executing code (<a href="#fig-r-console-1" class="quarto-xref">Figure&nbsp;<span class="quarto-unresolved-ref">fig-r-console-1</span></a>). Additionally, there exists a toolbar that contains shortcuts to commonly used functions. The menu bar allows one to perform various operations within the R software. The various menu bar options and a brief summary of their main uses are listed below:</p>
+<ul>
+<li>File: Create new scripts and workspaces, as well as review the session history.</li>
+<li>Edit: Copy, paste, and edit, as well as set up the graphical user interface (GUI) preferences.</li>
+<li>View: Include the toolbar and status bar within the GUI.</li>
+<li>Misc: Control computations and review objects.</li>
+<li>Packages: Install, load, and update packages.</li>
+<li>Windows: Arrange multiple windows in the learner’s preferred orientation.</li>
+<li>Help: Find links to FAQs, manuals, and help functions.</li>
+</ul>
+<div id="fig-r-console-1" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-r-console-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/navigating/r_console_1.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-r-console-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3.1: The R Console
+</figcaption>
+</figure>
+</div>
+</section>
+</section>
+<section id="rstudio-interface-panes" class="level3" data-number="3.3.2">
+<h3 data-number="3.3.2" class="anchored" data-anchor-id="rstudio-interface-panes"><span class="header-section-number">3.3.2</span> RStudio interface (Panes)</h3>
+<p>When opened for the 1st time, the RStudio interface will have 3 panes: Console, Environment, and Navigation. To include the 4th required panel, click on “File” –&gt; “New File” –&gt; “R Script”. Now that the 4 panes are open, let us review their functions.</p>
+<section id="script-pane-text-editor" class="level4" data-number="3.3.2.1">
+<h4 data-number="3.3.2.1" class="anchored" data-anchor-id="script-pane-text-editor"><span class="header-section-number">3.3.2.1</span> Script Pane (Text Editor)</h4>
+<p>The script pane allows the user to write, edit, and save code. This code can then be run, and the output will be displayed in the console pane.</p>
+</section>
+<section id="console-pane" class="level4" data-number="3.3.2.2">
+<h4 data-number="3.3.2.2" class="anchored" data-anchor-id="console-pane"><span class="header-section-number">3.3.2.2</span> Console Pane</h4>
+<p>In the console pane, one can write and edit code, but not save. Within the console, one can run one line of code at a time. Additionally, one can access the terminal tab and run code via the command line. Lastly, we can access the “Background Jobs” tab to monitor progress of R scripts that are running in a separate, dedicated R session.</p>
+</section>
+<section id="environmenthistory-pane" class="level4" data-number="3.3.2.3">
+<h4 data-number="3.3.2.3" class="anchored" data-anchor-id="environmenthistory-pane"><span class="header-section-number">3.3.2.3</span> Environment/History Pane</h4>
+<p>This pane has multiple uses. The “Environment” tab shows the values of objects loaded in the current R session. Additionally, from this tab, one can load workspaces, import datasets, and observe memory usage. The “History” tab allows you to see what has been run previously, and the “Connections” tab provides a method for connecting to various databases. Lastly, the “Tutorial” tab helps with training users on the basic concepts of R.</p>
+</section>
+<section id="navigation-pane" class="level4" data-number="3.3.2.4">
+<h4 data-number="3.3.2.4" class="anchored" data-anchor-id="navigation-pane"><span class="header-section-number">3.3.2.4</span> Navigation Pane</h4>
+<p>The navigation pane allows the user to manage files (create new folders and scripts), view generated plots, and review and update installed packages. Additionally, there is a “Help” tab for basic queries, and “Viewer” and “Presentation” tabs for reviewing analysis outputs.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/navigating/r_console_1.png" class="img-fluid figure-img"></p>
+<figcaption>The R Console</figcaption>
+</figure>
+</div>
+</section>
+</section>
+<section id="rstudio-interface-menu-options" class="level3" data-number="3.3.3">
+<h3 data-number="3.3.3" class="anchored" data-anchor-id="rstudio-interface-menu-options"><span class="header-section-number">3.3.3</span> RStudio interface (Menu Options)</h3>
+<p>The RStudio interface has a number of menu bar options (<a href="#fig-rstudio-console-1" class="quarto-xref">Figure&nbsp;<span class="quarto-unresolved-ref">fig-rstudio-console-1</span></a>). To orient the user, a brief description of each menu bar option has been provided below.</p>
+<ul>
+<li><p>File: Create new files and projects, save them, as well as open and close the projects. Additionally, importing of datasets is made much easier by the “Import Dataset” option.</p></li>
+<li><p>Edit: Using this option, one can cut, copy, and paste, as well as undo and redo any actions.</p></li>
+<li><p>Code: Edit code formats and run code.</p></li>
+<li><p>View: Change the appearance of the RStudio graphical user interface (GUI), adjust and view different panes.</p></li>
+<li><p>Plots: View plots and save the plot outputs to different formats.</p></li>
+<li><p>Session: Create sessions, load workspaces, and set the working directories.</p></li>
+<li><p>Build: Configure build tools and edit the project options.</p></li>
+<li><p>Debug: Debug your code.</p></li>
+<li><p><em>Profile:</em></p></li>
+<li><p>Help: The help section allows one to access tools for troubleshooting. Additionally, it contains documentation and cheatsheets that allow for to discover more about the software.</p></li>
+<li><p>Tools: Install packages and check for package updates. Additionally, one can review version control options, access the terminal, and look at keyboard shortcuts. A short snippet of the numerous shortcuts is shown below (<a href="#fig-rstudio-ks-1" class="quarto-xref">Figure&nbsp;<span class="quarto-unresolved-ref">fig-rstudio-ks-1</span></a>).</p></li>
+</ul>
+<div id="fig-rstudio-ks-1" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-rstudio-ks-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/navigating/rstudio_ks_1.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-rstudio-ks-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3.2: A list of shortcuts available in RStudio
+</figcaption>
+</figure>
+</div>
+<p>Lastly, one access both “Project Options” and “Global Options” from this menu bar option. Here, the user can change the appearance and pane layout for individual projects and globally.</p>
+</section>
 </section>
 <section id="exercises" class="level2" data-number="3.4">
 <h2 data-number="3.4" class="anchored" data-anchor-id="exercises"><span class="header-section-number">3.4</span> Exercises</h2>

@@ -4,6 +4,8 @@ project:
 
 book:
   title: "R for Novice Programmers (1e)"
+  author: William Okech
+  date: 01/01/2024
   reader-mode: true
   
   page-footer:
@@ -35,9 +37,10 @@ book:
     - data_struct_2.qmd
     - missing.qmd
     - conclusion.qmd
-    - appendix.qmd
-    
     - references.qmd
+  appendices:
+    - appendix.qmd
+    - datasets.qmd
 
 bibliography: references.bib
 

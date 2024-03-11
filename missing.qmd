@@ -30,8 +30,6 @@
 
 ## Lesson Content
 
-*In progress(4/3/24)*
-
 ### Introduction
 
 One of the most common tasks/activities in data analysis is handling missing values. Missing data are found everywhere; therefore, it is important to learn how to identify and summarize them. Missing data can arise from different sources including nonresponses in surveys or technical issues during data collection.

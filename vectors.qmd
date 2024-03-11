@@ -34,8 +34,6 @@
 
 ## Lesson Content
 
-*In progress (4/3/24)*
-
 ### Introduction
 
 A vector is a collection of elements of the same data type, and they are a basic data structure in R programming.
@@ -372,91 +370,134 @@ nchar(vec_5)
 
 A variety of mathematical operations can be performed on vectors. These operations together with examples are listed below.
 
+a.  Create a new vector
+
+```{r}
+stat_math_vec_1 <- seq(2, by = 6, length = 120)
+stat_math_vec_1
+```
+
+b.  Perform mathematical operations on the vector
+
 -   Length
 
-length()
-
--   Count
-
-count()
+```{r}
+length(stat_math_vec_1)
+```
 
 -   Sum
 
-sum()
-
--   Median
-
-median()
+```{r}
+sum(stat_math_vec_1)
+```
 
 -   Minimum
 
-min()
+```{r}
+min(stat_math_vec_1)
+```
 
 -   Maximum
 
-max()
+```{r}
+max(stat_math_vec_1)
+```
 
 -   Mean
 
-mean()
+```{r}
+mean(stat_math_vec_1)
+```
 
 -   Median
 
-median()
+```{r}
+median(stat_math_vec_1)
+```
 
 -   Quantile
 
-quantile()
+```{r}
+quantile(stat_math_vec_1)
+```
 
 -   Standard Deviation
 
-sd()
+```{r}
+sd(stat_math_vec_1)
+```
 
 -   Inter-Quartile Range (IQR)
 
-IQR()
+```{r}
+IQR(stat_math_vec_1)
+```
 
 -   Cumulative Sum
 
-cumsum()
+```{r}
+cumsum(stat_math_vec_1)
+```
 
 -   Range
 
-range()
+```{r}
+range(stat_math_vec_1)
+```
 
--   Cut
+-   Cut This function cuts a range of values into bins and specifies labels for each bin.
 
-cut()
+The argument "breaks" can be the number of bins or it can be specific break points.
+
+```{r}
+cut(stat_math_vec_1, breaks = 6)
+
+cut(stat_math_vec_1, breaks = c(0, 120, 240, 360, 480, 600, 720))
+```
 
 -   Pretty
 
-pretty()
+This function creates a sequence of equally spaced values that are rounded to the closest integer.The argument "n" lists the number of intervals.
+
+```{r}
+pretty(stat_math_vec_1)
+pretty(stat_math_vec_1, n = 20)
+```
 
 -   Trigonometric functions
 
-sin()
+```{r}
+sin(stat_math_vec_1)
+```
 
-cos()
+```{r}
+cos(stat_math_vec_1)
+```
 
-tan()
+```{r}
+tan(stat_math_vec_1)
+```
 
 -   Logarithmic functions
 
-log()
+```{r}
+log(stat_math_vec_1)
+```
 
-log2()
+```{r}
+log2(stat_math_vec_1)
+```
 
-log10()
+```{r}
+log10(stat_math_vec_1)
+```
 
--   Miscellaneous functions
+4.  Miscellaneous functions
 
-unique()
-
-duplicated()
-
-which()
-
-is.element()
+```{=html}
+<!-- -->
+```
+a.  Changing the case of a character vector
 
 ```{r}
 char_vec <- c("a", "b", "c", "d")
@@ -471,24 +512,6 @@ char_vec_upper
 char_vec_lower <- tolower(char_vec_upper)
 char_vec_lower
 ```
-
--   Create contingency tables
-
-Use the table() function to quickly create frequency tables and prop.table() to create a frequency table of proportions.
-
-table() prop.table() dimnames() – get names of columns and rows in tables names(dimnames()) – set the names of columns and rows in tables
-
-Examples
-
-table(vector) – frequency count of each distinct value in a vector
-
-table(cut(), pretty()) – review the use of cut and pretty###
-
-Create a matrix/dataframe table(vector1, vector2) – vector1 will go in rows and vector2 will go into columns
-
-table(cut(vector1), pretty(vector1), vector2)
-
-
 
 4.  Recycling of vectors
 
@@ -509,8 +532,9 @@ Examples
 
 1.  Name the columns of a vector with names().
 
+```{=html}
 <!-- -->
-
+```
 a)  Create the vector.
 
 ```{r}
@@ -574,14 +598,47 @@ vec_index[5] <- 1000
 vec_index
 ```
 
-- Combine vectors by row and column
+E)  Create matrices by combining vectors by row and column
 
-cbind() and rbind()
+```{=html}
+<!-- -->
+```
+1.  Create four new vectors
+
+```{r}
+vec_mat_df_1 <- seq(2,20, length.out=10)
+vec_mat_df_2 <- rep(2:6, each = 2)
+vec_mat_df_3 <- runif(10, min = 3, max = 100)
+vec_mat_df_4 <- sequence(10)
+
+vec_mat_df_1
+vec_mat_df_2
+vec_mat_df_3
+vec_mat_df_4
+```
+
+2.  Create a new matrix by combining each vector as a column, `cbind()`.
+
+```{r}
+new_matrix <- cbind(vec_mat_df_1, vec_mat_df_2, vec_mat_df_3, vec_mat_df_4)
+new_matrix
+str(new_matrix)
+class(new_matrix)
+```
+
+3.  Create a new matrix by combining each vector as a row, `rbind()`.
+
+```{r}
+new_matrix <- rbind(vec_mat_df_1, vec_mat_df_2, vec_mat_df_3, vec_mat_df_4)
+new_matrix
+str(new_matrix)
+class(new_matrix)
+```
 
 ## Exercises
 
-i.  Create a numeric vector with values 1 through 5 using c() and extract the middle element from the vector using the described subsetting methods.
-ii. Generate a sequence of even numbers from 2 to 10 using the seq() function and calculate the total sum and average of this new vector.
+i.  Create a numeric vector with values 1 through 5 using `c()` and extract the middle element from the vector using the described subsetting methods.
+ii. Generate a sequence of even numbers from 2 to 10 using the `seq()` function and calculate the total sum and average of this new vector.
 iii. Create a vector of student ages (between 16 and 20, n = 10), calculate their average and standard deviation, and identify students younger than 18.
 iv. Use logical indexing to subset elements from a vector based on a condition.
 v.  Perform element-wise addition and multiplication on two newly created numeric vectors of the same length.
@@ -591,7 +648,7 @@ viii. Use vector functions to find the length, sum, and mean of a numeric vector
 ix. Use functions like `sort()` or `rev()` to arrange elements in ascending, descending, or reversed order.
 x.  Use functions like `which()` or `match()` to locate elements based on conditions or matching values.
 xi. How can you append elements to an existing vector?
-xii. When binding vectors together, what is the difference between cbind() and rbind()?
+xii. When binding vectors together, what is the difference between `cbind()` and `rbind()`?
 xiii. Explore other vector capabilities like recycling, naming elements, and using vector lengths in your R code.
 
 ## Summary

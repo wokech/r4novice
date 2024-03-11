@@ -24,8 +24,6 @@
 
 ## Lesson Content
 
-*In progress (04/03/24)*
-
 ### Introduction
 
 Good file and data management allows the user to debug code, reduce the number of coding errors, and improve data quality. Additionally, by utilizing best practices the learner can easily share their work, organize projects, and develop a reproducible workflow.

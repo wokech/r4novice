@@ -1,0 +1,11 @@
+Name	Class Grade	Age	Gender	Mathematics	English	Science	Physical Education	Arts and Social Science	Religious Education
+JS	9	15	M	A	A	B	C	D	D
+NC	9	16	M	C	C	E	C	D	A
+KS	9	15	F	A	B	C	D	E	A
+QP	7	13	F	B	C	A	A	D	E
+QI	7	14	F	B	D	A	C	A	E
+HD	7	14	M	B	E	B	D	D	C
+DJ	8	14	F	C	D	E	A	A	B
+JD	8	15	M	A	A	D	E	B	C
+HE	8	16	F	C	D	A	A	B	D
+VO	8	17	F	A	A	C	C	B	E

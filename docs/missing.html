@@ -207,16 +207,33 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./appendix.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Appendix</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="./references.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">References</span></a>
   </div>
 </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text">Appendices</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./appendix.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Appendix 1: Resources for Learning R</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./datasets.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Appendix 2: Datasets</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
     </ul>
     </div>
 </nav>
@@ -229,7 +246,12 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#questions" id="toc-questions" class="nav-link active" data-scroll-target="#questions"><span class="header-section-number">12.1</span> Questions</a></li>
   <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link" data-scroll-target="#learning-objectives"><span class="header-section-number">12.2</span> Learning Objectives</a></li>
-  <li><a href="#lesson-content" id="toc-lesson-content" class="nav-link" data-scroll-target="#lesson-content"><span class="header-section-number">12.3</span> Lesson Content</a></li>
+  <li><a href="#lesson-content" id="toc-lesson-content" class="nav-link" data-scroll-target="#lesson-content"><span class="header-section-number">12.3</span> Lesson Content</a>
+  <ul class="collapse">
+  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction"><span class="header-section-number">12.3.1</span> Introduction</a></li>
+  <li><a href="#na" id="toc-na" class="nav-link" data-scroll-target="#na"><span class="header-section-number">12.3.2</span> NA</a></li>
+  <li><a href="#null" id="toc-null" class="nav-link" data-scroll-target="#null"><span class="header-section-number">12.3.3</span> NULL</a></li>
+  </ul></li>
   <li><a href="#exercises" id="toc-exercises" class="nav-link" data-scroll-target="#exercises"><span class="header-section-number">12.4</span> Exercises</a></li>
   <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary"><span class="header-section-number">12.5</span> Summary</a></li>
   </ul>
@@ -276,12 +298,48 @@ ul.task-list li input[type="checkbox"] {
 <li><p>Work with datasets that contain missing data.</p></li>
 <li><p>Understand the importance of addressing missing data in data analysis.</p></li>
 <li><p>Apply best practices for handling missing data in your R projects.</p></li>
-<li><p>Apply functions like is.na() and complete.cases() to identify NA values.</p></li>
+<li><p>Apply functions like <code>is.na()</code> and <code>complete.cases()</code> to identify <code>NA</code> values.</p></li>
 </ul>
 </section>
 <section id="lesson-content" class="level2" data-number="12.3">
 <h2 data-number="12.3" class="anchored" data-anchor-id="lesson-content"><span class="header-section-number">12.3</span> Lesson Content</h2>
-<p><em>In progress</em></p>
+<section id="introduction" class="level3" data-number="12.3.1">
+<h3 data-number="12.3.1" class="anchored" data-anchor-id="introduction"><span class="header-section-number">12.3.1</span> Introduction</h3>
+<p>One of the most common tasks/activities in data analysis is handling missing values. Missing data are found everywhere; therefore, it is important to learn how to identify and summarize them. Missing data can arise from different sources including nonresponses in surveys or technical issues during data collection.</p>
+<ul>
+<li>Unanswered survey questions</li>
+<li>Data entry errors</li>
+<li>Errors in measurements</li>
+<li>Data merge issues</li>
+</ul>
+<p>Missingness presents itself in a variety of ways in R. The most common way to represent a missing value in R is with the value <code>NA</code>. Other reserved values include:</p>
+<ul>
+<li><p><code>NULL</code> = neither TRUE or FALSE (<code>is.null()</code> identifies a null value and <code>as.null()</code> converts to a null value).</p></li>
+<li><p><code>NaN</code> = impossible values <code>Inf</code> = infinite value obtained by dividing by zero (<code>is.infinite()</code> identifies an infinite value and <code>as.infinite()</code> converts to an infinite value).</p></li>
+</ul>
+<p>Examples of the missing values</p>
+<p><code>NA</code> = <code>1/NA</code></p>
+<p><code>NaN</code> = <code>0/0</code></p>
+<p><code>Inf</code> = <code>10/0</code></p>
+<p><code>NULL</code> = <code>5/Inf</code></p>
+<p>Common strategies for handling missing data</p>
+<p>When investigating a dataset, there are a number of functions that can assist with the process. To find missing and non-missing values, the user can work with <code>is.na()</code> and <code>!is.na()</code>, respectively. If any rows contain missing values, one can use <code>na.omit()</code> or <code>drop_na()</code>. If there are missing values in the dataset, the arguments <code>na.rm = TRUE</code>, <code>remove_na = TRUE</code>, or the function <code>complete.cases()</code> can be used to remove missing values.</p>
+<ul>
+<li><p>Deletion: Remove rows or columns with missing values (simplest method but it can lead to bias).</p></li>
+<li><p>Imputation: Replace missing values with estimated values based on statistical methods (can introduce artificial data).</p></li>
+</ul>
+<p>R has two types of missing data, <code>NA</code> and <code>NULL</code>.</p>
+<p>Missing values can represent a fixed value like 0 (zero) or a negative number.</p>
+<p>Missing can be <code>NA</code> or <code>NaN</code> and represented by <code>is.na()</code> or <code>is.nan()</code></p>
+</section>
+<section id="na" class="level3" data-number="12.3.2">
+<h3 data-number="12.3.2" class="anchored" data-anchor-id="na"><span class="header-section-number">12.3.2</span> NA</h3>
+<p>R uses NA to represent missing data. The NA appears as another element of a vector. To test each element for missingness we use <code>is.na()</code>. Generally, we can use tools such as <code>mi</code>, <code>mice</code>, and <code>Amelia</code> (which will be discussed later) to deal with missing data. The deletion of this missing data may lead to bias or data loss, so we need to be very careful when handling it. In subsequent blog posts, we will look at the use of imputation to deal with missing data.</p>
+</section>
+<section id="null" class="level3" data-number="12.3.3">
+<h3 data-number="12.3.3" class="anchored" data-anchor-id="null"><span class="header-section-number">12.3.3</span> NULL</h3>
+<p>NULL represents nothingness or the “absence of anything”. 2 It does not mean missing but represents nothing. NULL cannot exist within a vector because it disappears.</p>
+</section>
 </section>
 <section id="exercises" class="level2" data-number="12.4">
 <h2 data-number="12.4" class="anchored" data-anchor-id="exercises"><span class="header-section-number">12.4</span> Exercises</h2>

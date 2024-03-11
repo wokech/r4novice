@@ -1,4 +1,4 @@
-# Appendix {.unnumbered}
+# Resources for Learning R {#sec-appendix-1}
 
 To further your R learning journey, I would recommend a review of the following freely available resources. This list will constantly be updated as new material becomes available.
 

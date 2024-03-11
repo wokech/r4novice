@@ -26,8 +26,6 @@
 
 ## Lesson Content
 
-*In progress (4/3/24)*
-
 ### Basic Arithmetic
 
 To get started, first, we will open R or RStudio (@fig-arithmetic-1). In R, go to the console, and in RStudio, head to the console pane. Next, type in a basic arithmetic calculation such as `1 + 1` after the angle bracket (`>`) and hit “Enter.”
@@ -210,9 +208,7 @@ After running `rm()` look at the environment pane to confirm whether variable_7 
 
 At this point, you may be wondering what conventions are used for naming variables. First, variables need to have meaningful names such as current_temp, time_24_hr, or weight_lbs. However, we need to be mindful of the variable style guide (link) which provides us with the appropriate rules for naming variables.
 
-```{r}
-object_name <- value
-```
+`object_name <- value`
 
 Objects must start with a letter and only contain letters and numbers
 

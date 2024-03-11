@@ -24,8 +24,6 @@
 
 ## Lesson Content
 
-*In progress (4/3/24)*
-
 ### Introduction
 
 R has many different types of operators that can perform different tasks. Here we will focus on 5 major types of operators. The major types of operators are:
@@ -146,7 +144,7 @@ These operators assign values to variables. A more comprehensive review can be o
 These are helpful operators for working in that can perform a variety of functions. A few common miscellaneous operators are described below.
 
 | Miscellaneous Operator |                          Description                           |
-|:----------------------:|:--------------------------------------------------------------:|
+|:------------------:|:--------------------------------------------------:|
 |         `%*%`          | Matrix multiplication (to be discussed in subsequent chapters) |
 |         `%in%`         |               Does an element belong to a vector               |
 |          `:`           |                      Generate a sequence                       |

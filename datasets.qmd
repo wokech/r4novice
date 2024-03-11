@@ -1,0 +1,29 @@
+# Datasets {#sec-appendix-2}
+
+Datasets for use in the section ["Importing data and saving analysis outputs"](@sec-import-save)
+
+## Files
+
+1.  [Microsoft Excel Worksheet (.xlsx)](datasets/r4novice_datafile.xlsx)
+2.  [Microsoft Excel Worksheet (97-2003) (.xls)](datasets/r4novice_datafile.xls)
+3.  [Comma Separated Values (.csv)](datasets/r4novice_datafile.csv)
+4.  [OpenDocument Spreadsheet (.ods)](datasets/r4novice_datafile.ods)
+5.  [Text File (.txt)](datasets/r4novice_datafile.txt)
+
+## Web Links
+
+1.  [Google Sheet Link](https://docs.google.com/spreadsheets/d/1JizCZw91QGQ5I0fqKczXn-kY93ghAbg3Pu2RhHxKiSc/edit#gid=0)
+2.  HTML Data Table
+
+| Name | Class Grade | Age | Gender | Mathematics | English | Science | Physical Education | Arts and Social Science | Religious Education |
+|--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|
+| JS   | 9           | 15  | M      | A           | A       | B       | C                  | D                       | D                   |
+| NC   | 9           | 16  | M      | C           | C       | E       | C                  | D                       | A                   |
+| KS   | 9           | 15  | F      | A           | B       | C       | D                  | E                       | A                   |
+| QP   | 7           | 13  | F      | B           | C       | A       | A                  | D                       | E                   |
+| QI   | 7           | 14  | F      | B           | D       | A       | C                  | A                       | E                   |
+| HD   | 7           | 14  | M      | B           | E       | B       | D                  | D                       | C                   |
+| DJ   | 8           | 14  | F      | C           | D       | E       | A                  | A                       | B                   |
+| JD   | 8           | 15  | M      | A           | A       | D       | E                  | B                       | C                   |
+| HE   | 8           | 16  | F      | C           | D       | A       | A                  | B                       | D                   |
+| VO   | 8           | 17  | F      | A           | A       | C       | C                  | B                       | E                   |

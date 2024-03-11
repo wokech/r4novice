@@ -26,8 +26,6 @@
 
 ## Lesson Content
 
-*In progress (4/3/24)*
-
 ### Introduction
 
 A dataset is a collection of data, and R offers the user the opportunity to either use internal datasets or import external datasets for analysis. In this lesson, we will cover the basics of accessing internal datasets, the importation of external datasets, as well as the saving of analysis outputs, such as plots and tables.
@@ -39,7 +37,7 @@ R has several built-in datasets. To access them, we use the `data()` function af
 ```{r}
 library(datasets)
 
-data()
+print(data())
 ```
 
 To find out more about a specific dataset, we use the `?` operator.
@@ -49,7 +47,7 @@ To find out more about a specific dataset, we use the `?` operator.
 Example:
 
 ```{r}
-?airquality
+print(?airquality)
 ```
 
 **Helpful functions when working with datasets**
@@ -180,22 +178,19 @@ airquality$Ozone
 
 ### Importing external datasets
 
-**NOTE**
-
-External datasets can be accessed from multiple sources. However, for this study we will use:
-
-1.  [Kaggle Datasets](https://www.kaggle.com/datasets)
-2.  [UCI Machine Learning Repository](https://archive.ics.uci.edu/datasets)
-
-The datasets should be saved to your working directory.
-
 As an R user, one of the tasks that you will often engage in is the importation of data from various sources. The commonly used data types include, but are not limited to CSV, TXT, JSON, SQL, SAS, STATA, SPSS, and XLSX. Additionally, R has two native data formats: Rdata (Rda) and Rds. Rdata is for multiple objects, while Rds is for a single R object.
 
 When importing external data, first set the correct working directory. The function `getwd()` will show the current working directory and `setwd(file_path_name)` will set the working directory to the file path name specified.
 
-Data importation can use base R functions or the `readr` package, which is part of the tidyverse.
+**NOTE**: External datasets can be accessed from multiple sources. Examples include can be found in the Appendix 1 (@sec-appendix-1). Both of these websites contain large repositories of datasets that can be used for the examples provided below.
 
-**Base R**
+Download the datasets from Appendix 2 (@sec-appendix-2) and save them to your working directory.
+
+Data importation can use base R functions or the `readr` package, which is part of the tidyverse. We will review both sets of methods in this section
+
+#### Base R
+
+1.  Commonly-used data importation formats
 
 There is a wide variety of base R functions used for importing external data into R. The main format for importing data is shown below:
 
@@ -217,21 +212,25 @@ The main functions for importing data using base R are listed below:
 
 Example:
 
--   `read.csv()` imports data with comma separated values.
+```{r}
+read.table("datasets/r4novice_datafile.csv", header = TRUE, sep = ",")
+```
+
+-   `read.csv()` imports data with comma separated values. Alternatively, we use `read.csv2()` is used where comma “,” indicates a decimal point and a semicolon is a field separator.
 
 Example:
 
--   `read.csv2()` is used where comma “,” indicates a decimal point and a semicolon is a field separator.
+```{r}
+read.csv("datasets/r4novice_datafile.csv", header = TRUE, sep = ",")
+```
+
+-   `read.delim()` is used for files with tab-separated values, such as TXT and where point “.” is used as a decimal point. Alternatively, `read.delim2()` is used for files with tab-separated values such as TXT and where comma “,” is used as a decimal point.
 
 Example:
 
--   `read.delim()` is used for files with tab-separated values, such as TXT and where point “.” is used as a decimal point.
-
-Example:
-
--   `read.delim2()` is used for files with tab-separated values such as TXT and where comma “,” is used as a decimal point.
-
-Example:
+```{r}
+read.delim("datasets/r4novice_datafile.txt", header = TRUE)
+```
 
 -   General data import
 
@@ -241,122 +240,136 @@ Example:
 
 `read.table(file.choose())`
 
--   Online files
+**NOTE**:Run this command in your R console and select the appropriate file from the working directory. 
+
+-   Excel (xls and xlsx) files are read in with `read.xlsx()`
+
+Load the required library
+
+```{r}
+library(xlsx)
+```
+
+Example: 
+
+```{r}
+read.xlsx("datasets/r4novice_datafile.xls", sheetIndex = 1)
+```
+
+```{r}
+read.xlsx("datasets/r4novice_datafile.xls", sheetIndex = 1)
+```
+
+
+2.  Less frequently used data importation formats
+
+a.  Fixed-width formats: `read.fwf("file path", header = TRUE)`
+
+b.  SPSS/Stata/SAS Data Files: The foreign package reads SPSS SAV files, Stata DTA files, and SAS XPORT libraries.
+
+Steps for use:
+
+Install the library
+
+`install.packages("foreign")`
+
+Load the library
+
+`library(foreign)`
+
+SPSS: `read.spss(“file path”, to.data.frame = __, use.value.labels = __)`
+
+-   to.data.frame: indicates whether R should treat the loaded data as a dataframe (options are TRUE/FALSE).
+
+-   use.value.labels: indicates whether R should convert variables with value labels into R factors (options are TRUE/FALSE).
+
+Stata: `read.dta("file", convert.dates = __, convert.factors = __)`
+
+convert.dates: converts Stata dates to R's Date class
+
+convert.factors: creates factors with Stata value labels
+
+SAS: `read.xport("file path")`
+
+Alternatively, one can utilize specific packages like `rio` or `haven` for more complex data formats like SPSS or SAS.
+
+Install the library
+
+`install.packages("haven")`
+
+Load the library
+
+`library(haven)`
+
+SPSS: `read_sav("file path")`
+
+SAS: `read_sas("file path")`
+
+c.  Native data formats in R
+
+R Data Files: `load("file_name.rda")`
+
+RDS Files: `readRDS("file_name.rds")`
+
+Online Files
 
 To download and import an online file, we use `read.html()` and `read.xml()`
 
 Example:
 
-`read.html("   ")`
+`read.html("file path")`
 
-`read.xml("   ")`
+`read.xml("file path")`
 
--   Excel
+e.  Miscellaneous file formats
 
-`library(xlsx)`
+JSON
 
-`read.xlsx("file", sheet number or name)`
+Install the library
 
-Example:
+`install.packages("rjson")`
 
--   Fixed-width formats
-
-`read.fwf("____", header = TRUE)`
-
-Example:
-
--   SPSS/Stata/SAS Data Files
-
-The foreign package reads SPSS SAV files, Stata DTA files, and SAS XPORT libraries.
-
-`install.packages("foreign")`
-
-`library(foreign)`
-
--   SPSS
-
-`read.spss(“file”, to.data.frame = __, use.value.labels = __)`
-
--   to.data.frame: indicates whether R should treat the loaded data as a dataframe (options are TRUE/FALSE).
--   use.value.labels: indicates whether R should convert variables with value labels into R factors (options are TRUE/FALSE).
-
-Example:
-
--   Stata
-
-`read.dta("file", convert.dates = __, convert.factors = __)`
-
-convert.dates:
-
-convert.factors:
-
-Example:
-
--   SAS
-
-`read.xport("file")`
-
-Example:
-
--   R Data Files
-
-RData Files: `load("____.rda")`
-
-Example:
-
-RDS Files: `readRDS("____.rds")`
-
-Example:
-
--   JSON
+Load the library
 
 `library(rjson)`
 
-`fromJSON(file = "____")`
+`fromJSON(file = "file name")`
 
-Example:
+SQL
 
--   SQL
+Install the library
+
+`install.packages("RSQLite")`
+
+Load the library
 
 `library(RSQLite)`
 
-`sql_connect <- dbConnect(RSQLite::SQLite(), "_____")`
+`sql_connect <- dbConnect(RSQLite::SQLite(), "file name")`
 
 `dbListTables(sql_connect)`
 
-Example:
+Matlab
 
--   Matlab
+Install the library
+
+`install.packages("Rmatlab")`
+
+Load the library
 
 `library(Rmatlab)`
 
-`readMat("file")`
+`readMat("file name")`
 
-Example:
-
-Alternatively, one can utilize specific packages like `rio` or `haven` for more complex data formats like SPSS or SAS.
-
-`library(haven)`
-
-SPSS:
-
-`read_sav("____")`
-
-Example:
-
-SAS:
-
-`read_sas()`
-
-Example:
-
-**Tidyverse and the `readr` package**
+#### Tidyverse and the `readr` package
 
 To enhance the speed and efficiency of data imports, the user can work with the readr package that is a part of the tidyverse. This is because the functions in this package allows for faster data imports and work similarly despite the data type that is imported.
 
-Examples of the various datatypes that can be imported using the `readr` package are shown below.
+1.  Commonly-used data importation formats in the tidyverse
 
 -   Import flat files
+
+read_table()
 
 read_csv()
 
@@ -365,16 +378,6 @@ read_csv2()
 read_tsv()
 
 read_delim()
-
-read_fwf()
-
-read_table()
-
-read_log()
-
-readRDS()
-
-read_lines()
 
 -   Import spreadsheets
 
@@ -386,9 +389,9 @@ read_xlsx()
 
 read_excel()
 
-read_excel("\_\_\_", sheet = "\_\_\_\_")
+read_excel("file path", sheet = "file path")
 
-excel_sheets("\_\_\_\_")
+excel_sheets("file path")
 
 -   Import Google Sheets
 
@@ -398,9 +401,17 @@ read_sheet()
 
 sheet_names()
 
-**NOTE**
+2.  Less frequently used data importation formats
 
-Missing data is a major challenge in data analysis. Strategies for dealing with this are discussed in Chapter 12 "Handling missing data" (@sec-missing).
+read_fwf()
+
+read_log()
+
+readRDS()
+
+read_lines()
+
+**NOTE**: Missing data is a major challenge in data analysis. Strategies for dealing with this are discussed in Chapter 12 "Handling missing data" (@sec-missing).
 
 Once the data is imported, the user can glimpse the data with `str()`, `head()`, and `summary()` functions. Additionally, one can check various aspects of the data such as `names()`, `dim`, and `class` to validate that the import was successful.
 

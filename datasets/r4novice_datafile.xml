@@ -1,0 +1,195 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Author>William Okech</Author>
+  <LastAuthor>William Okech</LastAuthor>
+  <Created>2024-03-11T10:19:46Z</Created>
+  <LastSaved>2024-03-11T10:44:42Z</LastSaved>
+  <Version>16.00</Version>
+ </DocumentProperties>
+ <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+  <AllowPNG/>
+ </OfficeDocumentSettings>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>4000</WindowHeight>
+  <WindowWidth>14360</WindowWidth>
+  <WindowTopX>32767</WindowTopX>
+  <WindowTopY>32767</WindowTopY>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="r4novice_datafile">
+  <Table ss:ExpandedColumnCount="10" ss:ExpandedRowCount="11" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultRowHeight="14.5">
+   <Column ss:Index="2" ss:AutoFitWidth="0" ss:Width="63.5"/>
+   <Column ss:AutoFitWidth="0" ss:Width="59.5" ss:Span="1"/>
+   <Column ss:Index="5" ss:AutoFitWidth="0" ss:Width="77.5"/>
+   <Column ss:Index="8" ss:AutoFitWidth="0" ss:Width="93"/>
+   <Column ss:AutoFitWidth="0" ss:Width="110" ss:Span="1"/>
+   <Row>
+    <Cell><Data ss:Type="String">Name</Data></Cell>
+    <Cell><Data ss:Type="String">Class Grade</Data></Cell>
+    <Cell><Data ss:Type="String">Age</Data></Cell>
+    <Cell><Data ss:Type="String">Gender</Data></Cell>
+    <Cell><Data ss:Type="String">Mathematics</Data></Cell>
+    <Cell><Data ss:Type="String">English</Data></Cell>
+    <Cell><Data ss:Type="String">Science</Data></Cell>
+    <Cell><Data ss:Type="String">Physical Education</Data></Cell>
+    <Cell><Data ss:Type="String">Arts and Social Science</Data></Cell>
+    <Cell><Data ss:Type="String">Religious Education</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">JS</Data></Cell>
+    <Cell><Data ss:Type="Number">9</Data></Cell>
+    <Cell><Data ss:Type="Number">15</Data></Cell>
+    <Cell><Data ss:Type="String">M</Data></Cell>
+    <Cell><Data ss:Type="String">A</Data></Cell>
+    <Cell><Data ss:Type="String">A</Data></Cell>
+    <Cell><Data ss:Type="String">B</Data></Cell>
+    <Cell><Data ss:Type="String">C</Data></Cell>
+    <Cell><Data ss:Type="String">D</Data></Cell>
+    <Cell><Data ss:Type="String">D</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">NC</Data></Cell>
+    <Cell><Data ss:Type="Number">9</Data></Cell>
+    <Cell><Data ss:Type="Number">16</Data></Cell>
+    <Cell><Data ss:Type="String">M</Data></Cell>
+    <Cell><Data ss:Type="String">C</Data></Cell>
+    <Cell><Data ss:Type="String">C</Data></Cell>
+    <Cell><Data ss:Type="String">E</Data></Cell>
+    <Cell><Data ss:Type="String">C</Data></Cell>
+    <Cell><Data ss:Type="String">D</Data></Cell>
+    <Cell><Data ss:Type="String">A</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">KS</Data></Cell>
+    <Cell><Data ss:Type="Number">9</Data></Cell>
+    <Cell><Data ss:Type="Number">15</Data></Cell>
+    <Cell><Data ss:Type="String">F</Data></Cell>
+    <Cell><Data ss:Type="String">A</Data></Cell>
+    <Cell><Data ss:Type="String">B</Data></Cell>
+    <Cell><Data ss:Type="String">C</Data></Cell>
+    <Cell><Data ss:Type="String">D</Data></Cell>
+    <Cell><Data ss:Type="String">E</Data></Cell>
+    <Cell><Data ss:Type="String">A</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">QP</Data></Cell>
+    <Cell><Data ss:Type="Number">7</Data></Cell>
+    <Cell><Data ss:Type="Number">13</Data></Cell>
+    <Cell><Data ss:Type="String">F</Data></Cell>
+    <Cell><Data ss:Type="String">B</Data></Cell>
+    <Cell><Data ss:Type="String">C</Data></Cell>
+    <Cell><Data ss:Type="String">A</Data></Cell>
+    <Cell><Data ss:Type="String">A</Data></Cell>
+    <Cell><Data ss:Type="String">D</Data></Cell>
+    <Cell><Data ss:Type="String">E</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">QI</Data></Cell>
+    <Cell><Data ss:Type="Number">7</Data></Cell>
+    <Cell><Data ss:Type="Number">14</Data></Cell>
+    <Cell><Data ss:Type="String">F</Data></Cell>
+    <Cell><Data ss:Type="String">B</Data></Cell>
+    <Cell><Data ss:Type="String">D</Data></Cell>
+    <Cell><Data ss:Type="String">A</Data></Cell>
+    <Cell><Data ss:Type="String">C</Data></Cell>
+    <Cell><Data ss:Type="String">A</Data></Cell>
+    <Cell><Data ss:Type="String">E</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">HD</Data></Cell>
+    <Cell><Data ss:Type="Number">7</Data></Cell>
+    <Cell><Data ss:Type="Number">14</Data></Cell>
+    <Cell><Data ss:Type="String">M</Data></Cell>
+    <Cell><Data ss:Type="String">B</Data></Cell>
+    <Cell><Data ss:Type="String">E</Data></Cell>
+    <Cell><Data ss:Type="String">B</Data></Cell>
+    <Cell><Data ss:Type="String">D</Data></Cell>
+    <Cell><Data ss:Type="String">D</Data></Cell>
+    <Cell><Data ss:Type="String">C</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">DJ</Data></Cell>
+    <Cell><Data ss:Type="Number">8</Data></Cell>
+    <Cell><Data ss:Type="Number">14</Data></Cell>
+    <Cell><Data ss:Type="String">F</Data></Cell>
+    <Cell><Data ss:Type="String">C</Data></Cell>
+    <Cell><Data ss:Type="String">D</Data></Cell>
+    <Cell><Data ss:Type="String">E</Data></Cell>
+    <Cell><Data ss:Type="String">A</Data></Cell>
+    <Cell><Data ss:Type="String">A</Data></Cell>
+    <Cell><Data ss:Type="String">B</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">JD</Data></Cell>
+    <Cell><Data ss:Type="Number">8</Data></Cell>
+    <Cell><Data ss:Type="Number">15</Data></Cell>
+    <Cell><Data ss:Type="String">M</Data></Cell>
+    <Cell><Data ss:Type="String">A</Data></Cell>
+    <Cell><Data ss:Type="String">A</Data></Cell>
+    <Cell><Data ss:Type="String">D</Data></Cell>
+    <Cell><Data ss:Type="String">E</Data></Cell>
+    <Cell><Data ss:Type="String">B</Data></Cell>
+    <Cell><Data ss:Type="String">C</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">HE</Data></Cell>
+    <Cell><Data ss:Type="Number">8</Data></Cell>
+    <Cell><Data ss:Type="Number">16</Data></Cell>
+    <Cell><Data ss:Type="String">F</Data></Cell>
+    <Cell><Data ss:Type="String">C</Data></Cell>
+    <Cell><Data ss:Type="String">D</Data></Cell>
+    <Cell><Data ss:Type="String">A</Data></Cell>
+    <Cell><Data ss:Type="String">A</Data></Cell>
+    <Cell><Data ss:Type="String">B</Data></Cell>
+    <Cell><Data ss:Type="String">D</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">VO</Data></Cell>
+    <Cell><Data ss:Type="Number">8</Data></Cell>
+    <Cell><Data ss:Type="Number">17</Data></Cell>
+    <Cell><Data ss:Type="String">F</Data></Cell>
+    <Cell><Data ss:Type="String">A</Data></Cell>
+    <Cell><Data ss:Type="String">A</Data></Cell>
+    <Cell><Data ss:Type="String">C</Data></Cell>
+    <Cell><Data ss:Type="String">C</Data></Cell>
+    <Cell><Data ss:Type="String">B</Data></Cell>
+    <Cell><Data ss:Type="String">E</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <Selected/>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>13</ActiveRow>
+     <ActiveCol>1</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>

@@ -1,12 +1,9 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
-
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.4.549">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-
-
 <title>R for Novice Programmers (1e) - 6&nbsp; Basic arithmetic, arithmetic operators, and variables</title>
 <style>
 code{white-space: pre-wrap;}
@@ -20,8 +17,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
-
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="site_libs/quarto-nav/headroom.min.js"></script>
@@ -41,8 +71,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
-<script id="quarto-search-options" type="application/json">{
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light"><script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
   "collapse-after": 3,
@@ -69,16 +98,11 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-
-
 </head>
-
 <body class="nav-sidebar floating">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
-  <nav class="quarto-secondary-nav">
-    <div class="container-fluid d-flex">
+  <header id="quarto-header" class="headroom fixed-top"><nav class="quarto-secondary-nav"><div class="container-fluid d-flex">
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
@@ -89,13 +113,9 @@ ul.task-list li input[type="checkbox"] {
         <i class="bi bi-search"></i>
       </button>
     </div>
-  </nav>
-</header>
-<!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+  </nav></header><!-- content --><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto"><div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="./">R for Novice Programmers (1e)</a> 
         <div class="sidebar-tools-main">
@@ -115,7 +135,7 @@ ul.task-list li input[type="checkbox"] {
         </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
-        <li class="sidebar-item">
+<li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Welcome</span></a>
@@ -207,39 +227,57 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./appendix.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Appendix</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="./references.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">References</span></a>
   </div>
 </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text">Appendices</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">
+<li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./appendix.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Appendix 1: Resources for Learning R</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./datasets.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Appendix 2: Datasets</span></a>
+  </div>
+</li>
+      </ul>
+</li>
     </ul>
-    </div>
-</nav>
-<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+</div>
+</nav><div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Table of contents</h2>
+        <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#questions" id="toc-questions" class="nav-link active" data-scroll-target="#questions"><span class="header-section-number">6.1</span> Questions</a></li>
+<li><a href="#questions" id="toc-questions" class="nav-link active" data-scroll-target="#questions"><span class="header-section-number">6.1</span> Questions</a></li>
   <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link" data-scroll-target="#learning-objectives"><span class="header-section-number">6.2</span> Learning Objectives</a></li>
-  <li><a href="#lesson-content" id="toc-lesson-content" class="nav-link" data-scroll-target="#lesson-content"><span class="header-section-number">6.3</span> Lesson Content</a></li>
+  <li>
+<a href="#lesson-content" id="toc-lesson-content" class="nav-link" data-scroll-target="#lesson-content"><span class="header-section-number">6.3</span> Lesson Content</a>
+  <ul class="collapse">
+<li><a href="#basic-arithmetic" id="toc-basic-arithmetic" class="nav-link" data-scroll-target="#basic-arithmetic"><span class="header-section-number">6.3.1</span> Basic Arithmetic</a></li>
+  <li><a href="#arithmetic-operators" id="toc-arithmetic-operators" class="nav-link" data-scroll-target="#arithmetic-operators"><span class="header-section-number">6.3.2</span> Arithmetic operators</a></li>
+  <li><a href="#variables" id="toc-variables" class="nav-link" data-scroll-target="#variables"><span class="header-section-number">6.3.3</span> Variables</a></li>
+  </ul>
+</li>
   <li><a href="#exercises" id="toc-exercises" class="nav-link" data-scroll-target="#exercises"><span class="header-section-number">6.4</span> Exercises</a></li>
   <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary"><span class="header-section-number">6.5</span> Summary</a></li>
-  </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/wokech/r4novice/edit/main/arithmetic_variables.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/wokech/r4novice/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+  </ul><div class="toc-actions"><ul><li><a href="https://github.com/wokech/r4novice/edit/main/arithmetic_variables.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/wokech/r4novice/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
 <h1 class="title"><span id="sec-arithmetic-variables" class="quarto-section-identifier"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Basic arithmetic, arithmetic operators, and variables</span></span></h1>
 </div>
 
@@ -254,20 +292,15 @@ ul.task-list li input[type="checkbox"] {
   
 
 
-</header>
-
-
-<section id="questions" class="level2" data-number="6.1">
-<h2 data-number="6.1" class="anchored" data-anchor-id="questions"><span class="header-section-number">6.1</span> Questions</h2>
+</header><section id="questions" class="level2" data-number="6.1"><h2 data-number="6.1" class="anchored" data-anchor-id="questions">
+<span class="header-section-number">6.1</span> Questions</h2>
 <ul>
 <li><p>How can we perform basic arithmetic operations in R?</p></li>
 <li><p>What arithmetic operators can be used in R?</p></li>
 <li><p>How do I assign values to variables?</p></li>
 <li><p>Are there naming conventions/variable style guides for creating new variables?</p></li>
-</ul>
-</section>
-<section id="learning-objectives" class="level2" data-number="6.2">
-<h2 data-number="6.2" class="anchored" data-anchor-id="learning-objectives"><span class="header-section-number">6.2</span> Learning Objectives</h2>
+</ul></section><section id="learning-objectives" class="level2" data-number="6.2"><h2 data-number="6.2" class="anchored" data-anchor-id="learning-objectives">
+<span class="header-section-number">6.2</span> Learning Objectives</h2>
 <ul>
 <li><p>Learn how to use R to perform basic arithmetic.</p></li>
 <li><p>Declare and manipulate variables to store and retrieve data in R.</p></li>
@@ -275,34 +308,291 @@ ul.task-list li input[type="checkbox"] {
 <li><p>Understand the concept of variables and assign numeric values in your R code.</p></li>
 <li><p>Use appropriate naming conventions for variables.</p></li>
 <li><p>Differentiate between different variable types (numeric, integer, character) and choose appropriate ones.</p></li>
+</ul></section><section id="lesson-content" class="level2" data-number="6.3"><h2 data-number="6.3" class="anchored" data-anchor-id="lesson-content">
+<span class="header-section-number">6.3</span> Lesson Content</h2>
+<section id="basic-arithmetic" class="level3" data-number="6.3.1"><h3 data-number="6.3.1" class="anchored" data-anchor-id="basic-arithmetic">
+<span class="header-section-number">6.3.1</span> Basic Arithmetic</h3>
+<p>To get started, first, we will open R or RStudio (<a href="#fig-arithmetic-1" class="quarto-xref">Figure&nbsp;<span class="quarto-unresolved-ref">fig-arithmetic-1</span></a>). In R, go to the console, and in RStudio, head to the console pane. Next, type in a basic arithmetic calculation such as <code>1 + 1</code> after the angle bracket (<code>&gt;</code>) and hit “Enter.”</p>
+<p><strong>NOTE</strong>: According to the Tidyverse Style Guide there should be a space on either side of the operator.</p>
+<p>Examples</p>
+<ul>
+<li><code>a &lt;- 2</code></li>
+<li><code>b &lt;- 4 + c</code></li>
 </ul>
-</section>
-<section id="lesson-content" class="level2" data-number="6.3">
-<h2 data-number="6.3" class="anchored" data-anchor-id="lesson-content"><span class="header-section-number">6.3</span> Lesson Content</h2>
-<p><em>In progress</em></p>
-</section>
-<section id="exercises" class="level2" data-number="6.4">
-<h2 data-number="6.4" class="anchored" data-anchor-id="exercises"><span class="header-section-number">6.4</span> Exercises</h2>
+<div class="cell">
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fl">1</span> <span class="op">+</span> <span class="fl">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 2</code></pre>
+</div>
+</div>
+<p>The output will be observed next to the square bracket containing the number 1 (<code>[1]</code>). The 1 indicates that the indexing begins at position 1. Here, as opposed to Python, which uses zero-based indexing, R uses one-based indexing.</p>
+<div id="fig-arithmetic-1" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure"><div aria-describedby="fig-arithmetic-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/arithmetic/arithmetic_console.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-arithmetic-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6.1: A basic arithmetic calculation in the R Console
+</figcaption></figure>
+</div>
+<p>Additionally, to include comments into the code block, we use the hash (<code>#</code>) symbol. Anything written after the code block will be commented out and not run.</p>
+<div class="cell">
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># A simple arithmetic calculation (which is not run because of the hash symbol)</span></span>
+<span></span>
+<span><span class="fl">1</span> <span class="op">+</span> <span class="fl">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 2</code></pre>
+</div>
+</div>
+</section><section id="arithmetic-operators" class="level3" data-number="6.3.2"><h3 data-number="6.3.2" class="anchored" data-anchor-id="arithmetic-operators">
+<span class="header-section-number">6.3.2</span> Arithmetic operators</h3>
+<p>Various arithmetic operators (listed below) can be used in R/RStudio.</p>
+<table class="table">
+<thead><tr class="header">
+<th style="text-align: center;">Arithmetic Operator</th>
+<th style="text-align: center;">Description</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><code>+</code></td>
+<td style="text-align: center;">Addition</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><code>-</code></td>
+<td style="text-align: center;">Subtraction</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><code>*</code></td>
+<td style="text-align: center;">Multiplication</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><code>/</code></td>
+<td style="text-align: center;">Division</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">
+<code>**</code> or <code>^</code>
+</td>
+<td style="text-align: center;">Exponentiation</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><code>%%</code></td>
+<td style="text-align: center;">Modulus (remainder after division)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><code>%/%</code></td>
+<td style="text-align: center;">Integer division</td>
+</tr>
+</tbody>
+</table>
+<p>Example</p>
+<p>Create an R script called “my_arithmetic_1.R”</p>
+<p>Run the following calculations in the script and save the file to the working directory.</p>
+<section id="addition" class="level4" data-number="6.3.2.1"><h4 data-number="6.3.2.1" class="anchored" data-anchor-id="addition">
+<span class="header-section-number">6.3.2.1</span> Addition</h4>
+<div class="cell">
+<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fl">10</span> <span class="op">+</span> <span class="fl">30</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 40</code></pre>
+</div>
+</div>
+</section><section id="subtraction" class="level4" data-number="6.3.2.2"><h4 data-number="6.3.2.2" class="anchored" data-anchor-id="subtraction">
+<span class="header-section-number">6.3.2.2</span> Subtraction</h4>
+<div class="cell">
+<div class="sourceCode" id="cb7"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fl">30</span> <span class="op">-</span> <span class="fl">24</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 6</code></pre>
+</div>
+</div>
+</section><section id="multiplication" class="level4" data-number="6.3.2.3"><h4 data-number="6.3.2.3" class="anchored" data-anchor-id="multiplication">
+<span class="header-section-number">6.3.2.3</span> Multiplication</h4>
+<div class="cell">
+<div class="sourceCode" id="cb9"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fl">20</span> <span class="op">*</span> <span class="fl">4</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 80</code></pre>
+</div>
+</div>
+</section><section id="division" class="level4" data-number="6.3.2.4"><h4 data-number="6.3.2.4" class="anchored" data-anchor-id="division">
+<span class="header-section-number">6.3.2.4</span> Division</h4>
+<div class="cell">
+<div class="sourceCode" id="cb11"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fl">93</span> <span class="op">/</span> <span class="fl">4</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 23.25</code></pre>
+</div>
+</div>
+</section><section id="exponentiation" class="level4" data-number="6.3.2.5"><h4 data-number="6.3.2.5" class="anchored" data-anchor-id="exponentiation">
+<span class="header-section-number">6.3.2.5</span> Exponentiation</h4>
+<div class="cell">
+<div class="sourceCode" id="cb13"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fl">3</span><span class="op">^</span><span class="fl">6</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 729</code></pre>
+</div>
+</div>
+</section><section id="modulus-remainder-with-division" class="level4" data-number="6.3.2.6"><h4 data-number="6.3.2.6" class="anchored" data-anchor-id="modulus-remainder-with-division">
+<span class="header-section-number">6.3.2.6</span> Modulus (remainder with division)</h4>
+<div class="cell">
+<div class="sourceCode" id="cb15"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fl">94</span> <span class="op"><a href="https://rdrr.io/r/base/Arithmetic.html">%%</a></span> <span class="fl">5</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 4</code></pre>
+</div>
+</div>
+</section><section id="integer-division" class="level4" data-number="6.3.2.7"><h4 data-number="6.3.2.7" class="anchored" data-anchor-id="integer-division">
+<span class="header-section-number">6.3.2.7</span> Integer Division</h4>
+<div class="cell">
+<div class="sourceCode" id="cb17"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fl">54</span> <span class="op"><a href="https://rdrr.io/r/base/Arithmetic.html">%/%</a></span> <span class="fl">7</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 7</code></pre>
+</div>
+</div>
+</section><section id="slightly-more-complex-arithmetic-operations" class="level4" data-number="6.3.2.8"><h4 data-number="6.3.2.8" class="anchored" data-anchor-id="slightly-more-complex-arithmetic-operations">
+<span class="header-section-number">6.3.2.8</span> Slightly more complex arithmetic operations</h4>
+<div class="cell">
+<div class="sourceCode" id="cb19"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fl">5</span> <span class="op">-</span> <span class="fl">1</span> <span class="op">+</span> <span class="op">(</span><span class="fl">4</span> <span class="op">*</span> <span class="fl">3</span><span class="op">)</span> <span class="op">/</span> <span class="fl">16</span> <span class="op">*</span> <span class="fl">3</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 6.25</code></pre>
+</div>
+</div>
+</section></section><section id="variables" class="level3" data-number="6.3.3"><h3 data-number="6.3.3" class="anchored" data-anchor-id="variables">
+<span class="header-section-number">6.3.3</span> Variables</h3>
+<p>Variables are instrumental in programming because they are used as “containers” to store data values. To assign a value to a variable, we can use <code>&lt;−</code> or <code>=</code>. However, most R users prefer to use <code>&lt;−</code>.</p>
+<ul>
+<li>Variables store values for later use in your code. This results in improved readability and efficiency.</li>
+<li>Assign values to variables using the <code>&lt;-</code> operator (e.g., <code>x &lt;- 5</code>).</li>
+<li>Variable names should be descriptive and avoid special characters.</li>
+</ul>
+<section id="variable-assignment" class="level4" data-number="6.3.3.1"><h4 data-number="6.3.3.1" class="anchored" data-anchor-id="variable-assignment">
+<span class="header-section-number">6.3.3.1</span> Variable assignment</h4>
+<ol type="1">
+<li>Using <code>&lt;-</code>
+</li>
+</ol>
+<div class="cell">
+<div class="sourceCode" id="cb21"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">variable_1</span> <span class="op">&lt;-</span> <span class="fl">5</span></span>
+<span><span class="va">variable_1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 5</code></pre>
+</div>
+</div>
+<ol start="2" type="1">
+<li>Using <code>=</code>
+</li>
+</ol>
+<div class="cell">
+<div class="sourceCode" id="cb23"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">variable_2</span> <span class="op">&lt;-</span> <span class="fl">10</span></span>
+<span><span class="va">variable_2</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 10</code></pre>
+</div>
+</div>
+<ol start="3" type="1">
+<li>Reverse the value and variable with <code>-&gt;</code>
+</li>
+</ol>
+<div class="cell">
+<div class="sourceCode" id="cb25"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fl">15</span> <span class="op">-&gt;</span> <span class="va">variable_3</span></span>
+<span><span class="va">variable_3</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 15</code></pre>
+</div>
+</div>
+<ol start="4" type="1">
+<li>Assign two variables to one value</li>
+</ol>
+<div class="cell">
+<div class="sourceCode" id="cb27"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">variable_4</span> <span class="op">&lt;-</span> <span class="va">variable_5</span> <span class="op">&lt;-</span> <span class="fl">30</span></span>
+<span><span class="va">variable_4</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 30</code></pre>
+</div>
+<div class="sourceCode" id="cb29"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">variable_5</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 30</code></pre>
+</div>
+</div>
+<p>The output of the variable can then be obtained by:</p>
+<ol type="1">
+<li><p>Typing the variable name and then pressing “Enter,”</p></li>
+<li><p>Typing “print” with the variable name in brackets, <code>print(variable)</code>, and,</p></li>
+<li><p>Typing “View” with the variable name in brackets, <code>View(variable)</code>.</p></li>
+</ol>
+<p>Both <code><a href="https://rdrr.io/r/base/print.html">print()</a></code> and <code><a href="https://rdrr.io/r/utils/View.html">View()</a></code> are some of the many built-in functions available in R.</p>
+<div id="fig-environment-1" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure"><div aria-describedby="fig-environment-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/arithmetic/environment_pane.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-environment-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6.2: The environment pane in RStudio with stored variables
+</figcaption></figure>
+</div>
+<div class="cell">
+<div class="sourceCode" id="cb31"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/print.html">print</a></span><span class="op">(</span><span class="va">variable_1</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 5</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode" id="cb33"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/View.html">View</a></span><span class="op">(</span><span class="va">variable_2</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Output of <code><a href="https://rdrr.io/r/utils/View.html">View()</a></code> will be seen in the script pane.</p>
+</section><section id="the-assign-and-rm-functions" class="level4" data-number="6.3.3.2"><h4 data-number="6.3.3.2" class="anchored" data-anchor-id="the-assign-and-rm-functions">
+<span class="header-section-number">6.3.3.2</span> The <code>assign()</code> and <code>rm()</code> functions</h4>
+<p>In addition to using the assignment operators (<code>&lt;-</code> and <code>=</code>), we can use the <code><a href="https://rdrr.io/r/base/assign.html">assign()</a></code> function to assign a value to a variable.</p>
+<div class="cell">
+<div class="sourceCode" id="cb34"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/assign.html">assign</a></span><span class="op">(</span><span class="st">"variable_6"</span>, <span class="fl">555</span><span class="op">)</span></span>
+<span><span class="va">variable_6</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 555</code></pre>
+</div>
+</div>
+<p>To remove the assignment of the value to the variable, either delete the variable in the “environment pane” or use the <code><a href="https://rdrr.io/r/base/rm.html">rm()</a></code> function.</p>
+<div class="cell">
+<div class="sourceCode" id="cb36"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">variable_7</span> <span class="op">&lt;-</span> <span class="fl">159</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode" id="cb37"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/rm.html">rm</a></span><span class="op">(</span><span class="va">variable_7</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>After running <code><a href="https://rdrr.io/r/base/rm.html">rm()</a></code> look at the environment pane to confirm whether variable_7 has been removed.</p>
+</section><section id="naming-variables" class="level4" data-number="6.3.3.3"><h4 data-number="6.3.3.3" class="anchored" data-anchor-id="naming-variables">
+<span class="header-section-number">6.3.3.3</span> Naming variables</h4>
+<p>At this point, you may be wondering what conventions are used for naming variables. First, variables need to have meaningful names such as current_temp, time_24_hr, or weight_lbs. However, we need to be mindful of the variable style guide (link) which provides us with the appropriate rules for naming variables.</p>
+<p><code>object_name &lt;- value</code></p>
+<p>Objects must start with a letter and only contain letters and numbers</p>
+<p>Some rules to keep in mind are: 1. R is case-sensitive (variable is not the same as Variable), 2. Names similar to typical outputs or functions (TRUE, FALSE, if, or else) cannot be used, 3. Appropriate variable names can contain letters, numbers, dots, and underscores. However, you cannot start with an underscore, number, or dot followed by a number.</p>
+</section><section id="valid-and-invalid-variable-names" class="level4" data-number="6.3.3.4"><h4 data-number="6.3.3.4" class="anchored" data-anchor-id="valid-and-invalid-variable-names">
+<span class="header-section-number">6.3.3.4</span> Valid and invalid variable names</h4>
+<p>Types of variable names:</p>
+<ul>
+<li>snake_case</li>
+<li>CamelCase</li>
+<li>use.periods</li>
+<li>snake.case.CamelCase_snake_case</li>
+</ul>
+<p>Valid names:</p>
+<ul>
+<li><p>time_24_hr</p></li>
+<li><p>.time24_hr</p></li>
+</ul>
+<p>Invalid names:</p>
+<ul>
+<li><p>_24_hr.time</p></li>
+<li><p>24_hr_time</p></li>
+<li><p>.24_hr_time</p></li>
+</ul></section></section></section><section id="exercises" class="level2" data-number="6.4"><h2 data-number="6.4" class="anchored" data-anchor-id="exercises">
+<span class="header-section-number">6.4</span> Exercises</h2>
 <ol type="i">
-<li>In R, calculate 3 + 5 and then 4 * 6.</li>
-<li>Assign the value 10 to a variable called x. Then calculate x ^ 2. Next, calculate the expression (3 + x) * (x - 1) using the x from before.</li>
+<li>In R, calculate <code>3 + 5</code> and then <code>4 * 6</code>.</li>
+<li>Assign the value 10 to a variable called x. Then calculate <code>x ^ 2</code>. Next, calculate the expression <code>(3 + x) * (x - 1)</code> using the x from before.</li>
 <li>Declare a variable to store your age and assign a value to it. Print the variable value.</li>
 <li>Create variables for the length and width of a rectangle and calculate its area.</li>
 <li>Explain the rules for naming variables in R. Provide examples of valid and invalid variable names.</li>
 <li>What is operator precedence in R? How does it work for arithmetic operators?</li>
 <li>What data types can be used for arithmetic operations in R?</li>
-<li>What is the difference between &lt;- and = for assignment in R?</li>
-</ol>
-</section>
-<section id="summary" class="level2" data-number="6.5">
-<h2 data-number="6.5" class="anchored" data-anchor-id="summary"><span class="header-section-number">6.5</span> Summary</h2>
+<li>What is the difference between <code>&lt;-</code> and <code>=</code> for assignment in R?</li>
+</ol></section><section id="summary" class="level2" data-number="6.5"><h2 data-number="6.5" class="anchored" data-anchor-id="summary">
+<span class="header-section-number">6.5</span> Summary</h2>
 <p>In this chapter, I have demonstrated how to perform basic arithmetic operations and how to use the various arithmetic operators available in R/RStudio. Additionally, the concept of variables and values has been explained, and conventions for appropriately naming variables have been discussed. In the next chapter, we will look at the other types of primary operators in R/RStudio.</p>
 
 
-</section>
-
-</main> <!-- /main -->
-<script id="quarto-html-after-body" type="application/javascript">
+</section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
     const mode = bsSheetEl.getAttribute("data-mode");
@@ -688,10 +978,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
 });
-</script>
-<nav class="page-navigation">
-  <div class="nav-page nav-page-previous">
-      <a href="./importing.html" class="pagination-link  aria-label=" &lt;span="" data="" and="" saving="" analysis="" outputs&lt;="" span&gt;"="">
+</script><nav class="page-navigation"><div class="nav-page nav-page-previous">
+      <a href="./importing.html" class="pagination-link  aria-label=" data="" and="" saving="" analysis="" outputs="">
         <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Importing data and saving analysis outputs</span></span>
       </a>          
   </div>
@@ -702,8 +990,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   </div>
 </nav>
 </div> <!-- /content -->
-<footer class="footer">
-  <div class="nav-footer">
+<footer class="footer"><div class="nav-footer">
     <div class="nav-footer-left">
 <p>R for Novice Programmers (1e) was written by William Okech.</p>
 </div>   
@@ -715,8 +1002,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>
   </div>
 </footer>
-
-
 
 
 </body></html>
