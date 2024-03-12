@@ -361,59 +361,138 @@ Load the library
 
 `readMat("file name")`
 
-#### Tidyverse and the `readr` package
+#### Tidyverse and the `readr`/`readxl` packages
 
 To enhance the speed and efficiency of data imports, the user can work with the readr package that is a part of the tidyverse. This is because the functions in this package allows for faster data imports and work similarly despite the data type that is imported.
 
 1.  Commonly-used data importation formats in the tidyverse
 
--   Import flat files
+```{r}
+install.packages("readr")
+```
 
-read_table()
+```{r}
+library(readr)
+```
 
-read_csv()
+a. Import flat files
 
-read_csv2()
+- `read_table()` is used to import whitespace-separated files.
 
-read_tsv()
+Example:
 
-read_delim()
+```{r}
+read_table("datasets/r4novice_datafile.txt", col_names = TRUE)
+```
 
--   Import spreadsheets
+- `read_csv()` is for comma-separated values (CSV), while `read_csv2()` is 
+   used for semicolon-separated values with `,` as the decimal mark.
 
-readxl
+Example:
 
-read_xls()
+```{r}
+read_csv("datasets/r4novice_datafile.csv")
+```
 
-read_xlsx()
+- `read_tsv()` is for tab-separated values (TSV)
 
-read_excel()
+Example:
 
-read_excel("file path", sheet = "file path")
+```{r}
+read_tsv("datasets/r4novice_datafile.txt")
+```
 
-excel_sheets("file path")
+- `read_delim()` is for all delimited files, such as CSV and TSV.
 
--   Import Google Sheets
+Example:
 
-googlesheets4
+```{r}
+read_delim("datasets/r4novice_datafile.csv", delim = ",")
+```
 
-read_sheet()
+b. Import spreadsheets
 
-sheet_names()
+```{r}
+install.packages("readxl")
+```
+
+```{r}
+library(readxl)
+```
+
+Use excel_sheets() to read the names of the different worksheets in the Excel workbook.
+
+```{r}
+excel_sheets("datasets/r4novice_datafile.xlsx")
+```
+```{r}
+read_excel("datasets/r4novice_datafile.xlsx", sheet = "Sheet1")
+```
 
 2.  Less frequently used data importation formats
 
-read_fwf()
+- Import Google Sheets
 
-read_log()
+```{r}
+install.packages("googlesheets4")
+```
 
-readRDS()
+```{r}
+library(googlesheets4)
+```
 
-read_lines()
+Use `read_sheet("link to file")` to read in the file via the link.
+
+- `read_fwf()` is used to read in fixed-width files.
+
+- `read_log()` is the standard format for reading in web log files.
+
+- `readRDS()` is used to read data stored as a single R object.
+
+- `read_lines()` is used to read data up to a specified number of lines in a file.
 
 **NOTE**: Missing data is a major challenge in data analysis. Strategies for dealing with this are discussed in Chapter 12 "Handling missing data" (@sec-missing).
 
-Once the data is imported, the user can glimpse the data with `str()`, `head()`, and `summary()` functions. Additionally, one can check various aspects of the data such as `names()`, `dim`, and `class` to validate that the import was successful.
+3. Inspecting the imported data
+
+Once the data is imported, the user can inspect the data with `str()`, `head()`, and `summary()` functions. Additionally, one can check various aspects of the data such as `names()`, `dim`, and `class` to validate that the import was successful.
+
+Example:
+
+Import a specific dataset
+
+```{r}
+import_inspect <- read_csv("datasets/r4novice_datafile.csv")
+```
+
+```{r}
+head(import_inspect)
+```
+
+```{r}
+tail(import_inspect)
+```
+
+```{r}
+summary(import_inspect)
+```
+
+```{r}
+str(import_inspect)
+```
+
+```{r}
+names(import_inspect)
+```
+
+```{r}
+dim(import_inspect)
+```
+
+```{r}
+class(import_inspect)
+typeof(import_inspect)
+```
 
 ### Saving data and analysis outputs
 
