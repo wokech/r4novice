@@ -118,8 +118,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto"><div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="./">R for Novice Programmers (1e)</a> 
-        <div class="sidebar-tools-main">
+        <div class="sidebar-tools-main tools-wide">
     <a href="https://github.com/wokech/r4novice" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+    <a href="./R-for-Novice-Programmers--1e-.pdf" title="Download PDF" class="quarto-navigation-tool px-1" aria-label="Download PDF"><i class="bi bi-file-pdf"></i></a>
   <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
   <div class="quarto-reader-toggle-btn">
   <i class="bi"></i>
@@ -243,13 +244,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./appendix.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">: Resources for Learning R</span></span></a>
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Resources for Learning R</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./datasets.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">: Datasets</span></span></a>
+ <span class="menu-text"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">Datasets</span></span></a>
   </div>
 </li>
       </ul>
@@ -320,13 +321,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell">
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va">datasets</span><span class="op">)</span></span>
 <span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/utils/data.html">data</a></span><span class="op">(</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span><span class="fu"><a href="https://rdrr.io/r/base/print.html">print</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/utils/data.html">data</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>To find out more about a specific dataset, we use the <code>?</code> operator.</p>
 <p><code>?dataset</code></p>
 <p>Example:</p>
 <div class="cell">
-<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="op">?</span><span class="va">airquality</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/print.html">print</a></span><span class="op">(</span><span class="op">?</span><span class="va">airquality</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>starting httpd help server ... done</code></pre>
 </div>
@@ -806,8 +807,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span class="header-section-number">5.3.3</span> Importing external datasets</h3>
 <p>As an R user, one of the tasks that you will often engage in is the importation of data from various sources. The commonly used data types include, but are not limited to CSV, TXT, JSON, SQL, SAS, STATA, SPSS, and XLSX. Additionally, R has two native data formats: Rdata (Rda) and Rds. Rdata is for multiple objects, while Rds is for a single R object.</p>
 <p>When importing external data, first set the correct working directory. The function <code><a href="https://rdrr.io/r/base/getwd.html">getwd()</a></code> will show the current working directory and <code>setwd(file_path_name)</code> will set the working directory to the file path name specified.</p>
-<p><strong>NOTE</strong>: External datasets can be accessed from multiple sources. Examples include can be found in the Appendix 1 (<a href="appendix.html" class="quarto-xref"><span>Appendix A</span></a>). Both of these websites contain large repositories of datasets that can be used for the examples provided below.</p>
-<p>Download the datasets from Appendix 2 (<a href="datasets.html" class="quarto-xref"><span>Appendix B</span></a>) and save them to your working directory.</p>
+<p><strong>NOTE</strong>: External datasets can be accessed from multiple sources. Examples include can be found in the Appendix 1 (<a href="#sec-appendix-1" class="quarto-xref"><span class="quarto-unresolved-ref">sec-appendix-1</span></a>). Both of these websites contain large repositories of datasets that can be used for the examples provided below.</p>
+<p>Download the datasets from Appendix 2 (<a href="#sec-appendix-2" class="quarto-xref"><span class="quarto-unresolved-ref">sec-appendix-2</span></a>) and save them to your working directory.</p>
 <p>Data importation can use base R functions or the <code>readr</code> package, which is part of the tidyverse. We will review both sets of methods in this section</p>
 <section id="base-r" class="level4" data-number="5.3.3.1"><h4 data-number="5.3.3.1" class="anchored" data-anchor-id="base-r">
 <span class="header-section-number">5.3.3.1</span> Base R</h4>
@@ -829,49 +830,171 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <code><a href="https://rdrr.io/r/utils/read.table.html">read.table()</a></code> is a general function to read in a file in table format as a data frame.</li>
 </ul>
 <p>Example:</p>
+<div class="cell">
+<div class="sourceCode" id="cb29"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/read.table.html">read.table</a></span><span class="op">(</span><span class="st">"datasets/r4novice_datafile.csv"</span>, header <span class="op">=</span> <span class="cn">TRUE</span>, sep <span class="op">=</span> <span class="st">","</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>   Name Class.Grade Age Gender Mathematics English Science Physical.Education
+1    JS           9  15      M           A       A       B                  C
+2    NC           9  16      M           C       C       E                  C
+3    KS           9  15      F           A       B       C                  D
+4    QP           7  13      F           B       C       A                  A
+5    QI           7  14      F           B       D       A                  C
+6    HD           7  14      M           B       E       B                  D
+7    DJ           8  14      F           C       D       E                  A
+8    JD           8  15      M           A       A       D                  E
+9    HE           8  16      F           C       D       A                  A
+10   VO           8  17      F           A       A       C                  C
+   Arts.and.Social.Science Religious.Education
+1                        D                   D
+2                        D                   A
+3                        E                   A
+4                        D                   E
+5                        A                   E
+6                        D                   C
+7                        A                   B
+8                        B                   C
+9                        B                   D
+10                       B                   E</code></pre>
+</div>
+</div>
 <ul>
 <li>
-<code><a href="https://rdrr.io/r/utils/read.table.html">read.csv()</a></code> imports data with comma separated values.</li>
+<code><a href="https://rdrr.io/r/utils/read.table.html">read.csv()</a></code> imports data with comma separated values. Alternatively, we use <code><a href="https://rdrr.io/r/utils/read.table.html">read.csv2()</a></code> is used where comma “,” indicates a decimal point and a semicolon is a field separator.</li>
 </ul>
 <p>Example:</p>
+<div class="cell">
+<div class="sourceCode" id="cb31"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/read.table.html">read.csv</a></span><span class="op">(</span><span class="st">"datasets/r4novice_datafile.csv"</span>, header <span class="op">=</span> <span class="cn">TRUE</span>, sep <span class="op">=</span> <span class="st">","</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>   Name Class.Grade Age Gender Mathematics English Science Physical.Education
+1    JS           9  15      M           A       A       B                  C
+2    NC           9  16      M           C       C       E                  C
+3    KS           9  15      F           A       B       C                  D
+4    QP           7  13      F           B       C       A                  A
+5    QI           7  14      F           B       D       A                  C
+6    HD           7  14      M           B       E       B                  D
+7    DJ           8  14      F           C       D       E                  A
+8    JD           8  15      M           A       A       D                  E
+9    HE           8  16      F           C       D       A                  A
+10   VO           8  17      F           A       A       C                  C
+   Arts.and.Social.Science Religious.Education
+1                        D                   D
+2                        D                   A
+3                        E                   A
+4                        D                   E
+5                        A                   E
+6                        D                   C
+7                        A                   B
+8                        B                   C
+9                        B                   D
+10                       B                   E</code></pre>
+</div>
+</div>
 <ul>
 <li>
-<code><a href="https://rdrr.io/r/utils/read.table.html">read.csv2()</a></code> is used where comma “,” indicates a decimal point and a semicolon is a field separator.</li>
+<code><a href="https://rdrr.io/r/utils/read.table.html">read.delim()</a></code> is used for files with tab-separated values, such as TXT and where point “.” is used as a decimal point. Alternatively, <code><a href="https://rdrr.io/r/utils/read.table.html">read.delim2()</a></code> is used for files with tab-separated values such as TXT and where comma “,” is used as a decimal point.</li>
 </ul>
 <p>Example:</p>
-<ul>
-<li>
-<code><a href="https://rdrr.io/r/utils/read.table.html">read.delim()</a></code> is used for files with tab-separated values, such as TXT and where point “.” is used as a decimal point.</li>
-</ul>
-<p>Example:</p>
-<ul>
-<li>
-<code><a href="https://rdrr.io/r/utils/read.table.html">read.delim2()</a></code> is used for files with tab-separated values such as TXT and where comma “,” is used as a decimal point.</li>
-</ul>
-<p>Example:</p>
+<div class="cell">
+<div class="sourceCode" id="cb33"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/read.table.html">read.delim</a></span><span class="op">(</span><span class="st">"datasets/r4novice_datafile.txt"</span>, header <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>   Name Class.Grade Age Gender Mathematics English Science Physical.Education
+1    JS           9  15      M           A       A       B                  C
+2    NC           9  16      M           C       C       E                  C
+3    KS           9  15      F           A       B       C                  D
+4    QP           7  13      F           B       C       A                  A
+5    QI           7  14      F           B       D       A                  C
+6    HD           7  14      M           B       E       B                  D
+7    DJ           8  14      F           C       D       E                  A
+8    JD           8  15      M           A       A       D                  E
+9    HE           8  16      F           C       D       A                  A
+10   VO           8  17      F           A       A       C                  C
+   Arts.and.Social.Science Religious.Education
+1                        D                   D
+2                        D                   A
+3                        E                   A
+4                        D                   E
+5                        A                   E
+6                        D                   C
+7                        A                   B
+8                        B                   C
+9                        B                   D
+10                       B                   E</code></pre>
+</div>
+</div>
 <ul>
 <li>General data import</li>
 </ul>
 <p>For beginners, one can use <code>read.___(file.choose())</code> for the interactive selection of files.</p>
 <p>Example:</p>
 <p><code>read.table(file.choose())</code></p>
+<p><strong>NOTE</strong>:Run this command in your R console and select the appropriate file from the working directory.</p>
 <ul>
-<li>Online files</li>
+<li>Excel (xls and xlsx) files are read in with <code><a href="https://rdrr.io/pkg/xlsx/man/read.xlsx.html">read.xlsx()</a></code>
+</li>
 </ul>
-<p>To download and import an online file, we use <code>read.html()</code> and <code>read.xml()</code></p>
+<p>Load the required library</p>
+<div class="cell">
+<div class="sourceCode" id="cb35"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/colearendt/xlsx">xlsx</a></span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 <p>Example:</p>
-<p><code>read.html("   ")</code></p>
-<p><code>read.xml("   ")</code></p>
-<ul>
-<li>Excel</li>
-</ul>
-<p><code><a href="https://github.com/colearendt/xlsx">library(xlsx)</a></code></p>
-<p><code>read.xlsx("file", sheet number or name)</code></p>
-<p>Example:</p>
+<div class="cell">
+<div class="sourceCode" id="cb36"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/pkg/xlsx/man/read.xlsx.html">read.xlsx</a></span><span class="op">(</span><span class="st">"datasets/r4novice_datafile.xls"</span>, sheetIndex <span class="op">=</span> <span class="fl">1</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>   Name Class.Grade Age Gender Mathematics English Science Physical.Education
+1    JS           9  15      M           A       A       B                  C
+2    NC           9  16      M           C       C       E                  C
+3    KS           9  15      F           A       B       C                  D
+4    QP           7  13      F           B       C       A                  A
+5    QI           7  14      F           B       D       A                  C
+6    HD           7  14      M           B       E       B                  D
+7    DJ           8  14      F           C       D       E                  A
+8    JD           8  15      M           A       A       D                  E
+9    HE           8  16      F           C       D       A                  A
+10   VO           8  17      F           A       A       C                  C
+   Arts.and.Social.Science Religious.Education
+1                        D                   D
+2                        D                   A
+3                        E                   A
+4                        D                   E
+5                        A                   E
+6                        D                   C
+7                        A                   B
+8                        B                   C
+9                        B                   D
+10                       B                   E</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode" id="cb38"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/pkg/xlsx/man/read.xlsx.html">read.xlsx</a></span><span class="op">(</span><span class="st">"datasets/r4novice_datafile.xls"</span>, sheetIndex <span class="op">=</span> <span class="fl">1</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>   Name Class.Grade Age Gender Mathematics English Science Physical.Education
+1    JS           9  15      M           A       A       B                  C
+2    NC           9  16      M           C       C       E                  C
+3    KS           9  15      F           A       B       C                  D
+4    QP           7  13      F           B       C       A                  A
+5    QI           7  14      F           B       D       A                  C
+6    HD           7  14      M           B       E       B                  D
+7    DJ           8  14      F           C       D       E                  A
+8    JD           8  15      M           A       A       D                  E
+9    HE           8  16      F           C       D       A                  A
+10   VO           8  17      F           A       A       C                  C
+   Arts.and.Social.Science Religious.Education
+1                        D                   D
+2                        D                   A
+3                        E                   A
+4                        D                   E
+5                        A                   E
+6                        D                   C
+7                        A                   B
+8                        B                   C
+9                        B                   D
+10                       B                   E</code></pre>
+</div>
+</div>
 <ol start="2" type="1">
 <li>Less frequently used data importation formats</li>
 </ol>
-<ol type="a">
+<!-- --><ol type="a">
 <li><p>Fixed-width formats: <code>read.fwf("file path", header = TRUE)</code></p></li>
 <li><p>SPSS/Stata/SAS Data Files: The foreign package reads SPSS SAV files, Stata DTA files, and SAS XPORT libraries.</p></li>
 </ol>
@@ -899,9 +1022,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <ol start="3" type="a">
 <li>Native data formats in R</li>
 </ol>
-<p>R Data Files: <code>load("____.rda")</code></p>
-<p>RDS Files: <code>readRDS("____.rds")</code></p>
-<ol start="4" type="a">
+<p>R Data Files: <code>load("file_name.rda")</code></p>
+<p>RDS Files: <code>readRDS("file_name.rds")</code></p>
+<p>Online Files</p>
+<p>To download and import an online file, we use <code>read.html()</code> and <code>read.xml()</code></p>
+<p>Example:</p>
+<p><code>read.html("file path")</code></p>
+<p><code>read.xml("file path")</code></p>
+<ol start="5" type="a">
 <li>Miscellaneous file formats</li>
 </ol>
 <p>JSON</p>
@@ -909,88 +1037,486 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p><code>install.packages("rjson")</code></p>
 <p>Load the library</p>
 <p><code><a href="https://github.com/alexcb/rjson">library(rjson)</a></code></p>
-<p><code>fromJSON(file = "____")</code></p>
+<p><code>fromJSON(file = "file name")</code></p>
 <p>SQL</p>
 <p>Install the library</p>
 <p><code>install.packages("RSQLite")</code></p>
 <p>Load the library</p>
 <p><code><a href="https://rsqlite.r-dbi.org">library(RSQLite)</a></code></p>
-<p><code>sql_connect &lt;- dbConnect(RSQLite::SQLite(), "_____")</code></p>
+<p><code>sql_connect &lt;- dbConnect(RSQLite::SQLite(), "file name")</code></p>
 <p><code>dbListTables(sql_connect)</code></p>
 <p>Matlab</p>
 <p>Install the library</p>
 <p><code>install.packages("Rmatlab")</code></p>
 <p>Load the library</p>
 <p><code><a href="https://rdrr.io/r/base/library.html">library(Rmatlab)</a></code></p>
-<p><code>readMat("file path")</code></p>
-</section><section id="tidyverse-and-the-readr-package" class="level4" data-number="5.3.3.2"><h4 data-number="5.3.3.2" class="anchored" data-anchor-id="tidyverse-and-the-readr-package">
-<span class="header-section-number">5.3.3.2</span> Tidyverse and the <code>readr</code> package</h4>
-<p>To enhance the speed and efficiency of data imports, the user can work with the readr package that is a part of the tidyverse. This is because the functions in this package allows for faster data imports and work similarly despite the data type that is imported.</p>
+<p><code>readMat("file name")</code></p>
+</section><section id="tidyverse-and-the-readrreadxl-packages" class="level4" data-number="5.3.3.2"><h4 data-number="5.3.3.2" class="anchored" data-anchor-id="tidyverse-and-the-readrreadxl-packages">
+<span class="header-section-number">5.3.3.2</span> Tidyverse and the <code>readr</code>/<code>readxl</code> packages</h4>
+<p>To enhance the speed and efficiency of data imports, the user can work with the <code>readr</code> and <code>readxl</code>packages that are part of the Tidyverse. This is because the functions in this package allows for faster data imports and work similarly despite the data type that is imported.</p>
 <ol type="1">
 <li>Commonly-used data importation formats in the tidyverse</li>
 </ol>
-<ul>
+<div class="cell">
+<div class="sourceCode" id="cb40"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># install.packages("readr")</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode" id="cb41"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://readr.tidyverse.org">readr</a></span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'readr' was built under R version 4.3.3</code></pre>
+</div>
+</div>
+<ol type="a">
 <li>Import flat files</li>
-</ul>
-<p>read_table()</p>
-<p>read_csv()</p>
-<p>read_csv2()</p>
-<p>read_tsv()</p>
-<p>read_delim()</p>
+</ol>
 <ul>
+<li>
+<code><a href="https://readr.tidyverse.org/reference/read_table.html">read_table()</a></code> is used to import whitespace-separated files.</li>
+</ul>
+<p>Example:</p>
+<div class="cell">
+<div class="sourceCode" id="cb43"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://readr.tidyverse.org/reference/read_table.html">read_table</a></span><span class="op">(</span><span class="st">"datasets/r4novice_datafile.txt"</span>, col_names <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Duplicated column names deduplicated: 'Science' =&gt; 'Science_1' [14],
+'Education' =&gt; 'Education_1' [16]</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>
+── Column specification ────────────────────────────────────────────────────────
+cols(
+  Name = col_character(),
+  Class = col_double(),
+  Grade = col_double(),
+  Age = col_character(),
+  Gender = col_character(),
+  Mathematics = col_character(),
+  English = col_character(),
+  Science = col_character(),
+  Physical = col_character(),
+  Education = col_character(),
+  Arts = col_character(),
+  and = col_character(),
+  Social = col_character(),
+  Science_1 = col_character(),
+  Religious = col_character(),
+  Education_1 = col_character()
+)</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: 10 parsing failures.
+row col   expected     actual                             file
+  1  -- 16 columns 10 columns 'datasets/r4novice_datafile.txt'
+  2  -- 16 columns 10 columns 'datasets/r4novice_datafile.txt'
+  3  -- 16 columns 10 columns 'datasets/r4novice_datafile.txt'
+  4  -- 16 columns 10 columns 'datasets/r4novice_datafile.txt'
+  5  -- 16 columns 10 columns 'datasets/r4novice_datafile.txt'
+... ... .......... .......... ................................
+See problems(...) for more details.</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 10 × 16
+   Name  Class Grade Age   Gender Mathematics English Science Physical Education
+   &lt;chr&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt; &lt;chr&gt;  &lt;chr&gt;       &lt;chr&gt;   &lt;chr&gt;   &lt;chr&gt;    &lt;chr&gt;    
+ 1 JS        9    15 M     A      A           B       C       D        D        
+ 2 NC        9    16 M     C      C           E       C       D        A        
+ 3 KS        9    15 F     A      B           C       D       E        A        
+ 4 QP        7    13 F     B      C           A       A       D        E        
+ 5 QI        7    14 F     B      D           A       C       A        E        
+ 6 HD        7    14 M     B      E           B       D       D        C        
+ 7 DJ        8    14 F     C      D           E       A       A        B        
+ 8 JD        8    15 M     A      A           D       E       B        C        
+ 9 HE        8    16 F     C      D           A       A       B        D        
+10 VO        8    17 F     A      A           C       C       B        E        
+# ℹ 6 more variables: Arts &lt;chr&gt;, and &lt;chr&gt;, Social &lt;chr&gt;, Science_1 &lt;chr&gt;,
+#   Religious &lt;chr&gt;, Education_1 &lt;chr&gt;</code></pre>
+</div>
+</div>
+<ul>
+<li>
+<code><a href="https://readr.tidyverse.org/reference/read_delim.html">read_csv()</a></code> is for comma-separated values (CSV), while <code><a href="https://readr.tidyverse.org/reference/read_delim.html">read_csv2()</a></code> is used for semicolon-separated values with <code>,</code> as the decimal mark.</li>
+</ul>
+<p>Example:</p>
+<div class="cell">
+<div class="sourceCode" id="cb48"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://readr.tidyverse.org/reference/read_delim.html">read_csv</a></span><span class="op">(</span><span class="st">"datasets/r4novice_datafile.csv"</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Rows: 10 Columns: 10
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: ","
+chr (8): Name, Gender, Mathematics, English, Science, Physical Education, Ar...
+dbl (2): Class Grade, Age
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 10 × 10
+   Name  `Class Grade`   Age Gender Mathematics English Science
+   &lt;chr&gt;         &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt;  &lt;chr&gt;       &lt;chr&gt;   &lt;chr&gt;  
+ 1 JS                9    15 M      A           A       B      
+ 2 NC                9    16 M      C           C       E      
+ 3 KS                9    15 F      A           B       C      
+ 4 QP                7    13 F      B           C       A      
+ 5 QI                7    14 F      B           D       A      
+ 6 HD                7    14 M      B           E       B      
+ 7 DJ                8    14 F      C           D       E      
+ 8 JD                8    15 M      A           A       D      
+ 9 HE                8    16 F      C           D       A      
+10 VO                8    17 F      A           A       C      
+# ℹ 3 more variables: `Physical Education` &lt;chr&gt;,
+#   `Arts and Social Science` &lt;chr&gt;, `Religious Education` &lt;chr&gt;</code></pre>
+</div>
+</div>
+<ul>
+<li>
+<code><a href="https://readr.tidyverse.org/reference/read_delim.html">read_tsv()</a></code> is for tab-separated values (TSV)</li>
+</ul>
+<p>Example:</p>
+<div class="cell">
+<div class="sourceCode" id="cb51"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://readr.tidyverse.org/reference/read_delim.html">read_tsv</a></span><span class="op">(</span><span class="st">"datasets/r4novice_datafile.txt"</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Rows: 10 Columns: 10
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (8): Name, Gender, Mathematics, English, Science, Physical Education, Ar...
+dbl (2): Class Grade, Age
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 10 × 10
+   Name  `Class Grade`   Age Gender Mathematics English Science
+   &lt;chr&gt;         &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt;  &lt;chr&gt;       &lt;chr&gt;   &lt;chr&gt;  
+ 1 JS                9    15 M      A           A       B      
+ 2 NC                9    16 M      C           C       E      
+ 3 KS                9    15 F      A           B       C      
+ 4 QP                7    13 F      B           C       A      
+ 5 QI                7    14 F      B           D       A      
+ 6 HD                7    14 M      B           E       B      
+ 7 DJ                8    14 F      C           D       E      
+ 8 JD                8    15 M      A           A       D      
+ 9 HE                8    16 F      C           D       A      
+10 VO                8    17 F      A           A       C      
+# ℹ 3 more variables: `Physical Education` &lt;chr&gt;,
+#   `Arts and Social Science` &lt;chr&gt;, `Religious Education` &lt;chr&gt;</code></pre>
+</div>
+</div>
+<ul>
+<li>
+<code><a href="https://readr.tidyverse.org/reference/read_delim.html">read_delim()</a></code> is for all delimited files, such as CSV and TSV.</li>
+</ul>
+<p>Example:</p>
+<div class="cell">
+<div class="sourceCode" id="cb54"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://readr.tidyverse.org/reference/read_delim.html">read_delim</a></span><span class="op">(</span><span class="st">"datasets/r4novice_datafile.csv"</span>, delim <span class="op">=</span> <span class="st">","</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Rows: 10 Columns: 10
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: ","
+chr (8): Name, Gender, Mathematics, English, Science, Physical Education, Ar...
+dbl (2): Class Grade, Age
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 10 × 10
+   Name  `Class Grade`   Age Gender Mathematics English Science
+   &lt;chr&gt;         &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt;  &lt;chr&gt;       &lt;chr&gt;   &lt;chr&gt;  
+ 1 JS                9    15 M      A           A       B      
+ 2 NC                9    16 M      C           C       E      
+ 3 KS                9    15 F      A           B       C      
+ 4 QP                7    13 F      B           C       A      
+ 5 QI                7    14 F      B           D       A      
+ 6 HD                7    14 M      B           E       B      
+ 7 DJ                8    14 F      C           D       E      
+ 8 JD                8    15 M      A           A       D      
+ 9 HE                8    16 F      C           D       A      
+10 VO                8    17 F      A           A       C      
+# ℹ 3 more variables: `Physical Education` &lt;chr&gt;,
+#   `Arts and Social Science` &lt;chr&gt;, `Religious Education` &lt;chr&gt;</code></pre>
+</div>
+</div>
+<ol start="2" type="a">
 <li>Import spreadsheets</li>
-</ul>
-<p>readxl</p>
-<p>read_xls()</p>
-<p>read_xlsx()</p>
-<p>read_excel()</p>
-<p>read_excel(“file path”, sheet = “file path”)</p>
-<p>excel_sheets(“file path”)</p>
-<ul>
-<li>Import Google Sheets</li>
-</ul>
-<p>googlesheets4</p>
-<p>read_sheet()</p>
-<p>sheet_names()</p>
+</ol>
+<div class="cell">
+<div class="sourceCode" id="cb57"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># install.packages("readxl")</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode" id="cb58"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://readxl.tidyverse.org">readxl</a></span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Use excel_sheets() to read the names of the different worksheets in the Excel workbook.</p>
+<div class="cell">
+<div class="sourceCode" id="cb59"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://readxl.tidyverse.org/reference/excel_sheets.html">excel_sheets</a></span><span class="op">(</span><span class="st">"datasets/r4novice_datafile.xlsx"</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "Sheet1"</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode" id="cb61"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://readxl.tidyverse.org/reference/read_excel.html">read_excel</a></span><span class="op">(</span><span class="st">"datasets/r4novice_datafile.xlsx"</span>, sheet <span class="op">=</span> <span class="st">"Sheet1"</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 10 × 10
+   Name  `Class Grade`   Age Gender Mathematics English Science
+   &lt;chr&gt;         &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt;  &lt;chr&gt;       &lt;chr&gt;   &lt;chr&gt;  
+ 1 JS                9    15 M      A           A       B      
+ 2 NC                9    16 M      C           C       E      
+ 3 KS                9    15 F      A           B       C      
+ 4 QP                7    13 F      B           C       A      
+ 5 QI                7    14 F      B           D       A      
+ 6 HD                7    14 M      B           E       B      
+ 7 DJ                8    14 F      C           D       E      
+ 8 JD                8    15 M      A           A       D      
+ 9 HE                8    16 F      C           D       A      
+10 VO                8    17 F      A           A       C      
+# ℹ 3 more variables: `Physical Education` &lt;chr&gt;,
+#   `Arts and Social Science` &lt;chr&gt;, `Religious Education` &lt;chr&gt;</code></pre>
+</div>
+</div>
 <ol start="2" type="1">
 <li>Less frequently used data importation formats</li>
 </ol>
-<p>read_fwf()</p>
-<p>read_log()</p>
-<p>readRDS()</p>
-<p>read_lines()</p>
-<p><strong>NOTE</strong>: Missing data is a major challenge in data analysis. Strategies for dealing with this are discussed in Chapter 12 “Handling missing data” (<a href="missing.html" class="quarto-xref"><span>Chapter 12</span></a>).</p>
-<p>Once the data is imported, the user can glimpse the data with <code><a href="https://rdrr.io/r/utils/str.html">str()</a></code>, <code><a href="https://rdrr.io/r/utils/head.html">head()</a></code>, and <code><a href="https://rdrr.io/r/base/summary.html">summary()</a></code> functions. Additionally, one can check various aspects of the data such as <code><a href="https://rdrr.io/r/base/names.html">names()</a></code>, <code>dim</code>, and <code>class</code> to validate that the import was successful.</p>
+<ul>
+<li>Import Google Sheets</li>
+</ul>
+<div class="cell">
+<div class="sourceCode" id="cb63"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># install.packages("googlesheets4")</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode" id="cb64"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://googlesheets4.tidyverse.org">googlesheets4</a></span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'googlesheets4' was built under R version 4.3.3</code></pre>
+</div>
+</div>
+<p>Use <code>read_sheet("link to file")</code> to read in the file via the link.</p>
+<ul>
+<li><p><code><a href="https://readr.tidyverse.org/reference/read_fwf.html">read_fwf()</a></code> is used to read in fixed-width files.</p></li>
+<li><p><code><a href="https://readr.tidyverse.org/reference/read_log.html">read_log()</a></code> is the standard format for reading in web log files.</p></li>
+<li><p><code><a href="https://rdrr.io/r/base/readRDS.html">readRDS()</a></code> is used to read data stored as a single R object.</p></li>
+<li><p><code><a href="https://readr.tidyverse.org/reference/read_lines.html">read_lines()</a></code> is used to read data up to a specified number of lines in a file.</p></li>
+</ul>
+<p><strong>NOTE</strong>: Missing data is a major challenge in data analysis. Strategies for dealing with this are discussed in Chapter 12 “Handling missing data” (<a href="#sec-missing" class="quarto-xref"><span class="quarto-unresolved-ref">sec-missing</span></a>).</p>
+</section><section id="inspecting-the-imported-data" class="level4" data-number="5.3.3.3"><h4 data-number="5.3.3.3" class="anchored" data-anchor-id="inspecting-the-imported-data">
+<span class="header-section-number">5.3.3.3</span> Inspecting the imported data</h4>
+<p>Once the data is imported, the user can inspect the data with <code><a href="https://rdrr.io/r/utils/str.html">str()</a></code>, <code><a href="https://rdrr.io/r/utils/head.html">head()</a></code>, and <code><a href="https://rdrr.io/r/base/summary.html">summary()</a></code> functions. Additionally, one can check various aspects of the data such as <code><a href="https://rdrr.io/r/base/names.html">names()</a></code>, <code>dim</code>, and <code>class</code> to validate that the import was successful.</p>
+<p>Example:</p>
+<p>Import a specific dataset</p>
+<div class="cell">
+<div class="sourceCode" id="cb66"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">import_inspect</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://readr.tidyverse.org/reference/read_delim.html">read_csv</a></span><span class="op">(</span><span class="st">"datasets/r4novice_datafile.csv"</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Rows: 10 Columns: 10
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: ","
+chr (8): Name, Gender, Mathematics, English, Science, Physical Education, Ar...
+dbl (2): Class Grade, Age
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode" id="cb68"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="va">import_inspect</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 6 × 10
+  Name  `Class Grade`   Age Gender Mathematics English Science
+  &lt;chr&gt;         &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt;  &lt;chr&gt;       &lt;chr&gt;   &lt;chr&gt;  
+1 JS                9    15 M      A           A       B      
+2 NC                9    16 M      C           C       E      
+3 KS                9    15 F      A           B       C      
+4 QP                7    13 F      B           C       A      
+5 QI                7    14 F      B           D       A      
+6 HD                7    14 M      B           E       B      
+# ℹ 3 more variables: `Physical Education` &lt;chr&gt;,
+#   `Arts and Social Science` &lt;chr&gt;, `Religious Education` &lt;chr&gt;</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode" id="cb70"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/head.html">tail</a></span><span class="op">(</span><span class="va">import_inspect</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 6 × 10
+  Name  `Class Grade`   Age Gender Mathematics English Science
+  &lt;chr&gt;         &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt;  &lt;chr&gt;       &lt;chr&gt;   &lt;chr&gt;  
+1 QI                7    14 F      B           D       A      
+2 HD                7    14 M      B           E       B      
+3 DJ                8    14 F      C           D       E      
+4 JD                8    15 M      A           A       D      
+5 HE                8    16 F      C           D       A      
+6 VO                8    17 F      A           A       C      
+# ℹ 3 more variables: `Physical Education` &lt;chr&gt;,
+#   `Arts and Social Science` &lt;chr&gt;, `Religious Education` &lt;chr&gt;</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode" id="cb72"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/summary.html">summary</a></span><span class="op">(</span><span class="va">import_inspect</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>     Name            Class Grade        Age           Gender         
+ Length:10          Min.   :7.00   Min.   :13.00   Length:10         
+ Class :character   1st Qu.:7.25   1st Qu.:14.00   Class :character  
+ Mode  :character   Median :8.00   Median :15.00   Mode  :character  
+                    Mean   :8.00   Mean   :14.90                     
+                    3rd Qu.:8.75   3rd Qu.:15.75                     
+                    Max.   :9.00   Max.   :17.00                     
+ Mathematics          English            Science          Physical Education
+ Length:10          Length:10          Length:10          Length:10         
+ Class :character   Class :character   Class :character   Class :character  
+ Mode  :character   Mode  :character   Mode  :character   Mode  :character  
+                                                                            
+                                                                            
+                                                                            
+ Arts and Social Science Religious Education
+ Length:10               Length:10          
+ Class :character        Class :character   
+ Mode  :character        Mode  :character   
+                                            
+                                            
+                                            </code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode" id="cb74"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/str.html">str</a></span><span class="op">(</span><span class="va">import_inspect</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>spc_tbl_ [10 × 10] (S3: spec_tbl_df/tbl_df/tbl/data.frame)
+ $ Name                   : chr [1:10] "JS" "NC" "KS" "QP" ...
+ $ Class Grade            : num [1:10] 9 9 9 7 7 7 8 8 8 8
+ $ Age                    : num [1:10] 15 16 15 13 14 14 14 15 16 17
+ $ Gender                 : chr [1:10] "M" "M" "F" "F" ...
+ $ Mathematics            : chr [1:10] "A" "C" "A" "B" ...
+ $ English                : chr [1:10] "A" "C" "B" "C" ...
+ $ Science                : chr [1:10] "B" "E" "C" "A" ...
+ $ Physical Education     : chr [1:10] "C" "C" "D" "A" ...
+ $ Arts and Social Science: chr [1:10] "D" "D" "E" "D" ...
+ $ Religious Education    : chr [1:10] "D" "A" "A" "E" ...
+ - attr(*, "spec")=
+  .. cols(
+  ..   Name = col_character(),
+  ..   `Class Grade` = col_double(),
+  ..   Age = col_double(),
+  ..   Gender = col_character(),
+  ..   Mathematics = col_character(),
+  ..   English = col_character(),
+  ..   Science = col_character(),
+  ..   `Physical Education` = col_character(),
+  ..   `Arts and Social Science` = col_character(),
+  ..   `Religious Education` = col_character()
+  .. )
+ - attr(*, "problems")=&lt;externalptr&gt; </code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode" id="cb76"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/names.html">names</a></span><span class="op">(</span><span class="va">import_inspect</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> [1] "Name"                    "Class Grade"            
+ [3] "Age"                     "Gender"                 
+ [5] "Mathematics"             "English"                
+ [7] "Science"                 "Physical Education"     
+ [9] "Arts and Social Science" "Religious Education"    </code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode" id="cb78"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/dim.html">dim</a></span><span class="op">(</span><span class="va">import_inspect</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 10 10</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode" id="cb80"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/class.html">class</a></span><span class="op">(</span><span class="va">import_inspect</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "spec_tbl_df" "tbl_df"      "tbl"         "data.frame" </code></pre>
+</div>
+<div class="sourceCode" id="cb82"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/typeof.html">typeof</a></span><span class="op">(</span><span class="va">import_inspect</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "list"</code></pre>
+</div>
+</div>
 </section></section><section id="saving-data-and-analysis-outputs" class="level3" data-number="5.3.4"><h3 data-number="5.3.4" class="anchored" data-anchor-id="saving-data-and-analysis-outputs">
 <span class="header-section-number">5.3.4</span> Saving data and analysis outputs</h3>
 <p>Both the base R functions and the <code>readr</code> package can be used to save data. This data can be in the form of cleaned/rearranged tables, or it can be other analysis outputs such as plots.</p>
+<section id="base-r-1" class="level4" data-number="5.3.4.1"><h4 data-number="5.3.4.1" class="anchored" data-anchor-id="base-r-1">
+<span class="header-section-number">5.3.4.1</span> Base R</h4>
+<p>Before we explore the functions used to save data, I will create a dataframe. A dataframe is one of the most common data objects used to store tabular data in R. A more in-depth look at dataframes will be provided in the chapter “Data Structures (Part I)” (<a href="#sec-data-structure-1" class="quarto-xref"><span class="quarto-unresolved-ref">sec-data-structure-1</span></a>).</p>
+<div class="cell">
+<div class="sourceCode" id="cb84"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">df_to_save</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/data.frame.html">data.frame</a></span><span class="op">(</span>one<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">1</span>, <span class="fl">3</span>, <span class="fl">2</span>, <span class="fl">9</span>, <span class="fl">5</span><span class="op">)</span>,</span>
+<span>                         two<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">7</span>, <span class="fl">7</span>, <span class="fl">3</span>, <span class="fl">8</span>, <span class="fl">2</span><span class="op">)</span>,</span>
+<span>                         three<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">3</span>, <span class="fl">3</span>, <span class="fl">9</span>, <span class="fl">7</span>, <span class="fl">1</span><span class="op">)</span>,</span>
+<span>                         four<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">5</span>, <span class="fl">2</span>, <span class="fl">2</span>, <span class="fl">8</span>, <span class="fl">9</span><span class="op">)</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ol type="1">
+<li>Commonly-used R functions</li>
+</ol>
 <ul>
-<li>Base R</li>
+<li>
+<code><a href="https://rdrr.io/r/utils/write.table.html">write.csv()</a></code> saves data to a CSV file.</li>
 </ul>
-<p>save()</p>
-<p>saveRDS()</p>
-<p>write.csv()</p>
-<p>write.table()</p>
-<p>fwrite()</p>
+<p>Example:</p>
+<div class="cell">
+<div class="sourceCode" id="cb85"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/write.table.html">write.csv</a></span><span class="op">(</span><span class="va">df_to_save</span>, file <span class="op">=</span> <span class="st">"saved_datasets/r4novice_saved_data.csv"</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 <ul>
+<li>
+<code><a href="https://rdrr.io/r/utils/write.table.html">write.table()</a></code> saves data to a specified file type.</li>
+</ul>
+<p>Example:</p>
+<div class="cell">
+<div class="sourceCode" id="cb86"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/write.table.html">write.table</a></span><span class="op">(</span><span class="va">df_to_save</span>, file <span class="op">=</span> <span class="st">"saved_datasets/r4novice_saved_data.txt"</span>, sep <span class="op">=</span> <span class="st">","</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ul>
+<li>
+<code><a href="https://rdatatable.gitlab.io/data.table/reference/fwrite.html">fwrite()</a></code> saves data to a specified file type. It is obtained from the <code>data.table</code> package.</li>
+</ul>
+<div class="cell">
+<div class="sourceCode" id="cb87"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://r-datatable.com">data.table</a></span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Example:</p>
+<div class="cell">
+<div class="sourceCode" id="cb88"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdatatable.gitlab.io/data.table/reference/fwrite.html">fwrite</a></span><span class="op">(</span><span class="va">df_to_save</span>, file <span class="op">=</span> <span class="st">"saved_datasets/r4novice_saved_data_2.csv"</span>, sep <span class="op">=</span> <span class="st">","</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section><section id="tidyverse-and-the-readrreadxl-packages-1" class="level4" data-number="5.3.4.2"><h4 data-number="5.3.4.2" class="anchored" data-anchor-id="tidyverse-and-the-readrreadxl-packages-1">
+<span class="header-section-number">5.3.4.2</span> Tidyverse and the <code>readr</code>/<code>readxl</code> packages</h4>
+<p>The <code>readr</code> and <code>readxl</code> also offer complementary functions that allow the user to save data.</p>
+<ol type="a">
 <li>Flat files</li>
-</ul>
-<p>write_csv()</p>
-<p>write_csv2()</p>
-<p>write_tsv()</p>
-<p>write_delim()</p>
+</ol>
 <ul>
+<li>
+<code><a href="https://readr.tidyverse.org/reference/write_delim.html">write_csv()</a></code> and <code><a href="https://readr.tidyverse.org/reference/write_delim.html">write_csv2()</a></code> can be used to write comma delimited and semicolon delimited files, respectively.</li>
+</ul>
+<p>Example:</p>
+<div class="cell">
+<div class="sourceCode" id="cb89"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://readr.tidyverse.org/reference/write_delim.html">write_csv</a></span><span class="op">(</span><span class="va">df_to_save</span>, file <span class="op">=</span> <span class="st">"saved_datasets/r4novice_saved_data_3.csv"</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ul>
+<li>
+<code><a href="https://readr.tidyverse.org/reference/write_delim.html">write_tsv()</a></code> is used to write a tab delimited file.</li>
+</ul>
+<p>Example:</p>
+<div class="cell">
+<div class="sourceCode" id="cb90"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://readr.tidyverse.org/reference/write_delim.html">write_tsv</a></span><span class="op">(</span><span class="va">df_to_save</span>, file <span class="op">=</span> <span class="st">"saved_datasets/r4novice_saved_data_2.txt"</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ul>
+<li>
+<code><a href="https://readr.tidyverse.org/reference/write_delim.html">write_delim()</a></code> is used to write files with any delimiter.</li>
+</ul>
+<p>Example:</p>
+<div class="cell">
+<div class="sourceCode" id="cb91"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://readr.tidyverse.org/reference/write_delim.html">write_delim</a></span><span class="op">(</span><span class="va">df_to_save</span>, file <span class="op">=</span> <span class="st">"saved_datasets/r4novice_saved_data_4.csv"</span>, delim <span class="op">=</span> <span class="st">";"</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ol start="2" type="a">
 <li>Excel files</li>
-</ul>
-<p>openxlsx</p>
-<p>writexl</p>
-<p>tidyxl</p>
-<p>write_xlsx()</p>
-<ul>
-<li>Google Sheets</li>
-</ul>
-<p>write_sheet()</p>
-</section></section><section id="exercises" class="level2" data-number="5.4"><h2 data-number="5.4" class="anchored" data-anchor-id="exercises">
+</ol>
+<div class="cell">
+<div class="sourceCode" id="cb92"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># install.packages("writexl")</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode" id="cb93"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://docs.ropensci.org/writexl/">writexl</a></span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'writexl' was built under R version 4.3.3</code></pre>
+</div>
+</div>
+<p>Create an XLS and XLSX file</p>
+<div class="cell">
+<div class="sourceCode" id="cb95"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co">#write_xlsx(df_to_save, "saved_datasets/r4novice_saved_data_4.xls")</span></span>
+<span><span class="fu"><a href="https://docs.ropensci.org/writexl/reference/write_xlsx.html">write_xlsx</a></span><span class="op">(</span><span class="va">df_to_save</span>, <span class="st">"saved_datasets/r4novice_saved_data_4.xlsx"</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section></section></section><section id="exercises" class="level2" data-number="5.4"><h2 data-number="5.4" class="anchored" data-anchor-id="exercises">
 <span class="header-section-number">5.4</span> Exercises</h2>
 <ol type="i">
 <li><p>Access the <code>mtcars</code>, <code>iris</code>, and <code>airquality</code> datasets and read the documentation using <code>?</code>. Additionally, explore the different characteristics of the data, such as names, dimensions, and summary statistics.</p></li>

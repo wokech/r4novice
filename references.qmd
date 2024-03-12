@@ -1,7 +1,7 @@
 # References {.unnumbered}
 
 ::: {#refs}
-1.  Posit/R Studio and Cheatsheets
-2.  Lander book R for...
-3.  Blogs
+1.  J. P. Lander, R for Everyone. Addison-Wesley Professional, 2017.
+
+2.  “Cheatsheets - Posit,” Posit, Jul. 18, 2023. https://posit.co/resources/cheatsheets/
 :::

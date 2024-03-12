@@ -240,7 +240,7 @@ Example:
 
 `read.table(file.choose())`
 
-**NOTE**:Run this command in your R console and select the appropriate file from the working directory. 
+**NOTE**:Run this command in your R console and select the appropriate file from the working directory.
 
 -   Excel (xls and xlsx) files are read in with `read.xlsx()`
 
@@ -250,7 +250,7 @@ Load the required library
 library(xlsx)
 ```
 
-Example: 
+Example:
 
 ```{r}
 read.xlsx("datasets/r4novice_datafile.xls", sheetIndex = 1)
@@ -259,10 +259,12 @@ read.xlsx("datasets/r4novice_datafile.xls", sheetIndex = 1)
 ```{r}
 read.xlsx("datasets/r4novice_datafile.xls", sheetIndex = 1)
 ```
-
 
 2.  Less frequently used data importation formats
 
+```{=html}
+<!-- -->
+```
 a.  Fixed-width formats: `read.fwf("file path", header = TRUE)`
 
 b.  SPSS/Stata/SAS Data Files: The foreign package reads SPSS SAV files, Stata DTA files, and SAS XPORT libraries.
@@ -363,21 +365,21 @@ Load the library
 
 #### Tidyverse and the `readr`/`readxl` packages
 
-To enhance the speed and efficiency of data imports, the user can work with the readr package that is a part of the tidyverse. This is because the functions in this package allows for faster data imports and work similarly despite the data type that is imported.
+To enhance the speed and efficiency of data imports, the user can work with the `readr` and `readxl`packages that are part of the Tidyverse. This is because the functions in this package allows for faster data imports and work similarly despite the data type that is imported.
 
 1.  Commonly-used data importation formats in the tidyverse
 
 ```{r}
-install.packages("readr")
+# install.packages("readr")
 ```
 
 ```{r}
 library(readr)
 ```
 
-a. Import flat files
+a.  Import flat files
 
-- `read_table()` is used to import whitespace-separated files.
+-   `read_table()` is used to import whitespace-separated files.
 
 Example:
 
@@ -385,8 +387,7 @@ Example:
 read_table("datasets/r4novice_datafile.txt", col_names = TRUE)
 ```
 
-- `read_csv()` is for comma-separated values (CSV), while `read_csv2()` is 
-   used for semicolon-separated values with `,` as the decimal mark.
+-   `read_csv()` is for comma-separated values (CSV), while `read_csv2()` is used for semicolon-separated values with `,` as the decimal mark.
 
 Example:
 
@@ -394,7 +395,7 @@ Example:
 read_csv("datasets/r4novice_datafile.csv")
 ```
 
-- `read_tsv()` is for tab-separated values (TSV)
+-   `read_tsv()` is for tab-separated values (TSV)
 
 Example:
 
@@ -402,7 +403,7 @@ Example:
 read_tsv("datasets/r4novice_datafile.txt")
 ```
 
-- `read_delim()` is for all delimited files, such as CSV and TSV.
+-   `read_delim()` is for all delimited files, such as CSV and TSV.
 
 Example:
 
@@ -410,10 +411,10 @@ Example:
 read_delim("datasets/r4novice_datafile.csv", delim = ",")
 ```
 
-b. Import spreadsheets
+b.  Import spreadsheets
 
 ```{r}
-install.packages("readxl")
+# install.packages("readxl")
 ```
 
 ```{r}
@@ -425,16 +426,17 @@ Use excel_sheets() to read the names of the different worksheets in the Excel wo
 ```{r}
 excel_sheets("datasets/r4novice_datafile.xlsx")
 ```
+
 ```{r}
 read_excel("datasets/r4novice_datafile.xlsx", sheet = "Sheet1")
 ```
 
 2.  Less frequently used data importation formats
 
-- Import Google Sheets
+-   Import Google Sheets
 
 ```{r}
-install.packages("googlesheets4")
+# install.packages("googlesheets4")
 ```
 
 ```{r}
@@ -443,17 +445,17 @@ library(googlesheets4)
 
 Use `read_sheet("link to file")` to read in the file via the link.
 
-- `read_fwf()` is used to read in fixed-width files.
+-   `read_fwf()` is used to read in fixed-width files.
 
-- `read_log()` is the standard format for reading in web log files.
+-   `read_log()` is the standard format for reading in web log files.
 
-- `readRDS()` is used to read data stored as a single R object.
+-   `readRDS()` is used to read data stored as a single R object.
 
-- `read_lines()` is used to read data up to a specified number of lines in a file.
+-   `read_lines()` is used to read data up to a specified number of lines in a file.
 
 **NOTE**: Missing data is a major challenge in data analysis. Strategies for dealing with this are discussed in Chapter 12 "Handling missing data" (@sec-missing).
 
-3. Inspecting the imported data
+#### Inspecting the imported data
 
 Once the data is imported, the user can inspect the data with `str()`, `head()`, and `summary()` functions. Additionally, one can check various aspects of the data such as `names()`, `dim`, and `class` to validate that the import was successful.
 
@@ -498,41 +500,93 @@ typeof(import_inspect)
 
 Both the base R functions and the `readr` package can be used to save data. This data can be in the form of cleaned/rearranged tables, or it can be other analysis outputs such as plots.
 
--   Base R
+#### Base R
 
-save()
+Before we explore the functions used to save data, I will create a dataframe. A dataframe is one of the most common data objects used to store tabular data in R. A more in-depth look at dataframes will be provided in the chapter "Data Structures (Part I)" (@sec-data-structure-1).
 
-saveRDS()
+```{r}
+df_to_save <- data.frame(one=c(1, 3, 2, 9, 5),
+                         two=c(7, 7, 3, 8, 2),
+                         three=c(3, 3, 9, 7, 1),
+                         four=c(5, 2, 2, 8, 9))
+```
 
-write.csv()
+1.  Commonly-used R functions
 
-write.table()
+-   `write.csv()` saves data to a CSV file.
 
-fwrite()
+Example:
 
--   Flat files
+```{r}
+write.csv(df_to_save, file = "saved_datasets/r4novice_saved_data.csv")
+```
 
-write_csv()
+-   `write.table()` saves data to a specified file type.
 
-write_csv2()
+Example:
 
-write_tsv()
+```{r}
+write.table(df_to_save, file = "saved_datasets/r4novice_saved_data.txt", sep = ",")
+```
 
-write_delim()
+-   `fwrite()` saves data to a specified file type. It is obtained from the `data.table` package.
 
--   Excel files
+```{r}
+library(data.table)
+```
 
-openxlsx
+Example:
 
-writexl
+```{r}
+fwrite(df_to_save, file = "saved_datasets/r4novice_saved_data_2.csv", sep = ",")
+```
 
-tidyxl
+#### Tidyverse and the `readr`/`readxl` packages
 
-write_xlsx()
+The `readr` and `readxl` also offer complementary functions that allow the user to save data.
 
--   Google Sheets
+a.  Flat files
 
-write_sheet()
+-   `write_csv()` and `write_csv2()` can be used to write comma delimited and semicolon delimited files, respectively.
+
+Example:
+
+```{r}
+write_csv(df_to_save, file = "saved_datasets/r4novice_saved_data_3.csv")
+```
+
+-   `write_tsv()` is used to write a tab delimited file.
+
+Example:
+
+```{r}
+write_tsv(df_to_save, file = "saved_datasets/r4novice_saved_data_2.txt")
+```
+
+-   `write_delim()` is used to write files with any delimiter.
+
+Example:
+
+```{r}
+write_delim(df_to_save, file = "saved_datasets/r4novice_saved_data_4.csv", delim = ";")
+```
+
+b.  Excel files
+
+```{r}
+# install.packages("writexl")
+```
+
+```{r}
+library(writexl)
+```
+
+Create an XLS and XLSX file
+
+```{r}
+#write_xlsx(df_to_save, "saved_datasets/r4novice_saved_data_4.xls")
+write_xlsx(df_to_save, "saved_datasets/r4novice_saved_data_4.xlsx")
+```
 
 ## Exercises
 
