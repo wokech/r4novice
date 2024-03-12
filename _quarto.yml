@@ -9,8 +9,7 @@ book:
   author: William Okech
   date: 01/01/2024
   reader-mode: true
-  downloads: pdf
-  
+
   cookie-consent:
     type: express
     style: headline
@@ -61,7 +60,6 @@ format:
     code-link: true
   pdf:
     documentclass: scrreprt
-    toc: true
 
 editor: visual
 
