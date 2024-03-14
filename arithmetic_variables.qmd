@@ -30,7 +30,7 @@
 
 To get started, first, we will open R or RStudio (@fig-arithmetic-1). In R, go to the console, and in RStudio, head to the console pane. Next, type in a basic arithmetic calculation such as `1 + 1` after the angle bracket (`>`) and hit “Enter.”
 
-**NOTE**: According to the Tidyverse Style Guide there should be a space on either side of the operator.
+**NOTE**: According to the Tidyverse Style Guide, there should be a space on either side of the operator.
 
 Examples
 

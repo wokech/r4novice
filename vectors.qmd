@@ -2,7 +2,7 @@
 
 ## Questions
 
--   What are vectors and why are they essential in R?
+-   What are vectors, and why are they essential in R?
 
 -   What are the different types of vectors and their key characteristics?
 
@@ -166,7 +166,7 @@ The `runif()` function can be used to generate a specific number of random numbe
 runif(5, min = 3, max = 100)
 ```
 
-**NOTE** If you run the previous code block multiple times you will get different answers. Use `set.seed()` to get a similar sequence every time you run the calculation.
+**NOTE**: If you run the previous code block multiple times you will get different answers. Use `set.seed()` to get a similar sequence every time you run the calculation.
 
 ```{r}
 set.seed(12345)
@@ -366,7 +366,7 @@ vec_5 <- c("R", "RStudio", "Shiny", "Quarto")
 nchar(vec_5)
 ```
 
-3.  Stats and math on vectors
+3.  Vectors and mathmatical/statistical operations
 
 A variety of mathematical operations can be performed on vectors. These operations together with examples are listed below.
 
@@ -447,7 +447,7 @@ range(stat_math_vec_1)
 
 -   Cut This function cuts a range of values into bins and specifies labels for each bin.
 
-The argument "breaks" can be the number of bins or it can be specific break points.
+The argument "breaks" can be the number of bins, or it can be specific break points.
 
 ```{r}
 cut(stat_math_vec_1, breaks = 6)
@@ -494,9 +494,8 @@ log10(stat_math_vec_1)
 
 4.  Miscellaneous functions
 
-```{=html}
 <!-- -->
-```
+
 a.  Changing the case of a character vector
 
 ```{r}
@@ -532,9 +531,8 @@ Examples
 
 1.  Name the columns of a vector with names().
 
-```{=html}
 <!-- -->
-```
+
 a)  Create the vector.
 
 ```{r}
@@ -600,9 +598,8 @@ vec_index
 
 E)  Create matrices by combining vectors by row and column
 
-```{=html}
 <!-- -->
-```
+
 1.  Create four new vectors
 
 ```{r}
@@ -638,14 +635,14 @@ class(new_matrix)
 ## Exercises
 
 i.  Create a numeric vector with values 1 through 5 using `c()` and extract the middle element from the vector using the described subsetting methods.
-ii. Generate a sequence of even numbers from 2 to 10 using the `seq()` function and calculate the total sum and average of this new vector.
+ii. Generate a sequence of even numbers from 2 to 10 using the `seq()` function, and calculate the total sum and average of this new vector.
 iii. Create a vector of student ages (between 16 and 20, n = 10), calculate their average and standard deviation, and identify students younger than 18.
 iv. Use logical indexing to subset elements from a vector based on a condition.
 v.  Perform element-wise addition and multiplication on two newly created numeric vectors of the same length.
 vi. Concatenate two newly created character vectors to create a longer vector.
 vii. Create a named vector with elements representing days of the week.
 viii. Use vector functions to find the length, sum, and mean of a numeric vector.
-ix. Use functions like `sort()` or `rev()` to arrange elements in ascending, descending, or reversed order.
+ix. Use the functions `sort()` or `rev()` to arrange elements in ascending, descending, or reversed order.
 x.  Use functions like `which()` or `match()` to locate elements based on conditions or matching values.
 xi. How can you append elements to an existing vector?
 xii. When binding vectors together, what is the difference between `cbind()` and `rbind()`?
@@ -653,4 +650,4 @@ xiii. Explore other vector capabilities like recycling, naming elements, and usi
 
 ## Summary
 
-Vectors are an essential data structure for data analysis purposes. In this chapter, I have demonstrated the different types of vectors, how to generate vectors, and the various types of vector operations that can be performed. Now that we have a better understanding of vectors, it is time to explore other data structures (that are useful for data analysis) in the subsequent chapters.
+Vectors are an essential data structure for data analysis purposes. In this chapter, I have demonstrated the different types of vectors, how to generate vectors, and the various types of vector operations that can be performed. Now that we have a deeper understanding of vectors, it is time to explore other data structures (that are useful for data analysis) in the subsequent chapters.

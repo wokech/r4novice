@@ -83,6 +83,9 @@ format:
     colorlinks: true
     highlight-style: github
   epub: default
-
+  docx:
+    toc: true
+    number-sections: true
+    highlight-style: github
 editor: visual
 

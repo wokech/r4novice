@@ -6,7 +6,7 @@ This book is primarily intended to cater to the needs of individuals who have a 
 
 ## About the author
 
-The author of this book is a Certified Carpentries instructor and a trainer with the Digital Research Academy. Additionally, the author holds a PhD in Biomedical Engineering and has completed postdoctoral fellowships in vascular biology and infectious diseases. Lastly, the author is passionate about using R and RStudio to generate data-driven visualizations to allow for a deeper understanding of public policy issues.
+The author of this book is a Certified Carpentries instructor and a trainer with the Digital Research Academy. Additionally, the author holds a PhD in Biomedical Engineering and has completed postdoctoral fellowships in vascular biology and infectious diseases. Lastly, the author is passionate about using R and RStudio to generate data-driven visualizations to allow for a more in-depth understanding of public policy issues.
 
 ## Syllabus
 
@@ -50,11 +50,7 @@ The learners are encouraged to work through each chapter sequentially. For each 
 
 ## Feedback
 
-Feedback can be provided using the following channels:
-
-i.  Email: willyokech\@gmail.com
-
-ii. Github pull request: [Link](https://github.com/wokech/r4novice)
+Feedback can be provided using a GitHub pull request: [Link](https://github.com/wokech/r4novice)
 
 ## Summary
 

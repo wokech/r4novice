@@ -108,7 +108,7 @@ m6
 m5 * m6
 ```
 
-Dimensions are very important when working with matrices. Here, we observe that we can't multiply m5 by m6 because of the matrix dimensions
+Knowledge of dimensions is very important when working with matrices. Here, we observe that we can't multiply m5 by m6 because of the matrix dimensions
 
 ```{r}
 dim(m5)

@@ -8,7 +8,7 @@
 
 -   What is the purpose of creating R project folders and scripts?
 
--   What is the significance of a working directory in R, and how does it impact your workflow?
+-   Describe the significance of a working directory in R, and how it impacts your workflow?
 
 -   How do you create, save, and run R scripts for efficient code management?
 
@@ -26,7 +26,7 @@
 
 ### Introduction
 
-Good file and data management allows the user to debug code, reduce the number of coding errors, and improve data quality. Additionally, by utilizing best practices the learner can easily share their work, organize projects, and develop a reproducible workflow.
+Good file and data management allows the user to debug code, reduce the number of coding errors, and improve data quality. Additionally, by utilizing best practices, the learner can easily share their work, organize projects, and develop a reproducible workflow.
 
 ### Projects
 
@@ -60,7 +60,7 @@ The paths to files or directories can be defined using relative or absolute path
 
 ### Finding help when using packages and functions
 
--   There is a built-in help system that can be accessed via the "Help" menu or one can use the `?` symbol before the function, package, or dataset to get a brief description and instructions for use.
+-   There is a built-in help system that can be accessed via the "Help" menu, or one can use the `?` symbol before the function, package, or dataset to get a brief description and instructions for use.
 
 -   Online R [documentation](https://cran.r-project.org/manuals.html) is also available to allow the user to learn the basics of R.
 

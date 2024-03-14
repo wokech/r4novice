@@ -24,7 +24,7 @@
 
 Both R and Studio are free, open-source software tools that are widely used for statistical analysis and data visualization. R is a programming language that enables the use of code to analyze data. The primary function of the R language is statistical analysis, and this can be performed directly in the R console. To ease the analysis process and enhance usability, an integrated development environment (IDE), such as RStudio is recommended. The RStudio IDE is a user-friendly interface that allows the learner to manage multiple script files, use the command-line terminal, easily access file inputs and outputs, and review file/analysis history.
 
-The R programming language software was developed by Ross Ihaka and Robert Gentleman in 1993 (published as open-source in 1995) when they were based at the University of Auckland. *Fun fact: R represents the first letter of the first names of the creators*. The software is utilized by individuals working for various organizations, ranging from academic institutions and healthcare organizations to financial services and information technology companies. In January 2024, the [PopularitY of Programming Language (PYPL) Index](https://pypl.github.io/PYPL.html), which is created by analyzing how often language tutorials are searched on Google, demonstrated that R was the 6th most popular programming language. However, in the same period, the TIOBE index (https://www.tiobe.com/tiobe-index/) indicated that R was the 23rd most popular language. This may result from different methodologies for developing the rankings. RStudio is an integrated development environment (IDE) for R that was developed by JJ Allaire. This software contains tools that make programming in R easier.
+The R programming language software was developed by Ross Ihaka and Robert Gentleman in 1993 (published as open-source in 1995) when they were based at the University of Auckland. *Fun fact: R represents the first letter of the first names of the creators*. The software is utilized by individuals working for various organizations, ranging from academic institutions and healthcare organizations to financial services and information technology companies. In January 2024, the [PopularitY of Programming Language (PYPL) Index](https://pypl.github.io/PYPL.html), which is created by analyzing how often language tutorials are searched on Google, demonstrated that R was the 6th most popular programming language. However, in the same period, the [TIOBE](https://www.tiobe.com/tiobe-index/) index indicated that R was the 23rd most popular language. This may result from different methodologies for developing the rankings. RStudio is an integrated development environment (IDE) for R that was developed by JJ Allaire. This software contains tools that make programming in R easier.
 
 RStudio extends R’s capabilities by making it easier to import data, write scripts, and generate visualizations and reports. The company RStudio (now Posit since 2022) was founded in 2009 with the main goal of “creating high quality open-source software for data scientists.”
 
@@ -44,7 +44,7 @@ vi. To aid in computational analysis, there exists a large package library ([CRA
 
 ### Primary advantages of R and RStudio
 
-i.  R and RStudio are free and open-source software programs, which makes them accessible to anyone with a computer and internet connection. This accessibility is key in enabling learners from all socioeconomic levels and geographic regions to have a chance to work with statistical software,
+i.  R and RStudio are free and open-source software programs, which makes them accessible to anyone with a computer and an internet connection. This accessibility is key in enabling learners from all socioeconomic levels and geographic regions to have a chance to work with statistical software,
 
 ii. Numerous user communities exist for the R/RStudio software. These communities (listed in the Appendix) provide learning support and assist with technical challenges,
 
@@ -82,7 +82,7 @@ iv. What tasks do you hope to accomplish after completing this training?
 
 v.  Explore the various R/RStudio communities listed in the appendix and consider joining any one of them. What is the role of the R community in the development and support of R?
 
-vi. Browse some of the popular R packages (on [CRAN](https://cran.r-project.org/) or [R-Universe](https://r-universe.dev/search/)) for different tasks like data visualization and statistical analysis. Pick one package that interests you and read about its capabilities.
+vi. Browse some popular R packages (on [CRAN](https://cran.r-project.org/) or [R-Universe](https://r-universe.dev/search/)) used for different tasks like data visualization and statistical analysis. Pick one package that interests you and read about its capabilities.
 
 ## Conclusion
 

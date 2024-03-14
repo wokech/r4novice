@@ -52,7 +52,7 @@ The script pane allows the user to write, edit, and save code. This code can the
 
 #### Console Pane
 
-In the console pane, one can write and edit code, but not save. Within the console, one can run one line of code at a time. Additionally, one can access the terminal tab and run code via the command line. Lastly, we can access the “Background Jobs” tab to monitor progress of R scripts that are running in a separate, dedicated R session.
+In the console pane, one can write and edit code, but not save. Within the console, one can run one line of code at a time. Additionally, one can access the terminal tab and run code via the command line. Lastly, we can access the “Background Jobs” tab to monitor the progress of R scripts that are running in a separate, dedicated R session.
 
 #### Environment/History Pane
 
@@ -97,7 +97,7 @@ Lastly, one access both “Project Options” and “Global Options” from this
 ## Exercises
 
 i.  Describe the main components of the RStudio interface.
-ii. Open RStudio and explore the different panels of the interface, then describe in your own words the purpose of the Environment, History, Files, and Plots panes.
+ii. Open RStudio and explore the different panels of the interface, then provide a brief summary of the purpose of the Environment, History, Files, and Plots panes.
 iii. What is the purpose of the Console pane in RStudio?
 iv. Access the help documentation using the Help pane and find information on specific R functions/packages.
 v.  Customize your RStudio environment by changing the theme and adjusting the appearance settings.
