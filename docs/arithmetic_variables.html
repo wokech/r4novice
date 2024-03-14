@@ -141,9 +141,8 @@ cookieconsent.run({
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto"><div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="./">R for Novice Programmers (1e)</a> 
-        <div class="sidebar-tools-main tools-wide">
+        <div class="sidebar-tools-main">
     <a href="https://github.com/wokech/r4novice" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
-    <a href="./R-for-Novice-Programmers--1e-.pdf" title="Download PDF" class="quarto-navigation-tool px-1" aria-label="Download PDF"><i class="bi bi-file-pdf"></i></a>
   <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
   <div class="quarto-reader-toggle-btn">
   <i class="bi"></i>
@@ -345,9 +344,6 @@ cookieconsent.run({
 </ul>
 <div class="cell">
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fl">1</span> <span class="op">+</span> <span class="fl">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 2</code></pre>
-</div>
 </div>
 <p>The output will be observed next to the square bracket containing the number 1 (<code>[1]</code>). The 1 indicates that the indexing begins at position 1. Here, as opposed to Python, which uses zero-based indexing, R uses one-based indexing.</p>
 <div id="fig-arithmetic-1" class="quarto-figure quarto-figure-center quarto-float anchored">
@@ -360,12 +356,9 @@ Figure&nbsp;6.1: A basic arithmetic calculation in the R Console
 </div>
 <p>Additionally, to include comments into the code block, we use the hash (<code>#</code>) symbol. Anything written after the code block will be commented out and not run.</p>
 <div class="cell">
-<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># A simple arithmetic calculation (which is not run because of the hash symbol)</span></span>
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># A simple arithmetic calculation (which is not run because of the hash symbol)</span></span>
 <span></span>
 <span><span class="fl">1</span> <span class="op">+</span> <span class="fl">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 2</code></pre>
-</div>
 </div>
 </section><section id="arithmetic-operators" class="level3" data-number="6.3.2"><h3 data-number="6.3.2" class="anchored" data-anchor-id="arithmetic-operators">
 <span class="header-section-number">6.3.2</span> Arithmetic operators</h3>
@@ -414,66 +407,42 @@ Figure&nbsp;6.1: A basic arithmetic calculation in the R Console
 <section id="addition" class="level4" data-number="6.3.2.1"><h4 data-number="6.3.2.1" class="anchored" data-anchor-id="addition">
 <span class="header-section-number">6.3.2.1</span> Addition</h4>
 <div class="cell">
-<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fl">10</span> <span class="op">+</span> <span class="fl">30</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 40</code></pre>
-</div>
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fl">10</span> <span class="op">+</span> <span class="fl">30</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section><section id="subtraction" class="level4" data-number="6.3.2.2"><h4 data-number="6.3.2.2" class="anchored" data-anchor-id="subtraction">
 <span class="header-section-number">6.3.2.2</span> Subtraction</h4>
 <div class="cell">
-<div class="sourceCode" id="cb7"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fl">30</span> <span class="op">-</span> <span class="fl">24</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 6</code></pre>
-</div>
+<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fl">30</span> <span class="op">-</span> <span class="fl">24</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section><section id="multiplication" class="level4" data-number="6.3.2.3"><h4 data-number="6.3.2.3" class="anchored" data-anchor-id="multiplication">
 <span class="header-section-number">6.3.2.3</span> Multiplication</h4>
 <div class="cell">
-<div class="sourceCode" id="cb9"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fl">20</span> <span class="op">*</span> <span class="fl">4</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 80</code></pre>
-</div>
+<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fl">20</span> <span class="op">*</span> <span class="fl">4</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section><section id="division" class="level4" data-number="6.3.2.4"><h4 data-number="6.3.2.4" class="anchored" data-anchor-id="division">
 <span class="header-section-number">6.3.2.4</span> Division</h4>
 <div class="cell">
-<div class="sourceCode" id="cb11"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fl">93</span> <span class="op">/</span> <span class="fl">4</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 23.25</code></pre>
-</div>
+<div class="sourceCode" id="cb6"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fl">93</span> <span class="op">/</span> <span class="fl">4</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section><section id="exponentiation" class="level4" data-number="6.3.2.5"><h4 data-number="6.3.2.5" class="anchored" data-anchor-id="exponentiation">
 <span class="header-section-number">6.3.2.5</span> Exponentiation</h4>
 <div class="cell">
-<div class="sourceCode" id="cb13"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fl">3</span><span class="op">^</span><span class="fl">6</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 729</code></pre>
-</div>
+<div class="sourceCode" id="cb7"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fl">3</span><span class="op">^</span><span class="fl">6</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section><section id="modulus-remainder-with-division" class="level4" data-number="6.3.2.6"><h4 data-number="6.3.2.6" class="anchored" data-anchor-id="modulus-remainder-with-division">
 <span class="header-section-number">6.3.2.6</span> Modulus (remainder with division)</h4>
 <div class="cell">
-<div class="sourceCode" id="cb15"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fl">94</span> <span class="op"><a href="https://rdrr.io/r/base/Arithmetic.html">%%</a></span> <span class="fl">5</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 4</code></pre>
-</div>
+<div class="sourceCode" id="cb8"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fl">94</span> <span class="op"><a href="https://rdrr.io/r/base/Arithmetic.html">%%</a></span> <span class="fl">5</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section><section id="integer-division" class="level4" data-number="6.3.2.7"><h4 data-number="6.3.2.7" class="anchored" data-anchor-id="integer-division">
 <span class="header-section-number">6.3.2.7</span> Integer Division</h4>
 <div class="cell">
-<div class="sourceCode" id="cb17"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fl">54</span> <span class="op"><a href="https://rdrr.io/r/base/Arithmetic.html">%/%</a></span> <span class="fl">7</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 7</code></pre>
-</div>
+<div class="sourceCode" id="cb9"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fl">54</span> <span class="op"><a href="https://rdrr.io/r/base/Arithmetic.html">%/%</a></span> <span class="fl">7</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section><section id="slightly-more-complex-arithmetic-operations" class="level4" data-number="6.3.2.8"><h4 data-number="6.3.2.8" class="anchored" data-anchor-id="slightly-more-complex-arithmetic-operations">
 <span class="header-section-number">6.3.2.8</span> Slightly more complex arithmetic operations</h4>
 <div class="cell">
-<div class="sourceCode" id="cb19"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fl">5</span> <span class="op">-</span> <span class="fl">1</span> <span class="op">+</span> <span class="op">(</span><span class="fl">4</span> <span class="op">*</span> <span class="fl">3</span><span class="op">)</span> <span class="op">/</span> <span class="fl">16</span> <span class="op">*</span> <span class="fl">3</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 6.25</code></pre>
-</div>
+<div class="sourceCode" id="cb10"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fl">5</span> <span class="op">-</span> <span class="fl">1</span> <span class="op">+</span> <span class="op">(</span><span class="fl">4</span> <span class="op">*</span> <span class="fl">3</span><span class="op">)</span> <span class="op">/</span> <span class="fl">16</span> <span class="op">*</span> <span class="fl">3</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section></section><section id="variables" class="level3" data-number="6.3.3"><h3 data-number="6.3.3" class="anchored" data-anchor-id="variables">
 <span class="header-section-number">6.3.3</span> Variables</h3>
@@ -490,47 +459,32 @@ Figure&nbsp;6.1: A basic arithmetic calculation in the R Console
 </li>
 </ol>
 <div class="cell">
-<div class="sourceCode" id="cb21"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">variable_1</span> <span class="op">&lt;-</span> <span class="fl">5</span></span>
+<div class="sourceCode" id="cb11"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">variable_1</span> <span class="op">&lt;-</span> <span class="fl">5</span></span>
 <span><span class="va">variable_1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 5</code></pre>
-</div>
 </div>
 <ol start="2" type="1">
 <li>Using <code>=</code>
 </li>
 </ol>
 <div class="cell">
-<div class="sourceCode" id="cb23"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">variable_2</span> <span class="op">&lt;-</span> <span class="fl">10</span></span>
+<div class="sourceCode" id="cb12"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">variable_2</span> <span class="op">&lt;-</span> <span class="fl">10</span></span>
 <span><span class="va">variable_2</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 10</code></pre>
-</div>
 </div>
 <ol start="3" type="1">
 <li>Reverse the value and variable with <code>-&gt;</code>
 </li>
 </ol>
 <div class="cell">
-<div class="sourceCode" id="cb25"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fl">15</span> <span class="op">-&gt;</span> <span class="va">variable_3</span></span>
+<div class="sourceCode" id="cb13"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fl">15</span> <span class="op">-&gt;</span> <span class="va">variable_3</span></span>
 <span><span class="va">variable_3</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 15</code></pre>
-</div>
 </div>
 <ol start="4" type="1">
 <li>Assign two variables to one value</li>
 </ol>
 <div class="cell">
-<div class="sourceCode" id="cb27"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">variable_4</span> <span class="op">&lt;-</span> <span class="va">variable_5</span> <span class="op">&lt;-</span> <span class="fl">30</span></span>
-<span><span class="va">variable_4</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 30</code></pre>
-</div>
-<div class="sourceCode" id="cb29"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">variable_5</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 30</code></pre>
-</div>
+<div class="sourceCode" id="cb14"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">variable_4</span> <span class="op">&lt;-</span> <span class="va">variable_5</span> <span class="op">&lt;-</span> <span class="fl">30</span></span>
+<span><span class="va">variable_4</span></span>
+<span><span class="va">variable_5</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>The output of the variable can then be obtained by:</p>
 <ol type="1">
@@ -548,31 +502,25 @@ Figure&nbsp;6.2: The environment pane in RStudio with stored variables
 </figcaption></figure>
 </div>
 <div class="cell">
-<div class="sourceCode" id="cb31"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/print.html">print</a></span><span class="op">(</span><span class="va">variable_1</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 5</code></pre>
-</div>
+<div class="sourceCode" id="cb15"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/print.html">print</a></span><span class="op">(</span><span class="va">variable_1</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
-<div class="sourceCode" id="cb33"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/View.html">View</a></span><span class="op">(</span><span class="va">variable_2</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb16"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/View.html">View</a></span><span class="op">(</span><span class="va">variable_2</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Output of <code><a href="https://rdrr.io/r/utils/View.html">View()</a></code> will be seen in the script pane.</p>
 </section><section id="the-assign-and-rm-functions" class="level4" data-number="6.3.3.2"><h4 data-number="6.3.3.2" class="anchored" data-anchor-id="the-assign-and-rm-functions">
 <span class="header-section-number">6.3.3.2</span> The <code>assign()</code> and <code>rm()</code> functions</h4>
 <p>In addition to using the assignment operators (<code>&lt;-</code> and <code>=</code>), we can use the <code><a href="https://rdrr.io/r/base/assign.html">assign()</a></code> function to assign a value to a variable.</p>
 <div class="cell">
-<div class="sourceCode" id="cb34"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/assign.html">assign</a></span><span class="op">(</span><span class="st">"variable_6"</span>, <span class="fl">555</span><span class="op">)</span></span>
+<div class="sourceCode" id="cb17"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/assign.html">assign</a></span><span class="op">(</span><span class="st">"variable_6"</span>, <span class="fl">555</span><span class="op">)</span></span>
 <span><span class="va">variable_6</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 555</code></pre>
-</div>
 </div>
 <p>To remove the assignment of the value to the variable, either delete the variable in the “environment pane” or use the <code><a href="https://rdrr.io/r/base/rm.html">rm()</a></code> function.</p>
 <div class="cell">
-<div class="sourceCode" id="cb36"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">variable_7</span> <span class="op">&lt;-</span> <span class="fl">159</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb18"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">variable_7</span> <span class="op">&lt;-</span> <span class="fl">159</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
-<div class="sourceCode" id="cb37"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/rm.html">rm</a></span><span class="op">(</span><span class="va">variable_7</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb19"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/rm.html">rm</a></span><span class="op">(</span><span class="va">variable_7</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>After running <code><a href="https://rdrr.io/r/base/rm.html">rm()</a></code> look at the environment pane to confirm whether variable_7 has been removed.</p>
 </section><section id="naming-variables" class="level4" data-number="6.3.3.3"><h4 data-number="6.3.3.3" class="anchored" data-anchor-id="naming-variables">

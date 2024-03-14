@@ -40,9 +40,8 @@
   \KOMAoptions{parskip=half}}
 \makeatother
 \usepackage{xcolor}
-\usepackage{svg}
 \setlength{\emergencystretch}{3em} % prevent overfull lines
-\setcounter{secnumdepth}{5}
+\setcounter{secnumdepth}{4}
 % Make \paragraph and \subparagraph free-standing
 \ifx\paragraph\undefined\else
   \let\oldparagraph\paragraph
@@ -59,40 +58,38 @@
 \newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
 \DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
 % Add ',fontsize=\small' for more characters per line
-\usepackage{framed}
-\definecolor{shadecolor}{RGB}{241,243,245}
-\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
-\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
-\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{#1}}
-\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.40,0.45,0.13}{#1}}
-\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
-\newcommand{\BuiltInTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
-\newcommand{\CharTok}[1]{\textcolor[rgb]{0.13,0.47,0.30}{#1}}
-\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{#1}}
-\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{\textit{#1}}}
-\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
-\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
-\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
-\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
-\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{\textit{#1}}}
-\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
-\newcommand{\ExtensionTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
-\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
-\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.28,0.35,0.67}{#1}}
-\newcommand{\ImportTok}[1]{\textcolor[rgb]{0.00,0.46,0.62}{#1}}
-\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{#1}}
-\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
-\newcommand{\NormalTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
-\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{#1}}
-\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
-\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
-\newcommand{\RegionMarkerTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
-\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{#1}}
-\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.13,0.47,0.30}{#1}}
-\newcommand{\StringTok}[1]{\textcolor[rgb]{0.13,0.47,0.30}{#1}}
-\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.07,0.07,0.07}{#1}}
-\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.13,0.47,0.30}{#1}}
-\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{\textit{#1}}}
+\newenvironment{Shaded}{}{}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{1.00,0.33,0.33}{\textbf{#1}}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.42,0.45,0.49}{#1}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.84,0.23,0.29}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.36,0.77}{#1}}
+\newcommand{\BuiltInTok}[1]{\textcolor[rgb]{0.84,0.23,0.29}{#1}}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.01,0.18,0.38}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.42,0.45,0.49}{#1}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.42,0.45,0.49}{#1}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.36,0.77}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.84,0.23,0.29}{#1}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.84,0.23,0.29}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.36,0.77}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.42,0.45,0.49}{#1}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{1.00,0.33,0.33}{\underline{#1}}}
+\newcommand{\ExtensionTok}[1]{\textcolor[rgb]{0.84,0.23,0.29}{\textbf{#1}}}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.36,0.77}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.44,0.26,0.76}{#1}}
+\newcommand{\ImportTok}[1]{\textcolor[rgb]{0.01,0.18,0.38}{#1}}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.42,0.45,0.49}{#1}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.84,0.23,0.29}{#1}}
+\newcommand{\NormalTok}[1]{\textcolor[rgb]{0.14,0.16,0.18}{#1}}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.14,0.16,0.18}{#1}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.44,0.26,0.76}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.84,0.23,0.29}{#1}}
+\newcommand{\RegionMarkerTok}[1]{\textcolor[rgb]{0.42,0.45,0.49}{#1}}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.36,0.77}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.01,0.18,0.38}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.01,0.18,0.38}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.89,0.38,0.04}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.01,0.18,0.38}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{1.00,0.33,0.33}{#1}}
 
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}\usepackage{longtable,booktabs,array}
@@ -234,6 +231,8 @@
 \setcounter{tocdepth}{2}
 \tableofcontents
 }
+\listoffigures
+\listoftables
 \bookmarksetup{startatroot}
 
 \chapter*{Welcome}\label{welcome}
@@ -251,12 +250,10 @@ will primarily focus on the basic R concepts that are hardly emphasized,
 but that may prove difficult for learners new to programming.
 
 \href{https://wokech.github.io/r4novice/}{R for Novice Programmers:
-First Steps with R and RStudio~}©
-2024~by~\href{https://www.williamokech.com/}{William Okech~}is licensed
-under~\href{http://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1}{CC
-BY-NC-ND
-4.0~\includesvg{index_files/mediabag/cc-logo.f0ab4ebe.svg}\includesvg{index_files/mediabag/cc-by.21b728bb.svg}}The
-online version of this book is free to use.
+First Steps with R and RStudio}© 2024 by
+\href{https://www.williamokech.com/}{William Okech} is licensed under
+\href{http://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1}{CC
+BY-NC-ND 4.0}.The online version of this book is free to use.
 
 Cover image was designed using \href{https://www.canva.com/}{Canva}
 
@@ -1332,6 +1329,8 @@ R has several built-in datasets. To access them, we use the
 
 \begin{Shaded}
 \begin{Highlighting}[]
+\CommentTok{\#| eval: false}
+\CommentTok{\#| include: false}
 \FunctionTok{library}\NormalTok{(datasets)}
 
 \FunctionTok{print}\NormalTok{(}\FunctionTok{data}\NormalTok{())}
@@ -1344,16 +1343,6 @@ operator.
 \texttt{?dataset}
 
 Example:
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\FunctionTok{print}\NormalTok{(?airquality)}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{verbatim}
-starting httpd help server ... done
-\end{verbatim}
 
 \textbf{Helpful functions when working with datasets}
 
@@ -1373,163 +1362,6 @@ Example:
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
-    Ozone Solar.R Wind Temp Month Day
-1      41     190  7.4   67     5   1
-2      36     118  8.0   72     5   2
-3      12     149 12.6   74     5   3
-4      18     313 11.5   62     5   4
-5      NA      NA 14.3   56     5   5
-6      28      NA 14.9   66     5   6
-7      23     299  8.6   65     5   7
-8      19      99 13.8   59     5   8
-9       8      19 20.1   61     5   9
-10     NA     194  8.6   69     5  10
-11      7      NA  6.9   74     5  11
-12     16     256  9.7   69     5  12
-13     11     290  9.2   66     5  13
-14     14     274 10.9   68     5  14
-15     18      65 13.2   58     5  15
-16     14     334 11.5   64     5  16
-17     34     307 12.0   66     5  17
-18      6      78 18.4   57     5  18
-19     30     322 11.5   68     5  19
-20     11      44  9.7   62     5  20
-21      1       8  9.7   59     5  21
-22     11     320 16.6   73     5  22
-23      4      25  9.7   61     5  23
-24     32      92 12.0   61     5  24
-25     NA      66 16.6   57     5  25
-26     NA     266 14.9   58     5  26
-27     NA      NA  8.0   57     5  27
-28     23      13 12.0   67     5  28
-29     45     252 14.9   81     5  29
-30    115     223  5.7   79     5  30
-31     37     279  7.4   76     5  31
-32     NA     286  8.6   78     6   1
-33     NA     287  9.7   74     6   2
-34     NA     242 16.1   67     6   3
-35     NA     186  9.2   84     6   4
-36     NA     220  8.6   85     6   5
-37     NA     264 14.3   79     6   6
-38     29     127  9.7   82     6   7
-39     NA     273  6.9   87     6   8
-40     71     291 13.8   90     6   9
-41     39     323 11.5   87     6  10
-42     NA     259 10.9   93     6  11
-43     NA     250  9.2   92     6  12
-44     23     148  8.0   82     6  13
-45     NA     332 13.8   80     6  14
-46     NA     322 11.5   79     6  15
-47     21     191 14.9   77     6  16
-48     37     284 20.7   72     6  17
-49     20      37  9.2   65     6  18
-50     12     120 11.5   73     6  19
-51     13     137 10.3   76     6  20
-52     NA     150  6.3   77     6  21
-53     NA      59  1.7   76     6  22
-54     NA      91  4.6   76     6  23
-55     NA     250  6.3   76     6  24
-56     NA     135  8.0   75     6  25
-57     NA     127  8.0   78     6  26
-58     NA      47 10.3   73     6  27
-59     NA      98 11.5   80     6  28
-60     NA      31 14.9   77     6  29
-61     NA     138  8.0   83     6  30
-62    135     269  4.1   84     7   1
-63     49     248  9.2   85     7   2
-64     32     236  9.2   81     7   3
-65     NA     101 10.9   84     7   4
-66     64     175  4.6   83     7   5
-67     40     314 10.9   83     7   6
-68     77     276  5.1   88     7   7
-69     97     267  6.3   92     7   8
-70     97     272  5.7   92     7   9
-71     85     175  7.4   89     7  10
-72     NA     139  8.6   82     7  11
-73     10     264 14.3   73     7  12
-74     27     175 14.9   81     7  13
-75     NA     291 14.9   91     7  14
-76      7      48 14.3   80     7  15
-77     48     260  6.9   81     7  16
-78     35     274 10.3   82     7  17
-79     61     285  6.3   84     7  18
-80     79     187  5.1   87     7  19
-81     63     220 11.5   85     7  20
-82     16       7  6.9   74     7  21
-83     NA     258  9.7   81     7  22
-84     NA     295 11.5   82     7  23
-85     80     294  8.6   86     7  24
-86    108     223  8.0   85     7  25
-87     20      81  8.6   82     7  26
-88     52      82 12.0   86     7  27
-89     82     213  7.4   88     7  28
-90     50     275  7.4   86     7  29
-91     64     253  7.4   83     7  30
-92     59     254  9.2   81     7  31
-93     39      83  6.9   81     8   1
-94      9      24 13.8   81     8   2
-95     16      77  7.4   82     8   3
-96     78      NA  6.9   86     8   4
-97     35      NA  7.4   85     8   5
-98     66      NA  4.6   87     8   6
-99    122     255  4.0   89     8   7
-100    89     229 10.3   90     8   8
-101   110     207  8.0   90     8   9
-102    NA     222  8.6   92     8  10
-103    NA     137 11.5   86     8  11
-104    44     192 11.5   86     8  12
-105    28     273 11.5   82     8  13
-106    65     157  9.7   80     8  14
-107    NA      64 11.5   79     8  15
-108    22      71 10.3   77     8  16
-109    59      51  6.3   79     8  17
-110    23     115  7.4   76     8  18
-111    31     244 10.9   78     8  19
-112    44     190 10.3   78     8  20
-113    21     259 15.5   77     8  21
-114     9      36 14.3   72     8  22
-115    NA     255 12.6   75     8  23
-116    45     212  9.7   79     8  24
-117   168     238  3.4   81     8  25
-118    73     215  8.0   86     8  26
-119    NA     153  5.7   88     8  27
-120    76     203  9.7   97     8  28
-121   118     225  2.3   94     8  29
-122    84     237  6.3   96     8  30
-123    85     188  6.3   94     8  31
-124    96     167  6.9   91     9   1
-125    78     197  5.1   92     9   2
-126    73     183  2.8   93     9   3
-127    91     189  4.6   93     9   4
-128    47      95  7.4   87     9   5
-129    32      92 15.5   84     9   6
-130    20     252 10.9   80     9   7
-131    23     220 10.3   78     9   8
-132    21     230 10.9   75     9   9
-133    24     259  9.7   73     9  10
-134    44     236 14.9   81     9  11
-135    21     259 15.5   76     9  12
-136    28     238  6.3   77     9  13
-137     9      24 10.9   71     9  14
-138    13     112 11.5   71     9  15
-139    46     237  6.9   78     9  16
-140    18     224 13.8   67     9  17
-141    13      27 10.3   76     9  18
-142    24     238 10.3   68     9  19
-143    16     201  8.0   82     9  20
-144    13     238 12.6   64     9  21
-145    23      14  9.2   71     9  22
-146    36     139 10.3   81     9  23
-147     7      49 10.3   69     9  24
-148    14      20 16.6   63     9  25
-149    30     193  6.9   70     9  26
-150    NA     145 13.2   77     9  27
-151    14     191 14.3   75     9  28
-152    18     131  8.0   76     9  29
-153    20     223 11.5   68     9  30
-\end{verbatim}
-
 \begin{Shaded}
 \begin{Highlighting}[]
 \FunctionTok{data}\NormalTok{(}\StringTok{"airquality"}\NormalTok{)}
@@ -1548,163 +1380,6 @@ Example:
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
-    Ozone Solar.R Wind Temp Month Day
-1      41     190  7.4   67     5   1
-2      36     118  8.0   72     5   2
-3      12     149 12.6   74     5   3
-4      18     313 11.5   62     5   4
-5      NA      NA 14.3   56     5   5
-6      28      NA 14.9   66     5   6
-7      23     299  8.6   65     5   7
-8      19      99 13.8   59     5   8
-9       8      19 20.1   61     5   9
-10     NA     194  8.6   69     5  10
-11      7      NA  6.9   74     5  11
-12     16     256  9.7   69     5  12
-13     11     290  9.2   66     5  13
-14     14     274 10.9   68     5  14
-15     18      65 13.2   58     5  15
-16     14     334 11.5   64     5  16
-17     34     307 12.0   66     5  17
-18      6      78 18.4   57     5  18
-19     30     322 11.5   68     5  19
-20     11      44  9.7   62     5  20
-21      1       8  9.7   59     5  21
-22     11     320 16.6   73     5  22
-23      4      25  9.7   61     5  23
-24     32      92 12.0   61     5  24
-25     NA      66 16.6   57     5  25
-26     NA     266 14.9   58     5  26
-27     NA      NA  8.0   57     5  27
-28     23      13 12.0   67     5  28
-29     45     252 14.9   81     5  29
-30    115     223  5.7   79     5  30
-31     37     279  7.4   76     5  31
-32     NA     286  8.6   78     6   1
-33     NA     287  9.7   74     6   2
-34     NA     242 16.1   67     6   3
-35     NA     186  9.2   84     6   4
-36     NA     220  8.6   85     6   5
-37     NA     264 14.3   79     6   6
-38     29     127  9.7   82     6   7
-39     NA     273  6.9   87     6   8
-40     71     291 13.8   90     6   9
-41     39     323 11.5   87     6  10
-42     NA     259 10.9   93     6  11
-43     NA     250  9.2   92     6  12
-44     23     148  8.0   82     6  13
-45     NA     332 13.8   80     6  14
-46     NA     322 11.5   79     6  15
-47     21     191 14.9   77     6  16
-48     37     284 20.7   72     6  17
-49     20      37  9.2   65     6  18
-50     12     120 11.5   73     6  19
-51     13     137 10.3   76     6  20
-52     NA     150  6.3   77     6  21
-53     NA      59  1.7   76     6  22
-54     NA      91  4.6   76     6  23
-55     NA     250  6.3   76     6  24
-56     NA     135  8.0   75     6  25
-57     NA     127  8.0   78     6  26
-58     NA      47 10.3   73     6  27
-59     NA      98 11.5   80     6  28
-60     NA      31 14.9   77     6  29
-61     NA     138  8.0   83     6  30
-62    135     269  4.1   84     7   1
-63     49     248  9.2   85     7   2
-64     32     236  9.2   81     7   3
-65     NA     101 10.9   84     7   4
-66     64     175  4.6   83     7   5
-67     40     314 10.9   83     7   6
-68     77     276  5.1   88     7   7
-69     97     267  6.3   92     7   8
-70     97     272  5.7   92     7   9
-71     85     175  7.4   89     7  10
-72     NA     139  8.6   82     7  11
-73     10     264 14.3   73     7  12
-74     27     175 14.9   81     7  13
-75     NA     291 14.9   91     7  14
-76      7      48 14.3   80     7  15
-77     48     260  6.9   81     7  16
-78     35     274 10.3   82     7  17
-79     61     285  6.3   84     7  18
-80     79     187  5.1   87     7  19
-81     63     220 11.5   85     7  20
-82     16       7  6.9   74     7  21
-83     NA     258  9.7   81     7  22
-84     NA     295 11.5   82     7  23
-85     80     294  8.6   86     7  24
-86    108     223  8.0   85     7  25
-87     20      81  8.6   82     7  26
-88     52      82 12.0   86     7  27
-89     82     213  7.4   88     7  28
-90     50     275  7.4   86     7  29
-91     64     253  7.4   83     7  30
-92     59     254  9.2   81     7  31
-93     39      83  6.9   81     8   1
-94      9      24 13.8   81     8   2
-95     16      77  7.4   82     8   3
-96     78      NA  6.9   86     8   4
-97     35      NA  7.4   85     8   5
-98     66      NA  4.6   87     8   6
-99    122     255  4.0   89     8   7
-100    89     229 10.3   90     8   8
-101   110     207  8.0   90     8   9
-102    NA     222  8.6   92     8  10
-103    NA     137 11.5   86     8  11
-104    44     192 11.5   86     8  12
-105    28     273 11.5   82     8  13
-106    65     157  9.7   80     8  14
-107    NA      64 11.5   79     8  15
-108    22      71 10.3   77     8  16
-109    59      51  6.3   79     8  17
-110    23     115  7.4   76     8  18
-111    31     244 10.9   78     8  19
-112    44     190 10.3   78     8  20
-113    21     259 15.5   77     8  21
-114     9      36 14.3   72     8  22
-115    NA     255 12.6   75     8  23
-116    45     212  9.7   79     8  24
-117   168     238  3.4   81     8  25
-118    73     215  8.0   86     8  26
-119    NA     153  5.7   88     8  27
-120    76     203  9.7   97     8  28
-121   118     225  2.3   94     8  29
-122    84     237  6.3   96     8  30
-123    85     188  6.3   94     8  31
-124    96     167  6.9   91     9   1
-125    78     197  5.1   92     9   2
-126    73     183  2.8   93     9   3
-127    91     189  4.6   93     9   4
-128    47      95  7.4   87     9   5
-129    32      92 15.5   84     9   6
-130    20     252 10.9   80     9   7
-131    23     220 10.3   78     9   8
-132    21     230 10.9   75     9   9
-133    24     259  9.7   73     9  10
-134    44     236 14.9   81     9  11
-135    21     259 15.5   76     9  12
-136    28     238  6.3   77     9  13
-137     9      24 10.9   71     9  14
-138    13     112 11.5   71     9  15
-139    46     237  6.9   78     9  16
-140    18     224 13.8   67     9  17
-141    13      27 10.3   76     9  18
-142    24     238 10.3   68     9  19
-143    16     201  8.0   82     9  20
-144    13     238 12.6   64     9  21
-145    23      14  9.2   71     9  22
-146    36     139 10.3   81     9  23
-147     7      49 10.3   69     9  24
-148    14      20 16.6   63     9  25
-149    30     193  6.9   70     9  26
-150    NA     145 13.2   77     9  27
-151    14     191 14.3   75     9  28
-152    18     131  8.0   76     9  29
-153    20     223 11.5   68     9  30
-\end{verbatim}
-
 \subsubsection{Inspect head and tail of
 datasets}\label{inspect-head-and-tail-of-datasets}
 
@@ -1722,31 +1397,11 @@ Example:
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
-  Ozone Solar.R Wind Temp Month Day
-1    41     190  7.4   67     5   1
-2    36     118  8.0   72     5   2
-3    12     149 12.6   74     5   3
-4    18     313 11.5   62     5   4
-5    NA      NA 14.3   56     5   5
-6    28      NA 14.9   66     5   6
-\end{verbatim}
-
 \begin{Shaded}
 \begin{Highlighting}[]
 \FunctionTok{tail}\NormalTok{(airquality)}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
-    Ozone Solar.R Wind Temp Month Day
-148    14      20 16.6   63     9  25
-149    30     193  6.9   70     9  26
-150    NA     145 13.2   77     9  27
-151    14     191 14.3   75     9  28
-152    18     131  8.0   76     9  29
-153    20     223 11.5   68     9  30
-\end{verbatim}
 
 \subsubsection{Inspect the column and row names in the
 dataset}\label{inspect-the-column-and-row-names-in-the-dataset}
@@ -1771,41 +1426,17 @@ Example:
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
-[1] "Ozone"   "Solar.R" "Wind"    "Temp"    "Month"   "Day"    
-\end{verbatim}
-
 \begin{Shaded}
 \begin{Highlighting}[]
 \FunctionTok{rownames}\NormalTok{(airquality)}
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
-  [1] "1"   "2"   "3"   "4"   "5"   "6"   "7"   "8"   "9"   "10"  "11"  "12" 
- [13] "13"  "14"  "15"  "16"  "17"  "18"  "19"  "20"  "21"  "22"  "23"  "24" 
- [25] "25"  "26"  "27"  "28"  "29"  "30"  "31"  "32"  "33"  "34"  "35"  "36" 
- [37] "37"  "38"  "39"  "40"  "41"  "42"  "43"  "44"  "45"  "46"  "47"  "48" 
- [49] "49"  "50"  "51"  "52"  "53"  "54"  "55"  "56"  "57"  "58"  "59"  "60" 
- [61] "61"  "62"  "63"  "64"  "65"  "66"  "67"  "68"  "69"  "70"  "71"  "72" 
- [73] "73"  "74"  "75"  "76"  "77"  "78"  "79"  "80"  "81"  "82"  "83"  "84" 
- [85] "85"  "86"  "87"  "88"  "89"  "90"  "91"  "92"  "93"  "94"  "95"  "96" 
- [97] "97"  "98"  "99"  "100" "101" "102" "103" "104" "105" "106" "107" "108"
-[109] "109" "110" "111" "112" "113" "114" "115" "116" "117" "118" "119" "120"
-[121] "121" "122" "123" "124" "125" "126" "127" "128" "129" "130" "131" "132"
-[133] "133" "134" "135" "136" "137" "138" "139" "140" "141" "142" "143" "144"
-[145] "145" "146" "147" "148" "149" "150" "151" "152" "153"
-\end{verbatim}
-
 \begin{Shaded}
 \begin{Highlighting}[]
 \FunctionTok{colnames}\NormalTok{(airquality)}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
-[1] "Ozone"   "Solar.R" "Wind"    "Temp"    "Month"   "Day"    
-\end{verbatim}
 
 \subsubsection{Dataset dimensions}\label{dataset-dimensions}
 
@@ -1829,29 +1460,17 @@ Example:
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
-[1] 153   6
-\end{verbatim}
-
 \begin{Shaded}
 \begin{Highlighting}[]
 \FunctionTok{nrow}\NormalTok{(airquality)}
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
-[1] 153
-\end{verbatim}
-
 \begin{Shaded}
 \begin{Highlighting}[]
 \FunctionTok{ncol}\NormalTok{(airquality)}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
-[1] 6
-\end{verbatim}
 
 \subsubsection{Summary statistics for the
 dataset}\label{summary-statistics-for-the-dataset}
@@ -1868,25 +1487,6 @@ Example:
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
-     Ozone           Solar.R           Wind             Temp      
- Min.   :  1.00   Min.   :  7.0   Min.   : 1.700   Min.   :56.00  
- 1st Qu.: 18.00   1st Qu.:115.8   1st Qu.: 7.400   1st Qu.:72.00  
- Median : 31.50   Median :205.0   Median : 9.700   Median :79.00  
- Mean   : 42.13   Mean   :185.9   Mean   : 9.958   Mean   :77.88  
- 3rd Qu.: 63.25   3rd Qu.:258.8   3rd Qu.:11.500   3rd Qu.:85.00  
- Max.   :168.00   Max.   :334.0   Max.   :20.700   Max.   :97.00  
- NA's   :37       NA's   :7                                       
-     Month            Day      
- Min.   :5.000   Min.   : 1.0  
- 1st Qu.:6.000   1st Qu.: 8.0  
- Median :7.000   Median :16.0  
- Mean   :6.993   Mean   :15.8  
- 3rd Qu.:8.000   3rd Qu.:23.0  
- Max.   :9.000   Max.   :31.0  
-                               
-\end{verbatim}
-
 Access specific columns in a dataset
 
 \texttt{dataset\$column}
@@ -1898,18 +1498,6 @@ Example:
 \NormalTok{airquality}\SpecialCharTok{$}\NormalTok{Ozone}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
-  [1]  41  36  12  18  NA  28  23  19   8  NA   7  16  11  14  18  14  34   6
- [19]  30  11   1  11   4  32  NA  NA  NA  23  45 115  37  NA  NA  NA  NA  NA
- [37]  NA  29  NA  71  39  NA  NA  23  NA  NA  21  37  20  12  13  NA  NA  NA
- [55]  NA  NA  NA  NA  NA  NA  NA 135  49  32  NA  64  40  77  97  97  85  NA
- [73]  10  27  NA   7  48  35  61  79  63  16  NA  NA  80 108  20  52  82  50
- [91]  64  59  39   9  16  78  35  66 122  89 110  NA  NA  44  28  65  NA  22
-[109]  59  23  31  44  21   9  NA  45 168  73  NA  76 118  84  85  96  78  73
-[127]  91  47  32  20  23  21  24  44  21  28   9  13  46  18  13  24  16  13
-[145]  23  36   7  14  30  NA  14  18  20
-\end{verbatim}
 
 \subsection{Importing external
 datasets}\label{importing-external-datasets}
@@ -1987,31 +1575,6 @@ Example:
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
-   Name Class.Grade Age Gender Mathematics English Science Physical.Education
-1    JS           9  15      M           A       A       B                  C
-2    NC           9  16      M           C       C       E                  C
-3    KS           9  15      F           A       B       C                  D
-4    QP           7  13      F           B       C       A                  A
-5    QI           7  14      F           B       D       A                  C
-6    HD           7  14      M           B       E       B                  D
-7    DJ           8  14      F           C       D       E                  A
-8    JD           8  15      M           A       A       D                  E
-9    HE           8  16      F           C       D       A                  A
-10   VO           8  17      F           A       A       C                  C
-   Arts.and.Social.Science Religious.Education
-1                        D                   D
-2                        D                   A
-3                        E                   A
-4                        D                   E
-5                        A                   E
-6                        D                   C
-7                        A                   B
-8                        B                   C
-9                        B                   D
-10                       B                   E
-\end{verbatim}
-
 \begin{itemize}
 \tightlist
 \item
@@ -2027,31 +1590,6 @@ Example:
 \FunctionTok{read.csv}\NormalTok{(}\StringTok{"datasets/r4novice\_datafile.csv"}\NormalTok{, }\AttributeTok{header =} \ConstantTok{TRUE}\NormalTok{, }\AttributeTok{sep =} \StringTok{","}\NormalTok{)}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
-   Name Class.Grade Age Gender Mathematics English Science Physical.Education
-1    JS           9  15      M           A       A       B                  C
-2    NC           9  16      M           C       C       E                  C
-3    KS           9  15      F           A       B       C                  D
-4    QP           7  13      F           B       C       A                  A
-5    QI           7  14      F           B       D       A                  C
-6    HD           7  14      M           B       E       B                  D
-7    DJ           8  14      F           C       D       E                  A
-8    JD           8  15      M           A       A       D                  E
-9    HE           8  16      F           C       D       A                  A
-10   VO           8  17      F           A       A       C                  C
-   Arts.and.Social.Science Religious.Education
-1                        D                   D
-2                        D                   A
-3                        E                   A
-4                        D                   E
-5                        A                   E
-6                        D                   C
-7                        A                   B
-8                        B                   C
-9                        B                   D
-10                       B                   E
-\end{verbatim}
 
 \begin{itemize}
 \tightlist
@@ -2070,31 +1608,6 @@ Example:
 \FunctionTok{read.delim}\NormalTok{(}\StringTok{"datasets/r4novice\_datafile.txt"}\NormalTok{, }\AttributeTok{header =} \ConstantTok{TRUE}\NormalTok{)}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
-   Name Class.Grade Age Gender Mathematics English Science Physical.Education
-1    JS           9  15      M           A       A       B                  C
-2    NC           9  16      M           C       C       E                  C
-3    KS           9  15      F           A       B       C                  D
-4    QP           7  13      F           B       C       A                  A
-5    QI           7  14      F           B       D       A                  C
-6    HD           7  14      M           B       E       B                  D
-7    DJ           8  14      F           C       D       E                  A
-8    JD           8  15      M           A       A       D                  E
-9    HE           8  16      F           C       D       A                  A
-10   VO           8  17      F           A       A       C                  C
-   Arts.and.Social.Science Religious.Education
-1                        D                   D
-2                        D                   A
-3                        E                   A
-4                        D                   E
-5                        A                   E
-6                        D                   C
-7                        A                   B
-8                        B                   C
-9                        B                   D
-10                       B                   E
-\end{verbatim}
 
 \begin{itemize}
 \tightlist
@@ -2134,61 +1647,11 @@ Example:
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
-   Name Class.Grade Age Gender Mathematics English Science Physical.Education
-1    JS           9  15      M           A       A       B                  C
-2    NC           9  16      M           C       C       E                  C
-3    KS           9  15      F           A       B       C                  D
-4    QP           7  13      F           B       C       A                  A
-5    QI           7  14      F           B       D       A                  C
-6    HD           7  14      M           B       E       B                  D
-7    DJ           8  14      F           C       D       E                  A
-8    JD           8  15      M           A       A       D                  E
-9    HE           8  16      F           C       D       A                  A
-10   VO           8  17      F           A       A       C                  C
-   Arts.and.Social.Science Religious.Education
-1                        D                   D
-2                        D                   A
-3                        E                   A
-4                        D                   E
-5                        A                   E
-6                        D                   C
-7                        A                   B
-8                        B                   C
-9                        B                   D
-10                       B                   E
-\end{verbatim}
-
 \begin{Shaded}
 \begin{Highlighting}[]
 \FunctionTok{read.xlsx}\NormalTok{(}\StringTok{"datasets/r4novice\_datafile.xls"}\NormalTok{, }\AttributeTok{sheetIndex =} \DecValTok{1}\NormalTok{)}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
-   Name Class.Grade Age Gender Mathematics English Science Physical.Education
-1    JS           9  15      M           A       A       B                  C
-2    NC           9  16      M           C       C       E                  C
-3    KS           9  15      F           A       B       C                  D
-4    QP           7  13      F           B       C       A                  A
-5    QI           7  14      F           B       D       A                  C
-6    HD           7  14      M           B       E       B                  D
-7    DJ           8  14      F           C       D       E                  A
-8    JD           8  15      M           A       A       D                  E
-9    HE           8  16      F           C       D       A                  A
-10   VO           8  17      F           A       A       C                  C
-   Arts.and.Social.Science Religious.Education
-1                        D                   D
-2                        D                   A
-3                        E                   A
-4                        D                   E
-5                        A                   E
-6                        D                   C
-7                        A                   B
-8                        B                   C
-9                        B                   D
-10                       B                   E
-\end{verbatim}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -2351,10 +1814,6 @@ imported.
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
-Warning: package 'readr' was built under R version 4.3.3
-\end{verbatim}
-
 \begin{enumerate}
 \def\labelenumi{\alph{enumi}.}
 \tightlist
@@ -2376,64 +1835,6 @@ Example:
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
-Warning: Duplicated column names deduplicated: 'Science' => 'Science_1' [14],
-'Education' => 'Education_1' [16]
-\end{verbatim}
-
-\begin{verbatim}
-
--- Column specification --------------------------------------------------------
-cols(
-  Name = col_character(),
-  Class = col_double(),
-  Grade = col_double(),
-  Age = col_character(),
-  Gender = col_character(),
-  Mathematics = col_character(),
-  English = col_character(),
-  Science = col_character(),
-  Physical = col_character(),
-  Education = col_character(),
-  Arts = col_character(),
-  and = col_character(),
-  Social = col_character(),
-  Science_1 = col_character(),
-  Religious = col_character(),
-  Education_1 = col_character()
-)
-\end{verbatim}
-
-\begin{verbatim}
-Warning: 10 parsing failures.
-row col   expected     actual                             file
-  1  -- 16 columns 10 columns 'datasets/r4novice_datafile.txt'
-  2  -- 16 columns 10 columns 'datasets/r4novice_datafile.txt'
-  3  -- 16 columns 10 columns 'datasets/r4novice_datafile.txt'
-  4  -- 16 columns 10 columns 'datasets/r4novice_datafile.txt'
-  5  -- 16 columns 10 columns 'datasets/r4novice_datafile.txt'
-... ... .......... .......... ................................
-See problems(...) for more details.
-\end{verbatim}
-
-\begin{verbatim}
-# A tibble: 10 x 16
-   Name  Class Grade Age   Gender Mathematics English Science Physical Education
-   <chr> <dbl> <dbl> <chr> <chr>  <chr>       <chr>   <chr>   <chr>    <chr>    
- 1 JS        9    15 M     A      A           B       C       D        D        
- 2 NC        9    16 M     C      C           E       C       D        A        
- 3 KS        9    15 F     A      B           C       D       E        A        
- 4 QP        7    13 F     B      C           A       A       D        E        
- 5 QI        7    14 F     B      D           A       C       A        E        
- 6 HD        7    14 M     B      E           B       D       D        C        
- 7 DJ        8    14 F     C      D           E       A       A        B        
- 8 JD        8    15 M     A      A           D       E       B        C        
- 9 HE        8    16 F     C      D           A       A       B        D        
-10 VO        8    17 F     A      A           C       C       B        E        
-# i 6 more variables: Arts <chr>, and <chr>, Social <chr>, Science_1 <chr>,
-#   Religious <chr>, Education_1 <chr>
-\end{verbatim}
-
 \begin{itemize}
 \tightlist
 \item
@@ -2450,35 +1851,6 @@ Example:
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
-Rows: 10 Columns: 10
--- Column specification --------------------------------------------------------
-Delimiter: ","
-chr (8): Name, Gender, Mathematics, English, Science, Physical Education, Ar...
-dbl (2): Class Grade, Age
-
-i Use `spec()` to retrieve the full column specification for this data.
-i Specify the column types or set `show_col_types = FALSE` to quiet this message.
-\end{verbatim}
-
-\begin{verbatim}
-# A tibble: 10 x 10
-   Name  `Class Grade`   Age Gender Mathematics English Science
-   <chr>         <dbl> <dbl> <chr>  <chr>       <chr>   <chr>  
- 1 JS                9    15 M      A           A       B      
- 2 NC                9    16 M      C           C       E      
- 3 KS                9    15 F      A           B       C      
- 4 QP                7    13 F      B           C       A      
- 5 QI                7    14 F      B           D       A      
- 6 HD                7    14 M      B           E       B      
- 7 DJ                8    14 F      C           D       E      
- 8 JD                8    15 M      A           A       D      
- 9 HE                8    16 F      C           D       A      
-10 VO                8    17 F      A           A       C      
-# i 3 more variables: `Physical Education` <chr>,
-#   `Arts and Social Science` <chr>, `Religious Education` <chr>
-\end{verbatim}
-
 \begin{itemize}
 \tightlist
 \item
@@ -2492,35 +1864,6 @@ Example:
 \FunctionTok{read\_tsv}\NormalTok{(}\StringTok{"datasets/r4novice\_datafile.txt"}\NormalTok{)}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
-Rows: 10 Columns: 10
--- Column specification --------------------------------------------------------
-Delimiter: "\t"
-chr (8): Name, Gender, Mathematics, English, Science, Physical Education, Ar...
-dbl (2): Class Grade, Age
-
-i Use `spec()` to retrieve the full column specification for this data.
-i Specify the column types or set `show_col_types = FALSE` to quiet this message.
-\end{verbatim}
-
-\begin{verbatim}
-# A tibble: 10 x 10
-   Name  `Class Grade`   Age Gender Mathematics English Science
-   <chr>         <dbl> <dbl> <chr>  <chr>       <chr>   <chr>  
- 1 JS                9    15 M      A           A       B      
- 2 NC                9    16 M      C           C       E      
- 3 KS                9    15 F      A           B       C      
- 4 QP                7    13 F      B           C       A      
- 5 QI                7    14 F      B           D       A      
- 6 HD                7    14 M      B           E       B      
- 7 DJ                8    14 F      C           D       E      
- 8 JD                8    15 M      A           A       D      
- 9 HE                8    16 F      C           D       A      
-10 VO                8    17 F      A           A       C      
-# i 3 more variables: `Physical Education` <chr>,
-#   `Arts and Social Science` <chr>, `Religious Education` <chr>
-\end{verbatim}
 
 \begin{itemize}
 \tightlist
@@ -2536,35 +1879,6 @@ Example:
 \FunctionTok{read\_delim}\NormalTok{(}\StringTok{"datasets/r4novice\_datafile.csv"}\NormalTok{, }\AttributeTok{delim =} \StringTok{","}\NormalTok{)}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
-Rows: 10 Columns: 10
--- Column specification --------------------------------------------------------
-Delimiter: ","
-chr (8): Name, Gender, Mathematics, English, Science, Physical Education, Ar...
-dbl (2): Class Grade, Age
-
-i Use `spec()` to retrieve the full column specification for this data.
-i Specify the column types or set `show_col_types = FALSE` to quiet this message.
-\end{verbatim}
-
-\begin{verbatim}
-# A tibble: 10 x 10
-   Name  `Class Grade`   Age Gender Mathematics English Science
-   <chr>         <dbl> <dbl> <chr>  <chr>       <chr>   <chr>  
- 1 JS                9    15 M      A           A       B      
- 2 NC                9    16 M      C           C       E      
- 3 KS                9    15 F      A           B       C      
- 4 QP                7    13 F      B           C       A      
- 5 QI                7    14 F      B           D       A      
- 6 HD                7    14 M      B           E       B      
- 7 DJ                8    14 F      C           D       E      
- 8 JD                8    15 M      A           A       D      
- 9 HE                8    16 F      C           D       A      
-10 VO                8    17 F      A           A       C      
-# i 3 more variables: `Physical Education` <chr>,
-#   `Arts and Social Science` <chr>, `Religious Education` <chr>
-\end{verbatim}
 
 \begin{enumerate}
 \def\labelenumi{\alph{enumi}.}
@@ -2595,33 +1909,11 @@ Excel workbook.
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
-[1] "Sheet1"
-\end{verbatim}
-
 \begin{Shaded}
 \begin{Highlighting}[]
 \FunctionTok{read\_excel}\NormalTok{(}\StringTok{"datasets/r4novice\_datafile.xlsx"}\NormalTok{, }\AttributeTok{sheet =} \StringTok{"Sheet1"}\NormalTok{)}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
-# A tibble: 10 x 10
-   Name  `Class Grade`   Age Gender Mathematics English Science
-   <chr>         <dbl> <dbl> <chr>  <chr>       <chr>   <chr>  
- 1 JS                9    15 M      A           A       B      
- 2 NC                9    16 M      C           C       E      
- 3 KS                9    15 F      A           B       C      
- 4 QP                7    13 F      B           C       A      
- 5 QI                7    14 F      B           D       A      
- 6 HD                7    14 M      B           E       B      
- 7 DJ                8    14 F      C           D       E      
- 8 JD                8    15 M      A           A       D      
- 9 HE                8    16 F      C           D       A      
-10 VO                8    17 F      A           A       C      
-# i 3 more variables: `Physical Education` <chr>,
-#   `Arts and Social Science` <chr>, `Religious Education` <chr>
-\end{verbatim}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -2648,10 +1940,6 @@ Excel workbook.
 \FunctionTok{library}\NormalTok{(googlesheets4)}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
-Warning: package 'googlesheets4' was built under R version 4.3.3
-\end{verbatim}
 
 Use \texttt{read\_sheet("link\ to\ file")} to read in the file via the
 link.
@@ -2692,36 +1980,11 @@ Import a specific dataset
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
-Rows: 10 Columns: 10
--- Column specification --------------------------------------------------------
-Delimiter: ","
-chr (8): Name, Gender, Mathematics, English, Science, Physical Education, Ar...
-dbl (2): Class Grade, Age
-
-i Use `spec()` to retrieve the full column specification for this data.
-i Specify the column types or set `show_col_types = FALSE` to quiet this message.
-\end{verbatim}
-
 \begin{Shaded}
 \begin{Highlighting}[]
 \FunctionTok{head}\NormalTok{(import\_inspect)}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
-# A tibble: 6 x 10
-  Name  `Class Grade`   Age Gender Mathematics English Science
-  <chr>         <dbl> <dbl> <chr>  <chr>       <chr>   <chr>  
-1 JS                9    15 M      A           A       B      
-2 NC                9    16 M      C           C       E      
-3 KS                9    15 F      A           B       C      
-4 QP                7    13 F      B           C       A      
-5 QI                7    14 F      B           D       A      
-6 HD                7    14 M      B           E       B      
-# i 3 more variables: `Physical Education` <chr>,
-#   `Arts and Social Science` <chr>, `Religious Education` <chr>
-\end{verbatim}
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -2729,49 +1992,11 @@ i Specify the column types or set `show_col_types = FALSE` to quiet this message
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
-# A tibble: 6 x 10
-  Name  `Class Grade`   Age Gender Mathematics English Science
-  <chr>         <dbl> <dbl> <chr>  <chr>       <chr>   <chr>  
-1 QI                7    14 F      B           D       A      
-2 HD                7    14 M      B           E       B      
-3 DJ                8    14 F      C           D       E      
-4 JD                8    15 M      A           A       D      
-5 HE                8    16 F      C           D       A      
-6 VO                8    17 F      A           A       C      
-# i 3 more variables: `Physical Education` <chr>,
-#   `Arts and Social Science` <chr>, `Religious Education` <chr>
-\end{verbatim}
-
 \begin{Shaded}
 \begin{Highlighting}[]
 \FunctionTok{summary}\NormalTok{(import\_inspect)}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
-     Name            Class Grade        Age           Gender         
- Length:10          Min.   :7.00   Min.   :13.00   Length:10         
- Class :character   1st Qu.:7.25   1st Qu.:14.00   Class :character  
- Mode  :character   Median :8.00   Median :15.00   Mode  :character  
-                    Mean   :8.00   Mean   :14.90                     
-                    3rd Qu.:8.75   3rd Qu.:15.75                     
-                    Max.   :9.00   Max.   :17.00                     
- Mathematics          English            Science          Physical Education
- Length:10          Length:10          Length:10          Length:10         
- Class :character   Class :character   Class :character   Class :character  
- Mode  :character   Mode  :character   Mode  :character   Mode  :character  
-                                                                            
-                                                                            
-                                                                            
- Arts and Social Science Religious Education
- Length:10               Length:10          
- Class :character        Class :character   
- Mode  :character        Mode  :character   
-                                            
-                                            
-                                            
-\end{verbatim}
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -2779,47 +2004,11 @@ i Specify the column types or set `show_col_types = FALSE` to quiet this message
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
-spc_tbl_ [10 x 10] (S3: spec_tbl_df/tbl_df/tbl/data.frame)
- $ Name                   : chr [1:10] "JS" "NC" "KS" "QP" ...
- $ Class Grade            : num [1:10] 9 9 9 7 7 7 8 8 8 8
- $ Age                    : num [1:10] 15 16 15 13 14 14 14 15 16 17
- $ Gender                 : chr [1:10] "M" "M" "F" "F" ...
- $ Mathematics            : chr [1:10] "A" "C" "A" "B" ...
- $ English                : chr [1:10] "A" "C" "B" "C" ...
- $ Science                : chr [1:10] "B" "E" "C" "A" ...
- $ Physical Education     : chr [1:10] "C" "C" "D" "A" ...
- $ Arts and Social Science: chr [1:10] "D" "D" "E" "D" ...
- $ Religious Education    : chr [1:10] "D" "A" "A" "E" ...
- - attr(*, "spec")=
-  .. cols(
-  ..   Name = col_character(),
-  ..   `Class Grade` = col_double(),
-  ..   Age = col_double(),
-  ..   Gender = col_character(),
-  ..   Mathematics = col_character(),
-  ..   English = col_character(),
-  ..   Science = col_character(),
-  ..   `Physical Education` = col_character(),
-  ..   `Arts and Social Science` = col_character(),
-  ..   `Religious Education` = col_character()
-  .. )
- - attr(*, "problems")=<externalptr> 
-\end{verbatim}
-
 \begin{Shaded}
 \begin{Highlighting}[]
 \FunctionTok{names}\NormalTok{(import\_inspect)}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
- [1] "Name"                    "Class Grade"            
- [3] "Age"                     "Gender"                 
- [5] "Mathematics"             "English"                
- [7] "Science"                 "Physical Education"     
- [9] "Arts and Social Science" "Religious Education"    
-\end{verbatim}
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -2827,29 +2016,12 @@ spc_tbl_ [10 x 10] (S3: spec_tbl_df/tbl_df/tbl/data.frame)
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
-[1] 10 10
-\end{verbatim}
-
 \begin{Shaded}
 \begin{Highlighting}[]
 \FunctionTok{class}\NormalTok{(import\_inspect)}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{verbatim}
-[1] "spec_tbl_df" "tbl_df"      "tbl"         "data.frame" 
-\end{verbatim}
-
-\begin{Shaded}
-\begin{Highlighting}[]
 \FunctionTok{typeof}\NormalTok{(import\_inspect)}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
-[1] "list"
-\end{verbatim}
 
 \subsection{Saving data and analysis
 outputs}\label{saving-data-and-analysis-outputs}
@@ -3008,10 +2180,6 @@ Example:
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
-Warning: package 'writexl' was built under R version 4.3.3
-\end{verbatim}
-
 Create an XLS and XLSX file
 
 \begin{Shaded}
@@ -3129,10 +2297,6 @@ Examples
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
-[1] 2
-\end{verbatim}
-
 The output will be observed next to the square bracket containing the
 number 1 (\texttt{{[}1{]}}). The 1 indicates that the indexing begins at
 position 1. Here, as opposed to Python, which uses zero-based indexing,
@@ -3162,10 +2326,6 @@ commented out and not run.
 \DecValTok{1} \SpecialCharTok{+} \DecValTok{1}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
-[1] 2
-\end{verbatim}
 
 \subsection{Arithmetic operators}\label{arithmetic-operators}
 
@@ -3202,10 +2362,6 @@ working directory.
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
-[1] 40
-\end{verbatim}
-
 \subsubsection{Subtraction}\label{subtraction}
 
 \begin{Shaded}
@@ -3213,10 +2369,6 @@ working directory.
 \DecValTok{30} \SpecialCharTok{{-}} \DecValTok{24}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
-[1] 6
-\end{verbatim}
 
 \subsubsection{Multiplication}\label{multiplication}
 
@@ -3226,10 +2378,6 @@ working directory.
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
-[1] 80
-\end{verbatim}
-
 \subsubsection{Division}\label{division}
 
 \begin{Shaded}
@@ -3238,10 +2386,6 @@ working directory.
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
-[1] 23.25
-\end{verbatim}
-
 \subsubsection{Exponentiation}\label{exponentiation}
 
 \begin{Shaded}
@@ -3249,10 +2393,6 @@ working directory.
 \DecValTok{3}\SpecialCharTok{\^{}}\DecValTok{6}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
-[1] 729
-\end{verbatim}
 
 \subsubsection{Modulus (remainder with
 division)}\label{modulus-remainder-with-division}
@@ -3263,10 +2403,6 @@ division)}\label{modulus-remainder-with-division}
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
-[1] 4
-\end{verbatim}
-
 \subsubsection{Integer Division}\label{integer-division}
 
 \begin{Shaded}
@@ -3274,10 +2410,6 @@ division)}\label{modulus-remainder-with-division}
 \DecValTok{54} \SpecialCharTok{\%/\%} \DecValTok{7}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
-[1] 7
-\end{verbatim}
 
 \subsubsection{Slightly more complex arithmetic
 operations}\label{slightly-more-complex-arithmetic-operations}
@@ -3287,10 +2419,6 @@ operations}\label{slightly-more-complex-arithmetic-operations}
 \DecValTok{5} \SpecialCharTok{{-}} \DecValTok{1} \SpecialCharTok{+}\NormalTok{ (}\DecValTok{4} \SpecialCharTok{*} \DecValTok{3}\NormalTok{) }\SpecialCharTok{/} \DecValTok{16} \SpecialCharTok{*} \DecValTok{3}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
-[1] 6.25
-\end{verbatim}
 
 \subsection{Variables}\label{variables}
 
@@ -3327,10 +2455,6 @@ prefer to use \texttt{\textless{}−}.
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
-[1] 5
-\end{verbatim}
-
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \setcounter{enumi}{1}
@@ -3345,10 +2469,6 @@ prefer to use \texttt{\textless{}−}.
 \NormalTok{variable\_2}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
-[1] 10
-\end{verbatim}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -3365,10 +2485,6 @@ prefer to use \texttt{\textless{}−}.
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
-[1] 15
-\end{verbatim}
-
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \setcounter{enumi}{3}
@@ -3381,22 +2497,9 @@ prefer to use \texttt{\textless{}−}.
 \begin{Highlighting}[]
 \NormalTok{variable\_4 }\OtherTok{\textless{}{-}}\NormalTok{ variable\_5 }\OtherTok{\textless{}{-}} \DecValTok{30}
 \NormalTok{variable\_4}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{verbatim}
-[1] 30
-\end{verbatim}
-
-\begin{Shaded}
-\begin{Highlighting}[]
 \NormalTok{variable\_5}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
-[1] 30
-\end{verbatim}
 
 The output of the variable can then be obtained by:
 
@@ -3434,10 +2537,6 @@ stored variables}
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
-[1] 5
-\end{verbatim}
-
 \begin{Shaded}
 \begin{Highlighting}[]
 \FunctionTok{View}\NormalTok{(variable\_2)}
@@ -3459,10 +2558,6 @@ to a variable.
 \NormalTok{variable\_6}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
-[1] 555
-\end{verbatim}
 
 To remove the assignment of the value to the variable, either delete the
 variable in the ``environment pane'' or use the \texttt{rm()} function.
@@ -3685,10 +2780,6 @@ variables}\label{assign-values-to-variables}
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
-[1] TRUE
-\end{verbatim}
-
 \begin{enumerate}
 \def\labelenumi{\alph{enumi}.}
 \setcounter{enumi}{1}
@@ -3702,10 +2793,6 @@ variables}\label{assign-values-to-variables}
 \NormalTok{x }\SpecialCharTok{\textgreater{}}\NormalTok{ y}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
-[1] FALSE
-\end{verbatim}
 
 \begin{enumerate}
 \def\labelenumi{\alph{enumi}.}
@@ -3721,10 +2808,6 @@ variables}\label{assign-values-to-variables}
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
-[1] TRUE
-\end{verbatim}
-
 \begin{enumerate}
 \def\labelenumi{\alph{enumi}.}
 \setcounter{enumi}{3}
@@ -3738,10 +2821,6 @@ variables}\label{assign-values-to-variables}
 \NormalTok{y }\SpecialCharTok{\textgreater{}=} \DecValTok{700}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
-[1] FALSE
-\end{verbatim}
 
 \begin{enumerate}
 \def\labelenumi{\alph{enumi}.}
@@ -3757,10 +2836,6 @@ variables}\label{assign-values-to-variables}
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
-[1] TRUE
-\end{verbatim}
-
 \begin{enumerate}
 \def\labelenumi{\alph{enumi}.}
 \setcounter{enumi}{5}
@@ -3774,10 +2849,6 @@ variables}\label{assign-values-to-variables}
 \NormalTok{x }\SpecialCharTok{!=} \DecValTok{227}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
-[1] FALSE
-\end{verbatim}
 
 \subsection{Logical Operators}\label{logical-operators}
 
@@ -3825,19 +2896,11 @@ NOTE: Full discussion in the chapter on ``Vectors''
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
-[1]  TRUE FALSE
-\end{verbatim}
-
 \begin{Shaded}
 \begin{Highlighting}[]
 \SpecialCharTok{!}\NormalTok{vector\_2}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
-[1] FALSE  TRUE
-\end{verbatim}
 
 \begin{enumerate}
 \def\labelenumi{\alph{enumi}.}
@@ -3853,10 +2916,6 @@ NOTE: Full discussion in the chapter on ``Vectors''
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
-[1] TRUE TRUE
-\end{verbatim}
-
 \begin{enumerate}
 \def\labelenumi{\alph{enumi}.}
 \setcounter{enumi}{2}
@@ -3870,10 +2929,6 @@ NOTE: Full discussion in the chapter on ``Vectors''
 \NormalTok{vector\_1 }\SpecialCharTok{\&}\NormalTok{ vector\_2}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
-[1] FALSE FALSE
-\end{verbatim}
 
 \subsection{Assignment Operators}\label{assignment-operators}
 
@@ -3919,20 +2974,12 @@ chapters) \\
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
-[1] 1 2 3 4 5 6 7 8
-\end{verbatim}
-
 \begin{Shaded}
 \begin{Highlighting}[]
 \NormalTok{b }\OtherTok{\textless{}{-}} \DecValTok{4}\SpecialCharTok{:}\DecValTok{10}
 \NormalTok{b}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
-[1]  4  5  6  7  8  9 10
-\end{verbatim}
 
 \begin{enumerate}
 \def\labelenumi{\alph{enumi}.}
@@ -3948,29 +2995,17 @@ chapters) \\
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
-[1] FALSE FALSE FALSE  TRUE  TRUE  TRUE  TRUE  TRUE
-\end{verbatim}
-
 \begin{Shaded}
 \begin{Highlighting}[]
 \DecValTok{9} \SpecialCharTok{\%in\%}\NormalTok{ b}
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
-[1] TRUE
-\end{verbatim}
-
 \begin{Shaded}
 \begin{Highlighting}[]
 \DecValTok{9} \SpecialCharTok{\%in\%}\NormalTok{ a}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
-[1] FALSE
-\end{verbatim}
 
 \section{Exercises}\label{exercises-6}
 
@@ -4100,19 +3135,11 @@ R}\label{examples-of-data-types-in-r}
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
-[1] 89.98
-\end{verbatim}
-
 \begin{Shaded}
 \begin{Highlighting}[]
 \DecValTok{55}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
-[1] 55
-\end{verbatim}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -4128,19 +3155,11 @@ R}\label{examples-of-data-types-in-r}
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
-[1] 5
-\end{verbatim}
-
 \begin{Shaded}
 \begin{Highlighting}[]
 \DecValTok{5768}\NormalTok{L}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
-[1] 5768
-\end{verbatim}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -4156,19 +3175,11 @@ R}\label{examples-of-data-types-in-r}
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
-[1] TRUE
-\end{verbatim}
-
 \begin{Shaded}
 \begin{Highlighting}[]
 \ConstantTok{FALSE}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
-[1] FALSE
-\end{verbatim}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -4184,19 +3195,11 @@ R}\label{examples-of-data-types-in-r}
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
-[1] 10+30i
-\end{verbatim}
-
 \begin{Shaded}
 \begin{Highlighting}[]
 \DecValTok{287} \SpecialCharTok{+} \DecValTok{34}\NormalTok{i}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
-[1] 287+34i
-\end{verbatim}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -4212,29 +3215,17 @@ R}\label{examples-of-data-types-in-r}
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
-[1] "abc"
-\end{verbatim}
-
 \begin{Shaded}
 \begin{Highlighting}[]
 \StringTok{"def"}
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
-[1] "def"
-\end{verbatim}
-
 \begin{Shaded}
 \begin{Highlighting}[]
 \StringTok{"I like learning R"}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
-[1] "I like learning R"
-\end{verbatim}
 
 \textbf{NOTE: A comprehensive overview of handling characters with the
 \texttt{stringr} package will be provided in a subsequent series on the
@@ -4254,19 +3245,11 @@ Tidyverse.}
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
-[1] "2022-06-23 14:39:21 EAT"
-\end{verbatim}
-
 \begin{Shaded}
 \begin{Highlighting}[]
 \StringTok{"2022{-}06{-}23"}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
-[1] "2022-06-23"
-\end{verbatim}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -4323,19 +3306,11 @@ Let's look at how these functions work with a few examples:
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
-[1] "double"
-\end{verbatim}
-
 \begin{Shaded}
 \begin{Highlighting}[]
 \FunctionTok{typeof}\NormalTok{(b)}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
-[1] "integer"
-\end{verbatim}
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -4343,29 +3318,17 @@ Let's look at how these functions work with a few examples:
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
-[1] "logical"
-\end{verbatim}
-
 \begin{Shaded}
 \begin{Highlighting}[]
 \FunctionTok{typeof}\NormalTok{(d)}
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
-[1] "complex"
-\end{verbatim}
-
 \begin{Shaded}
 \begin{Highlighting}[]
 \FunctionTok{typeof}\NormalTok{(e)}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
-[1] "character"
-\end{verbatim}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -4381,19 +3344,11 @@ Let's look at how these functions work with a few examples:
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
-[1] "numeric"
-\end{verbatim}
-
 \begin{Shaded}
 \begin{Highlighting}[]
 \FunctionTok{class}\NormalTok{(b)}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
-[1] "integer"
-\end{verbatim}
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -4401,29 +3356,17 @@ Let's look at how these functions work with a few examples:
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
-[1] "logical"
-\end{verbatim}
-
 \begin{Shaded}
 \begin{Highlighting}[]
 \FunctionTok{class}\NormalTok{(d)}
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
-[1] "complex"
-\end{verbatim}
-
 \begin{Shaded}
 \begin{Highlighting}[]
 \FunctionTok{class}\NormalTok{(e)}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
-[1] "character"
-\end{verbatim}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -4443,19 +3386,11 @@ First, we test the variable a which is numeric.
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
-[1] TRUE
-\end{verbatim}
-
 \begin{Shaded}
 \begin{Highlighting}[]
 \FunctionTok{is.integer}\NormalTok{(a)}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
-[1] FALSE
-\end{verbatim}
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -4463,19 +3398,11 @@ First, we test the variable a which is numeric.
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
-[1] FALSE
-\end{verbatim}
-
 \begin{Shaded}
 \begin{Highlighting}[]
 \FunctionTok{is.character}\NormalTok{(a)}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
-[1] FALSE
-\end{verbatim}
 
 Second, we test the variable c which is logical.
 
@@ -4485,19 +3412,11 @@ Second, we test the variable c which is logical.
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
-[1] FALSE
-\end{verbatim}
-
 \begin{Shaded}
 \begin{Highlighting}[]
 \FunctionTok{is.integer}\NormalTok{(c)}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
-[1] FALSE
-\end{verbatim}
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -4505,19 +3424,11 @@ Second, we test the variable c which is logical.
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
-[1] TRUE
-\end{verbatim}
-
 \begin{Shaded}
 \begin{Highlighting}[]
 \FunctionTok{is.character}\NormalTok{(c)}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
-[1] FALSE
-\end{verbatim}
 
 \subsection{Converting between various data
 types}\label{converting-between-various-data-types}
@@ -4539,19 +3450,11 @@ Examples
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
-[1] 45
-\end{verbatim}
-
 \begin{Shaded}
 \begin{Highlighting}[]
 \FunctionTok{as.logical}\NormalTok{(}\DecValTok{0}\NormalTok{)}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
-[1] FALSE
-\end{verbatim}
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -4559,19 +3462,11 @@ Examples
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
-[1] TRUE
-\end{verbatim}
-
 \begin{Shaded}
 \begin{Highlighting}[]
 \FunctionTok{nchar}\NormalTok{(e)}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
-[1] 3
-\end{verbatim}
 
 Order of precedence when converting between data types is:
 
@@ -4686,10 +3581,6 @@ Examples of vectors made up of different data types are shown below:
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
-[1]  2 10 16 -5
-\end{verbatim}
-
 \begin{itemize}
 \tightlist
 \item
@@ -4702,10 +3593,6 @@ Examples of vectors made up of different data types are shown below:
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
-[1] "R"       "RStudio" "Shiny"   "Quarto" 
-\end{verbatim}
-
 \begin{itemize}
 \tightlist
 \item
@@ -4717,10 +3604,6 @@ Examples of vectors made up of different data types are shown below:
 \FunctionTok{c}\NormalTok{(}\StringTok{"TRUE"}\NormalTok{, }\StringTok{"FALSE"}\NormalTok{, }\StringTok{"TRUE"}\NormalTok{)}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
-[1] "TRUE"  "FALSE" "TRUE" 
-\end{verbatim}
 
 \subsection{Sequence Generation}\label{sequence-generation}
 
@@ -4736,10 +3619,6 @@ Generate a sequence using \texttt{:}
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
- [1]  9 10 11 12 13 14 15 16 17 18
-\end{verbatim}
-
 \begin{Shaded}
 \begin{Highlighting}[]
 \NormalTok{a\_rev }\OtherTok{\textless{}{-}} \DecValTok{18}\SpecialCharTok{:}\DecValTok{9}
@@ -4747,20 +3626,12 @@ Generate a sequence using \texttt{:}
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
- [1] 18 17 16 15 14 13 12 11 10  9
-\end{verbatim}
-
 \begin{Shaded}
 \begin{Highlighting}[]
 \NormalTok{a\_rev\_minus }\OtherTok{\textless{}{-}} \DecValTok{5}\SpecialCharTok{:{-}}\DecValTok{3}
 \NormalTok{a\_rev\_minus}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
-[1]  5  4  3  2  1  0 -1 -2 -3
-\end{verbatim}
 
 Generate a sequence using \texttt{sequence()}
 
@@ -4771,20 +3642,12 @@ Generate a sequence using \texttt{sequence()}
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
-[1] 1 2 3 4 5 6 7
-\end{verbatim}
-
 \begin{Shaded}
 \begin{Highlighting}[]
 \NormalTok{c }\OtherTok{\textless{}{-}} \FunctionTok{sequence}\NormalTok{(}\FunctionTok{c}\NormalTok{(}\DecValTok{5}\NormalTok{,}\DecValTok{9}\NormalTok{))}
 \NormalTok{c}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
- [1] 1 2 3 4 5 1 2 3 4 5 6 7 8 9
-\end{verbatim}
 
 Generate a sequence using \texttt{seq()}
 
@@ -4801,20 +3664,12 @@ maximum length of the vector.
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
- [1]  2  4  6  8 10 12 14 16 18 20
-\end{verbatim}
-
 \begin{Shaded}
 \begin{Highlighting}[]
 \NormalTok{f }\OtherTok{\textless{}{-}} \FunctionTok{seq}\NormalTok{(}\DecValTok{2}\NormalTok{,}\DecValTok{20}\NormalTok{, }\AttributeTok{length.out=}\DecValTok{5}\NormalTok{)}
 \NormalTok{f}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
-[1]  2.0  6.5 11.0 15.5 20.0
-\end{verbatim}
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -4823,20 +3678,12 @@ maximum length of the vector.
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
- [1] 20 18 16 14 12 10  8  6  4  2
-\end{verbatim}
-
 \begin{Shaded}
 \begin{Highlighting}[]
 \NormalTok{j }\OtherTok{\textless{}{-}} \FunctionTok{seq}\NormalTok{(}\DecValTok{20}\NormalTok{, }\DecValTok{2}\NormalTok{, }\AttributeTok{length.out=}\DecValTok{3}\NormalTok{)}
 \NormalTok{j}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
-[1] 20 11  2
-\end{verbatim}
 
 The \texttt{seq()} function can also be used with the arguments first,
 by, and length.
@@ -4851,11 +3698,6 @@ Example
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
- [1]   3   7  11  15  19  23  27  31  35  39  43  47  51  55  59  63  67  71  75
-[20]  79  83  87  91  95  99 103 107 111 115 119
-\end{verbatim}
-
 Repeating vectors
 
 To create a repeating vector, we can use \texttt{rep()}.
@@ -4869,10 +3711,6 @@ To create a repeating vector, we can use \texttt{rep()}.
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
-[1] 0 3 6 0 3 6 0 3 6
-\end{verbatim}
-
 \texttt{rep(range,\ times)}
 
 \begin{Shaded}
@@ -4882,33 +3720,16 @@ To create a repeating vector, we can use \texttt{rep()}.
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
- [1] 2 2 2 3 3 3 4 4 4 5 5 5 6 6 6
-\end{verbatim}
-
 \texttt{rep(number\ or\ range,\ length.out)}
 
 \begin{Shaded}
 \begin{Highlighting}[]
 \NormalTok{m }\OtherTok{\textless{}{-}} \FunctionTok{rep}\NormalTok{(}\DecValTok{7}\NormalTok{, }\AttributeTok{length.out =} \DecValTok{20}\NormalTok{)}
 \NormalTok{m}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{verbatim}
- [1] 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7
-\end{verbatim}
-
-\begin{Shaded}
-\begin{Highlighting}[]
 \NormalTok{n }\OtherTok{\textless{}{-}} \FunctionTok{rep}\NormalTok{(}\DecValTok{7}\SpecialCharTok{:}\DecValTok{10}\NormalTok{, }\AttributeTok{length.out =} \DecValTok{20}\NormalTok{)}
 \NormalTok{n}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
- [1]  7  8  9 10  7  8  9 10  7  8  9 10  7  8  9 10  7  8  9 10
-\end{verbatim}
 
 Random number generation
 
@@ -4923,10 +3744,6 @@ of random numbers between a minimum and maximum value.
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
-[1] 59.94056 75.51165 13.48448 88.33481 10.15589
-\end{verbatim}
-
 \textbf{NOTE} If you run the previous code block multiple times you will
 get different answers. Use \texttt{set.seed()} to get a similar sequence
 every time you run the calculation.
@@ -4937,10 +3754,6 @@ every time you run the calculation.
 \FunctionTok{runif}\NormalTok{(}\DecValTok{5}\NormalTok{, }\AttributeTok{min =} \DecValTok{3}\NormalTok{, }\AttributeTok{max =} \DecValTok{100}\NormalTok{)}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
-[1] 72.92768 87.95000 76.81529 88.95408 47.27865
-\end{verbatim}
 
 \subsection{More functions to manipulate
 vectors}\label{more-functions-to-manipulate-vectors}
@@ -4955,17 +3768,6 @@ Generate a random vector with 50 elements
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
- [1] 44.613758 51.347751 20.139157 29.616173 24.001486 87.037027  7.792779
- [8] 23.286089 36.136404 39.050902 16.254312 68.576625  7.394091 66.313937
-[15] 99.424403 68.730823 92.098882 47.857159 58.427236 46.838066 19.267580
-[22]  9.621351 90.000337 29.562192 93.228959 55.463536 70.832691 83.908744
-[29]  4.192446 96.148363 69.028603 11.220652 97.050041 14.255861 88.055533
-[36] 40.604467 91.237585 75.716659 87.464208 58.556042 90.634738 22.596315
-[43] 69.616442 42.760092 94.441217 59.342340 63.392800 88.172536 12.631948
-[50] 94.952417
-\end{verbatim}
-
 Sample
 
 \begin{Shaded}
@@ -4973,12 +3775,6 @@ Sample
 \FunctionTok{sample}\NormalTok{(sam, }\AttributeTok{size =} \DecValTok{15}\NormalTok{)}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
- [1] 22.596315 91.237585 66.313937 68.576625 14.255861  9.621351 63.392800
- [8] 47.857159 55.463536 11.220652 36.136404 70.832691 93.228959  7.394091
-[15] 83.908744
-\end{verbatim}
 
 To get the same sample repeatedly
 
@@ -4989,28 +3785,11 @@ To get the same sample repeatedly
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
- [1] 83.908744 68.730823  9.621351 91.237585 42.760092 36.136404 24.001486
- [8] 75.716659 12.631948 29.616173 14.255861 87.464208 88.172536 55.463536
-[15] 87.037027
-\end{verbatim}
-
 \begin{Shaded}
 \begin{Highlighting}[]
 \FunctionTok{sort}\NormalTok{(sam)}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
- [1]  4.192446  7.394091  7.792779  9.621351 11.220652 12.631948 14.255861
- [8] 16.254312 19.267580 20.139157 22.596315 23.286089 24.001486 29.562192
-[15] 29.616173 36.136404 39.050902 40.604467 42.760092 44.613758 46.838066
-[22] 47.857159 51.347751 55.463536 58.427236 58.556042 59.342340 63.392800
-[29] 66.313937 68.576625 68.730823 69.028603 69.616442 70.832691 75.716659
-[36] 83.908744 87.037027 87.464208 88.055533 88.172536 90.000337 90.634738
-[43] 91.237585 92.098882 93.228959 94.441217 94.952417 96.148363 97.050041
-[50] 99.424403
-\end{verbatim}
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -5018,27 +3797,11 @@ To get the same sample repeatedly
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
- [1] 99.424403 97.050041 96.148363 94.952417 94.441217 93.228959 92.098882
- [8] 91.237585 90.634738 90.000337 88.172536 88.055533 87.464208 87.037027
-[15] 83.908744 75.716659 70.832691 69.616442 69.028603 68.730823 68.576625
-[22] 66.313937 63.392800 59.342340 58.556042 58.427236 55.463536 51.347751
-[29] 47.857159 46.838066 44.613758 42.760092 40.604467 39.050902 36.136404
-[36] 29.616173 29.562192 24.001486 23.286089 22.596315 20.139157 19.267580
-[43] 16.254312 14.255861 12.631948 11.220652  9.621351  7.792779  7.394091
-[50]  4.192446
-\end{verbatim}
-
 \begin{Shaded}
 \begin{Highlighting}[]
 \FunctionTok{quantile}\NormalTok{(sam)}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
-       0%       25%       50%       75%      100% 
- 4.192446 25.391662 58.491639 87.357413 99.424403 
-\end{verbatim}
 
 Create two vectors and look at the similarities/differences between the
 two
@@ -5057,29 +3820,11 @@ two
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
-  [1]   2   8  14  20  26  32  38  44  50  56  62  68  74  80  86  92  98 104
- [19] 110 116 122 128 134 140 146 152 158 164 170 176 182 188 194 200 206 212
- [37] 218 224 230 236 242 248 254 260 266 272 278 284 290 296 302 308 314 320
- [55] 326 332 338 344 350 356 362 368 374 380 386 392 398 404 410 416 422 428
- [73] 434 440 446 452 458 464 470 476 482 488 494 500 506 512 518 524 530 536
- [91] 542 548 554 560 566 572 578 584 590 596
-\end{verbatim}
-
 \begin{Shaded}
 \begin{Highlighting}[]
 \NormalTok{vec\_top\_2}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
-  [1]   4   8  12  16  20  24  28  32  36  40  44  48  52  56  60  64  68  72
- [19]  76  80  84  88  92  96 100 104 108 112 116 120 124 128 132 136 140 144
- [37] 148 152 156 160 164 168 172 176 180 184 188 192 196 200 204 208 212 216
- [55] 220 224 228 232 236 240 244 248 252 256 260 264 268 272 276 280 284 288
- [73] 292 296 300 304 308 312 316 320 324 328 332 336 340 344 348 352 356 360
- [91] 364 368 372 376 380 384 388 392 396 400
-\end{verbatim}
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -5087,42 +3832,17 @@ two
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
-  [1]   2   8  14  20  26  32  38  44  50  56  62  68  74  80  86  92  98 104
- [19] 110 116 122 128 134 140 146 152 158 164 170 176 182 188 194 200 206 212
- [37] 218 224 230 236 242 248 254 260 266 272 278 284 290 296 302 308 314 320
- [55] 326 332 338 344 350 356 362 368 374 380 386 392 398 404 410 416 422 428
- [73] 434 440 446 452 458 464 470 476 482 488 494 500 506 512 518 524 530 536
- [91] 542 548 554 560 566 572 578 584 590 596   4  12  16  24  28  36  40  48
-[109]  52  60  64  72  76  84  88  96 100 108 112 120 124 132 136 144 148 156
-[127] 160 168 172 180 184 192 196 204 208 216 220 228 232 240 244 252 256 264
-[145] 268 276 280 288 292 300 304 312 316 324 328 336 340 348 352 360 364 372
-[163] 376 384 388 396 400
-\end{verbatim}
-
 \begin{Shaded}
 \begin{Highlighting}[]
 \FunctionTok{intersect}\NormalTok{(vec\_top\_1, vec\_top\_2)}
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
- [1]   8  20  32  44  56  68  80  92 104 116 128 140 152 164 176 188 200 212 224
-[20] 236 248 260 272 284 296 308 320 332 344 356 368 380 392
-\end{verbatim}
-
 \begin{Shaded}
 \begin{Highlighting}[]
 \FunctionTok{setdiff}\NormalTok{(vec\_top\_1, vec\_top\_2)}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
- [1]   2  14  26  38  50  62  74  86  98 110 122 134 146 158 170 182 194 206 218
-[20] 230 242 254 266 278 290 302 314 326 338 350 362 374 386 398 404 410 416 422
-[39] 428 434 440 446 452 458 464 470 476 482 488 494 500 506 512 518 524 530 536
-[58] 542 548 554 560 566 572 578 584 590 596
-\end{verbatim}
 
 \subsection{Vector Operations}\label{vector-operations}
 
@@ -5151,19 +3871,11 @@ shorter vector.
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
- [1]  12  24  36  48  60  72  84  96 108 120
-\end{verbatim}
-
 \begin{Shaded}
 \begin{Highlighting}[]
 \NormalTok{vec\_1 }\SpecialCharTok{+} \DecValTok{12} \CommentTok{\# addition}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
- [1] 13 14 15 16 17 18 19 20 21 22
-\end{verbatim}
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -5171,20 +3883,11 @@ shorter vector.
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
- [1] -11 -10  -9  -8  -7  -6  -5  -4  -3  -2
-\end{verbatim}
-
 \begin{Shaded}
 \begin{Highlighting}[]
 \NormalTok{vec\_1 }\SpecialCharTok{/} \DecValTok{3} \CommentTok{\# division}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
- [1] 0.3333333 0.6666667 1.0000000 1.3333333 1.6666667 2.0000000 2.3333333
- [8] 2.6666667 3.0000000 3.3333333
-\end{verbatim}
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -5192,20 +3895,11 @@ shorter vector.
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
- [1]     1    16    81   256   625  1296  2401  4096  6561 10000
-\end{verbatim}
-
 \begin{Shaded}
 \begin{Highlighting}[]
 \FunctionTok{sqrt}\NormalTok{(vec\_1) }\CommentTok{\# square root}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
- [1] 1.000000 1.414214 1.732051 2.000000 2.236068 2.449490 2.645751 2.828427
- [9] 3.000000 3.162278
-\end{verbatim}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -5232,20 +3926,12 @@ operations on two vectors of equal length.
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
- [1]  5  6  7  8  9 10 11 12 13 14
-\end{verbatim}
-
 \begin{Shaded}
 \begin{Highlighting}[]
 \NormalTok{vec\_4 }\OtherTok{\textless{}{-}} \DecValTok{12}\SpecialCharTok{:}\DecValTok{3}
 \NormalTok{vec\_4}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
- [1] 12 11 10  9  8  7  6  5  4  3
-\end{verbatim}
 
 \begin{enumerate}
 \def\labelenumi{\alph{enumi}.}
@@ -5261,19 +3947,11 @@ operations on two vectors of equal length.
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
- [1] 17 17 17 17 17 17 17 17 17 17
-\end{verbatim}
-
 \begin{Shaded}
 \begin{Highlighting}[]
 \NormalTok{vec\_3 }\SpecialCharTok{{-}}\NormalTok{ vec\_4}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
- [1] -7 -5 -3 -1  1  3  5  7  9 11
-\end{verbatim}
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -5281,31 +3959,17 @@ operations on two vectors of equal length.
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
- [1] 0.4166667 0.5454545 0.7000000 0.8888889 1.1250000 1.4285714 1.8333333
- [8] 2.4000000 3.2500000 4.6666667
-\end{verbatim}
-
 \begin{Shaded}
 \begin{Highlighting}[]
 \NormalTok{vec\_3 }\SpecialCharTok{*}\NormalTok{ vec\_4}
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
- [1] 60 66 70 72 72 70 66 60 52 42
-\end{verbatim}
-
 \begin{Shaded}
 \begin{Highlighting}[]
 \NormalTok{vec\_3 }\SpecialCharTok{\^{}}\NormalTok{ vec\_4}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
- [1] 244140625 362797056 282475249 134217728  43046721  10000000   1771561
- [8]    248832     28561      2744
-\end{verbatim}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -5339,19 +4003,11 @@ Examples
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
-[1] TRUE
-\end{verbatim}
-
 \begin{Shaded}
 \begin{Highlighting}[]
 \FunctionTok{any}\NormalTok{(vec\_3 }\SpecialCharTok{\textless{}}\NormalTok{ vec\_4)}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
-[1] TRUE
-\end{verbatim}
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -5359,19 +4015,11 @@ Examples
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
-[1] FALSE
-\end{verbatim}
-
 \begin{Shaded}
 \begin{Highlighting}[]
 \FunctionTok{all}\NormalTok{(vec\_3 }\SpecialCharTok{\textless{}}\NormalTok{ vec\_4)}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
-[1] FALSE
-\end{verbatim}
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -5379,19 +4027,11 @@ Examples
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
-[1] 10
-\end{verbatim}
-
 \begin{Shaded}
 \begin{Highlighting}[]
 \FunctionTok{length}\NormalTok{(vec\_4)}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
-[1] 10
-\end{verbatim}
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -5399,19 +4039,11 @@ Examples
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
-[1] "integer"
-\end{verbatim}
-
 \begin{Shaded}
 \begin{Highlighting}[]
 \FunctionTok{typeof}\NormalTok{(vec\_4)}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
-[1] "integer"
-\end{verbatim}
 
 Determine the number of letters in a character
 
@@ -5426,10 +4058,6 @@ Determine the number of letters in a character
 \FunctionTok{nchar}\NormalTok{(vec\_5)}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
-[1] 1 7 5 6
-\end{verbatim}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -5456,16 +4084,6 @@ operations together with examples are listed below.
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
-  [1]   2   8  14  20  26  32  38  44  50  56  62  68  74  80  86  92  98 104
- [19] 110 116 122 128 134 140 146 152 158 164 170 176 182 188 194 200 206 212
- [37] 218 224 230 236 242 248 254 260 266 272 278 284 290 296 302 308 314 320
- [55] 326 332 338 344 350 356 362 368 374 380 386 392 398 404 410 416 422 428
- [73] 434 440 446 452 458 464 470 476 482 488 494 500 506 512 518 524 530 536
- [91] 542 548 554 560 566 572 578 584 590 596 602 608 614 620 626 632 638 644
-[109] 650 656 662 668 674 680 686 692 698 704 710 716
-\end{verbatim}
-
 \begin{enumerate}
 \def\labelenumi{\alph{enumi}.}
 \setcounter{enumi}{1}
@@ -5486,10 +4104,6 @@ operations together with examples are listed below.
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
-[1] 120
-\end{verbatim}
-
 \begin{itemize}
 \tightlist
 \item
@@ -5501,10 +4115,6 @@ operations together with examples are listed below.
 \FunctionTok{sum}\NormalTok{(stat\_math\_vec\_1)}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
-[1] 43080
-\end{verbatim}
 
 \begin{itemize}
 \tightlist
@@ -5518,10 +4128,6 @@ operations together with examples are listed below.
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
-[1] 2
-\end{verbatim}
-
 \begin{itemize}
 \tightlist
 \item
@@ -5533,10 +4139,6 @@ operations together with examples are listed below.
 \FunctionTok{max}\NormalTok{(stat\_math\_vec\_1)}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
-[1] 716
-\end{verbatim}
 
 \begin{itemize}
 \tightlist
@@ -5550,10 +4152,6 @@ operations together with examples are listed below.
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
-[1] 359
-\end{verbatim}
-
 \begin{itemize}
 \tightlist
 \item
@@ -5565,10 +4163,6 @@ operations together with examples are listed below.
 \FunctionTok{median}\NormalTok{(stat\_math\_vec\_1)}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
-[1] 359
-\end{verbatim}
 
 \begin{itemize}
 \tightlist
@@ -5582,11 +4176,6 @@ operations together with examples are listed below.
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
-   0%   25%   50%   75%  100% 
-  2.0 180.5 359.0 537.5 716.0 
-\end{verbatim}
-
 \begin{itemize}
 \tightlist
 \item
@@ -5598,10 +4187,6 @@ operations together with examples are listed below.
 \FunctionTok{sd}\NormalTok{(stat\_math\_vec\_1)}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
-[1] 208.7103
-\end{verbatim}
 
 \begin{itemize}
 \tightlist
@@ -5615,10 +4200,6 @@ operations together with examples are listed below.
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
-[1] 357
-\end{verbatim}
-
 \begin{itemize}
 \tightlist
 \item
@@ -5631,19 +4212,6 @@ operations together with examples are listed below.
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
-  [1]     2    10    24    44    70   102   140   184   234   290   352   420
- [13]   494   574   660   752   850   954  1064  1180  1302  1430  1564  1704
- [25]  1850  2002  2160  2324  2494  2670  2852  3040  3234  3434  3640  3852
- [37]  4070  4294  4524  4760  5002  5250  5504  5764  6030  6302  6580  6864
- [49]  7154  7450  7752  8060  8374  8694  9020  9352  9690 10034 10384 10740
- [61] 11102 11470 11844 12224 12610 13002 13400 13804 14214 14630 15052 15480
- [73] 15914 16354 16800 17252 17710 18174 18644 19120 19602 20090 20584 21084
- [85] 21590 22102 22620 23144 23674 24210 24752 25300 25854 26414 26980 27552
- [97] 28130 28714 29304 29900 30502 31110 31724 32344 32970 33602 34240 34884
-[109] 35534 36190 36852 37520 38194 38874 39560 40252 40950 41654 42364 43080
-\end{verbatim}
-
 \begin{itemize}
 \tightlist
 \item
@@ -5655,10 +4223,6 @@ operations together with examples are listed below.
 \FunctionTok{range}\NormalTok{(stat\_math\_vec\_1)}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
-[1]   2 716
-\end{verbatim}
 
 \begin{itemize}
 \tightlist
@@ -5673,60 +4237,10 @@ break points.
 \begin{Shaded}
 \begin{Highlighting}[]
 \FunctionTok{cut}\NormalTok{(stat\_math\_vec\_1, }\AttributeTok{breaks =} \DecValTok{6}\NormalTok{)}
-\end{Highlighting}
-\end{Shaded}
 
-\begin{verbatim}
-  [1] (1.29,121] (1.29,121] (1.29,121] (1.29,121] (1.29,121] (1.29,121]
-  [7] (1.29,121] (1.29,121] (1.29,121] (1.29,121] (1.29,121] (1.29,121]
- [13] (1.29,121] (1.29,121] (1.29,121] (1.29,121] (1.29,121] (1.29,121]
- [19] (1.29,121] (1.29,121] (121,240]  (121,240]  (121,240]  (121,240] 
- [25] (121,240]  (121,240]  (121,240]  (121,240]  (121,240]  (121,240] 
- [31] (121,240]  (121,240]  (121,240]  (121,240]  (121,240]  (121,240] 
- [37] (121,240]  (121,240]  (121,240]  (121,240]  (240,359]  (240,359] 
- [43] (240,359]  (240,359]  (240,359]  (240,359]  (240,359]  (240,359] 
- [49] (240,359]  (240,359]  (240,359]  (240,359]  (240,359]  (240,359] 
- [55] (240,359]  (240,359]  (240,359]  (240,359]  (240,359]  (240,359] 
- [61] (359,478]  (359,478]  (359,478]  (359,478]  (359,478]  (359,478] 
- [67] (359,478]  (359,478]  (359,478]  (359,478]  (359,478]  (359,478] 
- [73] (359,478]  (359,478]  (359,478]  (359,478]  (359,478]  (359,478] 
- [79] (359,478]  (359,478]  (478,597]  (478,597]  (478,597]  (478,597] 
- [85] (478,597]  (478,597]  (478,597]  (478,597]  (478,597]  (478,597] 
- [91] (478,597]  (478,597]  (478,597]  (478,597]  (478,597]  (478,597] 
- [97] (478,597]  (478,597]  (478,597]  (478,597]  (597,717]  (597,717] 
-[103] (597,717]  (597,717]  (597,717]  (597,717]  (597,717]  (597,717] 
-[109] (597,717]  (597,717]  (597,717]  (597,717]  (597,717]  (597,717] 
-[115] (597,717]  (597,717]  (597,717]  (597,717]  (597,717]  (597,717] 
-Levels: (1.29,121] (121,240] (240,359] (359,478] (478,597] (597,717]
-\end{verbatim}
-
-\begin{Shaded}
-\begin{Highlighting}[]
 \FunctionTok{cut}\NormalTok{(stat\_math\_vec\_1, }\AttributeTok{breaks =} \FunctionTok{c}\NormalTok{(}\DecValTok{0}\NormalTok{, }\DecValTok{120}\NormalTok{, }\DecValTok{240}\NormalTok{, }\DecValTok{360}\NormalTok{, }\DecValTok{480}\NormalTok{, }\DecValTok{600}\NormalTok{, }\DecValTok{720}\NormalTok{))}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
-  [1] (0,120]   (0,120]   (0,120]   (0,120]   (0,120]   (0,120]   (0,120]  
-  [8] (0,120]   (0,120]   (0,120]   (0,120]   (0,120]   (0,120]   (0,120]  
- [15] (0,120]   (0,120]   (0,120]   (0,120]   (0,120]   (0,120]   (120,240]
- [22] (120,240] (120,240] (120,240] (120,240] (120,240] (120,240] (120,240]
- [29] (120,240] (120,240] (120,240] (120,240] (120,240] (120,240] (120,240]
- [36] (120,240] (120,240] (120,240] (120,240] (120,240] (240,360] (240,360]
- [43] (240,360] (240,360] (240,360] (240,360] (240,360] (240,360] (240,360]
- [50] (240,360] (240,360] (240,360] (240,360] (240,360] (240,360] (240,360]
- [57] (240,360] (240,360] (240,360] (240,360] (360,480] (360,480] (360,480]
- [64] (360,480] (360,480] (360,480] (360,480] (360,480] (360,480] (360,480]
- [71] (360,480] (360,480] (360,480] (360,480] (360,480] (360,480] (360,480]
- [78] (360,480] (360,480] (360,480] (480,600] (480,600] (480,600] (480,600]
- [85] (480,600] (480,600] (480,600] (480,600] (480,600] (480,600] (480,600]
- [92] (480,600] (480,600] (480,600] (480,600] (480,600] (480,600] (480,600]
- [99] (480,600] (480,600] (600,720] (600,720] (600,720] (600,720] (600,720]
-[106] (600,720] (600,720] (600,720] (600,720] (600,720] (600,720] (600,720]
-[113] (600,720] (600,720] (600,720] (600,720] (600,720] (600,720] (600,720]
-[120] (600,720]
-Levels: (0,120] (120,240] (240,360] (360,480] (480,600] (600,720]
-\end{verbatim}
 
 \begin{itemize}
 \tightlist
@@ -5741,22 +4255,9 @@ intervals.
 \begin{Shaded}
 \begin{Highlighting}[]
 \FunctionTok{pretty}\NormalTok{(stat\_math\_vec\_1)}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{verbatim}
-[1]   0 200 400 600 800
-\end{verbatim}
-
-\begin{Shaded}
-\begin{Highlighting}[]
 \FunctionTok{pretty}\NormalTok{(stat\_math\_vec\_1, }\AttributeTok{n =} \DecValTok{20}\NormalTok{)}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
- [1]   0  50 100 150 200 250 300 350 400 450 500 550 600 650 700 750
-\end{verbatim}
 
 \begin{itemize}
 \tightlist
@@ -5770,98 +4271,17 @@ intervals.
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
-  [1]  9.092974e-01  9.893582e-01  9.906074e-01  9.129453e-01  7.625585e-01
-  [6]  5.514267e-01  2.963686e-01  1.770193e-02 -2.623749e-01 -5.215510e-01
- [11] -7.391807e-01 -8.979277e-01 -9.851463e-01 -9.938887e-01 -9.234584e-01
- [16] -7.794661e-01 -5.733819e-01 -3.216224e-01 -4.424268e-02  2.366614e-01
- [21]  4.987132e-01  7.210377e-01  8.859248e-01  9.802397e-01  9.964692e-01
- [26]  9.333205e-01  7.958241e-01  5.949328e-01  3.466495e-01  7.075224e-02
- [31] -2.107811e-01 -4.755237e-01 -7.023863e-01 -8.732973e-01 -9.746419e-01
- [36] -9.983471e-01 -9.425245e-01 -8.116210e-01 -6.160642e-01 -3.714321e-01
- [41] -9.721191e-02  1.847521e-01  4.519989e-01  6.832397e-01  8.600540e-01
- [46]  9.683569e-01  9.995211e-01  9.510640e-01  8.268456e-01  6.367613e-01
- [51]  3.959528e-01  1.236030e-01 -1.585929e-01 -4.281554e-01 -6.636113e-01
- [56] -8.462043e-01 -9.613892e-01 -9.999903e-01 -9.589328e-01 -8.414873e-01
- [61] -6.570093e-01 -4.201944e-01 -1.499070e-01  1.323219e-01  4.040101e-01
- [66]  6.435151e-01  8.317580e-01  9.537436e-01  9.997545e-01  9.661255e-01
- [71]  8.555356e-01  6.767941e-01  4.441397e-01  1.761053e-01 -1.059575e-01
- [76] -3.795799e-01 -6.229651e-01 -8.167252e-01 -9.454255e-01 -9.988138e-01
- [81] -9.726371e-01 -8.689807e-01 -6.961018e-01 -4.677718e-01 -2.021794e-01
- [86]  7.951849e-02  3.548820e-01  6.019758e-01  8.011166e-01  9.364408e-01
- [91]  9.971688e-01  9.784628e-01  8.818131e-01  7.149186e-01  4.910741e-01
- [96]  2.281110e-01 -5.302338e-02 -3.299339e-01 -5.805621e-01 -7.849430e-01
-[101] -9.267959e-01 -9.948207e-01 -9.835986e-01 -8.940237e-01 -7.332313e-01
-[106] -5.140302e-01 -2.538817e-01  2.649089e-02  3.047532e-01  5.587390e-01
-[111]  7.682161e-01  9.164974e-01  9.917711e-01  9.880409e-01  9.056039e-01
-[116]  7.510271e-01  5.366238e-01  2.794734e-01  6.028871e-05 -2.793576e-01
-\end{verbatim}
-
 \begin{Shaded}
 \begin{Highlighting}[]
 \FunctionTok{cos}\NormalTok{(stat\_math\_vec\_1)}
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
-  [1] -0.416146837 -0.145500034  0.136737218  0.408082062  0.646919322
-  [6]  0.834223361  0.955073644  0.999843309  0.964966028  0.853220108
- [11]  0.673507162  0.440143022  0.171717342 -0.110387244 -0.383698445
- [16] -0.626444448 -0.819288245 -0.946868011 -0.999020813 -0.971592191
- [21] -0.866767091 -0.692895822 -0.463828869 -0.197813574  0.083959437
- [26]  0.359044287  0.605527875  0.803775460  0.937994752  0.997493920
- [31]  0.977533295  0.879702927  0.711795929  0.487187675  0.223770330
- [36] -0.057472431 -0.334136971 -0.584184352 -0.787695942 -0.928460125
- [41] -0.995263706 -0.982785152 -0.892018495 -0.730194157 -0.510202971
- [46] -0.249569309  0.030944902  0.308994059  0.562428927  0.771061029
- [51]  0.918270851  0.992331744  0.987344059  0.903705112  0.748077534
- [56]  0.532858529  0.275192319 -0.004395554 -0.283633279 -0.540276940
- [61] -0.753882450 -0.907434115 -0.988700100 -0.991206801 -0.914754537
- [66] -0.765433451 -0.555138375 -0.300621294 -0.022156893  0.258072513
- [71]  0.517744010  0.736172317  0.895957559  0.984371335  0.994370655
- [76]  0.925158979  0.782249669  0.577026799  0.325838305  0.048693718
- [81] -0.232329783 -0.494846026 -0.717943118 -0.883849273 -0.979348502
- [86] -0.996833391 -0.934911103 -0.798514333 -0.598508368 -0.350825571
- [91] -0.075196209  0.206423239  0.471599131  0.699207706  0.871117796
- [96]  0.973635142  0.998593271  0.944004032  0.814215973  0.619567937
-[101]  0.375565474  0.101645680 -0.180371150 -0.448019717 -0.679979291
-[106] -0.857772105 -0.967235284 -0.999649055 -0.952431355 -0.829343520
-[111] -0.640190655 -0.400040570 -0.128023482  0.154191882  0.424124410
-[116]  0.660271431  0.843821608  0.960153439  0.999999998  0.960187131
-\end{verbatim}
-
 \begin{Shaded}
 \begin{Highlighting}[]
 \FunctionTok{tan}\NormalTok{(stat\_math\_vec\_1)}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
-  [1] -2.185040e+00 -6.799711e+00  7.244607e+00  2.237161e+00  1.178754e+00
-  [6]  6.610060e-01  3.103097e-01  1.770470e-02 -2.719006e-01 -6.112737e-01
- [11] -1.097510e+00 -2.040082e+00 -5.737023e+00  9.003655e+00  2.406730e+00
- [16]  1.244270e+00  6.998537e-01  3.396697e-01  4.428604e-02 -2.435810e-01
- [21] -5.753716e-01 -1.040615e+00 -1.910025e+00 -4.955371e+00  1.186846e+01
- [26]  2.599458e+00  1.314265e+00  7.401729e-01  3.695644e-01  7.092999e-02
- [31] -2.156255e-01 -5.405503e-01 -9.867805e-01 -1.792527e+00 -4.355546e+00
- [36]  1.737089e+01  2.820773e+00  1.389323e+00  7.821092e-01  4.000517e-01
- [41]  9.767452e-02 -1.879883e-01 -5.067147e-01 -9.356959e-01 -1.685710e+00
- [46] -3.880112e+00  3.230002e+01  3.077936e+00  1.470134e+00  8.258247e-01
- [51]  4.311939e-01  1.245582e-01 -1.606258e-01 -4.737778e-01 -8.870890e-01
- [56] -1.588047e+00 -3.493518e+00  2.275004e+02  3.380890e+00  1.557511e+00
- [61]  8.715010e-01  4.630577e-01  1.516203e-01 -1.334957e-01 -4.416595e-01
- [66] -8.407198e-01 -1.498290e+00 -3.172575e+00 -4.512160e+01  3.743621e+00
- [71]  1.652430e+00  9.193420e-01  4.957151e-01  1.789013e-01 -1.065574e-01
- [76] -4.102861e-01 -7.963762e-01 -1.415403e+00 -2.901517e+00 -2.051217e+01
- [81]  4.186450e+00  1.756063e+00  9.695779e-01  5.292439e-01  2.064428e-01
- [86] -7.977110e-02 -3.795890e-01 -7.538697e-01 -1.338522e+00 -2.669249e+00
- [91] -1.326089e+01  4.740081e+00  1.869836e+00  1.022470e+00  5.637287e-01
- [96]  2.342879e-01 -5.309808e-02 -3.495048e-01 -7.130321e-01 -1.266920e+00
-[101] -2.467734e+00 -9.787142e+00  5.453193e+00  1.995501e+00  1.078314e+00
-[106]  5.992619e-01  2.624818e-01 -2.650019e-02 -3.199739e-01 -6.737124e-01
-[111] -1.199980e+00 -2.291011e+00 -7.746791e+00  6.407866e+00  2.135232e+00
-[116]  1.137452e+00  6.359446e-01  2.910716e-01  6.028871e-05 -2.909408e-01
-\end{verbatim}
 
 \begin{itemize}
 \tightlist
@@ -5875,74 +4295,17 @@ intervals.
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
-  [1] 0.6931472 2.0794415 2.6390573 2.9957323 3.2580965 3.4657359 3.6375862
-  [8] 3.7841896 3.9120230 4.0253517 4.1271344 4.2195077 4.3040651 4.3820266
- [15] 4.4543473 4.5217886 4.5849675 4.6443909 4.7004804 4.7535902 4.8040210
- [22] 4.8520303 4.8978398 4.9416424 4.9836066 5.0238805 5.0625950 5.0998664
- [29] 5.1357984 5.1704840 5.2040067 5.2364420 5.2678582 5.2983174 5.3278762
- [36] 5.3565863 5.3844951 5.4116461 5.4380793 5.4638318 5.4889377 5.5134287
- [43] 5.5373343 5.5606816 5.5834963 5.6058021 5.6276211 5.6489742 5.6698809
- [50] 5.6903595 5.7104270 5.7300998 5.7493930 5.7683210 5.7868974 5.8051350
- [57] 5.8230459 5.8406417 5.8579332 5.8749307 5.8916442 5.9080829 5.9242558
- [64] 5.9401713 5.9558374 5.9712618 5.9864520 6.0014149 6.0161572 6.0306853
- [71] 6.0450053 6.0591232 6.0730445 6.0867747 6.1003190 6.1136822 6.1268692
- [78] 6.1398846 6.1527327 6.1654179 6.1779441 6.1903154 6.2025355 6.2146081
- [85] 6.2265367 6.2383246 6.2499752 6.2614917 6.2728770 6.2841342 6.2952660
- [92] 6.3062753 6.3171647 6.3279368 6.3385941 6.3491390 6.3595739 6.3699010
- [99] 6.3801225 6.3902407 6.4002574 6.4101749 6.4199949 6.4297195 6.4393504
-[106] 6.4488894 6.4583383 6.4676987 6.4769724 6.4861608 6.4952656 6.5042882
-[113] 6.5132301 6.5220928 6.5308776 6.5395860 6.5482191 6.5567784 6.5652650
-[120] 6.5736802
-\end{verbatim}
-
 \begin{Shaded}
 \begin{Highlighting}[]
 \FunctionTok{log2}\NormalTok{(stat\_math\_vec\_1)}
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
-  [1] 1.000000 3.000000 3.807355 4.321928 4.700440 5.000000 5.247928 5.459432
-  [9] 5.643856 5.807355 5.954196 6.087463 6.209453 6.321928 6.426265 6.523562
- [17] 6.614710 6.700440 6.781360 6.857981 6.930737 7.000000 7.066089 7.129283
- [25] 7.189825 7.247928 7.303781 7.357552 7.409391 7.459432 7.507795 7.554589
- [33] 7.599913 7.643856 7.686501 7.727920 7.768184 7.807355 7.845490 7.882643
- [41] 7.918863 7.954196 7.988685 8.022368 8.055282 8.087463 8.118941 8.149747
- [49] 8.179909 8.209453 8.238405 8.266787 8.294621 8.321928 8.348728 8.375039
- [57] 8.400879 8.426265 8.451211 8.475733 8.499846 8.523562 8.546894 8.569856
- [65] 8.592457 8.614710 8.636625 8.658211 8.679480 8.700440 8.721099 8.741467
- [73] 8.761551 8.781360 8.800900 8.820179 8.839204 8.857981 8.876517 8.894818
- [81] 8.912889 8.930737 8.948367 8.965784 8.982994 9.000000 9.016808 9.033423
- [89] 9.049849 9.066089 9.082149 9.098032 9.113742 9.129283 9.144658 9.159871
- [97] 9.174926 9.189825 9.204571 9.219169 9.233620 9.247928 9.262095 9.276124
-[105] 9.290019 9.303781 9.317413 9.330917 9.344296 9.357552 9.370687 9.383704
-[113] 9.396605 9.409391 9.422065 9.434628 9.447083 9.459432 9.471675 9.483816
-\end{verbatim}
-
 \begin{Shaded}
 \begin{Highlighting}[]
 \FunctionTok{log10}\NormalTok{(stat\_math\_vec\_1)}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
-  [1] 0.301030 0.903090 1.146128 1.301030 1.414973 1.505150 1.579784 1.643453
-  [9] 1.698970 1.748188 1.792392 1.832509 1.869232 1.903090 1.934498 1.963788
- [17] 1.991226 2.017033 2.041393 2.064458 2.086360 2.107210 2.127105 2.146128
- [25] 2.164353 2.181844 2.198657 2.214844 2.230449 2.245513 2.260071 2.274158
- [33] 2.287802 2.301030 2.313867 2.326336 2.338456 2.350248 2.361728 2.372912
- [41] 2.383815 2.394452 2.404834 2.414973 2.424882 2.434569 2.444045 2.453318
- [49] 2.462398 2.471292 2.480007 2.488551 2.496930 2.505150 2.513218 2.521138
- [57] 2.528917 2.536558 2.544068 2.551450 2.558709 2.565848 2.572872 2.579784
- [65] 2.586587 2.593286 2.599883 2.606381 2.612784 2.619093 2.625312 2.631444
- [73] 2.637490 2.643453 2.649335 2.655138 2.660865 2.666518 2.672098 2.677607
- [81] 2.683047 2.688420 2.693727 2.698970 2.704151 2.709270 2.714330 2.719331
- [89] 2.724276 2.729165 2.733999 2.738781 2.743510 2.748188 2.752816 2.757396
- [97] 2.761928 2.766413 2.770852 2.775246 2.779596 2.783904 2.788168 2.792392
-[105] 2.796574 2.800717 2.804821 2.808886 2.812913 2.816904 2.820858 2.824776
-[113] 2.828660 2.832509 2.836324 2.840106 2.843855 2.847573 2.851258 2.854913
-\end{verbatim}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -5972,20 +4335,12 @@ intervals.
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
-[1] "A" "B" "C" "D"
-\end{verbatim}
-
 \begin{Shaded}
 \begin{Highlighting}[]
 \NormalTok{char\_vec\_lower }\OtherTok{\textless{}{-}} \FunctionTok{tolower}\NormalTok{(char\_vec\_upper)}
 \NormalTok{char\_vec\_lower}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
-[1] "a" "b" "c" "d"
-\end{verbatim}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -6001,27 +4356,9 @@ intervals.
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
- [1] 15 26 17 28 19 30 21 32 23 34
-\end{verbatim}
-
 \begin{Shaded}
 \begin{Highlighting}[]
 \NormalTok{vec\_3 }\SpecialCharTok{+} \FunctionTok{c}\NormalTok{(}\DecValTok{10}\NormalTok{, }\DecValTok{20}\NormalTok{, }\DecValTok{30}\NormalTok{) }
-\end{Highlighting}
-\end{Shaded}
-
-\begin{verbatim}
-Warning in vec_3 + c(10, 20, 30): longer object length is not a multiple of
-shorter object length
-\end{verbatim}
-
-\begin{verbatim}
- [1] 15 26 37 18 29 40 21 32 43 24
-\end{verbatim}
-
-\begin{Shaded}
-\begin{Highlighting}[]
 \CommentTok{\# Will result in a warning as the longer vector is not a multiple of the shorter one}
 \end{Highlighting}
 \end{Shaded}
@@ -6060,10 +4397,6 @@ Examples
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
-[1] 1 2 3 4 5
-\end{verbatim}
-
 \begin{enumerate}
 \def\labelenumi{\alph{enumi})}
 \setcounter{enumi}{1}
@@ -6078,11 +4411,6 @@ Examples
 \NormalTok{vec\_name}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
-a c e g i 
-1 2 3 4 5 
-\end{verbatim}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -6099,10 +4427,6 @@ a c e g i
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
-[1] 1 2 3 4 5
-\end{verbatim}
-
 \begin{enumerate}
 \def\labelenumi{\alph{enumi})}
 \tightlist
@@ -6115,10 +4439,6 @@ a c e g i
 \NormalTok{vec\_index[}\FunctionTok{c}\NormalTok{(}\ConstantTok{TRUE}\NormalTok{, }\ConstantTok{FALSE}\NormalTok{, }\ConstantTok{TRUE}\NormalTok{, }\ConstantTok{FALSE}\NormalTok{, }\ConstantTok{TRUE}\NormalTok{)]}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
-[1] 1 3 5
-\end{verbatim}
 
 \begin{enumerate}
 \def\labelenumi{\alph{enumi})}
@@ -6134,10 +4454,6 @@ a c e g i
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
-[1] 1 2 3
-\end{verbatim}
-
 \begin{enumerate}
 \def\labelenumi{\alph{enumi})}
 \setcounter{enumi}{2}
@@ -6152,10 +4468,6 @@ a c e g i
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
-[1] 4
-\end{verbatim}
-
 With negative indexing, every element except the one specified is
 returned.
 
@@ -6165,19 +4477,11 @@ returned.
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
-[1] 1 3 4 5
-\end{verbatim}
-
 \begin{Shaded}
 \begin{Highlighting}[]
 \NormalTok{vec\_index[}\FunctionTok{c}\NormalTok{(}\DecValTok{2}\NormalTok{,}\DecValTok{4}\NormalTok{)]}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
-[1] 2 4
-\end{verbatim}
 
 \begin{enumerate}
 \def\labelenumi{\alph{enumi})}
@@ -6193,10 +4497,6 @@ returned.
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
-[1] 1 2 3 4 5
-\end{verbatim}
-
 \begin{Shaded}
 \begin{Highlighting}[]
 \NormalTok{vec\_index[}\DecValTok{5}\NormalTok{] }\OtherTok{\textless{}{-}} \DecValTok{1000}
@@ -6208,10 +4508,6 @@ returned.
 \NormalTok{vec\_index}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
-[1]    1    2    3    4 1000
-\end{verbatim}
 
 \begin{enumerate}
 \def\labelenumi{\Alph{enumi})}
@@ -6236,43 +4532,11 @@ returned.
 \NormalTok{vec\_mat\_df\_4 }\OtherTok{\textless{}{-}} \FunctionTok{sequence}\NormalTok{(}\DecValTok{10}\NormalTok{)}
 
 \NormalTok{vec\_mat\_df\_1}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{verbatim}
- [1]  2  4  6  8 10 12 14 16 18 20
-\end{verbatim}
-
-\begin{Shaded}
-\begin{Highlighting}[]
 \NormalTok{vec\_mat\_df\_2}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{verbatim}
- [1] 2 2 3 3 4 4 5 5 6 6
-\end{verbatim}
-
-\begin{Shaded}
-\begin{Highlighting}[]
 \NormalTok{vec\_mat\_df\_3}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{verbatim}
- [1] 47.86950 58.68996 39.35466 90.36772 24.81861 36.17793 68.65701 15.90084
- [9] 76.58137 39.43185
-\end{verbatim}
-
-\begin{Shaded}
-\begin{Highlighting}[]
 \NormalTok{vec\_mat\_df\_4}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
- [1]  1  2  3  4  5  6  7  8  9 10
-\end{verbatim}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -6287,45 +4551,10 @@ returned.
 \begin{Highlighting}[]
 \NormalTok{new\_matrix }\OtherTok{\textless{}{-}} \FunctionTok{cbind}\NormalTok{(vec\_mat\_df\_1, vec\_mat\_df\_2, vec\_mat\_df\_3, vec\_mat\_df\_4)}
 \NormalTok{new\_matrix}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{verbatim}
-      vec_mat_df_1 vec_mat_df_2 vec_mat_df_3 vec_mat_df_4
- [1,]            2            2     47.86950            1
- [2,]            4            2     58.68996            2
- [3,]            6            3     39.35466            3
- [4,]            8            3     90.36772            4
- [5,]           10            4     24.81861            5
- [6,]           12            4     36.17793            6
- [7,]           14            5     68.65701            7
- [8,]           16            5     15.90084            8
- [9,]           18            6     76.58137            9
-[10,]           20            6     39.43185           10
-\end{verbatim}
-
-\begin{Shaded}
-\begin{Highlighting}[]
 \FunctionTok{str}\NormalTok{(new\_matrix)}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{verbatim}
- num [1:10, 1:4] 2 4 6 8 10 12 14 16 18 20 ...
- - attr(*, "dimnames")=List of 2
-  ..$ : NULL
-  ..$ : chr [1:4] "vec_mat_df_1" "vec_mat_df_2" "vec_mat_df_3" "vec_mat_df_4"
-\end{verbatim}
-
-\begin{Shaded}
-\begin{Highlighting}[]
 \FunctionTok{class}\NormalTok{(new\_matrix)}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
-[1] "matrix" "array" 
-\end{verbatim}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -6340,44 +4569,10 @@ returned.
 \begin{Highlighting}[]
 \NormalTok{new\_matrix }\OtherTok{\textless{}{-}} \FunctionTok{rbind}\NormalTok{(vec\_mat\_df\_1, vec\_mat\_df\_2, vec\_mat\_df\_3, vec\_mat\_df\_4)}
 \NormalTok{new\_matrix}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{verbatim}
-                [,1]     [,2]     [,3]     [,4]     [,5]     [,6]     [,7]
-vec_mat_df_1  2.0000  4.00000  6.00000  8.00000 10.00000 12.00000 14.00000
-vec_mat_df_2  2.0000  2.00000  3.00000  3.00000  4.00000  4.00000  5.00000
-vec_mat_df_3 47.8695 58.68996 39.35466 90.36772 24.81861 36.17793 68.65701
-vec_mat_df_4  1.0000  2.00000  3.00000  4.00000  5.00000  6.00000  7.00000
-                 [,8]     [,9]    [,10]
-vec_mat_df_1 16.00000 18.00000 20.00000
-vec_mat_df_2  5.00000  6.00000  6.00000
-vec_mat_df_3 15.90084 76.58137 39.43185
-vec_mat_df_4  8.00000  9.00000 10.00000
-\end{verbatim}
-
-\begin{Shaded}
-\begin{Highlighting}[]
 \FunctionTok{str}\NormalTok{(new\_matrix)}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{verbatim}
- num [1:4, 1:10] 2 2 47.9 1 4 ...
- - attr(*, "dimnames")=List of 2
-  ..$ : chr [1:4] "vec_mat_df_1" "vec_mat_df_2" "vec_mat_df_3" "vec_mat_df_4"
-  ..$ : NULL
-\end{verbatim}
-
-\begin{Shaded}
-\begin{Highlighting}[]
 \FunctionTok{class}\NormalTok{(new\_matrix)}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
-[1] "matrix" "array" 
-\end{verbatim}
 
 \section{Exercises}\label{exercises-8}
 
@@ -6601,10 +4796,6 @@ Examples:
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
-NULL
-\end{verbatim}
-
 \begin{Shaded}
 \begin{Highlighting}[]
 \FunctionTok{names}\NormalTok{(list\_5) }\OtherTok{\textless{}{-}} \FunctionTok{c}\NormalTok{(}\StringTok{"character vector"}\NormalTok{, }\StringTok{"numeric vector"}\NormalTok{, }\StringTok{"list"}\NormalTok{)}
@@ -6616,10 +4807,6 @@ NULL
 \FunctionTok{names}\NormalTok{(list\_5)}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
-[1] "character vector" "numeric vector"   "list"            
-\end{verbatim}
 
 \begin{enumerate}
 \def\labelenumi{\alph{enumi}.}
@@ -6634,23 +4821,10 @@ Return a list within a list
 \begin{Shaded}
 \begin{Highlighting}[]
 \NormalTok{list\_5[}\DecValTok{1}\NormalTok{]}
-\end{Highlighting}
-\end{Shaded}
 
-\begin{verbatim}
-$`character vector`
-[1] "a" "b" "c"
-\end{verbatim}
-
-\begin{Shaded}
-\begin{Highlighting}[]
 \NormalTok{list\_5[[}\DecValTok{1}\NormalTok{]]}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
-[1] "a" "b" "c"
-\end{verbatim}
 
 Return an individual element within a list of lists
 
@@ -6660,19 +4834,11 @@ Return an individual element within a list of lists
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
-[1] "a"
-\end{verbatim}
-
 \begin{Shaded}
 \begin{Highlighting}[]
 \NormalTok{list\_5[[}\StringTok{"character vector"}\NormalTok{]]}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
-[1] "a" "b" "c"
-\end{verbatim}
 
 \begin{enumerate}
 \def\labelenumi{\alph{enumi}.}
@@ -6688,19 +4854,11 @@ Return an individual element within a list of lists
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
-[1] 3
-\end{verbatim}
-
 \begin{Shaded}
 \begin{Highlighting}[]
 \FunctionTok{length}\NormalTok{(list\_5)}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
-[1] 3
-\end{verbatim}
 
 Flatten out into a single vector using unlist()
 
@@ -6709,17 +4867,6 @@ Flatten out into a single vector using unlist()
 \FunctionTok{unlist}\NormalTok{(list\_5)}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
-character vector1 character vector2 character vector3   numeric vector1 
-              "a"               "b"               "c"               "5" 
-  numeric vector2   numeric vector3   numeric vector4   numeric vector5 
-              "4"               "3"               "2"               "1" 
-  numeric vector6   numeric vector7             list1             list2 
-              "0"              "-1"              "10"              "30" 
-            list3 
-             "50" 
-\end{verbatim}
 
 \subsection{Dataframes}\label{dataframes}
 
@@ -6789,10 +4936,6 @@ frames}\label{functions-used-to-manipulate-data-frames}
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
-[1] 3
-\end{verbatim}
-
 \begin{enumerate}
 \def\labelenumi{\alph{enumi}.}
 \setcounter{enumi}{1}
@@ -6806,10 +4949,6 @@ frames}\label{functions-used-to-manipulate-data-frames}
 \FunctionTok{ncol}\NormalTok{(df\_1)}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
-[1] 3
-\end{verbatim}
 
 \begin{enumerate}
 \def\labelenumi{\alph{enumi}.}
@@ -6825,10 +4964,6 @@ frames}\label{functions-used-to-manipulate-data-frames}
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
-[1] 3 3
-\end{verbatim}
-
 \begin{enumerate}
 \def\labelenumi{\alph{enumi}.}
 \setcounter{enumi}{3}
@@ -6842,10 +4977,6 @@ frames}\label{functions-used-to-manipulate-data-frames}
 \FunctionTok{class}\NormalTok{(df\_1)}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
-[1] "data.frame"
-\end{verbatim}
 
 \begin{enumerate}
 \def\labelenumi{\alph{enumi}.}
@@ -6861,10 +4992,6 @@ frames}\label{functions-used-to-manipulate-data-frames}
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
-[1] "level"    "language" "age"     
-\end{verbatim}
-
 \begin{enumerate}
 \def\labelenumi{\alph{enumi}.}
 \setcounter{enumi}{5}
@@ -6878,10 +5005,6 @@ frames}\label{functions-used-to-manipulate-data-frames}
 \FunctionTok{rownames}\NormalTok{(df\_1)}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
-[1] "1" "2" "3"
-\end{verbatim}
 
 \begin{enumerate}
 \def\labelenumi{\alph{enumi}.}
@@ -6897,23 +5020,11 @@ frames}\label{functions-used-to-manipulate-data-frames}
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
-  level language age
-1   Low        R  25
-2   Mid  RStudio  36
-\end{verbatim}
-
 \begin{Shaded}
 \begin{Highlighting}[]
 \FunctionTok{tail}\NormalTok{(df\_1, }\AttributeTok{n=}\DecValTok{2}\NormalTok{)}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
-  level language age
-2   Mid  RStudio  36
-3  High    Shiny  47
-\end{verbatim}
 
 \begin{enumerate}
 \def\labelenumi{\alph{enumi}.}
@@ -6929,10 +5040,6 @@ frames}\label{functions-used-to-manipulate-data-frames}
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
-[1] "Low"  "Mid"  "High"
-\end{verbatim}
-
 \begin{enumerate}
 \def\labelenumi{\roman{enumi}.}
 \tightlist
@@ -6946,20 +5053,11 @@ frames}\label{functions-used-to-manipulate-data-frames}
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
-[1] "Shiny"
-\end{verbatim}
-
 \begin{Shaded}
 \begin{Highlighting}[]
 \NormalTok{df\_1[}\DecValTok{2}\NormalTok{, }\DecValTok{1}\SpecialCharTok{:}\DecValTok{2}\NormalTok{]}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
-  level language
-2   Mid  RStudio
-\end{verbatim}
 
 \begin{enumerate}
 \def\labelenumi{\alph{enumi}.}
@@ -6975,19 +5073,11 @@ frames}\label{functions-used-to-manipulate-data-frames}
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
-[1] 25 36 47
-\end{verbatim}
-
 \begin{Shaded}
 \begin{Highlighting}[]
 \NormalTok{df\_1[, }\FunctionTok{c}\NormalTok{(}\StringTok{"language"}\NormalTok{)]}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
-[1] "R"       "RStudio" "Shiny"  
-\end{verbatim}
 
 \begin{enumerate}
 \def\labelenumi{\alph{enumi}.}
@@ -7003,11 +5093,6 @@ frames}\label{functions-used-to-manipulate-data-frames}
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
-  level language age
-2   Mid  RStudio  36
-\end{verbatim}
-
 \textbf{NOTE}: To view the internal structure of various data types
 described above, the learner can use the \texttt{str()} function.
 
@@ -7019,25 +5104,11 @@ Example
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
-List of 3
- $ : int [1:3] 1 2 3
- $ : num [1:2] 50 40
- $ : int [1:9] 3 2 1 0 -1 -2 -3 -4 -5
-\end{verbatim}
-
 \begin{Shaded}
 \begin{Highlighting}[]
 \FunctionTok{str}\NormalTok{(df\_1)}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
-'data.frame':   3 obs. of  3 variables:
- $ level   : chr  "Low" "Mid" "High"
- $ language: chr  "R" "RStudio" "Shiny"
- $ age     : num  25 36 47
-\end{verbatim}
 
 \section{Exercises}\label{exercises-9}
 
@@ -7170,40 +5241,10 @@ Format: \texttt{matrix(range,\ nrow\ =\ \_,\ ncol\ =\ \_)}
 \NormalTok{m2 }\OtherTok{\textless{}{-}} \FunctionTok{matrix}\NormalTok{(}\DecValTok{21}\SpecialCharTok{:}\DecValTok{29}\NormalTok{, }\AttributeTok{nrow =} \DecValTok{3}\NormalTok{, }\AttributeTok{ncol =} \DecValTok{3}\NormalTok{)}
 \NormalTok{m3 }\OtherTok{\textless{}{-}} \FunctionTok{matrix}\NormalTok{(}\DecValTok{1}\SpecialCharTok{:}\DecValTok{12}\NormalTok{, }\AttributeTok{nrow =} \DecValTok{2}\NormalTok{, }\AttributeTok{ncol =} \DecValTok{6}\NormalTok{)}
 \NormalTok{m1}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{verbatim}
-     [,1] [,2] [,3]
-[1,]    1    4    7
-[2,]    2    5    8
-[3,]    3    6    9
-\end{verbatim}
-
-\begin{Shaded}
-\begin{Highlighting}[]
 \NormalTok{m2}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{verbatim}
-     [,1] [,2] [,3]
-[1,]   21   24   27
-[2,]   22   25   28
-[3,]   23   26   29
-\end{verbatim}
-
-\begin{Shaded}
-\begin{Highlighting}[]
 \NormalTok{m3}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
-     [,1] [,2] [,3] [,4] [,5] [,6]
-[1,]    1    3    5    7    9   11
-[2,]    2    4    6    8   10   12
-\end{verbatim}
 
 Using \texttt{cbind()} and \texttt{rbind()}
 
@@ -7218,62 +5259,18 @@ Using \texttt{cbind()} and \texttt{rbind()}
 \begin{Shaded}
 \begin{Highlighting}[]
 \FunctionTok{nrow}\NormalTok{(m1)}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{verbatim}
-[1] 3
-\end{verbatim}
-
-\begin{Shaded}
-\begin{Highlighting}[]
 \FunctionTok{ncol}\NormalTok{(m1)}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{verbatim}
-[1] 3
-\end{verbatim}
-
-\begin{Shaded}
-\begin{Highlighting}[]
 \FunctionTok{dim}\NormalTok{(m1)}
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
-[1] 3 3
-\end{verbatim}
-
 \begin{Shaded}
 \begin{Highlighting}[]
 \FunctionTok{nrow}\NormalTok{(m3)}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{verbatim}
-[1] 2
-\end{verbatim}
-
-\begin{Shaded}
-\begin{Highlighting}[]
 \FunctionTok{ncol}\NormalTok{(m3)}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{verbatim}
-[1] 6
-\end{verbatim}
-
-\begin{Shaded}
-\begin{Highlighting}[]
 \FunctionTok{dim}\NormalTok{(m3)}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
-[1] 2 6
-\end{verbatim}
 
 \begin{enumerate}
 \def\labelenumi{\alph{enumi}.}
@@ -7286,67 +5283,12 @@ Using \texttt{cbind()} and \texttt{rbind()}
 \begin{Shaded}
 \begin{Highlighting}[]
 \NormalTok{m1 }\SpecialCharTok{+}\NormalTok{ m2}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{verbatim}
-     [,1] [,2] [,3]
-[1,]   22   28   34
-[2,]   24   30   36
-[3,]   26   32   38
-\end{verbatim}
-
-\begin{Shaded}
-\begin{Highlighting}[]
 \NormalTok{m1 }\SpecialCharTok{{-}}\NormalTok{ m2}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{verbatim}
-     [,1] [,2] [,3]
-[1,]  -20  -20  -20
-[2,]  -20  -20  -20
-[3,]  -20  -20  -20
-\end{verbatim}
-
-\begin{Shaded}
-\begin{Highlighting}[]
 \NormalTok{m1 }\SpecialCharTok{*}\NormalTok{ m2}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{verbatim}
-     [,1] [,2] [,3]
-[1,]   21   96  189
-[2,]   44  125  224
-[3,]   69  156  261
-\end{verbatim}
-
-\begin{Shaded}
-\begin{Highlighting}[]
 \NormalTok{m1 }\SpecialCharTok{/}\NormalTok{ m2}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{verbatim}
-           [,1]      [,2]      [,3]
-[1,] 0.04761905 0.1666667 0.2592593
-[2,] 0.09090909 0.2000000 0.2857143
-[3,] 0.13043478 0.2307692 0.3103448
-\end{verbatim}
-
-\begin{Shaded}
-\begin{Highlighting}[]
 \NormalTok{m1 }\SpecialCharTok{==}\NormalTok{ m2}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
-      [,1]  [,2]  [,3]
-[1,] FALSE FALSE FALSE
-[2,] FALSE FALSE FALSE
-[3,] FALSE FALSE FALSE
-\end{verbatim}
 
 \begin{enumerate}
 \def\labelenumi{\alph{enumi}.}
@@ -7361,32 +5303,9 @@ Using \texttt{cbind()} and \texttt{rbind()}
 \NormalTok{m5 }\OtherTok{\textless{}{-}} \FunctionTok{matrix}\NormalTok{(}\DecValTok{1}\SpecialCharTok{:}\DecValTok{10}\NormalTok{, }\AttributeTok{nrow =} \DecValTok{5}\NormalTok{)}
 \NormalTok{m6 }\OtherTok{\textless{}{-}} \FunctionTok{matrix}\NormalTok{(}\DecValTok{43}\SpecialCharTok{:}\DecValTok{34}\NormalTok{, }\AttributeTok{nrow =} \DecValTok{5}\NormalTok{)}
 \NormalTok{m5}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{verbatim}
-     [,1] [,2]
-[1,]    1    6
-[2,]    2    7
-[3,]    3    8
-[4,]    4    9
-[5,]    5   10
-\end{verbatim}
-
-\begin{Shaded}
-\begin{Highlighting}[]
 \NormalTok{m6}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
-     [,1] [,2]
-[1,]   43   38
-[2,]   42   37
-[3,]   41   36
-[4,]   40   35
-[5,]   39   34
-\end{verbatim}
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -7394,37 +5313,15 @@ Using \texttt{cbind()} and \texttt{rbind()}
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
-     [,1] [,2]
-[1,]   43  228
-[2,]   84  259
-[3,]  123  288
-[4,]  160  315
-[5,]  195  340
-\end{verbatim}
-
 Dimensions are very important when working with matrices. Here, we
 observe that we can't multiply m5 by m6 because of the matrix dimensions
 
 \begin{Shaded}
 \begin{Highlighting}[]
 \FunctionTok{dim}\NormalTok{(m5)}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{verbatim}
-[1] 5 2
-\end{verbatim}
-
-\begin{Shaded}
-\begin{Highlighting}[]
 \FunctionTok{dim}\NormalTok{(m6)}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
-[1] 5 2
-\end{verbatim}
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -7439,22 +5336,9 @@ Transpose
 \begin{Shaded}
 \begin{Highlighting}[]
 \FunctionTok{dim}\NormalTok{(m5)}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{verbatim}
-[1] 5 2
-\end{verbatim}
-
-\begin{Shaded}
-\begin{Highlighting}[]
 \FunctionTok{dim}\NormalTok{(}\FunctionTok{t}\NormalTok{(m6))}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
-[1] 2 5
-\end{verbatim}
 
 Now we have a 5 by 2 matrix that can be multiplied by a 2 by 5 matrix.
 
@@ -7463,15 +5347,6 @@ Now we have a 5 by 2 matrix that can be multiplied by a 2 by 5 matrix.
 \NormalTok{m5}\SpecialCharTok{\%*\%}\FunctionTok{t}\NormalTok{(m6)}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
-     [,1] [,2] [,3] [,4] [,5]
-[1,]  271  264  257  250  243
-[2,]  352  343  334  325  316
-[3,]  433  422  411  400  389
-[4,]  514  501  488  475  462
-[5,]  595  580  565  550  535
-\end{verbatim}
 
 \begin{enumerate}
 \def\labelenumi{\alph{enumi}.}
@@ -7486,15 +5361,6 @@ Now we have a 5 by 2 matrix that can be multiplied by a 2 by 5 matrix.
 \FunctionTok{diag}\NormalTok{(}\DecValTok{5}\NormalTok{)}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
-     [,1] [,2] [,3] [,4] [,5]
-[1,]    1    0    0    0    0
-[2,]    0    1    0    0    0
-[3,]    0    0    1    0    0
-[4,]    0    0    0    1    0
-[5,]    0    0    0    0    1
-\end{verbatim}
 
 \begin{enumerate}
 \def\labelenumi{\alph{enumi}.}
@@ -7512,10 +5378,6 @@ Dimensions of \texttt{m5}
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
-[1] 5 2
-\end{verbatim}
-
 Current column names of \texttt{m5}
 
 \begin{Shaded}
@@ -7523,10 +5385,6 @@ Current column names of \texttt{m5}
 \FunctionTok{colnames}\NormalTok{(m5)}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
-NULL
-\end{verbatim}
 
 Set column names
 
@@ -7541,27 +5399,9 @@ Display the matrix \texttt{m5} and new column names
 \begin{Shaded}
 \begin{Highlighting}[]
 \NormalTok{m5}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{verbatim}
-     AA BB
-[1,]  1  6
-[2,]  2  7
-[3,]  3  8
-[4,]  4  9
-[5,]  5 10
-\end{verbatim}
-
-\begin{Shaded}
-\begin{Highlighting}[]
 \FunctionTok{colnames}\NormalTok{(m5)}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
-[1] "AA" "BB"
-\end{verbatim}
 
 Set row names
 
@@ -7573,10 +5413,6 @@ Get the dimensions of \texttt{m6}
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
-[1] 5 2
-\end{verbatim}
-
 Display the current row names of \texttt{m6}
 
 \begin{Shaded}
@@ -7584,10 +5420,6 @@ Display the current row names of \texttt{m6}
 \FunctionTok{rownames}\NormalTok{(m6)}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
-NULL
-\end{verbatim}
 
 Set the row names of \texttt{m6}
 
@@ -7600,27 +5432,9 @@ Set the row names of \texttt{m6}
 \begin{Shaded}
 \begin{Highlighting}[]
 \NormalTok{m6}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{verbatim}
-    [,1] [,2]
-ABC   43   38
-BCA   42   37
-CAB   41   36
-ACB   40   35
-BAC   39   34
-\end{verbatim}
-
-\begin{Shaded}
-\begin{Highlighting}[]
 \FunctionTok{rownames}\NormalTok{(m6)}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
-[1] "ABC" "BCA" "CAB" "ACB" "BAC"
-\end{verbatim}
 
 \begin{enumerate}
 \def\labelenumi{\alph{enumi}.}
@@ -7636,21 +5450,11 @@ BAC   39   34
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
-AA BB 
-15 40 
-\end{verbatim}
-
 \begin{Shaded}
 \begin{Highlighting}[]
 \FunctionTok{rowSums}\NormalTok{(m6)}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
-ABC BCA CAB ACB BAC 
- 81  79  77  75  73 
-\end{verbatim}
 
 \begin{enumerate}
 \def\labelenumi{\alph{enumi}.}
@@ -7667,27 +5471,12 @@ ABC BCA CAB ACB BAC
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
-     AA BB
-[1,]  1  6
-[2,]  2  7
-[3,]  3  8
-[4,]  4  9
-\end{verbatim}
-
 \begin{Shaded}
 \begin{Highlighting}[]
 \NormalTok{subset\_m6 }\OtherTok{\textless{}{-}}\NormalTok{ m6[}\DecValTok{3}\SpecialCharTok{:}\DecValTok{5}\NormalTok{, }\DecValTok{1}\SpecialCharTok{:}\DecValTok{2}\NormalTok{]}
 \NormalTok{subset\_m6}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
-    [,1] [,2]
-CAB   41   36
-ACB   40   35
-BAC   39   34
-\end{verbatim}
 
 \begin{enumerate}
 \def\labelenumi{\roman{enumi}.}
@@ -7703,15 +5492,6 @@ When you divide a matrix by a vector, the operation is row-wise.
 \NormalTok{m5 }\SpecialCharTok{/}\NormalTok{ m6}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
-             AA        BB
-[1,] 0.02325581 0.1578947
-[2,] 0.04761905 0.1891892
-[3,] 0.07317073 0.2222222
-[4,] 0.10000000 0.2571429
-[5,] 0.12820513 0.2941176
-\end{verbatim}
 
 \subsection{Arrays}\label{arrays}
 
@@ -7743,20 +5523,6 @@ columns, and 3 matrices.
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
-, , 1
-
-     [,1] [,2] [,3]
-[1,]    1    3    5
-[2,]    2    4    6
-
-, , 2
-
-     [,1] [,2] [,3]
-[1,]    7    9   11
-[2,]    8   10   12
-\end{verbatim}
-
 \begin{enumerate}
 \def\labelenumi{\alph{enumi}.}
 \setcounter{enumi}{1}
@@ -7771,34 +5537,17 @@ columns, and 3 matrices.
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
-     [,1] [,2]
-[1,]    1    7
-[2,]    3    9
-[3,]    5   11
-\end{verbatim}
-
 \begin{Shaded}
 \begin{Highlighting}[]
 \NormalTok{arr\_1[}\DecValTok{1}\NormalTok{, ,}\DecValTok{1}\NormalTok{]}
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
-[1] 1 3 5
-\end{verbatim}
-
 \begin{Shaded}
 \begin{Highlighting}[]
 \NormalTok{arr\_1[, , }\DecValTok{1}\NormalTok{]}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
-     [,1] [,2] [,3]
-[1,]    1    3    5
-[2,]    2    4    6
-\end{verbatim}
 
 \subsection{Factors}\label{factors}
 
@@ -7825,11 +5574,6 @@ subsequent series focusing on the \texttt{tidyverse}.
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
-[1] Male   Female
-Levels: Female Male
-\end{verbatim}
-
 OR
 
 \begin{Shaded}
@@ -7839,20 +5583,11 @@ OR
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
-[1] Male   Female
-Levels: Female Male
-\end{verbatim}
-
 \begin{Shaded}
 \begin{Highlighting}[]
 \FunctionTok{as.numeric}\NormalTok{(factor\_2)}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
-[1] 2 1
-\end{verbatim}
 
 \textbf{NOTE}: To view the internal structure of various data types
 described above, the learner can use the \texttt{str()} function.
@@ -7865,32 +5600,17 @@ Example
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
- int [1:5, 1:2] 1 2 3 4 5 6 7 8 9 10
- - attr(*, "dimnames")=List of 2
-  ..$ : NULL
-  ..$ : chr [1:2] "AA" "BB"
-\end{verbatim}
-
 \begin{Shaded}
 \begin{Highlighting}[]
 \FunctionTok{str}\NormalTok{(arr\_1)}
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
- int [1:2, 1:3, 1:2] 1 2 3 4 5 6 7 8 9 10 ...
-\end{verbatim}
-
 \begin{Shaded}
 \begin{Highlighting}[]
 \FunctionTok{str}\NormalTok{(factor\_1)}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
- Factor w/ 2 levels "Female","Male": 2 1
-\end{verbatim}
 
 \section{Exercises}\label{exercises-10}
 

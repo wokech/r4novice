@@ -2,11 +2,16 @@ project:
   type: book
   output-dir: docs
 
+execute:
+  echo: true
+  warning: false
+  output: false
+  
 book:
   title: "R for Novice Programmers (1e)"
   subtitle: "First Steps with R and RStudio"
   image: Cover_R4NP.png
-  author: William Okech
+  author: "William Okech"
   date: 01/01/2024
   reader-mode: true
 
@@ -48,18 +53,36 @@ book:
     - missing.qmd
     - conclusion.qmd
     - references.qmd
+  
   appendices:
     - appendix.qmd
     - datasets.qmd
-
+    
 bibliography: references.bib
 
 format:
   html:
     theme: cosmo
     code-link: true
+    toc: true
+    toc-depth: 3
+    lof: true
+    lot: true
+    number-sections: true
+    number-depth: 4
+    colorlinks: true
+    highlight-style: github
   pdf:
     documentclass: scrreprt
+    toc: true
+    toc-depth: 3
+    lof: true
+    lot: true
+    number-sections: true
+    number-depth: 4
+    colorlinks: true
+    highlight-style: github
+  epub: default
 
 editor: visual
 

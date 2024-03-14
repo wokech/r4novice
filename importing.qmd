@@ -35,6 +35,9 @@ A dataset is a collection of data, and R offers the user the opportunity to eith
 R has several built-in datasets. To access them, we use the `data()` function after loading in the datasets library.
 
 ```{r}
+
+#| eval: false
+#| include: false
 library(datasets)
 
 print(data())
@@ -47,6 +50,9 @@ To find out more about a specific dataset, we use the `?` operator.
 Example:
 
 ```{r}
+#| eval: false
+#| include: false
+
 print(?airquality)
 ```
 
@@ -262,9 +268,8 @@ read.xlsx("datasets/r4novice_datafile.xls", sheetIndex = 1)
 
 2.  Less frequently used data importation formats
 
-```{=html}
 <!-- -->
-```
+
 a.  Fixed-width formats: `read.fwf("file path", header = TRUE)`
 
 b.  SPSS/Stata/SAS Data Files: The foreign package reads SPSS SAV files, Stata DTA files, and SAS XPORT libraries.
