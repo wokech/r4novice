@@ -435,14 +435,14 @@ cookieconsent.run({
 </section></section><section id="importing-external-datasets" class="level3" data-number="5.3.3"><h3 data-number="5.3.3" class="anchored" data-anchor-id="importing-external-datasets">
 <span class="header-section-number">5.3.3</span> Importing external datasets</h3>
 <p>As an R user, one of the tasks that you will often engage in is the importation of data from various sources. The commonly used data types include, but are not limited to CSV, TXT, JSON, SQL, SAS, STATA, SPSS, and XLSX. Additionally, R has two native data formats: Rdata (Rda) and Rds. Rdata is for multiple objects, while Rds is for a single R object.</p>
-<p>When importing external data, first set the correct working directory. The function <code><a href="https://rdrr.io/r/base/getwd.html">getwd()</a></code> will show the current working directory and <code>setwd(file_path_name)</code> will set the working directory to the file path name specified.</p>
+<p>When importing external data, first set the correct working directory. The function <code><a href="https://rdrr.io/r/base/getwd.html">getwd()</a></code> will show the current working directory, and <code>setwd(file_path_name)</code> will set the working directory to the file path name specified.</p>
 <p><strong>NOTE</strong>: External datasets can be accessed from multiple sources. Examples include can be found in the Appendix 1 (<a href="#sec-appendix-1" class="quarto-xref"><span class="quarto-unresolved-ref">sec-appendix-1</span></a>). Both of these websites contain large repositories of datasets that can be used for the examples provided below.</p>
 <p>Download the datasets from Appendix 2 (<a href="#sec-appendix-2" class="quarto-xref"><span class="quarto-unresolved-ref">sec-appendix-2</span></a>) and save them to your working directory.</p>
-<p>Data importation can use base R functions or the <code>readr</code> package, which is part of the tidyverse. We will review both sets of methods in this section</p>
+<p>Data importation can use base R functions or the <code>readr</code> package, which is part of the tidyverse. We will review both sets of methods in this section.</p>
 <section id="base-r" class="level4" data-number="5.3.3.1"><h4 data-number="5.3.3.1" class="anchored" data-anchor-id="base-r">
 <span class="header-section-number">5.3.3.1</span> Base R</h4>
 <ol type="1">
-<li>Commonly-used data importation formats</li>
+<li>Commonly used data importation formats</li>
 </ol>
 <p>There is a wide variety of base R functions used for importing external data into R. The main format for importing data is shown below:</p>
 <p><code>read.___(path to file, header = __, sep = “_”, dec = “_”)</code></p>
@@ -450,7 +450,7 @@ cookieconsent.run({
 <li><p>The argument “path to file” provides the location of the file the user intends to import.</p></li>
 <li><p>The argument header is set as either TRUE or FALSE, if TRUE, R assumes that the file has a header.</p></li>
 <li><p>The sep argument is a group of field separation characters which include , <code>,</code>, <code>;</code>, or <code>\t</code>.</p></li>
-<li><p>The dec argument allows one to set the different characters for decimal points which include <code>.</code> or <code>,</code>.</p></li>
+<li><p>The dec argument allows one to set the different characters for decimal points, which include <code>.</code> or <code>,</code>.</p></li>
 <li><p>The stringsAsFactors argument, by default, allows strings to be read as factors. This can be set as TRUE or FALSE</p></li>
 </ul>
 <p>The main functions for importing data using base R are listed below:</p>
@@ -464,7 +464,7 @@ cookieconsent.run({
 </div>
 <ul>
 <li>
-<code><a href="https://rdrr.io/r/utils/read.table.html">read.csv()</a></code> imports data with comma separated values. Alternatively, we use <code><a href="https://rdrr.io/r/utils/read.table.html">read.csv2()</a></code> is used where comma “,” indicates a decimal point and a semicolon is a field separator.</li>
+<code><a href="https://rdrr.io/r/utils/read.table.html">read.csv()</a></code> imports data with comma separated values. Alternatively, we use <code><a href="https://rdrr.io/r/utils/read.table.html">read.csv2()</a></code> is used where a comma (“,”) indicates a decimal point and a semicolon (“;”) is a field separator.</li>
 </ul>
 <p>Example:</p>
 <div class="cell">
@@ -472,7 +472,7 @@ cookieconsent.run({
 </div>
 <ul>
 <li>
-<code><a href="https://rdrr.io/r/utils/read.table.html">read.delim()</a></code> is used for files with tab-separated values, such as TXT and where point “.” is used as a decimal point. Alternatively, <code><a href="https://rdrr.io/r/utils/read.table.html">read.delim2()</a></code> is used for files with tab-separated values such as TXT and where comma “,” is used as a decimal point.</li>
+<code><a href="https://rdrr.io/r/utils/read.table.html">read.delim()</a></code> is used for files with tab-separated values, such as TXT, and where point “.” is used as a decimal point. Alternatively, <code><a href="https://rdrr.io/r/utils/read.table.html">read.delim2()</a></code> is used for files with tab-separated values such as TXT and where comma “,” is used as a decimal point.</li>
 </ul>
 <p>Example:</p>
 <div class="cell">
@@ -486,7 +486,7 @@ cookieconsent.run({
 <p><code>read.table(file.choose())</code></p>
 <p><strong>NOTE</strong>:Run this command in your R console and select the appropriate file from the working directory.</p>
 <ul>
-<li>Excel (xls and xlsx) files are read in with <code><a href="https://rdrr.io/pkg/xlsx/man/read.xlsx.html">read.xlsx()</a></code>
+<li>Excel (XLS and XLSX) files are read in with <code><a href="https://rdrr.io/pkg/xlsx/man/read.xlsx.html">read.xlsx()</a></code>
 </li>
 </ul>
 <p>Load the required library</p>
@@ -562,9 +562,9 @@ cookieconsent.run({
 <p><code>readMat("file name")</code></p>
 </section><section id="tidyverse-and-the-readrreadxl-packages" class="level4" data-number="5.3.3.2"><h4 data-number="5.3.3.2" class="anchored" data-anchor-id="tidyverse-and-the-readrreadxl-packages">
 <span class="header-section-number">5.3.3.2</span> Tidyverse and the <code>readr</code>/<code>readxl</code> packages</h4>
-<p>To enhance the speed and efficiency of data imports, the user can work with the <code>readr</code> and <code>readxl</code>packages that are part of the Tidyverse. This is because the functions in this package allows for faster data imports and work similarly despite the data type that is imported.</p>
+<p>To enhance the speed and efficiency of data imports, the user can work with the <code>readr</code> and <code>readxl</code> packages that are part of the Tidyverse. This is because the functions in this package allows for faster data imports and work similarly despite the data type that is imported.</p>
 <ol type="1">
-<li>Commonly-used data importation formats in the tidyverse</li>
+<li>Commonly used data importation formats in the tidyverse</li>
 </ol>
 <div class="cell">
 <div class="sourceCode" id="cb21"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># install.packages("readr")</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -686,7 +686,7 @@ cookieconsent.run({
 <span>                         four<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">5</span>, <span class="fl">2</span>, <span class="fl">2</span>, <span class="fl">8</span>, <span class="fl">9</span><span class="op">)</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <ol type="1">
-<li>Commonly-used R functions</li>
+<li>Commonly used R functions</li>
 </ol>
 <ul>
 <li>
@@ -723,7 +723,7 @@ cookieconsent.run({
 </ol>
 <ul>
 <li>
-<code><a href="https://readr.tidyverse.org/reference/write_delim.html">write_csv()</a></code> and <code><a href="https://readr.tidyverse.org/reference/write_delim.html">write_csv2()</a></code> can be used to write comma delimited and semicolon delimited files, respectively.</li>
+<code><a href="https://readr.tidyverse.org/reference/write_delim.html">write_csv()</a></code> and <code><a href="https://readr.tidyverse.org/reference/write_delim.html">write_csv2()</a></code> can be used to write comma-delimited and semicolon-delimited files, respectively.</li>
 </ul>
 <p>Example:</p>
 <div class="cell">

@@ -334,17 +334,18 @@ cookieconsent.run({
 <h2 data-number="12.3" class="anchored" data-anchor-id="lesson-content"><span class="header-section-number">12.3</span> Lesson Content</h2>
 <section id="introduction" class="level3" data-number="12.3.1">
 <h3 data-number="12.3.1" class="anchored" data-anchor-id="introduction"><span class="header-section-number">12.3.1</span> Introduction</h3>
-<p>One of the most common tasks/activities in data analysis is handling missing values. Missing data are found everywhere; therefore, it is important to learn how to identify and summarize them. Missing data can arise from different sources including nonresponses in surveys or technical issues during data collection.</p>
+<p>One of the most common tasks/activities in data analysis is handling missing values. Missing data are found everywhere; therefore, it is important to learn how to identify and summarize them. Missing data can arise from different sources, including nonresponses in surveys or technical difficulties during data collection.</p>
 <ul>
 <li>Unanswered survey questions</li>
 <li>Data entry errors</li>
 <li>Errors in measurements</li>
 <li>Data merge issues</li>
 </ul>
-<p>Missingness presents itself in a variety of ways in R. The most common way to represent a missing value in R is with the value <code>NA</code>. Other reserved values include:</p>
+<p>Missingness presents itself in various ways in R. The most common way to represent a missing value in R is with the value <code>NA</code>. Other reserved values include:</p>
 <ul>
 <li><p><code>NULL</code> = neither TRUE or FALSE (<code>is.null()</code> identifies a null value and <code>as.null()</code> converts to a null value).</p></li>
-<li><p><code>NaN</code> = impossible values <code>Inf</code> = infinite value obtained by dividing by zero (<code>is.infinite()</code> identifies an infinite value and <code>as.infinite()</code> converts to an infinite value).</p></li>
+<li><p><code>NaN</code> = impossible values</p></li>
+<li><p><code>Inf</code> = infinite value obtained by dividing by zero (<code>is.infinite()</code> identifies an infinite value and <code>as.infinite()</code> converts to an infinite value).</p></li>
 </ul>
 <p>Examples of the missing values</p>
 <p><code>NA</code> = <code>1/NA</code></p>
@@ -352,7 +353,7 @@ cookieconsent.run({
 <p><code>Inf</code> = <code>10/0</code></p>
 <p><code>NULL</code> = <code>5/Inf</code></p>
 <p>Common strategies for handling missing data</p>
-<p>When investigating a dataset, there are a number of functions that can assist with the process. To find missing and non-missing values, the user can work with <code>is.na()</code> and <code>!is.na()</code>, respectively. If any rows contain missing values, one can use <code>na.omit()</code> or <code>drop_na()</code>. If there are missing values in the dataset, the arguments <code>na.rm = TRUE</code>, <code>remove_na = TRUE</code>, or the function <code>complete.cases()</code> can be used to remove missing values.</p>
+<p>When investigating a dataset, there are several functions that can assist with the process. To find missing and non-missing values, the user can work with <code>is.na()</code> and <code>!is.na()</code>, respectively. If any rows contain missing values, one can use <code>na.omit()</code> or <code>drop_na()</code>. If there are missing values in the dataset, the arguments <code>na.rm = TRUE</code>, <code>remove_na = TRUE</code>, or the function <code>complete.cases()</code> can be used to remove missing values.</p>
 <ul>
 <li><p>Deletion: Remove rows or columns with missing values (simplest method but it can lead to bias).</p></li>
 <li><p>Imputation: Replace missing values with estimated values based on statistical methods (can introduce artificial data).</p></li>
@@ -363,7 +364,7 @@ cookieconsent.run({
 </section>
 <section id="na" class="level3" data-number="12.3.2">
 <h3 data-number="12.3.2" class="anchored" data-anchor-id="na"><span class="header-section-number">12.3.2</span> NA</h3>
-<p>R uses NA to represent missing data. The NA appears as another element of a vector. To test each element for missingness we use <code>is.na()</code>. Generally, we can use tools such as <code>mi</code>, <code>mice</code>, and <code>Amelia</code> (which will be discussed later) to deal with missing data. The deletion of this missing data may lead to bias or data loss, so we need to be very careful when handling it. In subsequent blog posts, we will look at the use of imputation to deal with missing data.</p>
+<p>R uses <code>NA</code> to represent missing data. The <code>NA</code> appears as another element of a vector. To test each element for missingness we use <code>is.na()</code>. Generally, we can use tools such as <code>mi</code>, <code>mice</code>, and <code>Amelia</code> (which will be discussed later) to deal with missing data. The deletion of this missing data may lead to bias or data loss, so we need to be careful when we choose this option. In subsequent blog posts, we will look at the use of imputation to deal with missing data.</p>
 </section>
 <section id="null" class="level3" data-number="12.3.3">
 <h3 data-number="12.3.3" class="anchored" data-anchor-id="null"><span class="header-section-number">12.3.3</span> NULL</h3>
@@ -385,7 +386,7 @@ cookieconsent.run({
 </section>
 <section id="summary" class="level2" data-number="12.5">
 <h2 data-number="12.5" class="anchored" data-anchor-id="summary"><span class="header-section-number">12.5</span> Summary</h2>
-<p>The learner should now have a firm grasp of what missing data is and why it is a common challenge in data analysis. Additionally, after completing this chapter, the learner should know how to identify and handle missing data with various R functions. This is the final chapter in the book and I hope you have enjoyed your learning journey so far. In the next chapter, I provide a conclusion to the book and some of the next steps you can take to continue on your R learning journey.</p>
+<p>The learner should now have a firm grasp of what missing data is and why it is a common challenge in data analysis. Additionally, after completing this chapter, the learner should know how to identify and handle missing data with various R functions. This is the final chapter in the book, and I hope you have enjoyed your learning journey so far. In the next chapter, I provide a conclusion to the book and some next steps you can take to continue on your R learning journey.</p>
 
 
 </section>

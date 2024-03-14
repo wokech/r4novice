@@ -253,9 +253,9 @@ but that may prove difficult for learners new to programming.
 First Steps with R and RStudio}© 2024 by
 \href{https://www.williamokech.com/}{William Okech} is licensed under
 \href{http://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1}{CC
-BY-NC-ND 4.0}.The online version of this book is free to use.
+BY-NC-ND 4.0}. The online version of this book is free to use.
 
-Cover image was designed using \href{https://www.canva.com/}{Canva}
+Cover image was designed using \href{https://www.canva.com/}{Canva}.
 
 This book was built with \href{https://quarto.org/}{Quarto}.
 
@@ -293,8 +293,8 @@ trainer with the Digital Research Academy. Additionally, the author
 holds a PhD in Biomedical Engineering and has completed postdoctoral
 fellowships in vascular biology and infectious diseases. Lastly, the
 author is passionate about using R and RStudio to generate data-driven
-visualizations to allow for a deeper understanding of public policy
-issues.
+visualizations to allow for a more in-depth understanding of public
+policy issues.
 
 \section*{Syllabus}\label{syllabus}
 \addcontentsline{toc}{section}{Syllabus}
@@ -382,15 +382,8 @@ the lesson summary.
 
 \markright{Feedback}
 
-Feedback can be provided using the following channels:
-
-\begin{enumerate}
-\def\labelenumi{\roman{enumi}.}
-\item
-  Email: willyokech@gmail.com
-\item
-  Github pull request: \href{https://github.com/wokech/r4novice}{Link}
-\end{enumerate}
+Feedback can be provided using a GitHub pull request:
+\href{https://github.com/wokech/r4novice}{Link}
 
 \section*{Summary}\label{summary}
 \addcontentsline{toc}{section}{Summary}
@@ -500,7 +493,7 @@ RStudio}\label{primary-advantages-of-r-and-rstudio}
 \def\labelenumi{\roman{enumi}.}
 \item
   R and RStudio are free and open-source software programs, which makes
-  them accessible to anyone with a computer and internet connection.
+  them accessible to anyone with a computer and an internet connection.
   This accessibility is key in enabling learners from all socioeconomic
   levels and geographic regions to have a chance to work with
   statistical software,
@@ -573,11 +566,11 @@ lessons.
   consider joining any one of them. What is the role of the R community
   in the development and support of R?
 \item
-  Browse some of the popular R packages (on
+  Browse some popular R packages (on
   \href{https://cran.r-project.org/}{CRAN} or
-  \href{https://r-universe.dev/search/}{R-Universe}) for different tasks
-  like data visualization and statistical analysis. Pick one package
-  that interests you and read about its capabilities.
+  \href{https://r-universe.dev/search/}{R-Universe}) used for different
+  tasks like data visualization and statistical analysis. Pick one
+  package that interests you and read about its capabilities.
 \end{enumerate}
 
 \section{Conclusion}\label{conclusion}
@@ -746,8 +739,8 @@ user interface to the one depicted in the image below
 
 \end{figure}%
 
-\subsection{Create an RStudio Cloud Account on Posit
-website}\label{create-an-rstudio-cloud-account-on-posit-website}
+\subsection{Create an RStudio Cloud Account on the Posit
+website}\label{create-an-rstudio-cloud-account-on-the-posit-website}
 
 Posit (formerly RStudio) Cloud lets the user access the RStudio
 interface from their internet browsers (Figure~\ref{fig-r-cloud-1}).
@@ -990,7 +983,7 @@ can then be run, and the output will be displayed in the console pane.
 In the console pane, one can write and edit code, but not save. Within
 the console, one can run one line of code at a time. Additionally, one
 can access the terminal tab and run code via the command line. Lastly,
-we can access the ``Background Jobs'' tab to monitor progress of R
+we can access the ``Background Jobs'' tab to monitor the progress of R
 scripts that are running in a separate, dedicated R session.
 
 \subsubsection{Environment/History Pane}\label{environmenthistory-pane}
@@ -1088,7 +1081,7 @@ layout for individual projects and globally.
   Describe the main components of the RStudio interface.
 \item
   Open RStudio and explore the different panels of the interface, then
-  describe in your own words the purpose of the Environment, History,
+  provide a brief summary of the purpose of the Environment, History,
   Files, and Plots panes.
 \item
   What is the purpose of the Console pane in RStudio?
@@ -1136,8 +1129,8 @@ the cognitive load on learners in future lessons.
 \item
   What is the purpose of creating R project folders and scripts?
 \item
-  What is the significance of a working directory in R, and how does it
-  impact your workflow?
+  Describe the significance of a working directory in R, and how it
+  impacts your workflow?
 \item
   How do you create, save, and run R scripts for efficient code
   management?
@@ -1166,7 +1159,7 @@ the cognitive load on learners in future lessons.
 
 Good file and data management allows the user to debug code, reduce the
 number of coding errors, and improve data quality. Additionally, by
-utilizing best practices the learner can easily share their work,
+utilizing best practices, the learner can easily share their work,
 organize projects, and develop a reproducible workflow.
 
 \subsection{Projects}\label{projects}
@@ -1226,7 +1219,7 @@ functions}\label{finding-help-when-using-packages-and-functions}
 \begin{itemize}
 \item
   There is a built-in help system that can be accessed via the ``Help''
-  menu or one can use the \texttt{?} symbol before the function,
+  menu, or one can use the \texttt{?} symbol before the function,
   package, or dataset to get a brief description and instructions for
   use.
 \item
@@ -1509,7 +1502,7 @@ and XLSX. Additionally, R has two native data formats: Rdata (Rda) and
 Rds. Rdata is for multiple objects, while Rds is for a single R object.
 
 When importing external data, first set the correct working directory.
-The function \texttt{getwd()} will show the current working directory
+The function \texttt{getwd()} will show the current working directory,
 and \texttt{setwd(file\_path\_name)} will set the working directory to
 the file path name specified.
 
@@ -1524,7 +1517,7 @@ and save them to your working directory.
 
 Data importation can use base R functions or the \texttt{readr} package,
 which is part of the tidyverse. We will review both sets of methods in
-this section
+this section.
 
 \subsubsection{Base R}\label{base-r}
 
@@ -1532,7 +1525,7 @@ this section
 \def\labelenumi{\arabic{enumi}.}
 \tightlist
 \item
-  Commonly-used data importation formats
+  Commonly used data importation formats
 \end{enumerate}
 
 There is a wide variety of base R functions used for importing external
@@ -1552,7 +1545,7 @@ data into R. The main format for importing data is shown below:
   include , \texttt{,}, \texttt{;}, or \texttt{\textbackslash{}t}.
 \item
   The dec argument allows one to set the different characters for
-  decimal points which include \texttt{.} or \texttt{,}.
+  decimal points, which include \texttt{.} or \texttt{,}.
 \item
   The stringsAsFactors argument, by default, allows strings to be read
   as factors. This can be set as TRUE or FALSE
@@ -1579,8 +1572,9 @@ Example:
 \tightlist
 \item
   \texttt{read.csv()} imports data with comma separated values.
-  Alternatively, we use \texttt{read.csv2()} is used where comma ``,''
-  indicates a decimal point and a semicolon is a field separator.
+  Alternatively, we use \texttt{read.csv2()} is used where a comma
+  (``,'') indicates a decimal point and a semicolon (``;'') is a field
+  separator.
 \end{itemize}
 
 Example:
@@ -1595,7 +1589,7 @@ Example:
 \tightlist
 \item
   \texttt{read.delim()} is used for files with tab-separated values,
-  such as TXT and where point ``.'' is used as a decimal point.
+  such as TXT, and where point ``.'' is used as a decimal point.
   Alternatively, \texttt{read.delim2()} is used for files with
   tab-separated values such as TXT and where comma ``,'' is used as a
   decimal point.
@@ -1628,7 +1622,7 @@ appropriate file from the working directory.
 \begin{itemize}
 \tightlist
 \item
-  Excel (xls and xlsx) files are read in with \texttt{read.xlsx()}
+  Excel (XLS and XLSX) files are read in with \texttt{read.xlsx()}
 \end{itemize}
 
 Load the required library
@@ -1790,8 +1784,8 @@ Load the library
 packages}{Tidyverse and the readr/readxl packages}}\label{tidyverse-and-the-readrreadxl-packages}
 
 To enhance the speed and efficiency of data imports, the user can work
-with the \texttt{readr} and \texttt{readxl}packages that are part of the
-Tidyverse. This is because the functions in this package allows for
+with the \texttt{readr} and \texttt{readxl} packages that are part of
+the Tidyverse. This is because the functions in this package allows for
 faster data imports and work similarly despite the data type that is
 imported.
 
@@ -1799,7 +1793,7 @@ imported.
 \def\labelenumi{\arabic{enumi}.}
 \tightlist
 \item
-  Commonly-used data importation formats in the tidyverse
+  Commonly used data importation formats in the tidyverse
 \end{enumerate}
 
 \begin{Shaded}
@@ -2051,7 +2045,7 @@ provided in the chapter ``Data Structures (Part I)''
 \def\labelenumi{\arabic{enumi}.}
 \tightlist
 \item
-  Commonly-used R functions
+  Commonly used R functions
 \end{enumerate}
 
 \begin{itemize}
@@ -2121,7 +2115,7 @@ functions that allow the user to save data.
 \tightlist
 \item
   \texttt{write\_csv()} and \texttt{write\_csv2()} can be used to write
-  comma delimited and semicolon delimited files, respectively.
+  comma-delimited and semicolon-delimited files, respectively.
 \end{itemize}
 
 Example:
@@ -2278,7 +2272,7 @@ RStudio, head to the console pane. Next, type in a basic arithmetic
 calculation such as \texttt{1\ +\ 1} after the angle bracket
 (\texttt{\textgreater{}}) and hit ``Enter.''
 
-\textbf{NOTE}: According to the Tidyverse Style Guide there should be a
+\textbf{NOTE}: According to the Tidyverse Style Guide, there should be a
 space on either side of the operator.
 
 Examples
@@ -2710,9 +2704,9 @@ primary operators in R/RStudio.
 
 \subsection{Introduction}\label{introduction-4}
 
-R has many different types of operators that can perform different
-tasks. Here we will focus on 5 major types of operators. The major types
-of operators are:
+R has many types of operators that can perform different tasks. Here we
+will focus on 5 major types of operators. The major types of operators
+are:
 
 \begin{itemize}
 \tightlist
@@ -2854,9 +2848,10 @@ variables}\label{assign-values-to-variables}
 
 Logical operators are used to specify multiple conditions between
 objects. Logical operators work with basic data types such as logical,
-numeric, and complex data types. This returns TRUE or FALSE values.
-Numbers greater that 1 are TRUE and 0 equals FALSE. The table below
-describes the most common logical operators.
+numeric, and complex data types. These operators generally return
+\texttt{TRUE} or \texttt{FALSE} values. Numbers greater that 1 are
+\texttt{TRUE} and 0 equals \texttt{FALSE}. The table below describes the
+most common logical operators.
 
 \begin{longtable}[]{@{}cc@{}}
 \toprule\noalign{}
@@ -2938,12 +2933,12 @@ operators, and variables'' (Chapter~\ref{sec-arithmetic-variables})
 
 \subsection{Miscellaneous Operators}\label{miscellaneous-operators}
 
-These are helpful operators for working in that can perform a variety of
+These are helpful operators for working in that can perform various
 functions. A few common miscellaneous operators are described below.
 
 \begin{longtable}[]{@{}
-  >{\centering\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.2778}}
-  >{\centering\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.7222}}@{}}
+  >{\centering\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.2917}}
+  >{\centering\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.7083}}@{}}
 \toprule\noalign{}
 \begin{minipage}[b]{\linewidth}\centering
 Miscellaneous Operator
@@ -3056,7 +3051,7 @@ how to utilize/handle them.
 \item
   How does R handle different types of data?
 \item
-  How can I determine the type of a variable in R?
+  How can I determine variable type in R?
 \item
   What are some helpful functions for identifying and manipulating data
   types?
@@ -3088,8 +3083,8 @@ data.
 The most common data types in R are listed below.
 
 \begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.1806}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.8194}}@{}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.2222}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.7778}}@{}}
 \toprule\noalign{}
 \begin{minipage}[b]{\linewidth}\raggedright
 \textbf{Data Type}
@@ -3433,14 +3428,14 @@ Second, we test the variable c which is logical.
 \subsection{Converting between various data
 types}\label{converting-between-various-data-types}
 
-To convert between data types we can use the \texttt{as.\_\_\_()}
+To convert between data types, we can use the \texttt{as.\_\_\_()}
 functions. These include: \texttt{as.Date()}, \texttt{as.numeric()}, and
 \texttt{as.factor()}. Additionally, other helpful functions include
 \texttt{factor()} which adds levels to the data and \texttt{nchar()}
 which provides the length of the data.
 
-\subsubsection{Implicit vs Explicit
-conversion}\label{implicit-vs-explicit-conversion}
+\subsubsection{Implicit vs.~Explicit
+conversion}\label{implicit-vs.-explicit-conversion}
 
 Examples
 
@@ -3510,7 +3505,7 @@ which are key data structures in R/RStudio.
 
 \begin{itemize}
 \item
-  What are vectors and why are they essential in R?
+  What are vectors, and why are they essential in R?
 \item
   What are the different types of vectors and their key characteristics?
 \item
@@ -3744,9 +3739,9 @@ of random numbers between a minimum and maximum value.
 \end{Highlighting}
 \end{Shaded}
 
-\textbf{NOTE} If you run the previous code block multiple times you will
-get different answers. Use \texttt{set.seed()} to get a similar sequence
-every time you run the calculation.
+\textbf{NOTE}: If you run the previous code block multiple times you
+will get different answers. Use \texttt{set.seed()} to get a similar
+sequence every time you run the calculation.
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -4064,7 +4059,7 @@ Determine the number of letters in a character
 \setcounter{enumi}{2}
 \tightlist
 \item
-  Stats and math on vectors
+  Vectors and mathmatical/statistical operations
 \end{enumerate}
 
 A variety of mathematical operations can be performed on vectors. These
@@ -4231,7 +4226,7 @@ operations together with examples are listed below.
   labels for each bin.
 \end{itemize}
 
-The argument ``breaks'' can be the number of bins or it can be specific
+The argument ``breaks'' can be the number of bins, or it can be specific
 break points.
 
 \begin{Shaded}
@@ -4585,7 +4580,7 @@ returned.
   subsetting methods.
 \item
   Generate a sequence of even numbers from 2 to 10 using the
-  \texttt{seq()} function and calculate the total sum and average of
+  \texttt{seq()} function, and calculate the total sum and average of
   this new vector.
 \item
   Create a vector of student ages (between 16 and 20, n = 10), calculate
@@ -4606,7 +4601,7 @@ returned.
   Use vector functions to find the length, sum, and mean of a numeric
   vector.
 \item
-  Use functions like \texttt{sort()} or \texttt{rev()} to arrange
+  Use the functions \texttt{sort()} or \texttt{rev()} to arrange
   elements in ascending, descending, or reversed order.
 \item
   Use functions like \texttt{which()} or \texttt{match()} to locate
@@ -4626,7 +4621,7 @@ returned.
 Vectors are an essential data structure for data analysis purposes. In
 this chapter, I have demonstrated the different types of vectors, how to
 generate vectors, and the various types of vector operations that can be
-performed. Now that we have a better understanding of vectors, it is
+performed. Now that we have a deeper understanding of vectors, it is
 time to explore other data structures (that are useful for data
 analysis) in the subsequent chapters.
 
@@ -5313,8 +5308,9 @@ Using \texttt{cbind()} and \texttt{rbind()}
 \end{Highlighting}
 \end{Shaded}
 
-Dimensions are very important when working with matrices. Here, we
-observe that we can't multiply m5 by m6 because of the matrix dimensions
+Knowledge of dimensions is very important when working with matrices.
+Here, we observe that we can't multiply m5 by m6 because of the matrix
+dimensions
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -5693,8 +5689,8 @@ and provide solutions.
 One of the most common tasks/activities in data analysis is handling
 missing values. Missing data are found everywhere; therefore, it is
 important to learn how to identify and summarize them. Missing data can
-arise from different sources including nonresponses in surveys or
-technical issues during data collection.
+arise from different sources, including nonresponses in surveys or
+technical difficulties during data collection.
 
 \begin{itemize}
 \tightlist
@@ -5708,19 +5704,20 @@ technical issues during data collection.
   Data merge issues
 \end{itemize}
 
-Missingness presents itself in a variety of ways in R. The most common
-way to represent a missing value in R is with the value \texttt{NA}.
-Other reserved values include:
+Missingness presents itself in various ways in R. The most common way to
+represent a missing value in R is with the value \texttt{NA}. Other
+reserved values include:
 
 \begin{itemize}
 \item
   \texttt{NULL} = neither TRUE or FALSE (\texttt{is.null()} identifies a
   null value and \texttt{as.null()} converts to a null value).
 \item
-  \texttt{NaN} = impossible values \texttt{Inf} = infinite value
-  obtained by dividing by zero (\texttt{is.infinite()} identifies an
-  infinite value and \texttt{as.infinite()} converts to an infinite
-  value).
+  \texttt{NaN} = impossible values
+\item
+  \texttt{Inf} = infinite value obtained by dividing by zero
+  (\texttt{is.infinite()} identifies an infinite value and
+  \texttt{as.infinite()} converts to an infinite value).
 \end{itemize}
 
 Examples of the missing values
@@ -5735,7 +5732,7 @@ Examples of the missing values
 
 Common strategies for handling missing data
 
-When investigating a dataset, there are a number of functions that can
+When investigating a dataset, there are several functions that can
 assist with the process. To find missing and non-missing values, the
 user can work with \texttt{is.na()} and \texttt{!is.na()}, respectively.
 If any rows contain missing values, one can use \texttt{na.omit()} or
@@ -5762,13 +5759,13 @@ Missing can be \texttt{NA} or \texttt{NaN} and represented by
 
 \subsection{NA}\label{na}
 
-R uses NA to represent missing data. The NA appears as another element
-of a vector. To test each element for missingness we use
+R uses \texttt{NA} to represent missing data. The \texttt{NA} appears as
+another element of a vector. To test each element for missingness we use
 \texttt{is.na()}. Generally, we can use tools such as \texttt{mi},
 \texttt{mice}, and \texttt{Amelia} (which will be discussed later) to
 deal with missing data. The deletion of this missing data may lead to
-bias or data loss, so we need to be very careful when handling it. In
-subsequent blog posts, we will look at the use of imputation to deal
+bias or data loss, so we need to be careful when we choose this option.
+In subsequent blog posts, we will look at the use of imputation to deal
 with missing data.
 
 \subsection{NULL}\label{null}
@@ -5809,9 +5806,9 @@ The learner should now have a firm grasp of what missing data is and why
 it is a common challenge in data analysis. Additionally, after
 completing this chapter, the learner should know how to identify and
 handle missing data with various R functions. This is the final chapter
-in the book and I hope you have enjoyed your learning journey so far. In
-the next chapter, I provide a conclusion to the book and some of the
-next steps you can take to continue on your R learning journey.
+in the book, and I hope you have enjoyed your learning journey so far.
+In the next chapter, I provide a conclusion to the book and some next
+steps you can take to continue on your R learning journey.
 
 \bookmarksetup{startatroot}
 
@@ -5833,9 +5830,9 @@ understand all the topics listed below based on the previously described
 learning objectives.
 
 \begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.1125}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.6875}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.2000}}@{}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.1944}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.6111}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.1944}}@{}}
 \caption{Syllabus}\label{tbl-syllabus-.striped-.hover-tbl-colwidths5-80-15}\tabularnewline
 \toprule\noalign{}
 \begin{minipage}[b]{\linewidth}\raggedright
