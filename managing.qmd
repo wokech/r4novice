@@ -58,7 +58,7 @@ The working directory is a file path or location on your computer that R uses fo
 
 The paths to files or directories can be defined using relative or absolute paths. The relative path is where the file is found in the location where the user is, and absolute includes the entire path from the root directory.
 
-### Finding help when using packages and functions
+### Finding help when using packages, functions, and inbuilt datasets
 
 -   There is a built-in help system that can be accessed via the "Help" menu, or one can use the `?` symbol before the function, package, or dataset to get a brief description and instructions for use.
 

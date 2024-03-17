@@ -222,7 +222,7 @@ Example:
 read.table("datasets/r4novice_datafile.csv", header = TRUE, sep = ",")
 ```
 
--   `read.csv()` imports data with comma separated values. Alternatively, we use `read.csv2()` is used where a comma (“,”) indicates a decimal point and a semicolon (“;”)  is a field separator.
+-   `read.csv()` imports data with comma separated values. Alternatively, we use `read.csv2()` is used where a comma (“,”) indicates a decimal point and a semicolon (“;”) is a field separator.
 
 Example:
 

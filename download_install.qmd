@@ -32,7 +32,7 @@ To install R on your personal computer, visit the R Project for Statistical Comp
 
 #### Step 1
 
-On the CRAN homepage, select the appropriate version of R for your operating system (Linux, macOS, or Windows) (@fig-cran-1).
+On the CRAN homepage, select the appropriate version of R for your operating system (Linux, macOS, or Windows; see @fig-cran-1).
 
 ![The CRAN Homepage (Part 1)](images/downloading/r_cran_1.png){#fig-cran-1}
 

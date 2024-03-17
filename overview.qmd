@@ -46,7 +46,7 @@ vi. To aid in computational analysis, there exists a large package library ([CRA
 
 i.  R and RStudio are free and open-source software programs, which makes them accessible to anyone with a computer and an internet connection. This accessibility is key in enabling learners from all socioeconomic levels and geographic regions to have a chance to work with statistical software,
 
-ii. Numerous user communities exist for the R/RStudio software. These communities (listed in the Appendix) provide learning support and assist with technical challenges,
+ii. Very many user communities exist for the R/RStudio software. These communities (listed in the Appendix) provide learning support and assist with technical challenges,
 
 iii. Numerous freely available packages/extensions have been developed by the R and RStudio user communities to facilitate all forms of computational analysis, visualization, and publication. The ([CRAN](https://cran.r-project.org/)) has packages that contain datasets as well as allow one to perform statistical analysis and data visualization,
 

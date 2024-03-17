@@ -44,7 +44,9 @@ The R graphical user interface opens up with a console where you can start writi
 
 ### RStudio interface (Panes)
 
-When opened for the 1st time, the RStudio interface will have 3 panes: Console, Environment, and Navigation. To include the 4th required panel, click on “File” --\> “New File” --\> “R Script”. Now that the 4 panes are open, let us review their functions.
+When opened for the 1st time, the RStudio interface will have 3 panes: Console, Environment, and Navigation. To include the 4th required panel, click on “File” --\> “New File” --\> “R Script”. Now that the 4 panes are open, let us review the functions of each panel shown below.
+
+![The RStudio Console](images/navigating/rstudio_console_1.png){#fig-rstudio-console-1}
 
 #### Script Pane (Text Editor)
 
@@ -62,11 +64,13 @@ This pane has multiple uses. The “Environment” tab shows the values of objec
 
 The navigation pane allows the user to manage files (create new folders and scripts), view generated plots, and review and update installed packages. Additionally, there is a “Help” tab for basic queries, and “Viewer” and “Presentation” tabs for reviewing analysis outputs.
 
-![The R Console](images/navigating/r_console_1.png)
-
 ### RStudio interface (Menu Options)
 
-The RStudio interface has a number of menu bar options (@fig-rstudio-console-1). To orient the user, a brief description of each menu bar option has been provided below.
+The RStudio interface has a number of menu bar options shown below (@fig-rstudio-menu-options-1).
+
+![RStudio interface (Menu Options)](images/navigating/rstudio_menu_options_1.png){#fig-rstudio-menu-options-1}
+
+To orient the user, a brief description of each menu bar option has been provided below.
 
 -   File: Create new files and projects, save them, as well as open and close the projects. Additionally, importing of datasets is made much easier by the “Import Dataset” option.
 
@@ -84,7 +88,7 @@ The RStudio interface has a number of menu bar options (@fig-rstudio-console-1).
 
 -   Debug: Debug your code.
 
--   *Profile:*
+-   Profile: Helps the user understand how R spends its time, and helps the R user to run the code faster.
 
 -   Help: The help section allows one to access tools for troubleshooting. Additionally, it contains documentation and cheatsheets that allow for to discover more about the software.
 

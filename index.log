@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2024.3.13)  15 MAR 2024 00:17
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2024.3.13)  17 MAR 2024 18:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -950,62 +950,62 @@ chapter 2.
 
 ]
 
-LaTeX Warning: Reference `fig-cran-1' on page 14 undefined on input line 638.
+LaTeX Warning: Reference `fig-cran-1' on page 14 undefined on input line 639.
 
 File: images/downloading/r_cran_1.png Graphic file (type bmp)
 <images/downloading/r_cran_1.png>
 
-LaTeX Warning: Reference `fig-cran-2' on page 14 undefined on input line 655.
+LaTeX Warning: Reference `fig-cran-2' on page 14 undefined on input line 656.
 
 File: images/downloading/r_cran_2.png Graphic file (type bmp)
 <images/downloading/r_cran_2.png>
 
-LaTeX Warning: Reference `fig-cran-3' on page 14 undefined on input line 674.
+LaTeX Warning: Reference `fig-cran-3' on page 14 undefined on input line 675.
 
 File: images/downloading/r_cran_3.png Graphic file (type bmp)
 <images/downloading/r_cran_3.png>
 
-LaTeX Warning: Reference `fig-r-console-1' on page 14 undefined on input line 692.
+LaTeX Warning: Reference `fig-r-console-1' on page 14 undefined on input line 693.
 
 File: images/downloading/r_console_1.png Graphic file (type bmp)
 <images/downloading/r_console_1.png>
 [14] [15]
 
-LaTeX Warning: Reference `fig-rstudio-1' on page 16 undefined on input line 712.
+LaTeX Warning: Reference `fig-rstudio-1' on page 16 undefined on input line 713.
 
 File: images/downloading/rstudio_1.png Graphic file (type bmp)
 <images/downloading/rstudio_1.png>
 
-LaTeX Warning: Reference `fig-rstudio-console-1' on page 16 undefined on input line 728.
+LaTeX Warning: Reference `fig-rstudio-console-1' on page 16 undefined on input line 729.
 
 File: images/downloading/rstudio_console_1.png Graphic file (type bmp)
 <images/downloading/rstudio_console_1.png>
 
-LaTeX Warning: Reference `fig-r-cloud-1' on page 16 undefined on input line 746.
+LaTeX Warning: Reference `fig-r-cloud-1' on page 16 undefined on input line 747.
 
 
-LaTeX Warning: Reference `fig-r-cloud-1' on page 16 undefined on input line 756.
+LaTeX Warning: Reference `fig-r-cloud-1' on page 16 undefined on input line 757.
 
 File: images/downloading/r_cloud_1.png Graphic file (type bmp)
 <images/downloading/r_cloud_1.png>
 [16] [17]
 
-LaTeX Warning: Reference `fig-r-cloud-2' on page 18 undefined on input line 772.
+LaTeX Warning: Reference `fig-r-cloud-2' on page 18 undefined on input line 773.
 
 File: images/downloading/r_cloud_2.png Graphic file (type bmp)
 <images/downloading/r_cloud_2.png>
 
-LaTeX Warning: Reference `fig-r-cloud-3' on page 18 undefined on input line 789.
+LaTeX Warning: Reference `fig-r-cloud-3' on page 18 undefined on input line 790.
 
 File: images/downloading/r_cloud_3.png Graphic file (type bmp)
 <images/downloading/r_cloud_3.png>
 
-LaTeX Warning: Reference `fig-r-cloud-console-1' on page 18 undefined on input line 810.
+LaTeX Warning: Reference `fig-r-cloud-console-1' on page 18 undefined on input line 811.
 
 File: images/downloading/r_cloud_console_1.png Graphic file (type bmp)
 <images/downloading/r_cloud_console_1.png>
 
-LaTeX Warning: Reference `fig-r-vscode' on page 18 undefined on input line 832.
+LaTeX Warning: Reference `fig-r-vscode' on page 18 undefined on input line 833.
 
 [18] [19]
 File: images/downloading/r_vscode.png Graphic file (type bmp)
@@ -1013,138 +1013,140 @@ File: images/downloading/r_vscode.png Graphic file (type bmp)
 [20] [21]
 chapter 3.
 
-LaTeX Warning: Reference `fig-r-console-1' on page 22 undefined on input line 930.
+LaTeX Warning: Reference `fig-r-console-1' on page 22 undefined on input line 931.
 
 [22
 
 ]
 File: images/navigating/r_console_1.png Graphic file (type bmp)
 <images/navigating/r_console_1.png>
+File: images/navigating/rstudio_console_1.png Graphic file (type bmp)
+<images/navigating/rstudio_console_1.png>
 [23]
-File: images/navigating/r_console_1.png Graphic file (type bmp)
-<images/navigating/r_console_1.png>
 
-LaTeX Warning: Reference `fig-rstudio-console-1' on page 24 undefined on input line 1020.
+LaTeX Warning: Reference `fig-rstudio-menu-options-1' on page 24 undefined on input line 1024.
 
+File: images/navigating/rstudio_menu_options_1.png Graphic file (type bmp)
+<images/navigating/rstudio_menu_options_1.png>
 [24]
 
-LaTeX Warning: Reference `fig-rstudio-ks-1' on page 25 undefined on input line 1055.
+LaTeX Warning: Reference `fig-rstudio-ks-1' on page 25 undefined on input line 1075.
 
 File: images/navigating/rstudio_ks_1.png Graphic file (type bmp)
 <images/navigating/rstudio_ks_1.png>
-[25] [26]
+[25] [26] [27]
 chapter 4.
-[27
+[28
 
-] [28] [29]
+] [29] [30]
 chapter 5.
-[30
+[31
 
-] [31] [32] [33]
+] [32] [33] [34]
 
-LaTeX Warning: Reference `sec-appendix-1' on page 34 undefined on input line 1511.
+LaTeX Warning: Reference `sec-appendix-1' on page 35 undefined on input line 1531.
 
 
-LaTeX Warning: Reference `sec-appendix-2' on page 34 undefined on input line 1515.
+LaTeX Warning: Reference `sec-appendix-2' on page 35 undefined on input line 1535.
 
-[34] [35] [36]
+[35] [36] [37]
 LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10.95> not available
-(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 1784.
-[37] [38]
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 1804.
+[38] [39]
 
-LaTeX Warning: Reference `sec-missing' on page 39 undefined on input line 1956.
-
-[39]
-
-LaTeX Warning: Reference `sec-data-structure-1' on page 40 undefined on input line 2033.
+LaTeX Warning: Reference `sec-missing' on page 40 undefined on input line 1976.
 
 [40]
 
-Package hyperref Warning: Suppressing link with empty target on input line 2196.
+LaTeX Warning: Reference `sec-data-structure-1' on page 41 undefined on input line 2053.
+
+[41]
+
+Package hyperref Warning: Suppressing link with empty target on input line 2216.
 
 
-Package hyperref Warning: Suppressing link with empty target on input line 2197.
+Package hyperref Warning: Suppressing link with empty target on input line 2217.
 
 
-Package hyperref Warning: Suppressing link with empty target on input line 2197.
+Package hyperref Warning: Suppressing link with empty target on input line 2217.
 
-[41] [42]
+[42] [43]
 chapter 6.
 
-LaTeX Warning: Reference `fig-arithmetic-1' on page 43 undefined on input line 2270.
+LaTeX Warning: Reference `fig-arithmetic-1' on page 44 undefined on input line 2290.
 
-[43
+[44
 
 ]
 File: images/arithmetic/arithmetic_console.png Graphic file (type bmp)
 <images/arithmetic/arithmetic_console.png>
-[44]
+[45]
 
 Package longtable Warning: Column widths have changed
-(longtable)                in table 6.1 on input line 2342.
+(longtable)                in table 6.1 on input line 2362.
 
-[45] [46]
+[46] [47]
 File: images/arithmetic/environment_pane.png Graphic file (type bmp)
 <images/arithmetic/environment_pane.png>
-[47] [48] [49]
+[48] [49] [50]
 chapter 7.
-[50
+[51
 
 ]
 
-LaTeX Warning: Reference `sec-arithmetic-variables' on page 51 undefined on input line 2730.
+LaTeX Warning: Reference `sec-arithmetic-variables' on page 52 undefined on input line 2750.
 
 
 Package longtable Warning: Column widths have changed
-(longtable)                in table 7.1 on input line 2752.
+(longtable)                in table 7.1 on input line 2772.
 
-[51]
+[52]
 
 Package longtable Warning: Column widths have changed
-(longtable)                in table 7.2 on input line 2866.
+(longtable)                in table 7.2 on input line 2886.
 
 
-LaTeX Warning: Reference `sec-vectors' on page 52 undefined on input line 2872.
+LaTeX Warning: Reference `sec-vectors' on page 53 undefined on input line 2892.
 
 
-LaTeX Warning: Reference `sec-arithmetic-variables' on page 52 undefined on input line 2932.
+LaTeX Warning: Reference `sec-arithmetic-variables' on page 53 undefined on input line 2952.
 
-[52] [53] [54]
+[53] [54] [55]
 chapter 8.
-[55
+[56
 
-] [56] [57] [58] [59]
+] [57] [58] [59] [60]
 chapter 9.
-[60
+[61
 
 ]
 
-LaTeX Warning: Reference `sec-data-structure-1' on page 61 undefined on input line 3558.
+LaTeX Warning: Reference `sec-data-structure-1' on page 62 undefined on input line 3578.
 
-[61] [62] [63] [64] [65] [66] [67] [68] [69] [70]
+[62] [63] [64] [65] [66] [67] [68] [69] [70] [71]
 chapter 10.
-[71
+[72
 
 ]
 
-LaTeX Warning: Reference `sec-vectors' on page 72 undefined on input line 4701.
+LaTeX Warning: Reference `sec-vectors' on page 73 undefined on input line 4721.
 
-[72] [73] [74] [75] [76]
+[73] [74] [75] [76] [77]
 chapter 11.
-[77
+[78
 
-] [78] [79] [80]
-Underfull \hbox (badness 1178) in paragraph at lines 5556--5559
+] [79] [80] [81]
+Underfull \hbox (badness 1178) in paragraph at lines 5576--5579
 []\TU/lmr/bx/n/10.95 NOTE\TU/lmr/m/n/10.95 : R has a more efficient method for handling categorical variables using the
  []
 
-[81] [82]
+[82] [83]
 chapter 12.
-[83
+[84
 
-] [84] [85] [86
+] [85] [86] [87
 
-] [87]
+] [88]
 
 ! LaTeX Error: Something's wrong--perhaps a missing \item.
 
@@ -1152,15 +1154,15 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.5916 \begin{enumerate}
+l.5936 \begin{enumerate}
                          
 Here is how much of TeX's memory you used:
- 24181 strings out of 476751
- 468514 string characters out of 5800017
+ 24198 strings out of 476751
+ 469322 string characters out of 5800017
  1933842 words of memory out of 5000000
- 45914 multiletter control sequences out of 15000+600000
+ 45930 multiletter control sequences out of 15000+600000
  561673 words of font info for 70 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  108i,9n,121p,10900b,530s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on index.pdf (87 pages).
+Output written on index.pdf (88 pages).
