@@ -188,9 +188,7 @@ As an R user, one of the tasks that you will often engage in is the importation 
 
 When importing external data, first set the correct working directory. The function `getwd()` will show the current working directory, and `setwd(file_path_name)` will set the working directory to the file path name specified.
 
-**NOTE**: External datasets can be accessed from multiple sources. Examples include can be found in the Appendix 1 (@sec-appendix-1). Both of these websites contain large repositories of datasets that can be used for the examples provided below.
-
-Download the datasets from Appendix 2 (@sec-appendix-2) and save them to your working directory.
+**NOTE**: Download the datasets from [Appendix section](https://wokech.github.io/r4novice/datasets.html) of my book and save them to your working directory.
 
 Data importation can use base R functions or the `readr` package, which is part of the tidyverse. We will review both sets of methods in this section.
 

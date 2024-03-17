@@ -181,7 +181,10 @@ print(variable_1)
 View(variable_2)
 ```
 
-Output of `View()` will be seen in the script pane.
+Output of `View()` will be seen in the script pane and stored variables can be seen in the environment pane (@fig-environment-1).
+
+![The environment pane in RStudio with stored variables](images/arithmetic/environment_pane.png){#fig-environment-1}
+
 
 #### The `assign()` and `rm()` functions
 

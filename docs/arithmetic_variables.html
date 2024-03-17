@@ -335,7 +335,7 @@ cookieconsent.run({
 <span class="header-section-number">6.3</span> Lesson Content</h2>
 <section id="basic-arithmetic" class="level3" data-number="6.3.1"><h3 data-number="6.3.1" class="anchored" data-anchor-id="basic-arithmetic">
 <span class="header-section-number">6.3.1</span> Basic Arithmetic</h3>
-<p>To get started, first, we will open R or RStudio (<a href="#fig-arithmetic-1" class="quarto-xref">Figure&nbsp;<span class="quarto-unresolved-ref">fig-arithmetic-1</span></a>). In R, go to the console, and in RStudio, head to the console pane. Next, type in a basic arithmetic calculation such as <code>1 + 1</code> after the angle bracket (<code>&gt;</code>) and hit “Enter.”</p>
+<p>To get started, first, we will open R or RStudio (<a href="#fig-arithmetic-1" class="quarto-xref">Figure&nbsp;<span>6.1</span></a>). In R, go to the console, and in RStudio, head to the console pane. Next, type in a basic arithmetic calculation such as <code>1 + 1</code> after the angle bracket (<code>&gt;</code>) and hit “Enter.”</p>
 <p><strong>NOTE</strong>: According to the Tidyverse Style Guide, there should be a space on either side of the operator.</p>
 <p>Examples</p>
 <ul>
@@ -507,7 +507,15 @@ Figure&nbsp;6.2: The environment pane in RStudio with stored variables
 <div class="cell">
 <div class="sourceCode" id="cb16"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/View.html">View</a></span><span class="op">(</span><span class="va">variable_2</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>Output of <code><a href="https://rdrr.io/r/utils/View.html">View()</a></code> will be seen in the script pane.</p>
+<p>Output of <code><a href="https://rdrr.io/r/utils/View.html">View()</a></code> will be seen in the script pane and stored variables can be seen in the environment pane (<a href="#fig-environment-1" class="quarto-xref">Figure&nbsp;<span>6.3</span></a>).</p>
+<div id="fig-environment-1" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure"><div aria-describedby="fig-environment-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/arithmetic/environment_pane.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-environment-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6.3: The environment pane in RStudio with stored variables
+</figcaption></figure>
+</div>
 </section><section id="the-assign-and-rm-functions" class="level4" data-number="6.3.3.2"><h4 data-number="6.3.3.2" class="anchored" data-anchor-id="the-assign-and-rm-functions">
 <span class="header-section-number">6.3.3.2</span> The <code>assign()</code> and <code>rm()</code> functions</h4>
 <p>In addition to using the assignment operators (<code>&lt;-</code> and <code>=</code>), we can use the <code><a href="https://rdrr.io/r/base/assign.html">assign()</a></code> function to assign a value to a variable.</p>
