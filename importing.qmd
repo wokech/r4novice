@@ -261,7 +261,7 @@ read.xlsx("datasets/r4novice_datafile.xls", sheetIndex = 1)
 ```
 
 ```{r}
-read.xlsx("datasets/r4novice_datafile.xls", sheetIndex = 1)
+read.xlsx("datasets/r4novice_datafile.xlsx", sheetIndex = 1)
 ```
 
 2.  Less frequently used data importation formats
@@ -609,4 +609,4 @@ vii. What is the difference between overwriting a dataset and appending new data
 
 ## Summary
 
-In this lesson, the learner has been guided through the process of accessing internal datasets. Additionally, methods for importing external datasets have been demonstrated for various data formats. Lastly, the learner has been shown how to save the outputs of the data analysis. With this knowledge, the learner sis now ready to perform basic arithmetic operations, which will be covered in the next chapter.
+In this lesson, the learner has been guided through the process of accessing internal datasets. Additionally, methods for importing external datasets have been demonstrated for various data formats. Lastly, the learner has been shown how to save the outputs of the data analysis. With this knowledge, the learner is now ready to perform basic arithmetic operations, which will be covered in the next chapter.
