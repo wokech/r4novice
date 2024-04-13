@@ -497,7 +497,7 @@ cookieconsent.run({
 <div class="sourceCode" id="cb19"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/pkg/xlsx/man/read.xlsx.html">read.xlsx</a></span><span class="op">(</span><span class="st">"datasets/r4novice_datafile.xls"</span>, sheetIndex <span class="op">=</span> <span class="fl">1</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
-<div class="sourceCode" id="cb20"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/pkg/xlsx/man/read.xlsx.html">read.xlsx</a></span><span class="op">(</span><span class="st">"datasets/r4novice_datafile.xls"</span>, sheetIndex <span class="op">=</span> <span class="fl">1</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb20"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/pkg/xlsx/man/read.xlsx.html">read.xlsx</a></span><span class="op">(</span><span class="st">"datasets/r4novice_datafile.xlsx"</span>, sheetIndex <span class="op">=</span> <span class="fl">1</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <ol start="2" type="1">
 <li>Less frequently used data importation formats</li>
@@ -576,35 +576,35 @@ cookieconsent.run({
 </ol>
 <ul>
 <li>
-<code><a href="https://readr.tidyverse.org/reference/read_table.html">read_table()</a></code> is used to import whitespace-separated files.</li>
+<code><a href="https://rdrr.io/pkg/readr/man/read_table.html">read_table()</a></code> is used to import whitespace-separated files.</li>
 </ul>
 <p>Example:</p>
 <div class="cell">
-<div class="sourceCode" id="cb23"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://readr.tidyverse.org/reference/read_table.html">read_table</a></span><span class="op">(</span><span class="st">"datasets/r4novice_datafile.txt"</span>, col_names <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb23"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/pkg/readr/man/read_table.html">read_table</a></span><span class="op">(</span><span class="st">"datasets/r4novice_datafile.txt"</span>, col_names <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <ul>
 <li>
-<code><a href="https://readr.tidyverse.org/reference/read_delim.html">read_csv()</a></code> is for comma-separated values (CSV), while <code><a href="https://readr.tidyverse.org/reference/read_delim.html">read_csv2()</a></code> is used for semicolon-separated values with <code>,</code> as the decimal mark.</li>
+<code><a href="https://rdrr.io/pkg/readr/man/read_delim.html">read_csv()</a></code> is for comma-separated values (CSV), while <code><a href="https://rdrr.io/pkg/readr/man/read_delim.html">read_csv2()</a></code> is used for semicolon-separated values with <code>,</code> as the decimal mark.</li>
 </ul>
 <p>Example:</p>
 <div class="cell">
-<div class="sourceCode" id="cb24"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://readr.tidyverse.org/reference/read_delim.html">read_csv</a></span><span class="op">(</span><span class="st">"datasets/r4novice_datafile.csv"</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb24"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/pkg/readr/man/read_delim.html">read_csv</a></span><span class="op">(</span><span class="st">"datasets/r4novice_datafile.csv"</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <ul>
 <li>
-<code><a href="https://readr.tidyverse.org/reference/read_delim.html">read_tsv()</a></code> is for tab-separated values (TSV)</li>
+<code><a href="https://rdrr.io/pkg/readr/man/read_delim.html">read_tsv()</a></code> is for tab-separated values (TSV)</li>
 </ul>
 <p>Example:</p>
 <div class="cell">
-<div class="sourceCode" id="cb25"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://readr.tidyverse.org/reference/read_delim.html">read_tsv</a></span><span class="op">(</span><span class="st">"datasets/r4novice_datafile.txt"</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb25"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/pkg/readr/man/read_delim.html">read_tsv</a></span><span class="op">(</span><span class="st">"datasets/r4novice_datafile.txt"</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <ul>
 <li>
-<code><a href="https://readr.tidyverse.org/reference/read_delim.html">read_delim()</a></code> is for all delimited files, such as CSV and TSV.</li>
+<code><a href="https://rdrr.io/pkg/readr/man/read_delim.html">read_delim()</a></code> is for all delimited files, such as CSV and TSV.</li>
 </ul>
 <p>Example:</p>
 <div class="cell">
-<div class="sourceCode" id="cb26"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://readr.tidyverse.org/reference/read_delim.html">read_delim</a></span><span class="op">(</span><span class="st">"datasets/r4novice_datafile.csv"</span>, delim <span class="op">=</span> <span class="st">","</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb26"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/pkg/readr/man/read_delim.html">read_delim</a></span><span class="op">(</span><span class="st">"datasets/r4novice_datafile.csv"</span>, delim <span class="op">=</span> <span class="st">","</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <ol start="2" type="a">
 <li>Import spreadsheets</li>
@@ -636,10 +636,10 @@ cookieconsent.run({
 </div>
 <p>Use <code>read_sheet("link to file")</code> to read in the file via the link.</p>
 <ul>
-<li><p><code><a href="https://readr.tidyverse.org/reference/read_fwf.html">read_fwf()</a></code> is used to read in fixed-width files.</p></li>
-<li><p><code><a href="https://readr.tidyverse.org/reference/read_log.html">read_log()</a></code> is the standard format for reading in web log files.</p></li>
+<li><p><code><a href="https://rdrr.io/pkg/readr/man/read_fwf.html">read_fwf()</a></code> is used to read in fixed-width files.</p></li>
+<li><p><code><a href="https://rdrr.io/pkg/readr/man/read_log.html">read_log()</a></code> is the standard format for reading in web log files.</p></li>
 <li><p><code><a href="https://rdrr.io/r/base/readRDS.html">readRDS()</a></code> is used to read data stored as a single R object.</p></li>
-<li><p><code><a href="https://readr.tidyverse.org/reference/read_lines.html">read_lines()</a></code> is used to read data up to a specified number of lines in a file.</p></li>
+<li><p><code><a href="https://rdrr.io/pkg/readr/man/read_lines.html">read_lines()</a></code> is used to read data up to a specified number of lines in a file.</p></li>
 </ul>
 <p><strong>NOTE</strong>: Missing data is a major challenge in data analysis. Strategies for dealing with this are discussed in Chapter 12 “Handling missing data” (<a href="missing.html" class="quarto-xref"><span>Chapter 12</span></a>).</p>
 </section><section id="inspecting-the-imported-data" class="level4" data-number="5.3.3.3"><h4 data-number="5.3.3.3" class="anchored" data-anchor-id="inspecting-the-imported-data">
@@ -648,7 +648,7 @@ cookieconsent.run({
 <p>Example:</p>
 <p>Import a specific dataset</p>
 <div class="cell">
-<div class="sourceCode" id="cb33"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">import_inspect</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://readr.tidyverse.org/reference/read_delim.html">read_csv</a></span><span class="op">(</span><span class="st">"datasets/r4novice_datafile.csv"</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb33"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">import_inspect</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/readr/man/read_delim.html">read_csv</a></span><span class="op">(</span><span class="st">"datasets/r4novice_datafile.csv"</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
 <div class="sourceCode" id="cb34"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="va">import_inspect</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -722,27 +722,27 @@ cookieconsent.run({
 </ol>
 <ul>
 <li>
-<code><a href="https://readr.tidyverse.org/reference/write_delim.html">write_csv()</a></code> and <code><a href="https://readr.tidyverse.org/reference/write_delim.html">write_csv2()</a></code> can be used to write comma-delimited and semicolon-delimited files, respectively.</li>
+<code><a href="https://rdrr.io/pkg/readr/man/write_delim.html">write_csv()</a></code> and <code><a href="https://rdrr.io/pkg/readr/man/write_delim.html">write_csv2()</a></code> can be used to write comma-delimited and semicolon-delimited files, respectively.</li>
 </ul>
 <p>Example:</p>
 <div class="cell">
-<div class="sourceCode" id="cb46"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://readr.tidyverse.org/reference/write_delim.html">write_csv</a></span><span class="op">(</span><span class="va">df_to_save</span>, file <span class="op">=</span> <span class="st">"saved_datasets/r4novice_saved_data_3.csv"</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb46"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/pkg/readr/man/write_delim.html">write_csv</a></span><span class="op">(</span><span class="va">df_to_save</span>, file <span class="op">=</span> <span class="st">"saved_datasets/r4novice_saved_data_3.csv"</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <ul>
 <li>
-<code><a href="https://readr.tidyverse.org/reference/write_delim.html">write_tsv()</a></code> is used to write a tab delimited file.</li>
+<code><a href="https://rdrr.io/pkg/readr/man/write_delim.html">write_tsv()</a></code> is used to write a tab delimited file.</li>
 </ul>
 <p>Example:</p>
 <div class="cell">
-<div class="sourceCode" id="cb47"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://readr.tidyverse.org/reference/write_delim.html">write_tsv</a></span><span class="op">(</span><span class="va">df_to_save</span>, file <span class="op">=</span> <span class="st">"saved_datasets/r4novice_saved_data_2.txt"</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb47"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/pkg/readr/man/write_delim.html">write_tsv</a></span><span class="op">(</span><span class="va">df_to_save</span>, file <span class="op">=</span> <span class="st">"saved_datasets/r4novice_saved_data_2.txt"</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <ul>
 <li>
-<code><a href="https://readr.tidyverse.org/reference/write_delim.html">write_delim()</a></code> is used to write files with any delimiter.</li>
+<code><a href="https://rdrr.io/pkg/readr/man/write_delim.html">write_delim()</a></code> is used to write files with any delimiter.</li>
 </ul>
 <p>Example:</p>
 <div class="cell">
-<div class="sourceCode" id="cb48"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://readr.tidyverse.org/reference/write_delim.html">write_delim</a></span><span class="op">(</span><span class="va">df_to_save</span>, file <span class="op">=</span> <span class="st">"saved_datasets/r4novice_saved_data_4.csv"</span>, delim <span class="op">=</span> <span class="st">";"</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb48"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/pkg/readr/man/write_delim.html">write_delim</a></span><span class="op">(</span><span class="va">df_to_save</span>, file <span class="op">=</span> <span class="st">"saved_datasets/r4novice_saved_data_4.csv"</span>, delim <span class="op">=</span> <span class="st">";"</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <ol start="2" type="a">
 <li>Excel files</li>
@@ -770,7 +770,7 @@ cookieconsent.run({
 <li><p>What is the difference between overwriting a dataset and appending new data to it in R?</p></li>
 </ol></section><section id="summary" class="level2" data-number="5.5"><h2 data-number="5.5" class="anchored" data-anchor-id="summary">
 <span class="header-section-number">5.5</span> Summary</h2>
-<p>In this lesson, the learner has been guided through the process of accessing internal datasets. Additionally, methods for importing external datasets have been demonstrated for various data formats. Lastly, the learner has been shown how to save the outputs of the data analysis. With this knowledge, the learner sis now ready to perform basic arithmetic operations, which will be covered in the next chapter.</p>
+<p>In this lesson, the learner has been guided through the process of accessing internal datasets. Additionally, methods for importing external datasets have been demonstrated for various data formats. Lastly, the learner has been shown how to save the outputs of the data analysis. With this knowledge, the learner is now ready to perform basic arithmetic operations, which will be covered in the next chapter.</p>
 
 
 </section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
