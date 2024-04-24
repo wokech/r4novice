@@ -15,10 +15,10 @@ book:
   date: 01/01/2024
   reader-mode: true
 
-  cookie-consent:
-    type: express
-    style: headline
-    palette: dark
+#  cookie-consent:
+#    type: express
+#    style: headline
+#    palette: dark
   google-analytics:
     tracking-id: "G-9WD4X1TR0R"
     anonymize-ip: true
