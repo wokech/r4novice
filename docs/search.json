@@ -140,5 +140,15 @@
       "Appendices",
       "<span class='chapter-number'>B</span>  <span class='chapter-title'>Datasets</span>"
     ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "R for Novice Programmers (1e)",
+    "section": "",
+    "text": "Welcome\nThis is the website for the book “R for Novice Programmers” written by William Okech. The goal of this book is to introduce non-programmers or those with very little programming experience to the benefits of the R and RStudio software. The main prerequisites for learners are basic knowledge of computer applications and experience working with files and folders. This book will primarily focus on the basic R concepts that are hardly emphasized, but that may prove difficult for learners new to programming.\nR for Novice Programmers: First Steps with R and RStudio© 2024 by William Okech is licensed under CC BY-NC-ND 4.0. The online version of this book is free to use.\nCover image was designed using Canva.\nThis book was built with Quarto.",
+    "crumbs": [
+      "Welcome"
+    ]
   }
 ]
