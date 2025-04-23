@@ -4,7 +4,8 @@ This is the website for “R for Novice Programmers.” The goal of this book is
 
 ![Cover Image for R for Novices](Cover_R4NP.png)
 
-[R for Novice Programmers: First Steps with R and RStudio ](https://wokech.github.io/r4novice/)© 2024 by [William Okech ](https://www.williamokech.com/)is licensed under [CC BY-NC-ND 4.0 ![](https://chooser-beta.creativecommons.org/img/cc-logo.f0ab4ebe.svg)](http://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1)The online version of this book is free to use.
+[R for Novice Programmers: First Steps with R and RStudio ](https://wokech.github.io/r4novice/)© 2024 by [William Okech ](https://www.williamokech.com/)is licensed under 
+[CC BY-NC-ND 4.0](https://chooser-beta.creativecommons.org/img/cc-logo.f0ab4ebe.svg)](http://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1)The online version of this book is free to use.
 
 Cover image was designed using [Canva](https://www.canva.com/)
 
